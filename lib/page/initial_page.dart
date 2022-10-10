@@ -3,12 +3,25 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
+import 'package:qrscan/qrscan.dart' as scanner;
 
 class InitialPage extends StatelessWidget {
   const InitialPage({Key? key}) : super(key: key);
 
   List<Widget> _buildScreens() {
-    return [IndexHome(), IndexHome(), IndexScanner(), IndexHome(), IndexHome()];
+    return [
+      IndexHome(),
+      IndexScanner(),
+      IndexScanner(),
+      IndexHome(),
+      IndexHome()
+    ];
+  }
+
+  getScanner() {
+    return GestureDetector(
+      onTap: () async {},
+    );
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
@@ -26,9 +39,14 @@ class InitialPage extends StatelessWidget {
           inactiveColorPrimary: CupertinoColors.systemGrey,
           textStyle: TextStyle(fontSize: 10)),
       PersistentBottomNavBarItem(
-          icon: Icon(
-            Icons.qr_code_scanner,
-            color: Colors.white,
+          icon: GestureDetector(
+            onTap: () async {
+              String? barcode = await scanner.scan();
+            },
+            child: Icon(
+              Icons.qr_code_scanner,
+              color: Colors.white,
+            ),
           ),
           title: ("Scan"),
           activeColorPrimary: Colors.red,

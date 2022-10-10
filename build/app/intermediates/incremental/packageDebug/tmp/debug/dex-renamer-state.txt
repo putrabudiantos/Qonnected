@@ -1,4 +1,4 @@
-#Thu Sep 29 05:43:31 ICT 2022
-base.0=C\:\\xampp\\htdocs\\qonnected_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Mon Oct 10 16:59:14 WIB 2022
+base.0=/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/dex/debug/minifyDebugWithR8/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
