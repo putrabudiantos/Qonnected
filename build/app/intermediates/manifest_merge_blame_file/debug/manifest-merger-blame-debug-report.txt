@@ -13,68 +13,68 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:43:5-67
-15-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:43:22-64
+15-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:43:5-67
+15-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:43:22-64
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:40:5-65
-16-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:40:22-62
+16-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:40:5-65
+16-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:40:22-62
 17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-17-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:41:5-81
-17-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:41:22-78
+17-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:41:5-81
+17-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:41:22-78
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:42:5-80
-18-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:42:22-77
+18-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:42:5-80
+18-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:42:22-77
 19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-19-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:44:5-79
-19-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:44:22-76
+19-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:44:5-79
+19-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:44:22-76
 20    <uses-permission android:name="android.permission.CALL_PHONE" />
-20-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:45:5-69
-20-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:45:22-66
+20-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:45:5-69
+20-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:45:22-66
 21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-21-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:46:5-75
-21-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:46:22-72
+21-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:46:5-75
+21-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:46:22-72
 22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-22-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:47:5-81
-22-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:47:22-78
+22-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:47:5-81
+22-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:47:22-78
 23
 24    <queries>
-24-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:48:5-53:15
+24-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:48:5-53:15
 25        <intent>
-25-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:49:9-52:18
+25-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:49:9-52:18
 26            <action android:name="android.intent.action.VIEW" />
-26-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:50:13-65
-26-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:50:21-62
+26-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:50:13-65
+26-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:50:21-62
 27
 28            <data android:scheme="https" />
-28-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:51:13-44
-28-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:51:19-41
+28-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:51:13-44
+28-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:51:19-41
 29        </intent>
 30    </queries>
 31
 32    <uses-permission android:name="android.permission.VIBRATE" />
-32-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-32-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+32-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
+32-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
 33    <uses-permission android:name="android.permission.FLASHLIGHT" />
-33-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-69
-33-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-66
+33-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-69
+33-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-66
 34
 35    <uses-feature android:name="android.hardware.camera" />
-35-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-60
-35-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:13:19-57
+35-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-60
+35-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:13:19-57
 36    <uses-feature android:name="android.hardware.camera.autofocus" />
-36-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-70
-36-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:19-67
+36-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-70
+36-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:14:19-67
 37
 38    <uses-permission android:name="android.permission.WAKE_LOCK" />
-38-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-68
-38-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:16:22-65
+38-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:16:5-68
+38-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:16:22-65
 39
 40    <application
 41        android:name="android.app.Application"
 42        android:allowBackup="true"
-42-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:13:18-44
+42-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:13:18-44
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.8.0] /Users/mydevteam/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+43-->[androidx.core:core:1.8.0] C:\Users\Novita Krisma\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 44        android:debuggable="true"
 45        android:icon="@mipmap/ic_launcher"
 46        android:label="Qonnected App" >
@@ -97,8 +97,8 @@
 63            </intent-filter>
 64            <intent-filter>
 65                <action android:name="android.intent.action.VIEW" />
-65-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:50:13-65
-65-->/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app/src/main/AndroidManifest.xml:50:21-62
+65-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:50:13-65
+65-->C:\xampp\htdocs\qonnected_app\android\app\src\main\AndroidManifest.xml:50:21-62
 66
 67                <category android:name="android.intent.category.DEFAULT" />
 68                <category android:name="android.intent.category.BROWSABLE" />
@@ -109,97 +109,97 @@
 73             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 74        -->
 75        <meta-data
-75-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
+75-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-27:37
 76            android:name="flutterEmbedding"
-76-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
+76-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-48
 77            android:value="2" />
-77-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
+77-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-34
 78
 79        <activity
-79-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-28:20
+79-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-28:20
 80            android:name="com.shinow.qrscan.SecondActivity"
-80-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-60
+80-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-60
 81            android:theme="@style/Theme.AppCompat.NoActionBar" >
-81-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-63
+81-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-63
 82            <meta-data
-82-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
+82-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-27:37
 83                android:name="flutterEmbedding"
-83-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
+83-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-48
 84                android:value="2" />
-84-->[:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
+84-->[:qrscan] C:\xampp\htdocs\qonnected_app\build\qrscan\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-34
 85        </activity>
 86
 87        <provider
-87-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+87-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
 88            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-88-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+88-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
 89            android:authorities="com.example.qonnected_app.flutter.image_provider"
-89-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+89-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
 90            android:exported="false"
-90-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+90-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
 91            android:grantUriPermissions="true" >
-91-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+91-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
 92            <meta-data
-92-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+92-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
 93                android:name="android.support.FILE_PROVIDER_PATHS"
-93-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+93-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
 94                android:resource="@xml/flutter_image_picker_file_paths" />
-94-->[:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+94-->[:image_picker_android] C:\xampp\htdocs\qonnected_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
 95        </provider>
 96
 97        <activity
-97-->[:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+97-->[:url_launcher_android] C:\xampp\htdocs\qonnected_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
 98            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-98-->[:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+98-->[:url_launcher_android] C:\xampp\htdocs\qonnected_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 99            android:exported="false"
-99-->[:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+99-->[:url_launcher_android] C:\xampp\htdocs\qonnected_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
 100            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-100-->[:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+100-->[:url_launcher_android] C:\xampp\htdocs\qonnected_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
 101
 102        <uses-library
-102-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+102-->[androidx.window:window:1.0.0-beta04] C:\Users\Novita Krisma\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 103            android:name="androidx.window.extensions"
-103-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+103-->[androidx.window:window:1.0.0-beta04] C:\Users\Novita Krisma\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
 104            android:required="false" />
-104-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+104-->[androidx.window:window:1.0.0-beta04] C:\Users\Novita Krisma\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
 105        <uses-library
-105-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+105-->[androidx.window:window:1.0.0-beta04] C:\Users\Novita Krisma\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
 106            android:name="androidx.window.sidecar"
-106-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+106-->[androidx.window:window:1.0.0-beta04] C:\Users\Novita Krisma\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
 107            android:required="false" />
-107-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+107-->[androidx.window:window:1.0.0-beta04] C:\Users\Novita Krisma\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 108
 109        <provider
-109-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+109-->[com.squareup.picasso:picasso:2.71828] C:\Users\Novita Krisma\.gradle\caches\transforms-3\22b0ac057e23148579d89adc41d6ffb3\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 110            android:name="com.squareup.picasso.PicassoProvider"
-110-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+110-->[com.squareup.picasso:picasso:2.71828] C:\Users\Novita Krisma\.gradle\caches\transforms-3\22b0ac057e23148579d89adc41d6ffb3\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 111            android:authorities="com.example.qonnected_app.com.squareup.picasso"
-111-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+111-->[com.squareup.picasso:picasso:2.71828] C:\Users\Novita Krisma\.gradle\caches\transforms-3\22b0ac057e23148579d89adc41d6ffb3\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 112            android:exported="false" />
-112-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+112-->[com.squareup.picasso:picasso:2.71828] C:\Users\Novita Krisma\.gradle\caches\transforms-3\22b0ac057e23148579d89adc41d6ffb3\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 113
 114        <activity
-114-->[pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+114-->[pub.devrel:easypermissions:3.0.0] C:\Users\Novita Krisma\.gradle\caches\transforms-3\e59d4e28a8e50b93dec513d561f4ef3d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
 115            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-115-->[pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:13:13-86
+115-->[pub.devrel:easypermissions:3.0.0] C:\Users\Novita Krisma\.gradle\caches\transforms-3\e59d4e28a8e50b93dec513d561f4ef3d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
 116            android:exported="false"
-116-->[pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+116-->[pub.devrel:easypermissions:3.0.0] C:\Users\Novita Krisma\.gradle\caches\transforms-3\e59d4e28a8e50b93dec513d561f4ef3d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
 117            android:label=""
-117-->[pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+117-->[pub.devrel:easypermissions:3.0.0] C:\Users\Novita Krisma\.gradle\caches\transforms-3\e59d4e28a8e50b93dec513d561f4ef3d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
 118            android:theme="@style/EasyPermissions.Transparent" />
-118-->[pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+118-->[pub.devrel:easypermissions:3.0.0] C:\Users\Novita Krisma\.gradle\caches\transforms-3\e59d4e28a8e50b93dec513d561f4ef3d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
 119        <activity
-119-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:14:9-19:63
+119-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:14:9-19:63
 120            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
-120-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:15:13-74
+120-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:15:13-74
 121            android:configChanges="orientation|keyboardHidden"
-121-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:16:13-63
+121-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:16:13-63
 122            android:screenOrientation="portrait"
-122-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:17:13-49
+122-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:17:13-49
 123            android:theme="@style/Theme.AppCompat.NoActionBar"
-123-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:18:13-63
+123-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:18:13-63
 124            android:windowSoftInputMode="stateAlwaysHidden" />
-124-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:19:13-60
+124-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] C:\Users\Novita Krisma\.gradle\caches\transforms-3\48d797836f8370cdcec5637d18b49e37\transformed\jetified-android-zxingLibrary-0.1.4-PRE\AndroidManifest.xml:19:13-60
 125    </application>
 126
 127</manifest>
