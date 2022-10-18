@@ -4,6 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+import 'package:qonnected_app/helper/alert.dart';
+import 'package:qonnected_app/page/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 
@@ -15,16 +17,10 @@ class AuthController extends GetxController {
   var emailController = TextEditingController().obs;
   var phoneController = TextEditingController().obs;
   var usernameController = TextEditingController().obs;
-  var walletController = TextEditingController().obs;
   var banknameController = TextEditingController().obs;
   var banktypeController = TextEditingController().obs;
   var norekeningController = TextEditingController().obs;
   var passwordController = TextEditingController().obs;
-  var refferalController = TextEditingController().obs;
-  var name1Controller = TextEditingController().obs;
-  var username1Controller = TextEditingController().obs;
-  var email1Controller = TextEditingController().obs;
-  var phone1Controller = TextEditingController().obs;
   // late TextEditingController nameController ;
   // late TextEditingController emailController;
   // late TextEditingController phoneController;
@@ -56,16 +52,11 @@ class AuthController extends GetxController {
 
     phoneController.value = TextEditingController();
     usernameController.value = TextEditingController();
-    walletController.value = TextEditingController();
+
     banknameController.value = TextEditingController();
     banktypeController.value = TextEditingController();
     norekeningController.value = TextEditingController();
     passwordController.value = TextEditingController();
-    refferalController.value = TextEditingController();
-    name1Controller.value = TextEditingController();
-    username1Controller.value = TextEditingController();
-    email1Controller.value = TextEditingController();
-    phone1Controller.value = TextEditingController();
   }
 
   @override
@@ -74,20 +65,19 @@ class AuthController extends GetxController {
     emailController.value.dispose();
     phoneController.value.dispose();
     usernameController.value.dispose();
-    walletController.value.dispose();
+
     banknameController.value.dispose();
     banktypeController.value.dispose();
     norekeningController.value.dispose();
     passwordController.value.dispose();
-    refferalController.value.dispose();
-    name1Controller.value.clear();
-    username1Controller.value.clear();
-    email1Controller.value.clear();
+
     phoneController.value.clear();
+    emailController.value.clear();
     super.onClose();
   }
 
-  _Login(BuildContext context, TextEditingController email) async {
+  login(BuildContext context, TextEditingController email) async {
+    isLoading.value = true;
     final response = await vars.client.auth.signIn(
         email: email.text,
         options: AuthOptions(
@@ -96,13 +86,15 @@ class AuthController extends GetxController {
                 : 'io.supabase.flutterquickstart://login-callback/'));
     final error = response.error;
     if (error != null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(error.message)),
-      );
+      isLoading.value = false;
+      Helper.alertDialog(context, '400', error.message, true);
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Check your email for login link!')),
-      );
+      isLoading.value = false;
+      Helper.alertDialog(
+          context, '200', 'Check your email for login link!', true);
+      // ScaffoldMessenger.of(context).showSnackBar(
+      //   const SnackBar(content: Text('Check your email for login link!')),
+      // );
 
       email.clear();
     }
@@ -115,31 +107,24 @@ class AuthController extends GetxController {
   }
 
   void SignUp(BuildContext context) async {
+    isLoading.value = true;
     var pwd =
         "${nameController.value.text}@${DateTime.now().millisecondsSinceEpoch}";
-    isLoading.value = true;
+
     final reslt = await vars.client.auth
-        .signUp(email1Controller.value.text, pwd, userMetadata: {
-      "fullname": name1Controller.value.text,
-      "username": username1Controller.value.text,
-      "mobile_number": phone1Controller.value.text,
-      "refferal_code": refferalController.value.text
+        .signUp(emailController.value.text, pwd, userMetadata: {
+      "fullname": nameController.value.text,
     });
 
     if (reslt.statusCode == 200) {
       isLoading.value = false;
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: const Text('Register Success')));
-
-      // Navigator.pushNamedAndRemoveUntil(
-      //     context, LoginPage.routeName, ModalRoute.withName('/'));
+      Helper.alertDialog(context, '200', 'Register Berhasil', false);
+      Get.offAll(LoginPage());
     } else {
       isLoading.value = false;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Register Failed')),
-      );
+      Helper.alertDialog(context, '400', 'Register Failed', true);
     }
-    print(reslt.statusCode);
+    print(reslt.error);
   }
 
   SignOut(BuildContext context) async {

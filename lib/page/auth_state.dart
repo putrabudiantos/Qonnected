@@ -9,7 +9,7 @@ class AuthState<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onUnauthenticated() {
     if (mounted) {
-      Get.to(LoginPage());
+      Get.offAll(LoginPage());
       // Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
     }
   }
@@ -17,7 +17,7 @@ class AuthState<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onAuthenticated(Session session) {
     if (mounted) {
-      Get.to(InitialPage());
+      Get.offAll(InitialPage());
       // Navigator.of(context)
       //     .pushNamedAndRemoveUntil('/initpage', (route) => false);
     }

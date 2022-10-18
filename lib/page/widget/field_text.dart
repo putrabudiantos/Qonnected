@@ -32,52 +32,46 @@ class _FieldTextState extends State<FieldText> {
                     style: vars.FontHeading(
                         context, 12, FontWeight.w600, Colors.white)))
             : Container(),
-        SizedBox(
-          height: 40,
-          child: TextFormField(
-            readOnly: widget.readonly,
-            obscureText: widget.customType,
-            controller: widget.customController,
-            style: GoogleFonts.inter(
-              color: Colors.white,
-              textStyle: Theme.of(context).textTheme.bodyMedium,
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-            ),
-            // initialValue: widget.labeltext,
-            decoration: InputDecoration(
-                errorStyle: const TextStyle(color: Colors.red),
-                fillColor: Colors.white,
-                filled: true,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                hintText: widget.placeholder,
-                hintStyle: GoogleFonts.inter(
-                  color: Color(0xFF0D1037),
-                  textStyle: Theme.of(context).textTheme.bodyMedium,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-                isDense: true,
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                focusedBorder: OutlineInputBorder(
-                    borderSide:
-                        BorderSide(color: Color(0xFF0D1037), width: 1.0),
-                    borderRadius: BorderRadius.circular(10.0)),
-                enabledBorder: OutlineInputBorder(
-                    borderSide:
-                        BorderSide(color: Color(0xFF0D1037), width: 1.0),
-                    borderRadius: BorderRadius.circular(10.0))),
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return widget.errorMessage;
-              } else if (value.length > 256) {
-                return 'Max number of characters 256';
-              }
-              return null;
-            },
+        TextFormField(
+          readOnly: widget.readonly,
+          obscureText: widget.customType,
+          controller: widget.customController,
+          style: GoogleFonts.inter(
+            color: Color(0xFF0D1037),
+            textStyle: Theme.of(context).textTheme.bodyMedium,
+            fontSize: 12,
+            fontWeight: FontWeight.w500,
           ),
+          // initialValue: widget.labeltext,
+          decoration: InputDecoration(
+              fillColor: Colors.white,
+              filled: true,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              hintText: widget.placeholder,
+              hintStyle: GoogleFonts.inter(
+                color: Color(0xFF0D1037),
+                textStyle: Theme.of(context).textTheme.bodyMedium,
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+              ),
+              isDense: true,
+              contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+              focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Color(0xFF0D1037), width: 1.0),
+                  borderRadius: BorderRadius.circular(10.0)),
+              enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Color(0xFF0D1037), width: 1.0),
+                  borderRadius: BorderRadius.circular(10.0))),
+          validator: (value) {
+            if (value == null || value.isEmpty) {
+              return widget.errorMessage;
+            } else if (value.length > 256) {
+              return 'Max number of characters 256';
+            }
+            return null;
+          },
         ),
       ],
     );

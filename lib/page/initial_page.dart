@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
+import 'package:get/get.dart';
 
 class InitialPage extends StatelessWidget {
   const InitialPage({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class InitialPage extends StatelessWidget {
   List<Widget> _buildScreens() {
     return [
       IndexHome(),
-      IndexScanner(),
+      IndexActivity(),
       IndexScanner(),
       IndexHome(),
       IndexHome()
@@ -42,6 +44,9 @@ class InitialPage extends StatelessWidget {
           icon: GestureDetector(
             onTap: () async {
               String? barcode = await scanner.scan();
+
+              print(barcode);
+              Get.toNamed(barcode!);
             },
             child: Icon(
               Icons.qr_code_scanner,
@@ -107,12 +112,12 @@ class InitialPage extends StatelessWidget {
         ),
         popAllScreensOnTapOfSelectedTab: true,
         popActionScreens: PopActionScreensType.all,
-        itemAnimationProperties: ItemAnimationProperties(
+        itemAnimationProperties: const ItemAnimationProperties(
           // Navigation Bar's items animation properties.
           duration: Duration(milliseconds: 200),
           curve: Curves.ease,
         ),
-        screenTransitionAnimation: ScreenTransitionAnimation(
+        screenTransitionAnimation: const ScreenTransitionAnimation(
           // Screen transition animation on change of selected tab.
           animateTabTransition: true,
           curve: Curves.easeInCirc,

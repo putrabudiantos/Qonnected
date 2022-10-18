@@ -1,6 +1,8 @@
 -keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class com.baseflow.geolocator.GeolocatorLocationService { <init>(); }
 -keep class com.example.qonnected_app.MainActivity { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 -keep class com.shinow.qrscan.SecondActivity { <init>(); }
 -keep class com.squareup.picasso.PicassoProvider { <init>(); }
 -keep class com.uuzuche.lib_zxing.activity.CaptureActivity { <init>(); }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/page/login.dart';
@@ -29,6 +30,7 @@ class _MyAppState extends State<MyApp> {
     GetPage(name: '/initpage', page: () => InitialPage()),
     GetPage(name: '/login', page: () => LoginPage()),
     GetPage(name: '/splash', page: () => SplashPage()),
+    GetPage(name: '/activity', page: () => IndexActivity())
   ];
 
   // This widget is the root of your application.
