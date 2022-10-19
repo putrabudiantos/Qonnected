@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:qonnected_app/page/activity/index.dart';
+import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 
 class IndexHome extends StatefulWidget {
   const IndexHome({Key? key}) : super(key: key);
@@ -41,6 +44,17 @@ class _IndexHomeState extends State<IndexHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Color(0xFF2D2F48)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Center(
+          child: Image.asset(
+            'assets/images/logo.png',
+            height: 80,
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -55,6 +69,11 @@ class _IndexHomeState extends State<IndexHome> {
               SizedBox(
                 height: 10,
               ),
+              // ElevatedButton(
+              //     onPressed: () {
+              //       Get.to(IndexActivity());
+              //     },
+              //     child: Text('go')),
               Container(
                 child: ListView.separated(
                     padding: EdgeInsets.zero,
@@ -79,6 +98,13 @@ class _IndexHomeState extends State<IndexHome> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
+        onPressed: () {},
+        child: Icon(Icons.qr_code_scanner), //icon inside button
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomNavWidget(),
     );
   }
 }

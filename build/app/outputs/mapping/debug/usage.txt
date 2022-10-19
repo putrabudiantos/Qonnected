@@ -62,12 +62,14 @@ androidx.annotation.ColorInt
 androidx.annotation.ColorLong
 androidx.annotation.ColorRes
 androidx.annotation.ContentView
+androidx.annotation.DeprecatedSinceApi
 androidx.annotation.DimenRes
 androidx.annotation.Dimension
 androidx.annotation.Discouraged
 androidx.annotation.DisplayContext
 androidx.annotation.DoNotInline
 androidx.annotation.DrawableRes
+androidx.annotation.EmptySuper
 androidx.annotation.FloatRange
 androidx.annotation.FontRes
 androidx.annotation.FractionRes
@@ -91,6 +93,7 @@ androidx.annotation.NavigationRes
 androidx.annotation.NonNull
 androidx.annotation.NonUiContext
 androidx.annotation.Nullable
+androidx.annotation.OpenForTesting
 androidx.annotation.OptIn
 androidx.annotation.PluralsRes
 androidx.annotation.Px
@@ -104,6 +107,7 @@ androidx.annotation.RequiresPermission$Write
 androidx.annotation.RequiresPermission
 androidx.annotation.RestrictTo$Scope
 androidx.annotation.RestrictTo
+androidx.annotation.ReturnThis
 androidx.annotation.Size
 androidx.annotation.StringDef
 androidx.annotation.StringRes
@@ -9425,6 +9429,31 @@ androidx.viewpager2.widget.ViewPager2$SavedState
 androidx.viewpager2.widget.ViewPager2$ScrollState
 androidx.viewpager2.widget.ViewPager2$SmoothScrollToPosition
 androidx.viewpager2.widget.ViewPager2
+com.baseflow.geocoding.BuildConfig
+com.baseflow.geocoding.GeocodingPlugin:
+    private static final java.lang.String TAG
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+com.baseflow.geocoding.MethodCallHandlerImpl:
+    private static final java.lang.String TAG
+com.baseflow.geocoding.R$attr
+com.baseflow.geocoding.R$color
+com.baseflow.geocoding.R$dimen
+com.baseflow.geocoding.R$drawable
+com.baseflow.geocoding.R$id
+com.baseflow.geocoding.R$integer
+com.baseflow.geocoding.R$layout
+com.baseflow.geocoding.R$string
+com.baseflow.geocoding.R$style
+com.baseflow.geocoding.R$styleable
+com.baseflow.geocoding.R
+com.baseflow.geocoding.utils.AddressLineParser:
+    private static final java.lang.String ADDRESS_LINE_DELIMITER
+    public void <init>()
+com.baseflow.geocoding.utils.AddressMapper:
+    public void <init>()
+com.baseflow.geocoding.utils.LocaleConverter:
+    private static final java.lang.String LOCALE_DELIMITER
+    public void <init>()
 com.baseflow.geolocator.BuildConfig
 com.baseflow.geolocator.GeolocatorLocationService:
     private static final java.lang.String CHANNEL_ID
@@ -20910,6 +20939,7 @@ kotlin.BuilderInference
 kotlin.CharCodeJVMKt
 kotlin.CharCodeKt
 kotlin.CompareToKt
+kotlin.ContextFunctionTypeParams
 kotlin.DeepRecursiveFunction
 kotlin.DeepRecursiveKt
 kotlin.DeepRecursiveScope
@@ -23444,15 +23474,23 @@ kotlin.collections.CollectionsKt___CollectionsKt:
     public static final java.util.List zipWithNext(java.lang.Iterable)
     public static final java.util.List zipWithNext(java.lang.Iterable,kotlin.jvm.functions.Function2)
 kotlin.collections.DoubleIterator
+kotlin.collections.EmptyIterator:
+    public void add(java.lang.Void)
+    public void set(java.lang.Void)
 kotlin.collections.EmptyList:
     private static final long serialVersionUID
+    public void add(int,java.lang.Void)
+    public boolean add(java.lang.Void)
     private final java.lang.Object readResolve()
     public java.lang.Void remove(int)
+    public java.lang.Void set(int,java.lang.Void)
 kotlin.collections.EmptyMap:
     private static final long serialVersionUID
+    public java.lang.Void put(java.lang.Object,java.lang.Void)
     private final java.lang.Object readResolve()
 kotlin.collections.EmptySet:
     private static final long serialVersionUID
+    public boolean add(java.lang.Void)
     private final java.lang.Object readResolve()
 kotlin.collections.FloatIterator
 kotlin.collections.Grouping
@@ -23968,6 +24006,7 @@ kotlin.jvm.JvmClassMappingKt:
     public static synthetic void getRuntimeClassOfKClassInstance$annotations(kotlin.reflect.KClass)
     public static final synthetic boolean isArrayOf(java.lang.Object[])
 kotlin.jvm.JvmDefault
+kotlin.jvm.JvmDefaultWithCompatibility
 kotlin.jvm.JvmDefaultWithoutCompatibility
 kotlin.jvm.JvmField
 kotlin.jvm.JvmInline
@@ -24099,6 +24138,7 @@ kotlin.jvm.internal.DoubleSpreadBuilder
 kotlin.jvm.internal.EnumCompanionObject
 kotlin.jvm.internal.FloatCompanionObject
 kotlin.jvm.internal.FloatSpreadBuilder
+kotlin.jvm.internal.FunInterfaceConstructorReference
 kotlin.jvm.internal.FunctionAdapter
 kotlin.jvm.internal.FunctionImpl
 kotlin.jvm.internal.InlineMarker
@@ -24220,6 +24260,7 @@ kotlin.jvm.internal.ReflectionFactory:
     public kotlin.reflect.KType typeOf(kotlin.reflect.KClassifier,java.util.List,boolean)
     public kotlin.reflect.KTypeParameter typeParameter(java.lang.Object,java.lang.String,kotlin.reflect.KVariance,boolean)
 kotlin.jvm.internal.RepeatableContainer
+kotlin.jvm.internal.SerializedIr
 kotlin.jvm.internal.ShortCompanionObject
 kotlin.jvm.internal.ShortSpreadBuilder
 kotlin.jvm.internal.SpreadBuilder

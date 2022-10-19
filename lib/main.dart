@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/page/activity/index.dart';
+import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/page/login.dart';
@@ -38,7 +39,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashPage(),
+      home: IndexHome(),
       getPages: getPages,
     );
   }

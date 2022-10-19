@@ -90,6 +90,14 @@ functions_client
 2.12
 file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/functions_client-0.0.1-dev.5/
 file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/functions_client-0.0.1-dev.5/lib/
+geocoding
+2.12
+file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/geocoding-2.0.5/
+file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/geocoding-2.0.5/lib/
+geocoding_platform_interface
+2.12
+file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/geocoding_platform_interface-2.0.1/
+file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/geocoding_platform_interface-2.0.1/lib/
 geolocator
 2.15
 file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator-9.0.2/

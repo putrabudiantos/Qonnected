@@ -50,6 +50,7 @@ MERGED from [:qrscan] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/
 MERGED from [:geolocator_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:flutter_plugin_android_lifecycle] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:geocoding] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:sqflite] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-16:12
 MERGED from [:path_provider_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -188,6 +189,8 @@ MERGED from [:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnec
 MERGED from [:image_picker_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:geocoding] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:geocoding] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:sqflite] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:sqflite] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
