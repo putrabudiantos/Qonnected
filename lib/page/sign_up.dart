@@ -39,6 +39,16 @@ class SignupPage extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
+                  FieldText(
+                      textfield: '',
+                      placeholder: 'Username',
+                      errorMessage: 'username harus diisi',
+                      customController: authC.usernameController.value,
+                      customType: false,
+                      readonly: false),
+                  SizedBox(
+                    height: 10,
+                  ),
                   FieldEmail(
                       textfield: '',
                       placeholder: 'Email',

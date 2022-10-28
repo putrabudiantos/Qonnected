@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:qonnected_app/binding/home_binding.dart';
 import 'package:qonnected_app/page/activity/index.dart';
+import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:get/get.dart';
@@ -28,10 +30,13 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   List<GetPage> getPages = [
-    GetPage(name: '/initpage', page: () => InitialPage()),
+    GetPage(
+        name: '/initpage', page: () => InitialPage(), binding: HomeBinding()),
     GetPage(name: '/login', page: () => LoginPage()),
     GetPage(name: '/splash', page: () => SplashPage()),
-    GetPage(name: '/activity', page: () => IndexActivity())
+    GetPage(name: '/activity', page: () => IndexActivity()),
+    GetPage(name: '/coworkers', page: () => IndexCoWorkers()),
+    GetPage(name: '/home', page: () => IndexHome(), binding: HomeBinding()),
   ];
 
   // This widget is the root of your application.
@@ -39,7 +44,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IndexHome(),
+      home: SplashPage(),
       getPages: getPages,
     );
   }

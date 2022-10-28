@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
@@ -8,6 +10,7 @@ import 'package:qonnected_app/helper/alert.dart';
 import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 import 'package:slide_digital_clock/slide_digital_clock.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:get/get.dart';
 
 class IndexActivity extends StatefulWidget {
   @override
@@ -15,6 +18,7 @@ class IndexActivity extends StatefulWidget {
 }
 
 class _IndexActivityState extends State<IndexActivity> {
+  final ActivityController activityC = Get.put(ActivityController());
   String location = 'Null, Press Button';
   String Address = 'search';
 
@@ -52,152 +56,97 @@ class _IndexActivityState extends State<IndexActivity> {
         desiredAccuracy: LocationAccuracy.high);
   }
 
-  Future<void> GetAddressFromLatLong(Position position) async {
+  Future<String> GetAddressFromLatLong(Position position) async {
     List<Placemark> placemarks =
         await placemarkFromCoordinates(position.latitude, position.longitude);
     // print(placemarks);
     Placemark place = placemarks[0];
     Address =
         '${place.street}, ${place.subLocality}, ${place.locality}, ${place.postalCode}, ${place.country}';
-    print(Address);
-  }
-
-  List<PersistentBottomNavBarItem> _navBarsItems() {
-    return [
-      PersistentBottomNavBarItem(
-          icon: Icon(CupertinoIcons.home),
-          title: ("Home"),
-          activeColorPrimary: Colors.red,
-          inactiveColorPrimary: CupertinoColors.systemGrey,
-          textStyle: TextStyle(fontSize: 10)),
-      PersistentBottomNavBarItem(
-          icon: Icon(Icons.people_outline),
-          title: ("Co Workers"),
-          activeColorPrimary: Colors.red,
-          inactiveColorPrimary: CupertinoColors.systemGrey,
-          textStyle: TextStyle(fontSize: 10)),
-      PersistentBottomNavBarItem(
-          icon: GestureDetector(
-            onTap: () async {
-              // String? barcode = await scanner.scan();
-
-              // print(barcode);
-              // Get.toNamed(barcode!);
-            },
-            child: Icon(
-              Icons.qr_code_scanner,
-              color: Colors.white,
-            ),
-          ),
-          title: ("Scan"),
-          activeColorPrimary: Colors.red,
-          inactiveColorPrimary: CupertinoColors.systemGrey,
-          textStyle: TextStyle(fontSize: 10)),
-      PersistentBottomNavBarItem(
-          icon: Icon(Icons.domain_outlined),
-          title: ("Company"),
-          activeColorPrimary: Colors.red,
-          inactiveColorPrimary: CupertinoColors.systemGrey,
-          textStyle: TextStyle(fontSize: 10)),
-      PersistentBottomNavBarItem(
-          icon: Icon(Icons.person_outline_rounded),
-          title: ("Profile"),
-          activeColorPrimary: Colors.red,
-          inactiveColorPrimary: CupertinoColors.systemGrey,
-          textStyle: TextStyle(fontSize: 10)),
-    ];
+    // print(Address);
+    return Address;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          iconTheme: IconThemeData(color: Color(0xFF2D2F48)),
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          title: Center(
-            child: Image.asset(
-              'assets/images/logo.png',
-              height: 80,
+      body: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20),
+        child: SingleChildScrollView(
+            child: Column(
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .2,
             ),
-          ),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20),
-          child: SingleChildScrollView(
-              child: Column(
-            children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height * .2,
-              ),
-              Align(
-                alignment: Alignment.center,
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      children: [
-                        Text(
-                          'CHECK IN',
-                          style: FontMedium(
-                              context, 20, FontWeight.w500, Color(0xFF0D1037)),
+            Align(
+              alignment: Alignment.center,
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    children: [
+                      Text(
+                        'CHECK IN',
+                        style: FontMedium(context, 20, FontWeight.w500,
+                            const Color(0xFF0D1037)),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      DigitalClock(
+                        areaDecoration: const BoxDecoration(
+                          color: Colors.transparent,
                         ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        DigitalClock(
-                          areaDecoration: BoxDecoration(
-                            color: Colors.transparent,
-                          ),
-                          showSecondsDigit: false,
-                          hourMinuteDigitTextStyle: TextStyle(
-                              color: Color(0xFF0D1037),
-                              fontSize: 50,
-                              fontWeight: FontWeight.w900),
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        ElevatedButton(
-                            style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(
-                                    EdgeInsets.all(15)),
-                                backgroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                        Color(0xFF0D1037)),
-                                shape: MaterialStateProperty.all<
-                                        RoundedRectangleBorder>(
-                                    RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(50),
-                                        side: BorderSide(
-                                            color: Color(0xFF0D1037))))),
-                            onPressed: () async {
-                              Position position =
-                                  await _getGeoLocationPosition();
-                              location =
-                                  'Lat: ${position.latitude} , Long: ${position.longitude}';
-                              GetAddressFromLatLong(position);
-                              print(location);
-                            },
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 30, right: 30),
-                              child: Text('CHECK IN'),
-                            ))
-                      ],
-                    ),
+                        showSecondsDigit: false,
+                        hourMinuteDigitTextStyle: const TextStyle(
+                            color: const Color(0xFF0D1037),
+                            fontSize: 50,
+                            fontWeight: FontWeight.w900),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      ElevatedButton(
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                  const EdgeInsets.all(15)),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  const Color(0xFF0D1037)),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                      side: const BorderSide(
+                                          color: Color(0xFF0D1037))))),
+                          onPressed: () async {
+                            Position position = await _getGeoLocationPosition();
+                            location =
+                                'Lat: ${position.latitude} , Long: ${position.longitude}';
+                            var locationName =
+                                await GetAddressFromLatLong(position);
+                            activityC.submitActivity(
+                                context,
+                                double.parse(position.longitude.toString()),
+                                double.parse(position.latitude.toString()),
+                                'wfo',
+                                locationName,
+                                '');
+                            // print(location);
+                          },
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 30, right: 30),
+                            child: Obx(() => Text(activityC.isLoading == true
+                                ? 'PROCESSING'
+                                : 'CHECK IN')),
+                          ))
+                    ],
                   ),
                 ),
               ),
-            ],
-          )),
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          onPressed: () {},
-          child: Icon(Icons.qr_code_scanner), //icon inside button
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        bottomNavigationBar: BottomNavWidget());
+            ),
+          ],
+        )),
+      ),
+    );
   }
 }

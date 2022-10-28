@@ -278,6 +278,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "introduction_screen",
       "rootUri": "file:///Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/introduction_screen-3.0.2",
       "packageUri": "lib/",
@@ -698,7 +704,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-10-19T03:49:43.214558Z",
+  "generated": "2022-10-20T04:06:37.883035Z",
   "generator": "pub",
   "generatorVersion": "2.17.5"
 }

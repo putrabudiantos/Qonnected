@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/activity/index.dart';
+import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
@@ -10,6 +11,7 @@ import 'package:get/get.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 
 class InitialPage extends StatefulWidget {
+  static const routeName = '/initpage';
   @override
   State<InitialPage> createState() => _InitialPageState();
 }
@@ -18,13 +20,7 @@ class _InitialPageState extends State<InitialPage> {
   // List<PersistentBottomNavBarItem> _navBarsItems() {
   int _selectedIndex = vars.idx == 0 ? vars.idx : 0;
 
-  final pages = [
-    IndexHome(),
-    IndexActivity(),
-    IndexScanner(),
-    IndexHome(),
-    IndexHome()
-  ];
+  final pages = [IndexHome(), IndexCoWorkers(), IndexActivity(), IndexHome()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -36,17 +32,47 @@ class _InitialPageState extends State<InitialPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          // actions: [Icon(Icons.abc_outlined)],
           iconTheme: IconThemeData(color: Color(0xFF2D2F48)),
           backgroundColor: Colors.transparent,
           elevation: 0,
           title: Center(
-            child: Image.asset(
-              'assets/images/logo.png',
-              height: 80,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 30),
+              child: Image.asset(
+                'assets/images/logo.png',
+                height: 80,
+              ),
             ),
           ),
         ),
         drawerEnableOpenDragGesture: false,
+        drawer: Drawer(
+          child: SingleChildScrollView(
+              child: Column(
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              ListTile(
+                leading: Icon(Icons.library_books_outlined),
+                title: Text('Summary'),
+              ),
+              ListTile(
+                leading: Icon(Icons.library_books_outlined),
+                title: Text('Change Shift'),
+              ),
+              ListTile(
+                leading: Icon(Icons.library_books_outlined),
+                title: Text('Over Time'),
+              ),
+              ListTile(
+                leading: Icon(Icons.library_books_outlined),
+                title: Text('Payslip'),
+              )
+            ],
+          )),
+        ),
         body: pages[vars.idx],
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.red,
@@ -73,19 +99,18 @@ class _InitialPageState extends State<InitialPage> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
-                      Get.to(IndexHome());
-                      setState(() {
-                        vars.idx = 0;
-                      });
+                      _onItemTapped(0);
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.home),
+                        Icon(Icons.home_outlined,
+                            color:
+                                vars.idx == 0 ? Colors.red : Color(0xFF0D1037)),
                         Text(
                           "Home",
-                          style: FontMedium(
-                              context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                          style: FontMedium(context, 12, FontWeight.w500,
+                              vars.idx == 0 ? Colors.red : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -99,19 +124,18 @@ class _InitialPageState extends State<InitialPage> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
-                      Get.to(IndexActivity());
-                      setState(() {
-                        vars.idx = 0;
-                      });
+                      _onItemTapped(1);
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.people_outline),
+                        Icon(Icons.people_outline,
+                            color:
+                                vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
                         Text(
                           "Co Worker",
-                          style: FontMedium(
-                              context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                          style: FontMedium(context, 12, FontWeight.w500,
+                              vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -124,18 +148,18 @@ class _InitialPageState extends State<InitialPage> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
-                      setState(() {
-                        vars.idx = 0;
-                      });
+                      _onItemTapped(2);
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.domain_outlined),
+                        Icon(Icons.domain_outlined,
+                            color:
+                                vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
                         Text(
                           "Company",
-                          style: FontMedium(
-                              context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                          style: FontMedium(context, 12, FontWeight.w500,
+                              vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -148,18 +172,18 @@ class _InitialPageState extends State<InitialPage> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
-                      setState(() {
-                        vars.idx = 0;
-                      });
+                      _onItemTapped(3);
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.person_outline_rounded),
+                        Icon(Icons.person_outline_rounded,
+                            color:
+                                vars.idx == 3 ? Colors.red : Color(0xFF0D1037)),
                         Text(
                           "Profile",
-                          style: FontMedium(
-                              context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                          style: FontMedium(context, 12, FontWeight.w500,
+                              vars.idx == 3 ? Colors.red : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],

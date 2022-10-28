@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:get/get.dart';
-import 'package:qonnected_app/page/activity/index.dart';
-import 'package:qonnected_app/page/home/index.dart';
+
+import 'package:qonnected_app/page/initial_page.dart';
 
 class BottomNavWidget extends StatefulWidget {
   const BottomNavWidget({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
 
   void _onItemTapped(int index) {
     setState(() {
-      // Navigator.pushNamed(context, InitPage.routeName);
+      Get.offAllNamed(InitialPage.routeName);
       _selectedIndex = index;
       vars.idx = index;
       print(vars.idx);
@@ -44,19 +44,19 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () {
-                  Get.to(IndexHome());
-                  setState(() {
-                    vars.idx = 0;
-                  });
+                  _onItemTapped(0);
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.home),
+                    Icon(
+                      Icons.home_outlined,
+                      color: vars.idx == 0 ? Colors.red : Color(0xFF0D1037),
+                    ),
                     Text(
                       "Home",
-                      style: FontMedium(
-                          context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                      style: FontMedium(context, 12, FontWeight.w500,
+                          vars.idx == 0 ? Colors.red : Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],
@@ -70,19 +70,17 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () {
-                  Get.to(IndexActivity());
-                  setState(() {
-                    vars.idx = 0;
-                  });
+                  _onItemTapped(1);
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.people_outline),
+                    Icon(Icons.people_outline,
+                        color: vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
                     Text(
                       "Co Worker",
-                      style: FontMedium(
-                          context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                      style: FontMedium(context, 12, FontWeight.w500,
+                          vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],
@@ -95,18 +93,17 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () {
-                  setState(() {
-                    vars.idx = 0;
-                  });
+                  _onItemTapped(2);
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.domain_outlined),
+                    Icon(Icons.domain_outlined,
+                        color: vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
                     Text(
                       "Company",
-                      style: FontMedium(
-                          context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                      style: FontMedium(context, 12, FontWeight.w500,
+                          vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],
@@ -119,18 +116,19 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () {
-                  setState(() {
-                    vars.idx = 0;
-                  });
+                  _onItemTapped(3);
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.person_outline_rounded),
+                    Icon(
+                      Icons.person_outline_rounded,
+                      color: vars.idx == 3 ? Colors.red : Color(0xFF0D1037),
+                    ),
                     Text(
                       "Profile",
-                      style: FontMedium(
-                          context, 12, FontWeight.w500, Color(0xFF0D1037)),
+                      style: FontMedium(context, 12, FontWeight.w500,
+                          vars.idx == 3 ? Colors.red : Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],

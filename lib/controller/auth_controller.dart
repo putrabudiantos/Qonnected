@@ -111,10 +111,11 @@ class AuthController extends GetxController {
     var pwd =
         "${nameController.value.text}@${DateTime.now().millisecondsSinceEpoch}";
 
-    final reslt = await vars.client.auth
-        .signUp(emailController.value.text, pwd, userMetadata: {
-      "fullname": nameController.value.text,
-    });
+    final reslt = await vars.client.auth.signUp(emailController.value.text, pwd,
+        userMetadata: {
+          "fullname": nameController.value.text,
+          "username": usernameController.value.text
+        });
 
     if (reslt.statusCode == 200) {
       isLoading.value = false;

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
+import 'package:qonnected_app/controller/activity_controller.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 
@@ -11,6 +13,7 @@ class IndexHome extends StatefulWidget {
 }
 
 class _IndexHomeState extends State<IndexHome> {
+  ActivityController homeC = Get.put(ActivityController());
   int get count => list.length;
 
   List<int> list = [];
@@ -44,17 +47,17 @@ class _IndexHomeState extends State<IndexHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Color(0xFF2D2F48)),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Center(
-          child: Image.asset(
-            'assets/images/logo.png',
-            height: 80,
-          ),
-        ),
-      ),
+      // appBar: AppBar(
+      //   iconTheme: IconThemeData(color: Color(0xFF2D2F48)),
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      //   title: Center(
+      //     child: Image.asset(
+      //       'assets/images/logo.png',
+      //       height: 80,
+      //     ),
+      //   ),
+      // ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -65,7 +68,11 @@ class _IndexHomeState extends State<IndexHome> {
               SizedBox(
                 height: 20,
               ),
-              Text("Today's Activities"),
+              GestureDetector(
+                  onTap: () {
+                    homeC.fetchActivity();
+                  },
+                  child: Text("Today's Activities")),
               SizedBox(
                 height: 10,
               ),
@@ -75,36 +82,68 @@ class _IndexHomeState extends State<IndexHome> {
               //     },
               //     child: Text('go')),
               Container(
-                child: ListView.separated(
+                child: Obx(() => ListView.separated(
                     padding: EdgeInsets.zero,
                     separatorBuilder: (context, index) => Divider(
                           color: Colors.grey,
                         ),
                     shrinkWrap: true,
                     physics: NeverScrollableScrollPhysics(),
-                    itemCount: 10,
+                    itemCount: homeC.activityModel.value.length,
                     itemBuilder: (BuildContext context, int index) {
-                      return ListTile(
-                        dense: true,
-                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
-                        visualDensity:
-                            VisualDensity(horizontal: 0, vertical: -4),
-                        leading: Icon(Icons.person),
-                        title: Text("Person's ${index}"),
-                      );
-                    }),
+                      var date = DateFormat('dd MMM yyyy').format(
+                          DateTime.parse(homeC.activityModel.value[index].date
+                              .toString()));
+
+                      return homeC.activityModel.value[index].category != 'wfo'
+                          ? ListTile(
+                              dense: true,
+                              contentPadding:
+                                  EdgeInsets.only(left: 0.0, right: 0.0),
+                              visualDensity:
+                                  VisualDensity(horizontal: 0, vertical: -4),
+                              leading: Icon(Icons.person),
+                              title: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.circle,
+                                    size: 10,
+                                    color: Colors.green,
+                                  ),
+                                  SizedBox(
+                                    width: 5,
+                                  ),
+                                  RichText(
+                                    text: TextSpan(
+                                      style: DefaultTextStyle.of(context).style,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                            text:
+                                                'Persons ${homeC.activityModel.value[index].category!.toUpperCase()}',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold)),
+                                        TextSpan(text: ' pada tanggal ${date}'),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ))
+                          : Container();
+                    })),
               )
             ],
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.red,
-        onPressed: () {},
-        child: Icon(Icons.qr_code_scanner), //icon inside button
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: BottomNavWidget(),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: Colors.red,
+      //   onPressed: () {},
+      //   child: Icon(Icons.qr_code_scanner), //icon inside button
+      // ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // // bottomNavigationBar: BottomNavWidget(),
     );
   }
 }
