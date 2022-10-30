@@ -17,6 +17,7 @@ class ProfileModel {
       registration_id,
       date_joined,
       phone,
+      position,
       worker_status;
   final bool? deleted;
   final int company_id;
@@ -32,6 +33,7 @@ class ProfileModel {
       required this.date_joined,
       required this.phone,
       required this.deleted,
+      required this.position,
       required this.company_id,
       required this.worker_status});
 
@@ -47,8 +49,9 @@ class ProfileModel {
         date_joined: json['date_joined'] ?? '-',
         phone: json['phone'] ?? '-',
         deleted: json['deleted'],
-        company_id: json['company_id'],
-        worker_status: json['worker_status']);
+        position: json['position'] ?? '-',
+        company_id: json['company_group_id'],
+        worker_status: json['worker_status'] ?? '-');
   }
 
   Map<String, dynamic> toJson() => {
@@ -63,6 +66,7 @@ class ProfileModel {
         "phone": phone,
         "deleted": deleted,
         "company_id": company_id,
+        "position": position,
         "worker_status": worker_status
       };
 }

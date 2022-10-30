@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
+import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 
@@ -72,7 +73,11 @@ class _IndexHomeState extends State<IndexHome> {
                   onTap: () {
                     homeC.fetchActivity();
                   },
-                  child: Text("Today's Activities")),
+                  child: Text(
+                    "Today's Activities",
+                    style: FontMedium(
+                        context, 15, FontWeight.w600, Color(0xFF0D1037)),
+                  )),
               SizedBox(
                 height: 10,
               ),
@@ -82,56 +87,86 @@ class _IndexHomeState extends State<IndexHome> {
               //     },
               //     child: Text('go')),
               Container(
-                child: Obx(() => ListView.separated(
-                    padding: EdgeInsets.zero,
-                    separatorBuilder: (context, index) => Divider(
-                          color: Colors.grey,
-                        ),
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    itemCount: homeC.activityModel.value.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      var date = DateFormat('dd MMM yyyy').format(
-                          DateTime.parse(homeC.activityModel.value[index].date
-                              .toString()));
-
-                      return homeC.activityModel.value[index].category != 'wfo'
-                          ? ListTile(
-                              dense: true,
-                              contentPadding:
-                                  EdgeInsets.only(left: 0.0, right: 0.0),
-                              visualDensity:
-                                  VisualDensity(horizontal: 0, vertical: -4),
-                              leading: Icon(Icons.person),
-                              title: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.circle,
-                                    size: 10,
-                                    color: Colors.green,
-                                  ),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text:
-                                                'Persons ${homeC.activityModel.value[index].category!.toUpperCase()}',
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold)),
-                                        TextSpan(text: ' pada tanggal ${date}'),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ))
-                          : Container();
-                    })),
+                child: Obx(() => homeC.activityModel.value.length > 0
+                    ? ListView.separated(
+                        padding: EdgeInsets.zero,
+                        separatorBuilder: (context, index) => Divider(
+                              color: Colors.grey,
+                            ),
+                        shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
+                        itemCount: homeC.activityModel.value.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          var date = DateFormat('dd MMM yyyy').format(
+                              DateTime.parse(homeC
+                                  .activityModel.value[index].date
+                                  .toString()));
+                          var act;
+                          if (homeC.activityModel.value[index].category ==
+                              'wfo') {
+                            act = Colors.green;
+                          } else if (homeC
+                                  .activityModel.value[index].category ==
+                              'wfh') {
+                            act = Colors.blue;
+                          } else if (homeC
+                                  .activityModel.value[index].category ==
+                              'izin') {
+                            act = Colors.grey;
+                          } else if (homeC
+                                  .activityModel.value[index].category ==
+                              'cuti') {
+                            act = Colors.black;
+                          } else {
+                            act = Colors.red;
+                          }
+                          return homeC.activityModel.value[index].category !=
+                                  'wfo'
+                              ? ListTile(
+                                  dense: true,
+                                  contentPadding:
+                                      EdgeInsets.only(left: 0.0, right: 0.0),
+                                  visualDensity: VisualDensity(
+                                      horizontal: 0, vertical: -4),
+                                  leading: Icon(Icons.person),
+                                  title: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.circle,
+                                        size: 10,
+                                        color: act,
+                                      ),
+                                      SizedBox(
+                                        width: 5,
+                                      ),
+                                      RichText(
+                                        text: TextSpan(
+                                          style: DefaultTextStyle.of(context)
+                                              .style,
+                                          children: <TextSpan>[
+                                            TextSpan(
+                                                text:
+                                                    '${homeC.activityModel.value[index].name} ${homeC.activityModel.value[index].category!.toUpperCase()}',
+                                                style: TextStyle(
+                                                    fontWeight:
+                                                        FontWeight.bold)),
+                                            TextSpan(
+                                                text: ' pada tanggal ${date}'),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ))
+                              : Container();
+                        })
+                    : Container(
+                        child: Text('Belum ada aktifitas',
+                            style: FontMedium(context, 12, FontWeight.w500,
+                                Color(0xFF0D1037))),
+                      )),
               )
             ],
           ),

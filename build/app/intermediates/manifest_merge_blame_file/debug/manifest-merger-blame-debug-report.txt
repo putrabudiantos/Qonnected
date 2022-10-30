@@ -193,13 +193,13 @@
 119-->[androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 120
 121        <provider
-121-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+121-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/2ba055d381db4c96049e1ccd65899133/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 122            android:name="com.squareup.picasso.PicassoProvider"
-122-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+122-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/2ba055d381db4c96049e1ccd65899133/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 123            android:authorities="com.example.qonnected_app.com.squareup.picasso"
-123-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+123-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/2ba055d381db4c96049e1ccd65899133/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 124            android:exported="false" />
-124-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+124-->[com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/2ba055d381db4c96049e1ccd65899133/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 125
 126        <activity
 126-->[pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66

@@ -11,25 +11,33 @@ class ActivityModel {
   final String? created_at,
       profile_id,
       description,
-      type,
-      location,
-      longitude,
-      latitude,
+      location_checkin,
+      longitude_checkin,
+      latitude_checkin,
+      location_checkout,
+      longitude_checkout,
+      latitude_checkout,
       category,
+      name,
       date;
-  final bool? deleted;
+  final bool? deleted, checkin, checkout;
   final int? id;
   ActivityModel(
       {required this.id,
       required this.created_at,
       required this.profile_id,
       required this.description,
-      required this.type,
-      required this.location,
-      required this.longitude,
-      required this.latitude,
+      required this.checkin,
+      required this.checkout,
+      required this.location_checkin,
+      required this.longitude_checkin,
+      required this.latitude_checkin,
+      required this.location_checkout,
+      required this.longitude_checkout,
+      required this.latitude_checkout,
       required this.category,
       required this.deleted,
+      required this.name,
       required this.date});
 
   factory ActivityModel.fromJson(Map<String, dynamic> json) {
@@ -38,27 +46,18 @@ class ActivityModel {
       created_at: json['created_at'].toString(),
       profile_id: json['profile_id'] ?? '-',
       description: json['description'] ?? '-',
-      type: json['type'] ?? '-',
-      location: json['location'].toString(),
-      longitude: json['longitude'].toString(),
-      latitude: json['latitude'].toString(),
+      checkin: json['checkin'] ?? false,
+      checkout: json['checkout'] ?? false,
+      location_checkin: json['location_checkin'].toString(),
+      longitude_checkin: json['longitude_checkin'].toString(),
+      latitude_checkin: json['latitude_checkin'].toString(),
+      location_checkout: json['location_checkout'].toString(),
+      longitude_checkout: json['longitude_checkout'].toString(),
+      latitude_checkout: json['latitude_checkout'].toString(),
       category: json['category'] ?? '-',
       deleted: json['deleted'],
+      name: json['profiles']['fullname'],
       date: json['date'].toString(),
     );
   }
-
-  Map<String, dynamic> toJson() => {
-        "id": id,
-        "created_at": created_at,
-        "profile_id": profile_id,
-        "description": description,
-        "type": type,
-        "location": location,
-        "longitude": longitude,
-        "latitude": latitude,
-        "category": category,
-        "deleted": deleted,
-        "date": date,
-      };
 }

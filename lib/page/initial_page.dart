@@ -1,14 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:qonnected_app/controller/init_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
+import 'package:qonnected_app/page/profile/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:get/get.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class InitialPage extends StatefulWidget {
   static const routeName = '/initpage';
@@ -17,10 +20,24 @@ class InitialPage extends StatefulWidget {
 }
 
 class _InitialPageState extends State<InitialPage> {
+  final InitController initC = Get.put(InitController());
+
   // List<PersistentBottomNavBarItem> _navBarsItems() {
+
+  @override
+  void initState() {
+    vars.idx = 0;
+    super.initState();
+  }
+
   int _selectedIndex = vars.idx == 0 ? vars.idx : 0;
 
-  final pages = [IndexHome(), IndexCoWorkers(), IndexActivity(), IndexHome()];
+  final pages = [
+    IndexHome(),
+    IndexCoWorkers(),
+    IndexActivity(),
+    IndexProfile()
+  ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -74,11 +91,17 @@ class _InitialPageState extends State<InitialPage> {
           )),
         ),
         body: pages[vars.idx],
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          onPressed: () {},
-          child: Icon(Icons.qr_code_scanner), //icon inside button
-        ),
+        floatingActionButton: Obx(() => FloatingActionButton(
+              backgroundColor: Color(initC.mainColor.value),
+              onPressed: () async {
+                //  String? barcode = await scanner.scan();
+                //  print(barcode);
+                final prefs = await SharedPreferences.getInstance();
+                await prefs.setBool('checkin', false);
+                await prefs.setBool('checkout', false);
+              },
+              child: Icon(Icons.qr_code_scanner), //icon inside button
+            )),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
           //bottom navigation bar on scaffold
@@ -105,12 +128,18 @@ class _InitialPageState extends State<InitialPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.home_outlined,
-                            color:
-                                vars.idx == 0 ? Colors.red : Color(0xFF0D1037)),
+                            color: vars.idx == 0
+                                ? Color(initC.mainColor.value)
+                                : Color(0xFF0D1037)),
                         Text(
                           "Home",
-                          style: FontMedium(context, 12, FontWeight.w500,
-                              vars.idx == 0 ? Colors.red : Color(0xFF0D1037)),
+                          style: FontMedium(
+                              context,
+                              12,
+                              FontWeight.w500,
+                              vars.idx == 0
+                                  ? Color(initC.mainColor.value)
+                                  : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -130,12 +159,18 @@ class _InitialPageState extends State<InitialPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.people_outline,
-                            color:
-                                vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
+                            color: vars.idx == 1
+                                ? Color(initC.mainColor.value)
+                                : Color(0xFF0D1037)),
                         Text(
                           "Co Worker",
-                          style: FontMedium(context, 12, FontWeight.w500,
-                              vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
+                          style: FontMedium(
+                              context,
+                              12,
+                              FontWeight.w500,
+                              vars.idx == 1
+                                  ? Color(initC.mainColor.value)
+                                  : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -154,12 +189,18 @@ class _InitialPageState extends State<InitialPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.domain_outlined,
-                            color:
-                                vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
+                            color: vars.idx == 2
+                                ? Color(initC.mainColor.value)
+                                : Color(0xFF0D1037)),
                         Text(
                           "Company",
-                          style: FontMedium(context, 12, FontWeight.w500,
-                              vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
+                          style: FontMedium(
+                              context,
+                              12,
+                              FontWeight.w500,
+                              vars.idx == 2
+                                  ? Color(initC.mainColor.value)
+                                  : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -178,12 +219,18 @@ class _InitialPageState extends State<InitialPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.person_outline_rounded,
-                            color:
-                                vars.idx == 3 ? Colors.red : Color(0xFF0D1037)),
+                            color: vars.idx == 3
+                                ? Color(initC.mainColor.value)
+                                : Color(0xFF0D1037)),
                         Text(
                           "Profile",
-                          style: FontMedium(context, 12, FontWeight.w500,
-                              vars.idx == 3 ? Colors.red : Color(0xFF0D1037)),
+                          style: FontMedium(
+                              context,
+                              12,
+                              FontWeight.w500,
+                              vars.idx == 3
+                                  ? Color(initC.mainColor.value)
+                                  : Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],

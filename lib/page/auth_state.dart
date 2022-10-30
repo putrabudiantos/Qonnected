@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qonnected_app/helper/shared_preferences.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:qonnected_app/page/login.dart';
 import 'package:supabase/supabase.dart';
@@ -17,7 +18,9 @@ class AuthState<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onAuthenticated(Session session) {
     if (mounted) {
+      StorageSharedPreferences.StorageProfile();
       Get.offAll(InitialPage());
+
       // Navigator.of(context)
       //     .pushNamedAndRemoveUntil('/initpage', (route) => false);
     }
