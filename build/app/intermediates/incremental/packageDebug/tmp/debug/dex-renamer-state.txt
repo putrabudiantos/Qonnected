@@ -1,4 +1,4 @@
-#Sun Oct 30 19:23:21 WIB 2022
+#Mon Oct 31 15:30:43 WIB 2022
 base.0=/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/dex/debug/minifyDebugWithR8/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

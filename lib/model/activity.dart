@@ -18,6 +18,8 @@ class ActivityModel {
       longitude_checkout,
       latitude_checkout,
       category,
+      time_in,
+      time_out,
       name,
       date;
   final bool? deleted, checkin, checkout;
@@ -37,6 +39,8 @@ class ActivityModel {
       required this.latitude_checkout,
       required this.category,
       required this.deleted,
+      required this.time_in,
+      required this.time_out,
       required this.name,
       required this.date});
 
@@ -57,6 +61,8 @@ class ActivityModel {
       category: json['category'] ?? '-',
       deleted: json['deleted'],
       name: json['profiles']['fullname'],
+      time_in: json['checkin_time'],
+      time_out: json['checkout_time'],
       date: json['date'].toString(),
     );
   }

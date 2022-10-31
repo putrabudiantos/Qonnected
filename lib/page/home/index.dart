@@ -120,47 +120,40 @@ class _IndexHomeState extends State<IndexHome> {
                           } else {
                             act = Colors.red;
                           }
-                          return homeC.activityModel.value[index].category !=
-                                  'wfo'
-                              ? ListTile(
-                                  dense: true,
-                                  contentPadding:
-                                      EdgeInsets.only(left: 0.0, right: 0.0),
-                                  visualDensity: VisualDensity(
-                                      horizontal: 0, vertical: -4),
-                                  leading: Icon(Icons.person),
-                                  title: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      Icon(
-                                        Icons.circle,
-                                        size: 10,
-                                        color: act,
-                                      ),
-                                      SizedBox(
-                                        width: 5,
-                                      ),
-                                      RichText(
-                                        text: TextSpan(
-                                          style: DefaultTextStyle.of(context)
-                                              .style,
-                                          children: <TextSpan>[
-                                            TextSpan(
-                                                text:
-                                                    '${homeC.activityModel.value[index].name} ${homeC.activityModel.value[index].category!.toUpperCase()}',
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                            TextSpan(
-                                                text: ' pada tanggal ${date}'),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ))
-                              : Container();
+                          return ListTile(
+                              dense: true,
+                              contentPadding:
+                                  EdgeInsets.only(left: 0.0, right: 0.0),
+                              visualDensity:
+                                  VisualDensity(horizontal: 0, vertical: -4),
+                              leading: Icon(Icons.person),
+                              title: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.circle,
+                                    size: 10,
+                                    color: act,
+                                  ),
+                                  SizedBox(
+                                    width: 5,
+                                  ),
+                                  RichText(
+                                    text: TextSpan(
+                                      style: DefaultTextStyle.of(context).style,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                            text:
+                                                '${homeC.activityModel.value[index].name} ${homeC.activityModel.value[index].category!.toUpperCase()}',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold)),
+                                        TextSpan(text: ' pada tanggal ${date}'),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ));
                         })
                     : Container(
                         child: Text('Belum ada aktifitas',

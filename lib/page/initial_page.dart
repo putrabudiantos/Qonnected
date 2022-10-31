@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:qonnected_app/controller/init_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
+import 'package:qonnected_app/helper/shared_preferences.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
@@ -97,8 +98,10 @@ class _InitialPageState extends State<InitialPage> {
                 //  String? barcode = await scanner.scan();
                 //  print(barcode);
                 final prefs = await SharedPreferences.getInstance();
-                await prefs.setBool('checkin', false);
-                await prefs.setBool('checkout', false);
+                // await prefs.setBool('checkin', false);
+                // await prefs.setBool('checkout', false);
+                HelperSharedPreferences.refreshStorage();
+                print(prefs.getBool('checkin'));
               },
               child: Icon(Icons.qr_code_scanner), //icon inside button
             )),

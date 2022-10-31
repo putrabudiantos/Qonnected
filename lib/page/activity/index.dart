@@ -120,18 +120,20 @@ class _IndexActivityState extends State<IndexActivity> {
                       Obx(() => activityC.distanceFar.value == true
                           ? DescriptionBox()
                           : Container()),
-                      ElevatedButton(
+                      Obx(() => ElevatedButton(
                           style: ButtonStyle(
                               padding: MaterialStateProperty.all<EdgeInsets>(
                                   const EdgeInsets.all(15)),
                               backgroundColor: MaterialStateProperty.all<Color>(
-                                  const Color(0xFF0D1037)),
-                              shape: MaterialStateProperty.all<
-                                      RoundedRectangleBorder>(
+                                  Color(activityC.checkOut.value == false
+                                      ? 0xFF0D1037
+                                      : 0xFF4F4F56)),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(50),
-                                      side: const BorderSide(
-                                          color: Color(0xFF0D1037))))),
+                                      side: BorderSide(
+                                          color:
+                                              Color(activityC.checkOut.value == false ? 0xFF0D1037 : 0xFF4F4F56))))),
                           onPressed: () async {
                             // Position position = await _getGeoLocationPosition();
                             // in meter
@@ -140,20 +142,22 @@ class _IndexActivityState extends State<IndexActivity> {
                             //     112.7989678, -7.2699392, 112.8029696);
                             // print(ab > 50 ? 'jauh' : 'dekat');
 
-                            print(_character == SingingCharacter.wfo
-                                ? 'wfo'
-                                : activity);
-
+                            // print(_character == SingingCharacter.wfo
+                            //     ? 'wfo'
+                            //     : activity);
+                            // print(activityC.distanceFar.value);
                             // StorageSharedPreferences.StorageProfile();
                             // location =
                             //     'Lat: ${position.latitude} , Long: ${position.longitude}';
+                            if (activityC.checkOut.value == false) {
+                              activityC.submitActivity(
+                                  context,
+                                  _character == SingingCharacter.wfo
+                                      ? 'wfo'
+                                      : activity,
+                                  text.text);
+                            }
 
-                            activityC.submitActivity(
-                                context,
-                                _character == SingingCharacter.wfo
-                                    ? 'wfo'
-                                    : activity,
-                                text.text);
                             // print(location);
                           },
                           child: Padding(
@@ -161,7 +165,7 @@ class _IndexActivityState extends State<IndexActivity> {
                             child: Obx(() => Text(activityC.isLoading == true
                                 ? 'PROCESSING'
                                 : 'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}')),
-                          ))
+                          )))
                     ],
                   ),
                 ),

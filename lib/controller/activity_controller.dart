@@ -18,8 +18,10 @@ class ActivityController extends GetxController {
   var activityModel = <ActivityModel>[].obs;
   var isLoading = false.obs;
   var checkIn = false.obs;
+  var checkOut = false.obs;
   var distanceInMeter = 0.obs;
   var distanceFar = false.obs;
+  var timeCompany = ''.obs;
   var logId;
 
   @override
@@ -30,14 +32,18 @@ class ActivityController extends GetxController {
   }
 
   fetchActivity() async {
+    final prefs = await SharedPreferences.getInstance();
     var date = DateFormat('yyyy-MM-dd')
         .format(DateTime.parse(DateTime.now().toLocal().toString()));
+    var date1 = DateFormat('HH:mm')
+        .format(DateTime.parse(DateTime.now().toLocal().toString()));
+    checkOut.value = prefs.getBool('checkout')!;
     final response = await vars.client
         .from('activities')
         // .select()
         .select('*, profiles(fullname, email)')
         .eq('date', date)
-        .neq('category', 'wfo')
+        // .neq('category', 'wfo')
         .execute();
     print(response.data);
     if (response.status == 200) {
@@ -103,8 +109,15 @@ class ActivityController extends GetxController {
     var lat = prefs.getDouble('latCompany');
     Position position = await _getGeoLocationPosition();
 
+    // var distance = Geolocator.distanceBetween(
+    //     lat!, long!, position.latitude, position.longitude);
     var distance = Geolocator.distanceBetween(
         lat!, long!, position.latitude, position.longitude);
+    print(position.latitude);
+    print(position.longitude);
+    print(distance);
+    print(long);
+    print(lat);
     if (distance > 50) {
       distanceFar.value = true;
     } else {
@@ -113,6 +126,7 @@ class ActivityController extends GetxController {
   }
 
   submitActivity(BuildContext context, String activity, String desc) async {
+    isLoading.value = true;
     final prefs = await SharedPreferences.getInstance();
     Position position = await _getGeoLocationPosition();
     var locationName = await GetAddressFromLatLong(position);
@@ -121,8 +135,8 @@ class ActivityController extends GetxController {
     var checkout = prefs.getBool('checkout');
     print(checkin);
 
-    isLoading.value = true;
-
+    var time = DateFormat('HH:mm')
+        .format(DateTime.parse(DateTime.now().toLocal().toString()));
     var date = DateFormat('yyyy-MM-dd')
         .format(DateTime.parse(DateTime.now().toLocal().toString()));
 
@@ -140,7 +154,7 @@ class ActivityController extends GetxController {
           .execute();
 
       var response = await _insertCheckinActivity(position.longitude,
-          position.latitude, activity, locationName, desc, date);
+          position.latitude, activity, locationName, desc, date, time);
       if (response == 200 || response == 201) {
         // var dataAct = {
         //   'message':
@@ -171,14 +185,14 @@ class ActivityController extends GetxController {
       }
     } else if (checkin == true) {
       print('edit act');
-      await prefs.setBool('checkout', false);
+      await prefs.setBool('checkout', true);
       var response = await _insertCheckoutActivity(position.longitude,
-          position.latitude, activity, locationName, desc, date);
+          position.latitude, activity, locationName, desc, date, time);
 
       print(response);
       if (response == 200 || response == 201) {
         isLoading.value = false;
-        checkIn.value = false;
+        checkOut.value = true;
         Helper.alertDialog(context, '200', 'Berhasil Check Out', true);
       } else {
         isLoading.value = false;
@@ -190,7 +204,7 @@ class ActivityController extends GetxController {
   }
 
   Future _insertCheckinActivity(double long, double lat, String activity,
-      String location, String desc, var date) async {
+      String location, String desc, var date, var time) async {
     final prefs = await SharedPreferences.getInstance();
     var id = vars.client.auth.currentUser!.id;
     final data = {
@@ -201,6 +215,7 @@ class ActivityController extends GetxController {
       "latitude_checkin": lat,
       "category": activity,
       "checkin": true,
+      "checkin_time": time,
       "date": date
     };
 
@@ -212,7 +227,7 @@ class ActivityController extends GetxController {
   }
 
   Future _insertCheckoutActivity(double long, double lat, String activity,
-      String location, String desc, var date) async {
+      String location, String desc, var date, var time) async {
     final prefs = await SharedPreferences.getInstance();
     var id = prefs.getString('idAct');
     final data = {
@@ -220,6 +235,7 @@ class ActivityController extends GetxController {
       "location_checkout": location,
       "longitude_checkout": long,
       "latitude_checkout": lat,
+      "checkout_time": time,
       "category": activity,
     };
 
@@ -230,5 +246,19 @@ class ActivityController extends GetxController {
         .execute();
     print(response.data);
     return response.status;
+  }
+
+  getTimeCompany() async {
+    final prefs = await SharedPreferences.getInstance();
+    var id = prefs.getInt('idCompany');
+    var res = await vars.client
+        .from('company_group')
+        .select('*,work_type_id(*)')
+        .eq('id', id)
+        .execute();
+
+    if (res.status == 200) {
+      timeCompany.value = res.data[0]['work_type_id']['time_in'];
+    }
   }
 }

@@ -18,7 +18,8 @@ class AuthState<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onAuthenticated(Session session) {
     if (mounted) {
-      StorageSharedPreferences.StorageProfile();
+      HelperSharedPreferences.StorageProfile();
+      HelperSharedPreferences.refreshStorage();
       Get.offAll(InitialPage());
 
       // Navigator.of(context)
