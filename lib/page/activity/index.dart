@@ -14,6 +14,9 @@ import 'package:slide_digital_clock/slide_digital_clock.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:image_picker/image_picker.dart';
+import 'dart:async';
+import 'dart:io';
 
 enum SingingCharacter { wfo, wfh, izin, cuti }
 
@@ -30,6 +33,9 @@ class _IndexActivityState extends State<IndexActivity> {
   String location = 'Null, Press Button';
   String Address = 'search';
   bool isCheckin = false;
+  List<XFile>? _imageFileList;
+  dynamic _pickImageError;
+  final ImagePicker _picker = ImagePicker();
 
   @override
   void initState() {
@@ -42,6 +48,31 @@ class _IndexActivityState extends State<IndexActivity> {
     activityC.checkIn.value = prefs.getBool('checkin')!;
 
     print(isCheckin);
+  }
+
+  void _setImageFileListFromFile(XFile? value) {
+    _imageFileList = value == null ? null : <XFile>[value];
+  }
+
+  Future<void> _onImageButtonPressed(ImageSource source,
+      {BuildContext? context, bool isMultiImage = false}) async {
+    try {
+      final XFile? pickedFile = await _picker.pickImage(
+        source: source,
+        maxWidth: 300,
+        maxHeight: 300,
+        imageQuality: 100,
+      );
+      setState(() {
+        _setImageFileListFromFile(pickedFile);
+        print('aaa ${pickedFile}');
+      });
+    } catch (e) {
+      setState(() {
+        _pickImageError = e;
+      });
+    }
+    ;
   }
 
   // Future<Position> _getGeoLocationPosition() async {
@@ -149,14 +180,16 @@ class _IndexActivityState extends State<IndexActivity> {
                             // StorageSharedPreferences.StorageProfile();
                             // location =
                             //     'Lat: ${position.latitude} , Long: ${position.longitude}';
-                            if (activityC.checkOut.value == false) {
-                              activityC.submitActivity(
-                                  context,
-                                  _character == SingingCharacter.wfo
-                                      ? 'wfo'
-                                      : activity,
-                                  text.text);
-                            }
+                            _onImageButtonPressed(ImageSource.camera,
+                                context: context);
+                            // if (activityC.checkOut.value == false) {
+                            //   activityC.submitActivity(
+                            //       context,
+                            //       _character == SingingCharacter.wfo
+                            //           ? 'wfo'
+                            //           : activity,
+                            //       text.text);
+                            // }
 
                             // print(location);
                           },

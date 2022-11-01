@@ -51,8 +51,8 @@ class HelperSharedPreferences {
         .eq('date', dateNow)
         .execute();
 
-    if (response.count! > 0) {
-      if (responsedateNow.count! == 0) {
+    if (response.data.length > 0) {
+      if (responsedateNow.count == null) {
         await prefs.setBool('checkin', false);
         await prefs.setBool('checkout', false);
       }
