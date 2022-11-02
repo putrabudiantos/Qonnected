@@ -113,40 +113,39 @@ class _IndexActivityState extends State<IndexActivity> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-          child: Stack(
-        clipBehavior: Clip.none,
+          child: Column(
         children: [
           Container(
             width: MediaQuery.of(context).size.width * 1,
-            height: MediaQuery.of(context).size.height * .4,
+            height: MediaQuery.of(context).size.height * .25,
             decoration: BoxDecoration(
               color: Color(0xFF0D1037),
             ),
+            child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 35,
+                  ),
+                  Text('MyDevTeam',
+                      style: FontMedium(
+                          context, 20, FontWeight.w800, Colors.white)),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text('Check In',
+                      style: FontMedium(
+                          context, 15, FontWeight.w500, Colors.white)),
+                ],
+              ),
+            ),
           ),
-          Positioned(
-              top: 50,
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('MyDevTeam',
-                        style: FontMedium(
-                            context, 20, FontWeight.w800, Colors.white)),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text('Check In',
-                        style: FontMedium(
-                            context, 15, FontWeight.w500, Colors.white)),
-                  ],
-                ),
-              )),
-          Positioned(
-            top: 150,
+          Container(
+            transform: Matrix4.translationValues(0.0, -50.0, 0.0),
             child: Container(
               width: MediaQuery.of(context).size.width * 1,
-              height: MediaQuery.of(context).size.height,
               padding: EdgeInsets.only(top: 30),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -159,9 +158,7 @@ class _IndexActivityState extends State<IndexActivity> {
                 child: Column(
                   children: [
                     Row(
-                      children: [
-                        
-                      ],
+                      children: [],
                     ),
                     Obx(() => Text(
                           'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}',
@@ -216,16 +213,16 @@ class _IndexActivityState extends State<IndexActivity> {
                           // StorageSharedPreferences.StorageProfile();
                           // location =
                           //     'Lat: ${position.latitude} , Long: ${position.longitude}';
-                          _onImageButtonPressed(ImageSource.camera,
-                              context: context);
-                          // if (activityC.checkOut.value == false) {
-                          //   activityC.submitActivity(
-                          //       context,
-                          //       _character == SingingCharacter.wfo
-                          //           ? 'wfo'
-                          //           : activity,
-                          //       text.text);
-                          // }
+                          // _onImageButtonPressed(ImageSource.camera,
+                          //     context: context);
+                          if (activityC.checkOut.value == false) {
+                            activityC.submitActivity(
+                                context,
+                                _character == SingingCharacter.wfo
+                                    ? 'wfo'
+                                    : activity,
+                                text.text);
+                          }
 
                           // print(location);
                         },

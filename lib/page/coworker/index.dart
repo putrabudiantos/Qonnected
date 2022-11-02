@@ -36,9 +36,9 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(workerC.companyName.value,
+                    Obx(() => Text(workerC.companyName.value,
                         style: FontMedium(
-                            context, 20, FontWeight.w800, Colors.white)),
+                            context, 20, FontWeight.w800, Colors.white))),
                     SizedBox(
                       height: 10,
                     ),
@@ -53,7 +53,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
             child: Container(
               width: MediaQuery.of(context).size.width * 1,
               height: MediaQuery.of(context).size.height,
-              padding: EdgeInsets.only(top:30),
+              padding: EdgeInsets.only(top: 30),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: const BorderRadius.only(

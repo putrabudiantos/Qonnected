@@ -4,7 +4,7 @@
             "outputFile": "/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-h600dp-port-v13/values-h600dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/macbook2019/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/values-h600dp-port-v13/values-h600dp-port-v13.xml",
+                    "source": "/Users/mydevteam/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/values-h600dp-port-v13/values-h600dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
