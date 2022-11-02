@@ -14,7 +14,7 @@ class IndexProfile extends StatelessWidget {
         children: [
           bannerCustom(
             customAsset:
-                'https://www.markdesign.net/images/product/resize_755_3000/a3d63-my-devteam2.jpg',
+                'https://www.markdesign.net/images/product/resize_755_3000/a3d63-my-devteam2.jpg', customHeight: .3,
           ),
           SizedBox(height: 50,),
         InfoSummary(context)

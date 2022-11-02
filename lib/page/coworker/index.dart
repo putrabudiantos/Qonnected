@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:qonnected_app/controller/coworkers_controller.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:qonnected_app/global_variabel.dart';
+import 'package:qonnected_app/page/widget/banner.dart';
 
 class IndexCoWorkers extends StatefulWidget {
   IndexCoWorkers({Key? key}) : super(key: key);
@@ -18,24 +19,59 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-          child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Obx(() => Wrap(
-              children: [
-                Center(
-                    child: Text(workerC.companyName.value,
+          child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width * 1,
+            height: MediaQuery.of(context).size.height * .4,
+            decoration: BoxDecoration(
+              color: Color(0xFF0D1037),
+            ),
+          ),
+          Positioned(
+              top: 50,
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(workerC.companyName.value,
                         style: FontMedium(
-                            context, 20, FontWeight.w800, Color(0xFF0D1037)))),
-                SizedBox(
-                  height: 50,
+                            context, 20, FontWeight.w800, Colors.white)),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text('15 Teams',
+                        style: FontMedium(
+                            context, 15, FontWeight.w500, Colors.white)),
+                  ],
                 ),
-                for (var i = 0; i < workerC.coworkersModel.length; i++)
-                  CardList(
-                      workerC.coworkersModel.value[i].fullname!,
-                      workerC.coworkersModel.value[i].position!,
-                      workerC.coworkersModel.value[i].worker_status!),
-              ],
-            )),
+              )),
+          Positioned(
+            top: MediaQuery.of(context).size.height * .2,
+            child: Container(
+              width: MediaQuery.of(context).size.width * 1,
+              height: MediaQuery.of(context).size.height,
+              padding: EdgeInsets.only(top:30),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(25)),
+              ),
+              child: Obx(() => Wrap(
+                    children: [
+                      for (var i = 0; i < workerC.coworkersModel.length; i++)
+                        CardList(
+                            workerC.coworkersModel.value[i].fullname!,
+                            workerC.coworkersModel.value[i].position!,
+                            workerC.coworkersModel.value[i].worker_status!),
+                    ],
+                  )),
+            ),
+          ),
+        ],
       )),
     );
   }
@@ -62,7 +98,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Card(
-                elevation: 2,
+                elevation: 4,
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: Column(children: [

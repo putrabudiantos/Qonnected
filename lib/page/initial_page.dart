@@ -68,32 +68,32 @@ class _InitialPageState extends State<InitialPage> {
           // ),
         ),
         drawerEnableOpenDragGesture: false,
-        drawer: Drawer(
-          child: SingleChildScrollView(
-              child: Column(
-            children: const [
-              SizedBox(
-                height: 20,
-              ),
-              ListTile(
-                leading: Icon(Icons.library_books_outlined),
-                title: Text('Summary'),
-              ),
-              ListTile(
-                leading: Icon(Icons.library_books_outlined),
-                title: Text('Change Shift'),
-              ),
-              ListTile(
-                leading: Icon(Icons.library_books_outlined),
-                title: Text('Over Time'),
-              ),
-              ListTile(
-                leading: Icon(Icons.library_books_outlined),
-                title: Text('Payslip'),
-              )
-            ],
-          )),
-        ),
+        // drawer: Drawer(
+        //   child: SingleChildScrollView(
+        //       child: Column(
+        //     children: const [
+        //       SizedBox(
+        //         height: 20,
+        //       ),
+        //       ListTile(
+        //         leading: Icon(Icons.library_books_outlined),
+        //         title: Text('Summary'),
+        //       ),
+        //       ListTile(
+        //         leading: Icon(Icons.library_books_outlined),
+        //         title: Text('Change Shift'),
+        //       ),
+        //       ListTile(
+        //         leading: Icon(Icons.library_books_outlined),
+        //         title: Text('Over Time'),
+        //       ),
+        //       ListTile(
+        //         leading: Icon(Icons.library_books_outlined),
+        //         title: Text('Payslip'),
+        //       )
+        //     ],
+        //   )),
+        // ),
         body: pages[vars.idx],
         floatingActionButton: Obx(() => FloatingActionButton(
               backgroundColor: Color(initC.mainColor.value),

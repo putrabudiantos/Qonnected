@@ -50,31 +50,35 @@ class _IndexHomeState extends State<IndexHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(children: [
-          Stack(
-            clipBehavior: Clip.none,
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                height: MediaQuery.of(context).size.height * .31,
-                decoration: BoxDecoration(
-                  color: Color(0xFF0D1037),
-                ),
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height * .31,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF0D1037),
+                    ),
+                  ),
+                  Positioned.fill(
+                      bottom: -90,
+                      child: Align(
+                          alignment: Alignment.bottomCenter,
+                          child: WidgetStats())),
+                ],
               ),
-              Positioned.fill(
-                  bottom: -90,
-                  child: Align(
-                      alignment: Alignment.bottomCenter, child: WidgetStats())),
-            ],
-          ),
-          DisplayActivities()
-        ]),
+              DisplayActivities()
+            ]),
       ),
     );
   }
 
   Widget WidgetStats() {
     return Padding(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(10),
       child: Container(
         height: MediaQuery.of(context).size.height * .4,
         child: Column(
@@ -128,20 +132,17 @@ class _IndexHomeState extends State<IndexHome> {
 
   Widget CardWidget() {
     return Container(
-      width: MediaQuery.of(context).size.width * 1,
+      // width: MediaQuery.of(context).size.width * 1,
       child: Card(
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Wrap(
-            alignment: WrapAlignment.spaceBetween,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              IconCard('Calendar', Icons.file_present),
-              IconCard('Time Off', Icons.file_present),
-              IconCard('Overtime', Icons.file_present),
-              IconCard('Pay Slip', Icons.file_present),
-            ],
-          ),
+        child: Wrap(
+          alignment: WrapAlignment.spaceBetween,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            IconCard('Calendar', Icons.file_present),
+            IconCard('Time Off', Icons.file_present),
+            IconCard('Overtime', Icons.file_present),
+            IconCard('Pay Slip', Icons.file_present),
+          ],
         ),
       ),
     );
@@ -177,7 +178,7 @@ class _IndexHomeState extends State<IndexHome> {
   Widget DisplayActivities() {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -187,7 +188,20 @@ class _IndexHomeState extends State<IndexHome> {
             ),
             GestureDetector(
                 onTap: () {
-                  homeC.fetchActivity();
+                  // homeC.fetchActivity();
+                //    var dateNow = DateFormat('dd-MM-yyyy').format(
+                //             DateTime.parse(homeC.activityModel.value[0].date
+                //                 .toString()));
+                // DateTime dt1 = DateTime.parse("${dateNow} ${homeC.activityModel.value[0].time_in}");
+                //         DateTime dt2 = DateTime.parse("${dateNow} ${homeC.timeCompany.value}");
+
+                //   if (dt1.compareTo(dt2) < 0) {
+                //     print("DT1 is before DT2");
+                //   }
+
+                //   if (dt1.compareTo(dt2) > 0) {
+                //     print("DT1 is after DT2");
+                //   }
                 },
                 child: Text(
                   "Today's Activities",
@@ -216,6 +230,14 @@ class _IndexHomeState extends State<IndexHome> {
                         var date = DateFormat('dd MMM yyyy').format(
                             DateTime.parse(homeC.activityModel.value[index].date
                                 .toString()));
+
+                        //compare time
+                        var dateNow = DateFormat('dd-MM-yyyy').format(
+                            DateTime.parse(homeC.activityModel.value[index].date
+                                .toString()));
+                        DateTime dt1 = DateTime.parse("${dateNow} ${homeC.activityModel.value[index].time_in}");
+                        DateTime dt2 = DateTime.parse("${dateNow} ${homeC.timeCompany.value}");
+
                         var act;
                         if (homeC.activityModel.value[index].category ==
                             'wfo') {

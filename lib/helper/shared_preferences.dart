@@ -56,6 +56,11 @@ class HelperSharedPreferences {
         await prefs.setBool('checkin', false);
         await prefs.setBool('checkout', false);
       }
+    } else {
+      if (responsedateNow.count == null) {
+        await prefs.setBool('checkin', false);
+        await prefs.setBool('checkout', false);
+      }
     }
   }
 }

@@ -1,22 +1,26 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class bannerCustom extends StatelessWidget {
   const bannerCustom(
       {
       required this.customAsset,
+      required this.customHeight,
       Key? key})
       : super(key: key);
   final String customAsset;
+  final double customHeight;
 
   @override
   Widget build(BuildContext context) {
         
-    Size size = MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Stack(
       clipBehavior: Clip.none,
       children: [
         Container(
-          height: size.height * .3,
+          height: size.height * customHeight,
           decoration: BoxDecoration(
             // color: greenColor,
             // borderRadius: const BorderRadius.only(
