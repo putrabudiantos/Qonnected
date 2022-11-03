@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:get/get.dart';
 
 class Helper {
   static alertDialog(
-      BuildContext context, String status, String message, bool showbutton) {
+      BuildContext context, String status, String message, bool showbutton, String route) {
     return showDialog<String>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
@@ -26,7 +27,7 @@ class Helper {
         actions: <Widget>[
           showbutton == true
               ? TextButton(
-                  onPressed: () => Navigator.pop(context, 'OK'),
+                  onPressed: () => showbutton == false ? Navigator.pop(context, 'OK') : Navigator.pushNamedAndRemoveUntil(context, route, (route) => false),
                   child: const Text(
                     'OK',
                     style: TextStyle(

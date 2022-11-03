@@ -22,12 +22,14 @@ class ActivityController extends GetxController {
   var distanceInMeter = 0.obs;
   var distanceFar = false.obs;
   var timeCompany = ''.obs;
+  var timeOffset = 0.obs;
   var logId;
 
   @override
   void onInit() {
     fetchActivity();
     calculateDistance();
+    getTimeCompany();
     super.onInit();
   }
 
@@ -118,6 +120,8 @@ class ActivityController extends GetxController {
     print(distance);
     print(long);
     print(lat);
+    var checkout = prefs.getBool('checkin');
+    print(checkout);
     if (distance > 50) {
       distanceFar.value = true;
     } else {
@@ -142,7 +146,8 @@ class ActivityController extends GetxController {
 
     if (checkin == null || checkin == false) {
       print('create act');
-      await prefs.setBool('checkin', true);
+    
+
       final updates = {
         "worker_status": activity,
       };
@@ -153,35 +158,44 @@ class ActivityController extends GetxController {
           .eq('id', id)
           .execute();
 
-      var response = await _insertCheckinActivity(position.longitude,
-          position.latitude, activity, locationName, desc, date, time);
-      if (response == 200 || response == 201) {
-        // var dataAct = {
-        //   'message':
-        //       '_username7 Checked in. #Q_adikarya_username7 #Q_Checkin #Q_102022'
-        // };
-        // var msg = 'testing  - ${activity} - long:${long} lat:${lat} ';
-        // var postAct = await http.post(
-        //     Uri.parse(
-        //         'https://hook.eu1.make.com/u7dj2vkwusaz1x9cdwv8gzm1d8lmrn19'),
-        //     body: dataAct);
+          print(res.data);
+      if (res.status == 200 || res.status == 201) {
+        var response = await _insertCheckinActivity(position.longitude,
+            position.latitude, activity, locationName, desc, date, time);
+        if (response == 200 || response == 201) {
+          // var dataAct = {
+          //   'message':
+          //       '_username7 Checked in. #Q_adikarya_username7 #Q_Checkin #Q_102022'
+          // };
+          // var msg = 'testing  - ${activity} - long:${long} lat:${lat} ';
+          // var postAct = await http.post(
+          //     Uri.parse(
+          //         'https://hook.eu1.make.com/u7dj2vkwusaz1x9cdwv8gzm1d8lmrn19'),
+          //     body: dataAct);
 
-        // print(postAct.body);
-        // if (postAct.statusCode == 200) {
-        //   isLoading.value = false;
-        //   Helper.alertDialog(context, '200', 'Berhasil Check In', true);
-        // } else {
-        //   Helper.alertDialog(
-        //       context, '400', 'Terjadi Kesalahan\nSilahkan Coba lagi', true);
-        // }
-        isLoading.value = false;
-        checkIn.value = true;
-        Helper.alertDialog(context, '200', 'Berhasil Check In', true);
+          // print(postAct.body);
+          // if (postAct.statusCode == 200) {
+          isLoading.value = false;
+          checkIn.value = true;
+          await prefs.setBool('checkin', true);
+          Helper.alertDialog(
+              context, '200', 'Berhasil Check In', true, '/initpage');
+          vars.idx = 1;
+          // } else {
+          //   Helper.alertDialog(
+          //       context, '400', 'Terjadi Kesalahan\nSilahkan Coba lagi', true);
+          // }
+
+        } else {
+          isLoading.value = false;
+          Helper.alertDialog(context, '400',
+              'Terjadi Kesalahan\nSilahkan Coba lagi ', true, '/activity');
+          print(response.error);
+        }
       } else {
-        isLoading.value = false;
-        Helper.alertDialog(
-            context, '400', 'Terjadi Kesalahan\nSilahkan Coba lagi 1', true);
-        print(response.error);
+        Helper.alertDialog(context, '400',
+            'Terjadi Kesalahan\nSilahkan Coba lagi ', true, '/activity');
+        print(res.error);
       }
     } else if (checkin == true) {
       print('edit act');
@@ -193,11 +207,13 @@ class ActivityController extends GetxController {
       if (response == 200 || response == 201) {
         isLoading.value = false;
         checkOut.value = true;
-        Helper.alertDialog(context, '200', 'Berhasil Check Out', true);
+        vars.idx = 1;
+        Helper.alertDialog(
+            context, '200', 'Berhasil Check Out', true, '/initpage');
       } else {
         isLoading.value = false;
-        Helper.alertDialog(
-            context, '400', 'Terjadi Kesalahan\nSilahkan Coba lagi 1', true);
+        Helper.alertDialog(context, '400',
+            'Terjadi Kesalahan\nSilahkan Coba lagi 1', true, '/activity');
         print(response.error);
       }
     }
@@ -230,6 +246,7 @@ class ActivityController extends GetxController {
       String location, String desc, var date, var time) async {
     final prefs = await SharedPreferences.getInstance();
     var id = prefs.getString('idAct');
+
     final data = {
       "checkout": true,
       "location_checkout": location,
@@ -259,6 +276,7 @@ class ActivityController extends GetxController {
 
     if (res.status == 200) {
       timeCompany.value = res.data[0]['work_type_id']['time_in'];
+      timeOffset.value = res.data[0]['work_type_id']['time_in_offset'];
     }
   }
 }

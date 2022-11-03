@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+import 'package:qonnected_app/model/activity.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
@@ -37,12 +38,12 @@ class HelperSharedPreferences {
     var dateNow = DateFormat('yyyy-MM-dd')
         .format(DateTime.parse(DateTime.now().toLocal().toString()));
     // print(date);
-    final response = await vars.client
-        .from('activities')
-        .select()
-        .eq('profile_id', id)
-        .eq('date', datelast)
-        .execute();
+    // final response = await vars.client
+    //     .from('activities')
+    //     .select()
+    //     .eq('profile_id', id)
+    //     .eq('date', datelast)
+    //     .execute();
 
     final responsedateNow = await vars.client
         .from('activities')
@@ -51,15 +52,26 @@ class HelperSharedPreferences {
         .eq('date', dateNow)
         .execute();
 
-    if (response.data.length > 0) {
-      if (responsedateNow.count == null) {
+    if (responsedateNow.status == 200) {
+      List jsonResponse = responsedateNow.data;
+
+      List tmpAct = jsonResponse.map((e) => ActivityModel.fromJson(e)).toList();
+  
+      if (tmpAct.length == 0) {
         await prefs.setBool('checkin', false);
         await prefs.setBool('checkout', false);
-      }
-    } else {
-      if (responsedateNow.count == null) {
-        await prefs.setBool('checkin', false);
-        await prefs.setBool('checkout', false);
+
+       print('jgn');
+       print(tmpAct.length);
+        final updates = {
+          "worker_status": "-",
+        };
+
+        var res = await vars.client
+            .from('profiles')
+            .update(updates)
+            .eq('id', id)
+            .execute();
       }
     }
   }

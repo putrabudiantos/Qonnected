@@ -60,7 +60,7 @@ class ActivityModel {
       latitude_checkout: json['latitude_checkout'].toString(),
       category: json['category'] ?? '-',
       deleted: json['deleted'],
-      name: json['profiles']['fullname'],
+      name: json['profiles']['fullname'] ?? '-',
       time_in: json['checkin_time'],
       time_out: json['checkout_time'],
       date: json['date'].toString(),

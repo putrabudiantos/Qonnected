@@ -101,8 +101,8 @@ class _InitialPageState extends State<InitialPage> {
                 //  String? barcode = await scanner.scan();
                 //  print(barcode);
                 final prefs = await SharedPreferences.getInstance();
-                // await prefs.setBool('checkin', false);
-                // await prefs.setBool('checkout', false);
+                await prefs.setBool('checkin', false);
+                await prefs.setBool('checkout', false);
                 // HelperSharedPreferences.refreshStorage();
                 // print(prefs.getBool('checkin'));
               },

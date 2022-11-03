@@ -12,7 +12,7 @@ import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class CoWorkersController extends GetxController {
+class ProfileController extends GetxController {
   var isLoading = false.obs;
   var coworkersModel = <ProfileModel>[].obs;
 

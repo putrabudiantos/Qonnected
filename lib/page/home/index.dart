@@ -188,20 +188,26 @@ class _IndexHomeState extends State<IndexHome> {
             ),
             GestureDetector(
                 onTap: () {
+                  print(homeC.timeCompany.value);
+                  var dateNow = DateFormat('dd-MM-yyyy').format(DateTime.parse(
+                      homeC.activityModel.value[0].date.toString()));
+                  final today = dateNow;
+
                   // homeC.fetchActivity();
-                //    var dateNow = DateFormat('dd-MM-yyyy').format(
-                //             DateTime.parse(homeC.activityModel.value[0].date
-                //                 .toString()));
-                // DateTime dt1 = DateTime.parse("${dateNow} ${homeC.activityModel.value[0].time_in}");
-                //         DateTime dt2 = DateTime.parse("${dateNow} ${homeC.timeCompany.value}");
 
-                //   if (dt1.compareTo(dt2) < 0) {
-                //     print("DT1 is before DT2");
-                //   }
+                  //                 DateTime dt2 = DateTime.parse("${dateNow.toString()} ${homeC.timeCompany.value.toString()}");
+                  //           DateTime a = dt2 as DateTime;
+                  //                 print(a.add(Duration(minutes: 10)));
 
-                //   if (dt1.compareTo(dt2) > 0) {
-                //     print("DT1 is after DT2");
-                //   }
+                  //         DateTime dt2 = DateTime.parse("${dateNow} ${homeC.timeCompany.value}");
+
+                  //   if (dt1.compareTo(dt2) < 0) {
+                  //     print("DT1 is before DT2");
+                  //   }
+
+                  //   if (dt1.compareTo(dt2) > 0) {
+                  //     print("DT1 is after DT2");
+                  //   }
                 },
                 child: Text(
                   "Today's Activities",
@@ -232,11 +238,19 @@ class _IndexHomeState extends State<IndexHome> {
                                 .toString()));
 
                         //compare time
-                        var dateNow = DateFormat('dd-MM-yyyy').format(
-                            DateTime.parse(homeC.activityModel.value[index].date
-                                .toString()));
-                        DateTime dt1 = DateTime.parse("${dateNow} ${homeC.activityModel.value[index].time_in}");
-                        DateTime dt2 = DateTime.parse("${dateNow} ${homeC.timeCompany.value}");
+
+                        var dateNow = DateFormat('yyyy-MM-dd').format(
+                            DateTime.parse(
+                                DateTime.now().toLocal().toString()));
+                        DateTime dt1 = DateTime.parse(
+                            "${homeC.activityModel.value[index].date.toString()} ${homeC.activityModel.value[index].time_in.toString()}");
+                        DateTime dt2 = DateTime.parse(
+                                "${dateNow.toString()} ${homeC.timeCompany.value}")
+                            .add(Duration(minutes: homeC.timeOffset.value));
+
+//                            DateTime dt2 = DateTime.parse('${homeC.activityModel.value[0].date
+//                                 .toString()} ${homeC.timeCompany.value}');
+// final fiftyDaysFromNow = dt1.add(Duration(minutes: homeC.timeOffset.value));
 
                         var act;
                         if (homeC.activityModel.value[index].category ==
@@ -254,7 +268,8 @@ class _IndexHomeState extends State<IndexHome> {
                         } else {
                           act = Colors.red;
                         }
-                        return ListTile(
+                        var tempAct;
+                        var activities = ListTile(
                             dense: true,
                             contentPadding:
                                 EdgeInsets.only(left: 0.0, right: 0.0),
@@ -288,6 +303,18 @@ class _IndexHomeState extends State<IndexHome> {
                                 ),
                               ],
                             ));
+                        
+                        if(homeC.activityModel.value[index].category ==
+                            'wfo'){
+                              if(dt1.compareTo(dt2) > 0){
+                               tempAct = activities;
+                              } else{
+                                tempAct = Container();
+                              }
+                            }else{
+                              tempAct = activities;
+                            }
+                        return  tempAct;
                       })
                   : Container(
                       child: Text('Belum ada aktifitas',

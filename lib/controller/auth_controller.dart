@@ -87,11 +87,11 @@ class AuthController extends GetxController {
     final error = response.error;
     if (error != null) {
       isLoading.value = false;
-      Helper.alertDialog(context, '400', error.message, true);
+      Helper.alertDialog(context, '400', error.message, true,'/login');
     } else {
       isLoading.value = false;
       Helper.alertDialog(
-          context, '200', 'Check your email for login link!', true);
+          context, '200', 'Check your email for login link!', true, '/login');
       // ScaffoldMessenger.of(context).showSnackBar(
       //   const SnackBar(content: Text('Check your email for login link!')),
       // );
@@ -119,11 +119,11 @@ class AuthController extends GetxController {
 
     if (reslt.statusCode == 200) {
       isLoading.value = false;
-      Helper.alertDialog(context, '200', 'Register Berhasil', false);
-      Get.offAll(LoginPage());
+      Helper.alertDialog(context, '200', 'Register Berhasil', false,'/login');
+    
     } else {
       isLoading.value = false;
-      Helper.alertDialog(context, '400', 'Register Failed', true);
+      Helper.alertDialog(context, '400', 'Register Failed', true, '/login');
     }
     print(reslt.error);
   }

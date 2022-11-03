@@ -30,7 +30,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
             ),
           ),
           Positioned(
-              top: 50,
+              top: 40,
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
@@ -42,9 +42,10 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
                     SizedBox(
                       height: 10,
                     ),
-                    Text('15 Teams',
+                    Obx(() => Text('${workerC.coworkersModel.value.length} Teams',
                         style: FontMedium(
-                            context, 15, FontWeight.w500, Colors.white)),
+                            context, 15, FontWeight.w500, Colors.white))),
+                    
                   ],
                 ),
               )),
