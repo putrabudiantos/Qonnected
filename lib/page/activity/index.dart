@@ -17,6 +17,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:async';
 import 'dart:io';
+import 'package:qonnected_app/global_variabel.dart' as vars;
 
 enum SingingCharacter { wfo, wfh, izin, cuti }
 
@@ -33,7 +34,8 @@ class _IndexActivityState extends State<IndexActivity> {
   String location = 'Null, Press Button';
   String Address = 'search';
   bool isCheckin = false;
-  List<XFile>? _imageFileList;
+  File? _imageFileList;
+  String ImgUrl = '';
   dynamic _pickImageError;
   final ImagePicker _picker = ImagePicker();
 
@@ -50,8 +52,17 @@ class _IndexActivityState extends State<IndexActivity> {
     print(isCheckin);
   }
 
-  void _setImageFileListFromFile(XFile? value) {
-    _imageFileList = value == null ? null : <XFile>[value];
+  Future<void> _setImageFileListFromFile(XFile? value) async {
+    _imageFileList = File(value!.path);
+
+    final bytes = await _imageFileList!.readAsBytes();
+    final fileExt = _imageFileList!.path.split('.').last;
+    final fileName = '${DateTime.now().toIso8601String()}.$fileExt';
+    final filePath = fileName;
+    final response =
+        await vars.client.storage.from('avatars').uploadBinary(filePath, bytes);
+
+    final res = vars.client.storage.from('avatars').getPublicUrl(fileName);
   }
 
   Future<void> _onImageButtonPressed(ImageSource source,
@@ -63,9 +74,9 @@ class _IndexActivityState extends State<IndexActivity> {
         maxHeight: 300,
         imageQuality: 100,
       );
+      // final File? imagefile = File(pickedFile!.path);
       setState(() {
         _setImageFileListFromFile(pickedFile);
-        print('aaa ${pickedFile}');
       });
     } catch (e) {
       setState(() {
@@ -135,9 +146,9 @@ class _IndexActivityState extends State<IndexActivity> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text('Check In',
+                  Text('Activity',
                       style: FontMedium(
-                          context, 15, FontWeight.w500, Colors.white)),
+                          context, 15, FontWeight.w500, Colors.white))
                 ],
               ),
             ),
@@ -146,7 +157,6 @@ class _IndexActivityState extends State<IndexActivity> {
             transform: Matrix4.translationValues(0.0, -50.0, 0.0),
             child: Container(
               width: MediaQuery.of(context).size.width * 1,
-              padding: EdgeInsets.only(top: 30),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: const BorderRadius.only(
@@ -157,9 +167,6 @@ class _IndexActivityState extends State<IndexActivity> {
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    Row(
-                      children: [],
-                    ),
                     Obx(() => Text(
                           'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}',
                           style: FontMedium(context, 20, FontWeight.w500,
@@ -179,11 +186,15 @@ class _IndexActivityState extends State<IndexActivity> {
                           fontWeight: FontWeight.w900),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 20,
                     ),
-                    Obx(() => activityC.distanceFar.value == true
-                        ? DescriptionBox()
-                        : Container()),
+                    DisplayActivity(),
+                    // Obx(() => activityC.distanceFar.value == true
+                    //     ? DescriptionBox()
+                    //     : Container()),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Obx(() => ElevatedButton(
                         style: ButtonStyle(
                             padding: MaterialStateProperty.all<EdgeInsets>(
@@ -308,13 +319,240 @@ class _IndexActivityState extends State<IndexActivity> {
             ),
           ],
         ),
-        FieldTextArea(
-          textfield: '',
-          readonly: false,
-          customController: text,
-          customType: false,
-          errorMessage: '',
-          placeholder: '',
+        // FieldTextArea(
+        //   textfield: '',
+        //   readonly: false,
+        //   customController: text,
+        //   customType: false,
+        //   errorMessage: '',
+        //   placeholder: '',
+        // ),
+        // SizedBox(
+        //   height: 20,
+        // )
+      ],
+    );
+  }
+
+  Widget DisplayActivity() {
+    return Column(
+      children: [
+        Location(),
+        SizedBox(
+          height: 20,
+        ),
+        Obx(() =>
+            activityC.distanceFar.value == true ? UploadFoto() : Container()),
+        SizedBox(
+          height: 20,
+        ),
+        Obx(() =>
+            activityC.distanceFar.value == true ? DisplayType() : Container()),
+        DisplayDescription()
+      ],
+    );
+  }
+
+  Widget Location() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Image.asset(
+          'assets/images/icon/map.png',
+          width: 20,
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        Flexible(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Location',
+                  style: FontMedium(
+                      context, 15, FontWeight.w700, const Color(0xFF0D1037))),
+              SizedBox(
+                height: 10,
+              ),
+              Obx(() => Text(activityC.address.value,
+                  style: FontMedium(
+                      context, 11, FontWeight.w500, const Color(0xFF0D1037)))),
+            ],
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget UploadFoto() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Image.asset(
+          'assets/images/icon/users_upload.png',
+          width: 20,
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        Flexible(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Take a photo',
+                  style: FontMedium(
+                      context, 15, FontWeight.w700, const Color(0xFF0D1037))),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  _imageFileList == null
+                      ? Image.asset(
+                          'assets/images/icon/user.png',
+                          width: 50,
+                        )
+                      : Image.file(
+                          _imageFileList!,
+                          width: 50,
+                          height: 50,
+                          fit: BoxFit.cover,
+                        ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    style: ButtonStyle(
+                        padding: MaterialStateProperty.all<EdgeInsets>(
+                            const EdgeInsets.all(10)),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Color(0xFF0D1037)),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(50),
+                                    side:
+                                        BorderSide(color: Color(0xFF0D1037))))),
+                    onPressed: () {
+                      _onImageButtonPressed(ImageSource.camera,
+                          context: context);
+                    },
+                    child: Text('Upload Foto',
+                        style: FontMedium(
+                            context, 10, FontWeight.w600, Colors.white)),
+                  ),
+                ],
+              )
+            ],
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget DisplayDate() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Image.asset(
+          'assets/images/icon/map.png',
+          width: 20,
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        Flexible(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Date',
+                  style: FontMedium(
+                      context, 15, FontWeight.w700, const Color(0xFF0D1037))),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Image.asset(
+                    'assets/images/icon/user.png',
+                    width: 50,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                ],
+              )
+            ],
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget DisplayDescription() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Image.asset(
+          'assets/images/icon/check-list.png',
+          width: 15,
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        Flexible(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Description',
+                  style: FontMedium(
+                      context, 15, FontWeight.w700, const Color(0xFF0D1037))),
+              SizedBox(
+                height: 10,
+              ),
+              FieldTextArea(
+                textfield: '',
+                readonly: false,
+                customController: text,
+                customType: false,
+                errorMessage: '',
+                placeholder: '',
+              ),
+            ],
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget DisplayType() {
+    return Column(
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.asset(
+              'assets/images/icon/worker.png',
+              width: 15,
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Flexible(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Category',
+                      style: FontMedium(context, 15, FontWeight.w700,
+                          const Color(0xFF0D1037))),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  DescriptionBox()
+                ],
+              ),
+            )
+          ],
         ),
         SizedBox(
           height: 20,

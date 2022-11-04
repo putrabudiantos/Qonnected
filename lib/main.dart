@@ -36,7 +36,10 @@ class _MyAppState extends State<MyApp> {
     GetPage(name: '/login', page: () => LoginPage()),
     GetPage(name: '/splash', page: () => SplashPage()),
     GetPage(name: '/activity', page: () => IndexActivity()),
-    GetPage(name: '/coworkers', page: () => IndexCoWorkers(), binding:HomeBinding()),
+    GetPage(
+        name: '/coworkers',
+        page: () => IndexCoWorkers(),
+        binding: HomeBinding()),
     GetPage(name: '/home', page: () => IndexHome(), binding: HomeBinding()),
     GetPage(name: '/profile', page: () => IndexProfile()),
   ];
@@ -45,6 +48,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFFFFFFF)),
       debugShowCheckedModeBanner: false,
       home: SplashPage(),
       getPages: getPages,

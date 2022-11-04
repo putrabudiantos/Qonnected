@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
@@ -90,32 +91,38 @@ class _IndexHomeState extends State<IndexHome> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Flexible(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('CoWoker Name',
-                          style: vars.FontHeading(
-                              context, 20, FontWeight.w800, Colors.white)),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text('Position',
-                          style: vars.FontHeading(
-                              context, 15, FontWeight.w500, Colors.white))
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('CoWoker Name',
+                            style: vars.FontHeading(
+                                context, 20, FontWeight.w800, Colors.white)),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text('Position',
+                            style: vars.FontHeading(
+                                context, 15, FontWeight.w500, Colors.white))
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(100),
-                  child: Image(
-                    fit: BoxFit.cover,
-                    width: 80,
-                    height: 80,
-                    image: NetworkImage(
-                        'https://www.tutorialkart.com/img/hummingbird.png'),
+                Padding(
+                  padding: const EdgeInsets.only(right: 15),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(100),
+                    child: Image(
+                      fit: BoxFit.cover,
+                      width: 80,
+                      height: 80,
+                      image: NetworkImage(
+                          'https://www.tutorialkart.com/img/hummingbird.png'),
+                    ),
                   ),
                 ),
               ],
@@ -138,17 +145,17 @@ class _IndexHomeState extends State<IndexHome> {
           alignment: WrapAlignment.spaceBetween,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            IconCard('Calendar', Icons.file_present),
-            IconCard('Time Off', Icons.file_present),
-            IconCard('Overtime', Icons.file_present),
-            IconCard('Pay Slip', Icons.file_present),
+            IconCard('Calendar', 'assets/images/icon/icon-03.png'),
+            IconCard('Time Off', 'assets/images/icon/icon-04.png'),
+            IconCard('Overtime', 'assets/images/icon/icon-05.png'),
+            IconCard('Pay Slip', 'assets/images/icon/icon-06.png'),
           ],
         ),
       ),
     );
   }
 
-  Widget IconCard(String text, IconData customIcon) {
+  Widget IconCard(String text, String img) {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Container(
@@ -156,9 +163,10 @@ class _IndexHomeState extends State<IndexHome> {
           padding: const EdgeInsets.all(10),
           child: Column(
             children: [
-              Icon(
-                customIcon,
-                size: 30,
+              Image.asset(
+                img,
+                width: 25,
+                fit: BoxFit.contain,
               ),
               SizedBox(
                 height: 10,
@@ -303,18 +311,18 @@ class _IndexHomeState extends State<IndexHome> {
                                 ),
                               ],
                             ));
-                        
-                        if(homeC.activityModel.value[index].category ==
-                            'wfo'){
-                              if(dt1.compareTo(dt2) > 0){
-                               tempAct = activities;
-                              } else{
-                                tempAct = Container();
-                              }
-                            }else{
-                              tempAct = activities;
-                            }
-                        return  tempAct;
+
+                        if (homeC.activityModel.value[index].category ==
+                            'wfo') {
+                          if (dt1.compareTo(dt2) > 0) {
+                            tempAct = activities;
+                          } else {
+                            tempAct = Container();
+                          }
+                        } else {
+                          tempAct = activities;
+                        }
+                        return tempAct;
                       })
                   : Container(
                       child: Text('Belum ada aktifitas',

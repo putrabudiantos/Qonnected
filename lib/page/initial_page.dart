@@ -28,7 +28,7 @@ class _InitialPageState extends State<InitialPage> {
 
   @override
   void initState() {
-    vars.idx = 0;
+    // vars.idx = 0;
     super.initState();
   }
 

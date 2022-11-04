@@ -23,6 +23,7 @@ class ActivityController extends GetxController {
   var distanceFar = false.obs;
   var timeCompany = ''.obs;
   var timeOffset = 0.obs;
+  var address = ''.obs;
   var logId;
 
   @override
@@ -115,6 +116,8 @@ class ActivityController extends GetxController {
     //     lat!, long!, position.latitude, position.longitude);
     var distance = Geolocator.distanceBetween(
         lat!, long!, position.latitude, position.longitude);
+    address.value = await GetAddressFromLatLong(position);
+
     print(position.latitude);
     print(position.longitude);
     print(distance);
@@ -146,7 +149,6 @@ class ActivityController extends GetxController {
 
     if (checkin == null || checkin == false) {
       print('create act');
-    
 
       final updates = {
         "worker_status": activity,
@@ -158,7 +160,7 @@ class ActivityController extends GetxController {
           .eq('id', id)
           .execute();
 
-          print(res.data);
+      print(res.data);
       if (res.status == 200 || res.status == 201) {
         var response = await _insertCheckinActivity(position.longitude,
             position.latitude, activity, locationName, desc, date, time);
