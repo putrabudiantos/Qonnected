@@ -4,17 +4,13 @@ import 'package:flutter/material.dart';
 
 class bannerCustom extends StatelessWidget {
   const bannerCustom(
-      {
-      required this.customAsset,
-      required this.customHeight,
-      Key? key})
+      {required this.customAsset, required this.customHeight, Key? key})
       : super(key: key);
   final String customAsset;
   final double customHeight;
 
   @override
   Widget build(BuildContext context) {
-        
     var size = MediaQuery.of(context).size;
     return Stack(
       clipBehavior: Clip.none,
@@ -33,24 +29,30 @@ class bannerCustom extends StatelessWidget {
               // )
             ),
           ),
-
         ),
-          Positioned.fill(
-            bottom: -40,
-            child: Align(
-              alignment: Alignment.bottomCenter,
+        Positioned.fill(
+          bottom: -40,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(100),
+                color: Colors.white,
+              ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(100),
                 child: Image(
                   fit: BoxFit.cover,
                   width: 80,
                   height: 80,
-                  image: NetworkImage(
-                      'https://www.tutorialkart.com/img/hummingbird.png'),
+                  image: AssetImage('assets/images/icon/profile.png'),
                 ),
               ),
             ),
           ),
+        ),
       ],
     );
   }

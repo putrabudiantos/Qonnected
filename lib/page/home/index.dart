@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
+import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
+import 'package:qonnected_app/service/local_notification.dart';
 
 class IndexHome extends StatefulWidget {
   const IndexHome({Key? key}) : super(key: key);
@@ -17,12 +20,17 @@ class IndexHome extends StatefulWidget {
 
 class _IndexHomeState extends State<IndexHome> {
   ActivityController homeC = Get.put(ActivityController());
+  ProfileController profileC = Get.put(ProfileController());
   int get count => list.length;
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
 
   List<int> list = [];
 
   void initState() {
+    // service.initialize();
     super.initState();
+    Noti.initialize(flutterLocalNotificationsPlugin);
     // list.addAll(List.generate(30, (v) => v));
   }
 
@@ -59,7 +67,7 @@ class _IndexHomeState extends State<IndexHome> {
                 clipBehavior: Clip.none,
                 children: [
                   Container(
-                    height: MediaQuery.of(context).size.height * .31,
+                    height: MediaQuery.of(context).size.height * .26,
                     decoration: BoxDecoration(
                       color: Color(0xFF0D1037),
                     ),
@@ -85,7 +93,7 @@ class _IndexHomeState extends State<IndexHome> {
         child: Column(
           children: [
             SizedBox(
-              height: 70,
+              height: MediaQuery.of(context).size.height * .05,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -96,13 +104,13 @@ class _IndexHomeState extends State<IndexHome> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('CoWoker Name',
+                        Text(profileC.coworkersModel.value[0].fullname!,
                             style: vars.FontHeading(
                                 context, 20, FontWeight.w800, Colors.white)),
                         SizedBox(
                           height: 5,
                         ),
-                        Text('Position',
+                        Text(profileC.coworkersModel.value[0].position!,
                             style: vars.FontHeading(
                                 context, 15, FontWeight.w500, Colors.white))
                       ],
@@ -114,14 +122,19 @@ class _IndexHomeState extends State<IndexHome> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 15),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
-                    child: Image(
-                      fit: BoxFit.cover,
-                      width: 80,
-                      height: 80,
-                      image: NetworkImage(
-                          'https://www.tutorialkart.com/img/hummingbird.png'),
+                  child: Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.white,
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(100),
+                      child: Image(
+                        fit: BoxFit.contain,
+                        image: AssetImage('assets/images/icon/profile.png'),
+                      ),
                     ),
                   ),
                 ),
@@ -145,7 +158,14 @@ class _IndexHomeState extends State<IndexHome> {
           alignment: WrapAlignment.spaceBetween,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            IconCard('Calendar', 'assets/images/icon/icon-03.png'),
+            GestureDetector(
+                onTap: () {
+                  Noti.showBigTextNotification(
+                      title: "New message title",
+                      body: "Your long body",
+                      fln: flutterLocalNotificationsPlugin);
+                },
+                child: IconCard('Calendar', 'assets/images/icon/icon-03.png')),
             IconCard('Time Off', 'assets/images/icon/icon-04.png'),
             IconCard('Overtime', 'assets/images/icon/icon-05.png'),
             IconCard('Pay Slip', 'assets/images/icon/icon-06.png'),

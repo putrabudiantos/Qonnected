@@ -30,7 +30,7 @@ class _FieldTextState extends State<FieldText> {
                 padding: const EdgeInsets.only(bottom: 10),
                 child: Text(widget.textfield,
                     style: vars.FontHeading(
-                        context, 12, FontWeight.w600, Colors.white)))
+                        context, 12, FontWeight.w600, Colors.black)))
             : Container(),
         TextFormField(
           readOnly: widget.readonly,

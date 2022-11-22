@@ -7,6 +7,7 @@ import 'package:qonnected_app/page/initial_page.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/page/login.dart';
 import 'package:qonnected_app/page/profile/index.dart';
+import 'package:qonnected_app/page/settings/index.dart';
 import 'package:qonnected_app/page/sign_up.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -34,7 +35,7 @@ class _MyAppState extends State<MyApp> {
     GetPage(
         name: '/initpage', page: () => InitialPage(), binding: HomeBinding()),
     GetPage(name: '/login', page: () => LoginPage()),
-    GetPage(name: '/splash', page: () => SplashPage()),
+    GetPage(name: '/splash', page: () => SplashPage(), binding: HomeBinding()),
     GetPage(name: '/activity', page: () => IndexActivity()),
     GetPage(
         name: '/coworkers',
@@ -42,6 +43,7 @@ class _MyAppState extends State<MyApp> {
         binding: HomeBinding()),
     GetPage(name: '/home', page: () => IndexHome(), binding: HomeBinding()),
     GetPage(name: '/profile', page: () => IndexProfile()),
+    GetPage(name: '/settings', page: () => IndexSettings()),
   ];
 
   // This widget is the root of your application.

@@ -56,13 +56,13 @@ class HelperSharedPreferences {
       List jsonResponse = responsedateNow.data;
 
       List tmpAct = jsonResponse.map((e) => ActivityModel.fromJson(e)).toList();
-  
+
       if (tmpAct.length == 0) {
         await prefs.setBool('checkin', false);
         await prefs.setBool('checkout', false);
 
-       print('jgn');
-       print(tmpAct.length);
+        print('jgn');
+        print(tmpAct.length);
         final updates = {
           "worker_status": "-",
         };
@@ -72,6 +72,8 @@ class HelperSharedPreferences {
             .update(updates)
             .eq('id', id)
             .execute();
+      } else {
+        await prefs.setBool('checkin', true);
       }
     }
   }

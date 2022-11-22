@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:qonnected_app/controller/init_controller.dart';
+import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/page/widget/banner.dart';
+import 'package:qonnected_app/page/widget/bottom_navigation.dart';
+import 'package:qonnected_app/page/widget/field_text.dart';
 
 class IndexProfile extends StatelessWidget {
-  const IndexProfile({Key? key}) : super(key: key);
+  ProfileController profileC = Get.put(ProfileController());
+  final InitController initC = Get.put(InitController());
 
   @override
   Widget build(BuildContext context) {
@@ -12,125 +17,111 @@ class IndexProfile extends StatelessWidget {
       body: SingleChildScrollView(
           child: Column(
         children: [
-          bannerCustom(
-            customAsset:
-                'https://www.markdesign.net/images/product/resize_755_3000/a3d63-my-devteam2.jpg', customHeight: .3,
+          SizedBox(
+            height: 50,
           ),
-          SizedBox(height: 50,),
-        InfoSummary(context)
-         
+          ClipRRect(
+            borderRadius: BorderRadius.circular(100),
+            child: Image(
+              fit: BoxFit.cover,
+              width: 80,
+              height: 80,
+              image: NetworkImage(
+                  'https://marketplace.canva.com/EAEeKH905XY/2/0/1600w/canva-yellow-and-black-gamer-grunge-twitch-profile-picture-Yf5RCMJroQI.jpg'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Form(context)
         ],
       )),
+      floatingActionButton: Obx(() => FloatingActionButton(
+            backgroundColor: Color(initC.mainColor.value),
+            onPressed: () async {
+              //  String? barcode = await scanner.scan();
+              //  print(barcode);
+
+              // HelperSharedPreferences.refreshStorage();
+              // print(prefs.getBool('checkin'));
+            },
+            child: Icon(Icons.qr_code_scanner), //icon inside button
+          )),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomNavWidget(),
     );
   }
 
-  Widget InfoSummary(BuildContext context) {
+  Widget Form(BuildContext context) {
+    profileC.nameController.value.text =
+        profileC.coworkersModel.value[0].fullname!;
+    profileC.phoneController.value.text =
+        profileC.coworkersModel.value[0].phone!;
+    profileC.emailController.value.text =
+        profileC.coworkersModel.value[0].email!;
+    profileC.identityController.value.text =
+        profileC.coworkersModel.value[0].identity_number!;
+    profileC.identityEmployeeController.value.text =
+        profileC.coworkersModel.value[0].employee_identification!;
+
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Summary(context),
+          Obx(() => FieldText(
+                customController: profileC.nameController.value,
+                customType: false,
+                errorMessage: '',
+                placeholder: '',
+                readonly: true,
+                textfield: 'Name',
+              )),
           SizedBox(
             height: 20,
           ),
-          Info(context),
+          Obx(() => FieldText(
+                customController: profileC.phoneController.value,
+                customType: false,
+                errorMessage: '',
+                placeholder: '',
+                readonly: true,
+                textfield: 'Phone',
+              )),
+          SizedBox(
+            height: 20,
+          ),
+          Obx(() => FieldText(
+                customController: profileC.emailController.value,
+                customType: false,
+                errorMessage: '',
+                placeholder: '',
+                readonly: true,
+                textfield: 'Email',
+              )),
+          SizedBox(
+            height: 20,
+          ),
+          Obx(() => FieldText(
+                customController: profileC.identityController.value,
+                customType: false,
+                errorMessage: '',
+                placeholder: '',
+                readonly: true,
+                textfield: 'No KTP',
+              )),
+          SizedBox(
+            height: 20,
+          ),
+          Obx(() => FieldText(
+                customController: profileC.identityEmployeeController.value,
+                customType: false,
+                errorMessage: '',
+                placeholder: '',
+                readonly: true,
+                textfield: 'No Karyawan',
+              )),
         ],
       ),
-    );
-  }
-
-  Widget Summary(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(30),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            TextSummary(context, 'WFH', '0'),
-            TextSummary(context, 'IZIN', '0'),
-            TextSummary(context, 'CUTI', '0')
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget Info(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text('Info',
-            style: FontMedium(context, 15, FontWeight.w700, Color(0xFF0D1037))),
-        SizedBox(
-          height: 10,
-        ),
-        Row(
-          children: [
-            RoundedCard('home', Icons.person_outline_outlined),
-            RoundedCard('home', Icons.person_outline_outlined),
-            RoundedCard('home', Icons.logout_outlined),
-          ],
-        )
-      ],
-    );
-  }
-
-  Widget Sosmed(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text('Sosial Media',
-            style: FontMedium(context, 15, FontWeight.w700, Color(0xFF0D1037))),
-        SizedBox(
-          height: 10,
-        ),
-        Row(
-          children: [
-            RoundedCard('home', Icons.person_outline_outlined),
-            RoundedCard('home', Icons.person_outline_outlined),
-            RoundedCard('home', Icons.logout_outlined),
-          ],
-        )
-      ],
-    );
-  }
-
-  Widget RoundedCard(String route, IconData icon) {
-    return GestureDetector(
-      onTap: () {
-        Get.toNamed(route);
-      },
-      child: Padding(
-        padding: const EdgeInsets.only(right: 20),
-        child: Card(
-            shape: RoundedRectangleBorder(
-              side: BorderSide(color: Colors.white70, width: 1),
-              borderRadius: BorderRadius.circular(100),
-            ),
-            child: Center(
-                child: Padding(
-              padding: const EdgeInsets.all(10),
-              child: Icon(
-                icon,
-                size: 25,
-              ),
-            ))),
-      ),
-    );
-  }
-
-  Widget TextSummary(BuildContext context, String title, String summary) {
-    return Column(
-      children: [
-        Text(summary,
-            style: FontMedium(context, 20, FontWeight.w700, Color(0xFF0D1037))),
-        Text(title,
-            style: FontMedium(context, 10, FontWeight.w500, Color(0xFF0D1037)))
-      ],
     );
   }
 }

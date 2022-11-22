@@ -18,7 +18,9 @@ class ProfileModel {
       date_joined,
       phone,
       position,
-      worker_status;
+      worker_status,
+      employee_identification,
+      identity_number;
   final bool? deleted;
   final int company_id;
 
@@ -35,7 +37,9 @@ class ProfileModel {
       required this.deleted,
       required this.position,
       required this.company_id,
-      required this.worker_status});
+      required this.worker_status,
+      required this.employee_identification,
+      required this.identity_number});
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
     return ProfileModel(
@@ -51,7 +55,9 @@ class ProfileModel {
         deleted: json['deleted'],
         position: json['position'] ?? '-',
         company_id: json['company_group_id'],
-        worker_status: json['worker_status'] ?? '-');
+        worker_status: json['worker_status'] ?? '-',
+        employee_identification: json['employee_identification'] ?? '-',
+        identity_number: json['identity_number'] ?? '-');
   }
 
   Map<String, dynamic> toJson() => {
@@ -67,6 +73,8 @@ class ProfileModel {
         "deleted": deleted,
         "company_id": company_id,
         "position": position,
-        "worker_status": worker_status
+        "worker_status": worker_status,
+        "employee_identification": employee_identification,
+        "identity_number": identity_number
       };
 }

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
+import 'package:qonnected_app/controller/coworkers_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/helper/alert.dart';
 import 'package:qonnected_app/helper/shared_preferences.dart';
@@ -28,6 +29,8 @@ class IndexActivity extends StatefulWidget {
 
 class _IndexActivityState extends State<IndexActivity> {
   final ActivityController activityC = Get.put(ActivityController());
+  final CoWorkersController workerC = Get.put(CoWorkersController());
+
   SingingCharacter? _character = SingingCharacter.wfo;
   TextEditingController text = TextEditingController();
   var activity;
@@ -140,9 +143,9 @@ class _IndexActivityState extends State<IndexActivity> {
                   SizedBox(
                     height: 35,
                   ),
-                  Text('MyDevTeam',
+                  Obx(() => Text(workerC.companyName.value,
                       style: FontMedium(
-                          context, 20, FontWeight.w800, Colors.white)),
+                          context, 20, FontWeight.w800, Colors.white))),
                   SizedBox(
                     height: 10,
                   ),
@@ -155,96 +158,93 @@ class _IndexActivityState extends State<IndexActivity> {
           ),
           Container(
             transform: Matrix4.translationValues(0.0, -50.0, 0.0),
-            child: Container(
-              width: MediaQuery.of(context).size.width * 1,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    topRight: Radius.circular(25)),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  children: [
-                    Obx(() => Text(
-                          'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}',
-                          style: FontMedium(context, 20, FontWeight.w500,
-                              const Color(0xFF0D1037)),
-                        )),
-                    const SizedBox(
-                      height: 15,
+            width: MediaQuery.of(context).size.width * 1,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Obx(() => Text(
+                        'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}',
+                        style: FontMedium(context, 20, FontWeight.w500,
+                            const Color(0xFF0D1037)),
+                      )),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  DigitalClock(
+                    areaDecoration: const BoxDecoration(
+                      color: Colors.transparent,
                     ),
-                    DigitalClock(
-                      areaDecoration: const BoxDecoration(
-                        color: Colors.transparent,
-                      ),
-                      showSecondsDigit: false,
-                      hourMinuteDigitTextStyle: const TextStyle(
-                          color: const Color(0xFF0D1037),
-                          fontSize: 50,
-                          fontWeight: FontWeight.w900),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    DisplayActivity(),
-                    // Obx(() => activityC.distanceFar.value == true
-                    //     ? DescriptionBox()
-                    //     : Container()),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Obx(() => ElevatedButton(
-                        style: ButtonStyle(
-                            padding: MaterialStateProperty.all<EdgeInsets>(
-                                const EdgeInsets.all(15)),
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color(activityC.checkOut.value == false
-                                    ? 0xFF0D1037
-                                    : 0xFF4F4F56)),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(50),
-                                    side: BorderSide(
-                                        color:
-                                            Color(activityC.checkOut.value == false ? 0xFF0D1037 : 0xFF4F4F56))))),
-                        onPressed: () async {
-                          // Position position = await _getGeoLocationPosition();
-                          // in meter
+                    showSecondsDigit: false,
+                    hourMinuteDigitTextStyle: const TextStyle(
+                        color: const Color(0xFF0D1037),
+                        fontSize: 50,
+                        fontWeight: FontWeight.w900),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  DisplayActivity(),
+                  // Obx(() => activityC.distanceFar.value == true
+                  //     ? DescriptionBox()
+                  //     : Container()),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Obx(() => ElevatedButton(
+                      style: ButtonStyle(
+                          padding: MaterialStateProperty.all<EdgeInsets>(
+                              const EdgeInsets.all(15)),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Color(activityC.checkOut.value == false
+                                  ? 0xFF0D1037
+                                  : 0xFF4F4F56)),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(50),
+                                  side: BorderSide(
+                                      color: Color(
+                                          activityC.checkOut.value == false ? 0xFF0D1037 : 0xFF4F4F56))))),
+                      onPressed: () async {
+                        // Position position = await _getGeoLocationPosition();
+                        // in meter
 
-                          // var ab = Geolocator.distanceBetween(-7.270599,
-                          //     112.7989678, -7.2699392, 112.8029696);
-                          // print(ab > 50 ? 'jauh' : 'dekat');
+                        // var ab = Geolocator.distanceBetween(-7.270599,
+                        //     112.7989678, -7.2699392, 112.8029696);
+                        // print(ab > 50 ? 'jauh' : 'dekat');
 
-                          // print(_character == SingingCharacter.wfo
-                          //     ? 'wfo'
-                          //     : activity);
-                          // print(activityC.distanceFar.value);
-                          // StorageSharedPreferences.StorageProfile();
-                          // location =
-                          //     'Lat: ${position.latitude} , Long: ${position.longitude}';
-                          // _onImageButtonPressed(ImageSource.camera,
-                          //     context: context);
-                          if (activityC.checkOut.value == false) {
-                            activityC.submitActivity(
-                                context,
-                                _character == SingingCharacter.wfo
-                                    ? 'wfo'
-                                    : activity,
-                                text.text);
-                          }
+                        // print(_character == SingingCharacter.wfo
+                        //     ? 'wfo'
+                        //     : activity);
+                        // print(activityC.distanceFar.value);
+                        // StorageSharedPreferences.StorageProfile();
+                        // location =
+                        //     'Lat: ${position.latitude} , Long: ${position.longitude}';
+                        // _onImageButtonPressed(ImageSource.camera,
+                        //     context: context);
+                        if (activityC.checkOut.value == false) {
+                          activityC.submitActivity(
+                              context,
+                              _character == SingingCharacter.wfo
+                                  ? 'wfo'
+                                  : activity,
+                              text.text);
+                        }
 
-                          // print(location);
-                        },
-                        child: Padding(
-                          padding: EdgeInsets.only(left: 30, right: 30),
-                          child: Obx(() => Text(activityC.isLoading == true
-                              ? 'PROCESSING'
-                              : 'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}')),
-                        )))
-                  ],
-                ),
+                        // print(location);
+                      },
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 30, right: 30),
+                        child: Obx(() => Text(activityC.isLoading == true
+                            ? 'PROCESSING'
+                            : 'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}')),
+                      )))
+                ],
               ),
             ),
           ),

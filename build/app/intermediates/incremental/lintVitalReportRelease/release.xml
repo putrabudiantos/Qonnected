@@ -1,0 +1,38 @@
+<variant
+    name="release"
+    package="asia.qonnected.adikarya"
+    minSdkVersion="21"
+    targetSdkVersion="31"
+    shrinking="true"
+    mergedManifest="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    manifestMergeReport="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/outputs/logs/manifest-merger-release-report.txt"
+    proguardFiles="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.1.2:/Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/lint_vital_partial_results/release/out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifest="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin"
+        resDirectories="src/main/res"
+        assetsDirectories="src/main/assets"/>
+    <sourceProvider
+        manifest="src/release/AndroidManifest.xml"
+        javaDirectories="src/release/java:src/release/kotlin"
+        resDirectories="src/release/res"
+        assetsDirectories="src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/javac/release/classes:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/tmp/kotlin-classes/release:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/kotlinToolingMetadata:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      applicationId="asia.qonnected.adikarya"
+      generatedSourceFolders="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/generated/ap_generated_sources/release/out:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/generated/aidl_source_output_dir/release/out:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/generated/source/buildConfig/release:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/generated/renderscript_source_output_dir/release/out"
+      generatedResourceFolders="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/generated/res/rs/release:/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/generated/res/resValues/release">
+  </mainArtifact>
+</variant>

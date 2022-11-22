@@ -1,4 +1,4 @@
-package com.example.qonnected_app
+package asia.qonnected.adikarya
 
 import io.flutter.embedding.android.FlutterActivity
 

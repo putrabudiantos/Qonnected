@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.1.2"
+    buildFolder="/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app"
+    bootClassPath="/Users/mydevteam/Library/Android/sdk/platforms/android-33/android.jar:/Users/mydevteam/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

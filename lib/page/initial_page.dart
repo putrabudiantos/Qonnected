@@ -8,8 +8,8 @@ import 'package:qonnected_app/helper/shared_preferences.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
-import 'package:qonnected_app/page/profile/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
+import 'package:qonnected_app/page/settings/index.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:get/get.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
@@ -38,7 +38,7 @@ class _InitialPageState extends State<InitialPage> {
     IndexHome(),
     IndexCoWorkers(),
     IndexActivity(),
-    IndexProfile()
+    IndexSettings()
   ];
 
   void _onItemTapped(int index) {

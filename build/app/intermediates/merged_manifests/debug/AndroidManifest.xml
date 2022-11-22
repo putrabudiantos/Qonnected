@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.qonnected_app"
+    package="asia.qonnected.adikarya"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -38,6 +38,10 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:name="android.app.Application"
@@ -47,12 +51,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Qonnected App" >
         <activity
-            android:name="com.example.qonnected_app.MainActivity"
+            android:name="asia.qonnected.adikarya.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
+            android:showWhenLocked="true"
             android:theme="@style/LaunchTheme"
+            android:turnScreenOn="true"
             android:windowSoftInputMode="adjustResize" >
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
@@ -98,13 +104,30 @@
 
         <provider
             android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-            android:authorities="com.example.qonnected_app.flutter.image_provider"
+            android:authorities="asia.qonnected.adikarya.flutter.image_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/flutter_image_picker_file_paths" />
         </provider>
+
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name="io.flutter.plugins.urllauncher.WebViewActivity"
@@ -120,7 +143,7 @@
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.example.qonnected_app.com.squareup.picasso"
+            android:authorities="asia.qonnected.adikarya.com.squareup.picasso"
             android:exported="false" />
 
         <activity
