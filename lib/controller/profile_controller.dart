@@ -43,8 +43,9 @@ class ProfileController extends GetxController {
   }
 
   fetchProfile() async {
+    isLoading.value = true;
     final prefs = await SharedPreferences.getInstance();
-    var id = vars.client.auth.currentUser!.id;
+    var id = '77c8f365-24af-441c-ae06-41b4b83d724f';
     final response =
         await vars.client.from('profiles').select().eq('id', id).execute();
     print(response.data);
@@ -53,9 +54,11 @@ class ProfileController extends GetxController {
 
       coworkersModel.value =
           jsonResponse.map((e) => ProfileModel.fromJson(e)).toList();
+      isLoading.value = false;
     } else {
       Get.snackbar('Error Loading data!',
           'Sever responded: ${response.status}:${response.error}');
+      isLoading.value = false;
     }
   }
 

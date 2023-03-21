@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/page/auth_state.dart';
+import 'package:qonnected_app/page/home/index.dart';
+import 'package:qonnected_app/page/initial_page.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:get/get.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -13,6 +17,28 @@ class _SplashPageState extends AuthState<SplashPage> {
   void initState() {
     recoverSupabaseSession();
     super.initState();
+  }
+
+  bool _redirectCalled = false;
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _redirect();
+  }
+
+  Future<void> _redirect() async {
+    await Future.delayed(Duration.zero);
+    if (_redirectCalled || !mounted) {
+      return;
+    }
+
+    _redirectCalled = true;
+    final session = Supabase.instance.client;
+    if (session != null) {
+      Get.to(InitialPage());
+    } else {
+      Navigator.of(context).pushReplacementNamed('/login');
+    }
   }
 
   @override

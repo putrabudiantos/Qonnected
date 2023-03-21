@@ -13,8 +13,8 @@ MERGED from [:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnec
 MERGED from [:url_launcher_android] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-14:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.android.material:material:1.3.0] /Users/mydevteam/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] /Users/mydevteam/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:11:5-17:19
@@ -60,7 +60,7 @@ MERGED from [:path_provider_android] /Applications/XAMPP/xamppfiles/htdocs/qonne
 MERGED from [:uni_links] /Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/mydevteam/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /Users/mydevteam/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:2:1-22:12
@@ -209,8 +209,8 @@ MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/mydevteam/.gradle/
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.3.0] /Users/mydevteam/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.3.0] /Users/mydevteam/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
@@ -444,13 +444,13 @@ ADDED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches
 	android:name
 		ADDED from [androidx.window:window:1.0.0-beta04] /Users/mydevteam/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/1d7a937c7e681ebcf06c13872c7e8399/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/mydevteam/.gradle/caches/transforms-3/57636e4c0fda390e6b7ee0cab23cd4cd/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
 ADDED from [pub.devrel:easypermissions:3.0.0] /Users/mydevteam/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
 	android:label

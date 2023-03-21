@@ -35,6 +35,7 @@ class ActivityController extends GetxController {
   }
 
   fetchActivity() async {
+    isLoading.value = true;
     final prefs = await SharedPreferences.getInstance();
     var date = DateFormat('yyyy-MM-dd')
         .format(DateTime.parse(DateTime.now().toLocal().toString()));
@@ -54,9 +55,11 @@ class ActivityController extends GetxController {
 
       activityModel.value =
           jsonResponse.map((e) => ActivityModel.fromJson(e)).toList();
+      isLoading.value = false;
     } else {
       Get.snackbar('Error Loading data!',
           'Sever responded: ${response.status}:${response.error}');
+      isLoading.value = false;
     }
   }
 
