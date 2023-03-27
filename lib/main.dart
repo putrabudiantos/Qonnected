@@ -5,16 +5,18 @@ import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:get/get.dart';
+import 'package:qonnected_app/page/introduction/index.dart';
 import 'package:qonnected_app/page/login.dart';
+import 'package:qonnected_app/page/profile/ajukanperubahansaya.dart';
 import 'package:qonnected_app/page/profile/index.dart';
 import 'package:qonnected_app/page/settings/index.dart';
-import 'package:qonnected_app/page/sign_up.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  //supabase
   await Supabase.initialize(
     url: 'https://dszmwtuipauoafvjqrsn.supabase.co',
     anonKey:
@@ -35,24 +37,39 @@ class _MyAppState extends State<MyApp> {
     GetPage(
         name: '/initpage', page: () => InitialPage(), binding: HomeBinding()),
     GetPage(name: '/login', page: () => LoginPage()),
-    GetPage(name: '/splash', page: () => SplashPage(), binding: HomeBinding()),
+    GetPage(
+        name: '/splash',
+        page: () => const SplashPage(),
+        binding: HomeBinding()),
     GetPage(name: '/activity', page: () => IndexActivity()),
     GetPage(
         name: '/coworkers',
-        page: () => IndexCoWorkers(),
+        page: () => const IndexCoWorkers(),
         binding: HomeBinding()),
-    GetPage(name: '/home', page: () => IndexHome(), binding: HomeBinding()),
+    GetPage(
+        name: '/home', page: () => const IndexHome(), binding: HomeBinding()),
     GetPage(name: '/profile', page: () => IndexProfile()),
     GetPage(name: '/settings', page: () => IndexSettings()),
+    GetPage(
+        name: '/profile/personal/ajukanperubahan',
+        page: () => const AjukanPerubahanSaya())
   ];
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFFFFFFF)),
+      theme: ThemeData(
+          scaffoldBackgroundColor: const Color(0xFFFFFFFF),
+          textTheme: const TextTheme(
+              button: TextStyle(
+                  fontFamily: "Inter",
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold)),
+          fontFamily: "Inter"),
       debugShowCheckedModeBanner: false,
-      home: SplashPage(),
+      // home: const IntroductionScreens(),
+      home: const SplashPage(),
       getPages: getPages,
     );
   }

@@ -8,8 +8,10 @@ import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 import 'package:qonnected_app/page/widget/field_text.dart';
 
 class IndexProfile extends StatelessWidget {
-  ProfileController profileC = Get.put(ProfileController());
+  final profileC = Get.put(ProfileController());
   final InitController initC = Get.put(InitController());
+
+  IndexProfile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +19,12 @@ class IndexProfile extends StatelessWidget {
       body: SingleChildScrollView(
           child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           ClipRRect(
             borderRadius: BorderRadius.circular(100),
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               width: 80,
               height: 80,
@@ -30,10 +32,10 @@ class IndexProfile extends StatelessWidget {
                   'https://marketplace.canva.com/EAEeKH905XY/2/0/1600w/canva-yellow-and-black-gamer-grunge-twitch-profile-picture-Yf5RCMJroQI.jpg'),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Form(context)
+          form(context)
         ],
       )),
       floatingActionButton: Obx(() => FloatingActionButton(
@@ -45,14 +47,14 @@ class IndexProfile extends StatelessWidget {
               // HelperSharedPreferences.refreshStorage();
               // print(prefs.getBool('checkin'));
             },
-            child: Icon(Icons.qr_code_scanner), //icon inside button
+            child: const Icon(Icons.qr_code_scanner), //icon inside button
           )),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: BottomNavWidget(),
+      bottomNavigationBar: const BottomNavWidget(),
     );
   }
 
-  Widget Form(BuildContext context) {
+  Widget form(BuildContext context) {
     profileC.nameController.value.text =
         profileC.coworkersModel.value[0].fullname!;
     profileC.phoneController.value.text =
@@ -76,7 +78,7 @@ class IndexProfile extends StatelessWidget {
                 readonly: true,
                 textfield: 'Name',
               )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Obx(() => FieldText(
@@ -87,7 +89,7 @@ class IndexProfile extends StatelessWidget {
                 readonly: true,
                 textfield: 'Phone',
               )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Obx(() => FieldText(
@@ -98,7 +100,7 @@ class IndexProfile extends StatelessWidget {
                 readonly: true,
                 textfield: 'Email',
               )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Obx(() => FieldText(
@@ -109,7 +111,7 @@ class IndexProfile extends StatelessWidget {
                 readonly: true,
                 textfield: 'No KTP',
               )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Obx(() => FieldText(

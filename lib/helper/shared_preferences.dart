@@ -30,9 +30,8 @@ class HelperSharedPreferences {
   static refreshStorage() async {
     final prefs = await SharedPreferences.getInstance();
     var id = vars.client.auth.currentUser!.id;
-    var lastDate = new DateTime.now().toLocal();
-    var lastDate1 =
-        new DateTime(lastDate.year, lastDate.month, lastDate.day - 1);
+    var lastDate = DateTime.now().toLocal();
+    var lastDate1 = DateTime(lastDate.year, lastDate.month, lastDate.day - 1);
     var datelast = DateFormat('yyyy-MM-dd')
         .format(DateTime.parse(lastDate1.toLocal().toString()));
     var dateNow = DateFormat('yyyy-MM-dd')

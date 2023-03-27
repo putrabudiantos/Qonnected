@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Applications/XAMPP/xamppfiles/htdocs/qonnected_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/mydevteam/.gradle/caches/transforms-3/c5e6066e343a23cadf0e84126bc54229/transformed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

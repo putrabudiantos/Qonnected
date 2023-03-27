@@ -2,12 +2,16 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
-class bannerCustom extends StatelessWidget {
-  const bannerCustom(
-      {required this.customAsset, required this.customHeight, Key? key})
+class BannerCustom extends StatelessWidget {
+  BannerCustom(
+      {required this.customAsset,
+      required this.customHeight,
+      Key? key,
+      String? imageUrl})
       : super(key: key);
   final String customAsset;
   final double customHeight;
+  bool imageAvailable = false;
 
   @override
   Widget build(BuildContext context) {
@@ -35,19 +39,19 @@ class bannerCustom extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              width: 80,
-              height: 80,
+              width: 100,
+              height: 100,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
+                borderRadius: BorderRadius.circular(120),
                 color: Colors.white,
               ),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image(
+                borderRadius: BorderRadius.circular(80),
+                child: const Image(
                   fit: BoxFit.cover,
                   width: 80,
                   height: 80,
-                  image: AssetImage('assets/images/icon/profile.png'),
+                  image: AssetImage('assets/images/person.png'),
                 ),
               ),
             ),

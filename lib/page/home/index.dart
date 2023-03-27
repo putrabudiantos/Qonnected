@@ -27,6 +27,7 @@ class _IndexHomeState extends State<IndexHome> {
 
   List<int> list = [];
 
+  @override
   void initState() {
     // service.initialize();
     super.initState();
@@ -68,7 +69,7 @@ class _IndexHomeState extends State<IndexHome> {
                 children: [
                   Container(
                     height: MediaQuery.of(context).size.height * .26,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFF0D1037),
                     ),
                   ),
@@ -76,19 +77,20 @@ class _IndexHomeState extends State<IndexHome> {
                       bottom: -90,
                       child: Align(
                           alignment: Alignment.bottomCenter,
-                          child: WidgetStats())),
+                          child: widgetStats())),
                 ],
               ),
-              DisplayActivities()
+              displayActivities()
             ]),
       ),
     );
   }
 
-  Widget WidgetStats() {
+  Widget widgetStats() {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Container(
+        color: Colors.transparent,
         height: MediaQuery.of(context).size.height * .4,
         child: Column(
           children: [
@@ -105,15 +107,15 @@ class _IndexHomeState extends State<IndexHome> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Obx(() => profileC.isLoading.value == true
-                            ? Text('...')
+                            ? const Text('...')
                             : Text(profileC.coworkersModel.value[0].fullname!,
                                 style: vars.FontHeading(context, 20,
                                     FontWeight.w800, Colors.white))),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Obx(() => profileC.isLoading.value == true
-                            ? Text('...')
+                            ? const Text('...')
                             : Text(profileC.coworkersModel.value[0].position!,
                                 style: vars.FontHeading(context, 15,
                                     FontWeight.w500, Colors.white)))
@@ -121,7 +123,7 @@ class _IndexHomeState extends State<IndexHome> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Padding(
@@ -135,47 +137,50 @@ class _IndexHomeState extends State<IndexHome> {
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(100),
-                      child: Image(
+                      child: const Image(
                         fit: BoxFit.contain,
-                        image: AssetImage('assets/images/icon/profile.png'),
+                        image: AssetImage('assets/images/person.png'),
                       ),
                     ),
                   ),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            CardWidget(),
+            cardWidget(),
           ],
         ),
       ),
     );
   }
 
-  Widget CardWidget() {
+  Widget cardWidget() {
     return Container(
+      color: Colors.transparent,
       // width: MediaQuery.of(context).size.width * 1,
       child: Card(
+        elevation: 4,
         child: Wrap(
           alignment: WrapAlignment.spaceBetween,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            IconCard('Calendar', 'assets/images/icon/icon-03.png'),
-            IconCard('Time Off', 'assets/images/icon/icon-04.png'),
-            IconCard('Overtime', 'assets/images/icon/icon-05.png'),
-            IconCard('Pay Slip', 'assets/images/icon/icon-06.png'),
+            iconCard('Calendar', 'assets/images/icon/icon-03.png'),
+            iconCard('Time Off', 'assets/images/icon/icon-04.png'),
+            iconCard('Overtime', 'assets/images/icon/icon-05.png'),
+            iconCard('Pay Slip', 'assets/images/icon/icon-06.png'),
           ],
         ),
       ),
     );
   }
 
-  Widget IconCard(String text, String img) {
+  Widget iconCard(String text, String img) {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Container(
+        color: Colors.transparent,
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
@@ -185,13 +190,13 @@ class _IndexHomeState extends State<IndexHome> {
                 width: 25,
                 fit: BoxFit.contain,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(
                 text,
                 style: vars.FontHeading(
-                    context, 11, FontWeight.w500, Color(0xFF0D1037)),
+                    context, 12, FontWeight.w500, const Color(0xFF0D1037)),
               )
             ],
           ),
@@ -200,8 +205,9 @@ class _IndexHomeState extends State<IndexHome> {
     );
   }
 
-  Widget DisplayActivities() {
+  Widget displayActivities() {
     return Container(
+      color: Colors.transparent,
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -235,11 +241,11 @@ class _IndexHomeState extends State<IndexHome> {
                   //   }
                 },
                 child: Text(
-                  "Today's Activities",
+                  "Aktifitas hari ini",
                   style: FontMedium(
-                      context, 15, FontWeight.w600, Color(0xFF0D1037)),
+                      context, 15, FontWeight.w600, const Color(0xFF0D1037)),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             // ElevatedButton(
@@ -248,16 +254,17 @@ class _IndexHomeState extends State<IndexHome> {
             //     },
             //     child: Text('go')),
             Container(
+              color: Colors.transparent,
               child: Obx(() => homeC.isLoading.value == true
                   ? Container()
-                  : homeC.activityModel.value.length > 0
+                  : homeC.activityModel.value.isNotEmpty
                       ? ListView.separated(
                           padding: EdgeInsets.zero,
-                          separatorBuilder: (context, index) => Divider(
+                          separatorBuilder: (context, index) => const Divider(
                                 color: Colors.grey,
                               ),
                           shrinkWrap: true,
-                          physics: NeverScrollableScrollPhysics(),
+                          physics: const NeverScrollableScrollPhysics(),
                           itemCount: homeC.activityModel.value.length,
                           itemBuilder: (BuildContext context, int index) {
                             var date = DateFormat('dd MMM yyyy').format(
@@ -302,11 +309,11 @@ class _IndexHomeState extends State<IndexHome> {
                             var tempAct;
                             var activities = ListTile(
                                 dense: true,
-                                contentPadding:
-                                    EdgeInsets.only(left: 0.0, right: 0.0),
-                                visualDensity:
-                                    VisualDensity(horizontal: 0, vertical: -4),
-                                leading: Icon(Icons.person),
+                                contentPadding: const EdgeInsets.only(
+                                    left: 0.0, right: 0.0),
+                                visualDensity: const VisualDensity(
+                                    horizontal: 0, vertical: -4),
+                                leading: const Icon(Icons.person),
                                 title: Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -316,7 +323,7 @@ class _IndexHomeState extends State<IndexHome> {
                                       size: 10,
                                       color: act,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 5,
                                     ),
                                     RichText(
@@ -327,10 +334,9 @@ class _IndexHomeState extends State<IndexHome> {
                                           TextSpan(
                                               text:
                                                   '${homeC.activityModel.value[index].name} ${homeC.activityModel.value[index].category!.toUpperCase()}',
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   fontWeight: FontWeight.bold)),
-                                          TextSpan(
-                                              text: ' pada tanggal ${date}'),
+                                          TextSpan(text: ' pada tanggal $date'),
                                         ],
                                       ),
                                     ),
@@ -350,9 +356,10 @@ class _IndexHomeState extends State<IndexHome> {
                             return tempAct;
                           })
                       : Container(
+                          color: Colors.transparent,
                           child: Text('Belum ada aktifitas',
                               style: FontMedium(context, 12, FontWeight.w500,
-                                  Color(0xFF0D1037))),
+                                  const Color(0xFF0D1037))),
                         )),
             )
           ],

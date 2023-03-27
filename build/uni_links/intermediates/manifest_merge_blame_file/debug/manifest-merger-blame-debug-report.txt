@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/uni_links-0.5.1/android/src/main/AndroidManifest.xml
+6-->/home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/uni_links-0.5.1/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="16" />
-7-->/Applications/XAMPP/xamppfiles/htdocs/flutter-3.0.4/flutter/.pub-cache/hosted/pub.dartlang.org/uni_links-0.5.1/android/src/main/AndroidManifest.xml
+7-->/home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/uni_links-0.5.1/android/src/main/AndroidManifest.xml
 8
 9</manifest>
