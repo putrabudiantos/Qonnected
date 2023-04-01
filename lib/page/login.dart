@@ -4,13 +4,14 @@ import 'package:qonnected_app/controller/auth_controller.dart';
 import 'package:qonnected_app/page/sign_up.dart';
 import 'package:qonnected_app/page/widget/btn_rounded.dart';
 import 'package:qonnected_app/page/widget/field_email.dart';
-import 'package:qonnected_app/page/widget/field_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
 class LoginPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   final AuthController authC = Get.put(AuthController());
+
+  LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,7 @@ class LoginPage extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Container(
+            color: Colors.transparent,
             width: MediaQuery.of(context).size.width * .8,
             child: SingleChildScrollView(
               child: Column(
@@ -35,7 +37,7 @@ class LoginPage extends StatelessWidget {
                       errorMessage: 'Email harus diisi',
                       customController: authC.emailController.value,
                       readonly: false),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   GestureDetector(
@@ -50,14 +52,14 @@ class LoginPage extends StatelessWidget {
                               : 'CHECK EMAIL',
                         )),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   RichText(
                     text: TextSpan(
                       text: 'Create an account? ',
                       style: GoogleFonts.inter(
-                        color: Color(0xFF0D1037),
+                        color: const Color(0xFF0D1037),
                         textStyle: Theme.of(context).textTheme.bodyMedium,
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
@@ -74,7 +76,7 @@ class LoginPage extends StatelessWidget {
                               },
                             text: 'Sign up',
                             style: GoogleFonts.inter(
-                              color: Color(0xFF0D1037),
+                              color: const Color(0xFF0D1037),
                               textStyle: Theme.of(context).textTheme.bodyMedium,
                               fontSize: 12,
                               fontWeight: FontWeight.w700,

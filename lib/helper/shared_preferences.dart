@@ -1,11 +1,10 @@
 import 'package:intl/intl.dart';
 import 'package:qonnected_app/model/activity.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter/material.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 
 class HelperSharedPreferences {
-  static StorageProfile() async {
+  static storageProfile() async {
     final prefs = await SharedPreferences.getInstance();
     var id = vars.client.auth.currentUser!.id;
     final response = await vars.client

@@ -10,8 +10,11 @@ class Pekerjaan extends StatelessWidget {
         backgroundColor: const Color(0xFF0D1037),
         elevation: 0,
         centerTitle: true,
-        automaticallyImplyLeading: true,
-        title: const Text('Info Pekerjaan'),
+        leading: const BackButton(color: Colors.white),
+        title: const Text(
+          'Info Pekerjaan',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 15, right: 15, top: 8),

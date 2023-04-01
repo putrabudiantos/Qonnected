@@ -4,7 +4,7 @@
             "outputFile": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/packaged_res/debug/values-w820dp-v13/values-w820dp-v13.xml",
+                    "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/values-w820dp-v13/values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

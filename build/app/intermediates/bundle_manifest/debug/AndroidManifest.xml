@@ -35,15 +35,17 @@
     </queries>
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
-    <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- for android -->
@@ -75,7 +77,9 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Qonnected Apps" >
+        android:label="Qonnected Apps"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity
             android:name="asia.qonnected.adikarya.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -119,6 +123,8 @@
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="location" />
+
+        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
 
         <provider
             android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"

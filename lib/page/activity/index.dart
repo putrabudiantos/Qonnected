@@ -1,15 +1,12 @@
-// ignore_for_file: use_build_context_synchronously
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:geocoding/geocoding.dart';
-import 'package:geolocator/geolocator.dart';
+// import 'package:geocoding/geocoding.dart';
+// import 'package:geolocator/geolocator.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
 import 'package:qonnected_app/controller/coworkers_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
-import 'package:qonnected_app/helper/alert.dart';
-import 'package:qonnected_app/helper/shared_preferences.dart';
-import 'package:qonnected_app/page/widget/bottom_navigation.dart';
+// import 'package:qonnected_app/helper/alert.dart';
+// import 'package:qonnected_app/helper/shared_preferences.dart';
+// import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 import 'package:qonnected_app/page/widget/field_text_area.dart';
 import 'package:slide_digital_clock/slide_digital_clock.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -23,6 +20,8 @@ import 'package:qonnected_app/global_variabel.dart' as vars;
 enum SingingCharacter { wfo, wfh, izin, cuti }
 
 class IndexActivity extends StatefulWidget {
+  const IndexActivity({Key? key}) : super(key: key);
+
   @override
   State<IndexActivity> createState() => _IndexActivityState();
 }
@@ -132,7 +131,7 @@ class _IndexActivityState extends State<IndexActivity> {
           Container(
             width: MediaQuery.of(context).size.width * 1,
             height: MediaQuery.of(context).size.height * .25,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xFF0D1037),
             ),
             child: Padding(
@@ -140,13 +139,13 @@ class _IndexActivityState extends State<IndexActivity> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 35,
                   ),
                   Obx(() => Text(workerC.companyName.value,
                       style: FontMedium(
                           context, 20, FontWeight.w800, Colors.white))),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text('Activity',
@@ -159,9 +158,9 @@ class _IndexActivityState extends State<IndexActivity> {
           Container(
             transform: Matrix4.translationValues(0.0, -50.0, 0.0),
             width: MediaQuery.of(context).size.width * 1,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
-              borderRadius: const BorderRadius.only(
+              borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25), topRight: Radius.circular(25)),
             ),
             child: Padding(
@@ -182,18 +181,18 @@ class _IndexActivityState extends State<IndexActivity> {
                     ),
                     showSecondsDigit: false,
                     hourMinuteDigitTextStyle: const TextStyle(
-                        color: const Color(0xFF0D1037),
+                        color: Color(0xFF0D1037),
                         fontSize: 50,
                         fontWeight: FontWeight.w900),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  DisplayActivity(),
+                  displayActivity(),
                   // Obx(() => activityC.distanceFar.value == true
-                  //     ? DescriptionBox()
+                  //     ? descriptionBox()
                   //     : Container()),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Obx(() => ElevatedButton(
@@ -239,7 +238,7 @@ class _IndexActivityState extends State<IndexActivity> {
                         // print(location);
                       },
                       child: Padding(
-                        padding: EdgeInsets.only(left: 30, right: 30),
+                        padding: const EdgeInsets.only(left: 30, right: 30),
                         child: Obx(() => Text(activityC.isLoading == true
                             ? 'PROCESSING'
                             : 'CHECK ${activityC.checkIn.value == false || activityC.checkIn.value == null ? 'IN' : 'OUT'}')),
@@ -253,7 +252,7 @@ class _IndexActivityState extends State<IndexActivity> {
     );
   }
 
-  Widget DescriptionBox() {
+  Widget descriptionBox() {
     return Column(
       children: [
         Row(
@@ -262,8 +261,8 @@ class _IndexActivityState extends State<IndexActivity> {
               fit: FlexFit.loose,
               child: ListTile(
                 dense: true,
-                contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
-                visualDensity: VisualDensity(horizontal: 0, vertical: -4),
+                contentPadding: const EdgeInsets.only(left: 0.0, right: 0.0),
+                visualDensity: const VisualDensity(horizontal: 0, vertical: -4),
                 title: const Text('WFH'),
                 leading: Radio<SingingCharacter>(
                   value: SingingCharacter.wfh,
@@ -281,8 +280,8 @@ class _IndexActivityState extends State<IndexActivity> {
               fit: FlexFit.loose,
               child: ListTile(
                 dense: true,
-                contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
-                visualDensity: VisualDensity(horizontal: 0, vertical: -4),
+                contentPadding: const EdgeInsets.only(left: 0.0, right: 0.0),
+                visualDensity: const VisualDensity(horizontal: 0, vertical: -4),
                 title: const Text('IZIN'),
                 leading: Radio<SingingCharacter>(
                   value: SingingCharacter.izin,
@@ -300,11 +299,12 @@ class _IndexActivityState extends State<IndexActivity> {
               fit: FlexFit.loose,
               child: ListTile(
                 dense: true,
-                contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
-                visualDensity: VisualDensity(horizontal: 0, vertical: -4),
+                contentPadding: const EdgeInsets.only(left: 0.0, right: 0.0),
+                visualDensity: const VisualDensity(horizontal: 0, vertical: -4),
                 title: const Text('CUTI'),
                 leading: Radio<SingingCharacter>(
-                  visualDensity: VisualDensity(horizontal: 0, vertical: -4),
+                  visualDensity:
+                      const VisualDensity(horizontal: 0, vertical: -4),
                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   value: SingingCharacter.cuti,
                   groupValue: _character,
@@ -334,26 +334,26 @@ class _IndexActivityState extends State<IndexActivity> {
     );
   }
 
-  Widget DisplayActivity() {
+  Widget displayActivity() {
     return Column(
       children: [
-        Location(),
-        SizedBox(
+        locations(),
+        const SizedBox(
           height: 20,
         ),
         Obx(() =>
-            activityC.distanceFar.value == true ? UploadFoto() : Container()),
-        SizedBox(
+            activityC.distanceFar.value == true ? uploadFoto() : Container()),
+        const SizedBox(
           height: 20,
         ),
         Obx(() =>
-            activityC.distanceFar.value == true ? DisplayType() : Container()),
-        DisplayDescription()
+            activityC.distanceFar.value == true ? displayType() : Container()),
+        displayDescription()
       ],
     );
   }
 
-  Widget Location() {
+  Widget locations() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -361,7 +361,7 @@ class _IndexActivityState extends State<IndexActivity> {
           'assets/images/icon/map.png',
           width: 20,
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Flexible(
@@ -371,7 +371,7 @@ class _IndexActivityState extends State<IndexActivity> {
               Text('Location',
                   style: FontMedium(
                       context, 15, FontWeight.w700, const Color(0xFF0D1037))),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Obx(() => Text(activityC.address.value,
@@ -384,7 +384,7 @@ class _IndexActivityState extends State<IndexActivity> {
     );
   }
 
-  Widget UploadFoto() {
+  Widget uploadFoto() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -392,7 +392,7 @@ class _IndexActivityState extends State<IndexActivity> {
           'assets/images/icon/users_upload.png',
           width: 20,
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Flexible(
@@ -402,7 +402,7 @@ class _IndexActivityState extends State<IndexActivity> {
               Text('Take a photo',
                   style: FontMedium(
                       context, 15, FontWeight.w700, const Color(0xFF0D1037))),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -418,21 +418,21 @@ class _IndexActivityState extends State<IndexActivity> {
                           height: 50,
                           fit: BoxFit.cover,
                         ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   ElevatedButton(
                     style: ButtonStyle(
                         padding: MaterialStateProperty.all<EdgeInsets>(
                             const EdgeInsets.all(10)),
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Color(0xFF0D1037)),
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color(0xFF0D1037)),
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50),
-                                    side:
-                                        BorderSide(color: Color(0xFF0D1037))))),
+                                    side: const BorderSide(
+                                        color: Color(0xFF0D1037))))),
                     onPressed: () {
                       _onImageButtonPressed(ImageSource.camera,
                           context: context);
@@ -450,7 +450,7 @@ class _IndexActivityState extends State<IndexActivity> {
     );
   }
 
-  Widget DisplayDate() {
+  Widget displayDate() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -458,7 +458,7 @@ class _IndexActivityState extends State<IndexActivity> {
           'assets/images/icon/map.png',
           width: 20,
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Flexible(
@@ -468,7 +468,7 @@ class _IndexActivityState extends State<IndexActivity> {
               Text('Date',
                   style: FontMedium(
                       context, 15, FontWeight.w700, const Color(0xFF0D1037))),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -477,7 +477,7 @@ class _IndexActivityState extends State<IndexActivity> {
                     'assets/images/icon/user.png',
                     width: 50,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                 ],
@@ -489,7 +489,7 @@ class _IndexActivityState extends State<IndexActivity> {
     );
   }
 
-  Widget DisplayDescription() {
+  Widget displayDescription() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -497,7 +497,7 @@ class _IndexActivityState extends State<IndexActivity> {
           'assets/images/icon/check-list.png',
           width: 15,
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Flexible(
@@ -507,7 +507,7 @@ class _IndexActivityState extends State<IndexActivity> {
               Text('Description',
                   style: FontMedium(
                       context, 15, FontWeight.w700, const Color(0xFF0D1037))),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               FieldTextArea(
@@ -525,7 +525,7 @@ class _IndexActivityState extends State<IndexActivity> {
     );
   }
 
-  Widget DisplayType() {
+  Widget displayType() {
     return Column(
       children: [
         Row(
@@ -535,7 +535,7 @@ class _IndexActivityState extends State<IndexActivity> {
               'assets/images/icon/worker.png',
               width: 15,
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             Flexible(
@@ -545,16 +545,16 @@ class _IndexActivityState extends State<IndexActivity> {
                   Text('Category',
                       style: FontMedium(context, 15, FontWeight.w700,
                           const Color(0xFF0D1037))),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  DescriptionBox()
+                  descriptionBox()
                 ],
               ),
             )
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         )
       ],

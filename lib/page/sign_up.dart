@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/controller/auth_controller.dart';
-import 'package:qonnected_app/helper/alert.dart';
 import 'package:qonnected_app/page/login.dart';
 import 'package:qonnected_app/page/widget/btn_rounded.dart';
 import 'package:qonnected_app/page/widget/field_email.dart';
@@ -13,6 +12,8 @@ class SignupPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   final AuthController authC = Get.put(AuthController());
 
+  SignupPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -20,6 +21,7 @@ class SignupPage extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Container(
+            color: Colors.transparent,
             width: MediaQuery.of(context).size.width * .8,
             child: SingleChildScrollView(
               child: Column(
@@ -36,7 +38,7 @@ class SignupPage extends StatelessWidget {
                       customController: authC.nameController.value,
                       customType: false,
                       readonly: false),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   FieldText(
@@ -46,7 +48,7 @@ class SignupPage extends StatelessWidget {
                       customController: authC.usernameController.value,
                       customType: false,
                       readonly: false),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   FieldEmail(
@@ -55,7 +57,7 @@ class SignupPage extends StatelessWidget {
                       errorMessage: 'Email harus diisi',
                       customController: authC.emailController.value,
                       readonly: false),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   GestureDetector(
@@ -70,14 +72,14 @@ class SignupPage extends StatelessWidget {
                               : 'REGISTER',
                         )),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   RichText(
                     text: TextSpan(
                       text: 'Have account? ',
                       style: GoogleFonts.inter(
-                        color: Color(0xFF0D1037),
+                        color: const Color(0xFF0D1037),
                         textStyle: Theme.of(context).textTheme.bodyMedium,
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
@@ -94,7 +96,7 @@ class SignupPage extends StatelessWidget {
                               },
                             text: 'Login',
                             style: GoogleFonts.inter(
-                              color: Color(0xFF0D1037),
+                              color: const Color(0xFF0D1037),
                               textStyle: Theme.of(context).textTheme.bodyMedium,
                               fontSize: 12,
                               fontWeight: FontWeight.w700,

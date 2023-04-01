@@ -3,12 +3,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 
 class Helper {
-  static alertDialog(
-      BuildContext context, String status, String message, bool showbutton, String route) {
+  static alertDialog(BuildContext context, String status, String message,
+      bool showbutton, String route) {
     return showDialog<String>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10))),
         alignment: Alignment.center,
         actionsAlignment: MainAxisAlignment.center,
@@ -21,13 +21,16 @@ class Helper {
         ),
         content: Text(
           message,
-          style: TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 18),
           textAlign: TextAlign.center,
         ),
         actions: <Widget>[
           showbutton == true
               ? TextButton(
-                  onPressed: () => showbutton == false ? Navigator.pop(context, 'OK') : Navigator.pushNamedAndRemoveUntil(context, route, (route) => false),
+                  onPressed: () => showbutton == false
+                      ? Navigator.pop(context, 'OK')
+                      : Navigator.pushNamedAndRemoveUntil(
+                          context, route, (route) => false),
                   child: const Text(
                     'OK',
                     style: TextStyle(

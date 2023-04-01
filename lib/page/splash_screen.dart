@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/page/auth_state.dart';
-import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:get/get.dart';

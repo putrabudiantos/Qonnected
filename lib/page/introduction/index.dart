@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:qonnected_app/login/loginpilihan.dart';
-import 'package:qonnected_app/page/login.dart';
 // import 'package:android_intent/android_intent.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
@@ -111,10 +109,8 @@ class IntroductionScreens extends StatelessWidget {
                     ))),
           ],
           onDone: () {
-            Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const LoginFirstPage()));
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) => const SplashPage()));
             // Navigator.pushReplacement(context,
             //     MaterialPageRoute(builder: (context) => const SplashPage()));
           },

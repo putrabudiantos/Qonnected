@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 // List<ProfileModel> ProfileModelFromJson(String str) => List<ProfileModel>.from(
 //     json.decode(str).map((x) => ProfileModel.fromJson(x)));
 
@@ -7,7 +5,6 @@ import 'dart:convert';
 //     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class ProfileModel {
-  @override
   final String? id,
       username,
       avatar_url,
@@ -22,7 +19,7 @@ class ProfileModel {
       employee_identification,
       identity_number;
   final bool? deleted;
-  final int company_id;
+  int company_id;
 
   ProfileModel(
       {required this.id,

@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
-import 'package:qonnected_app/page/activity/index.dart';
-import 'package:qonnected_app/page/widget/bottom_navigation.dart';
+import 'package:qonnected_app/page/home/timeoff.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
-import 'package:qonnected_app/service/local_notification.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class IndexHome extends StatefulWidget {
   const IndexHome({Key? key}) : super(key: key);
@@ -68,7 +65,7 @@ class _IndexHomeState extends State<IndexHome> {
                 clipBehavior: Clip.none,
                 children: [
                   Container(
-                    height: MediaQuery.of(context).size.height * .26,
+                    height: 210,
                     decoration: const BoxDecoration(
                       color: Color(0xFF0D1037),
                     ),
@@ -80,7 +77,7 @@ class _IndexHomeState extends State<IndexHome> {
                           child: widgetStats())),
                 ],
               ),
-              displayActivities()
+              // displayActivities()
             ]),
       ),
     );
@@ -91,7 +88,7 @@ class _IndexHomeState extends State<IndexHome> {
       padding: const EdgeInsets.all(10),
       child: Container(
         color: Colors.transparent,
-        height: MediaQuery.of(context).size.height * .4,
+        height: 260,
         child: Column(
           children: [
             SizedBox(
@@ -166,39 +163,131 @@ class _IndexHomeState extends State<IndexHome> {
           alignment: WrapAlignment.spaceBetween,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            iconCard('Calendar', 'assets/images/icon/icon-03.png'),
-            iconCard('Time Off', 'assets/images/icon/icon-04.png'),
-            iconCard('Overtime', 'assets/images/icon/icon-05.png'),
-            iconCard('Pay Slip', 'assets/images/icon/icon-06.png'),
+            iconCard(
+                text: 'Calendar',
+                img: 'assets/images/icon/icon-03.png',
+                function: () {
+                  CalendarFormat calendarFormat = CalendarFormat.month;
+                  DateTime focusedDay = DateTime.now();
+                  DateTime? selectedDay;
+                  final kToday = DateTime.now();
+                  final kFirstDay =
+                      DateTime(kToday.year, kToday.month - 3, kToday.day);
+                  final kLastDay =
+                      DateTime(kToday.year, kToday.month + 3, kToday.day);
+                  showModalBottomSheet(
+                    isDismissible: true,
+                    isScrollControlled: true,
+                    context: context,
+                    enableDrag: true,
+                    builder: (context) {
+                      return FractionallySizedBox(
+                        heightFactor: 0.6,
+                        child: Container(
+                          padding: const EdgeInsets.all(15),
+                          width: MediaQuery.of(context).size.width,
+                          decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(30),
+                                topRight: Radius.circular(30),
+                              ),
+                              color: Colors.white),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                color: Colors.transparent,
+                                child: Container(
+                                  width: 60,
+                                  height: 8,
+                                  decoration: BoxDecoration(
+                                      color: Colors.black12,
+                                      borderRadius: BorderRadius.circular(10)),
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              TableCalendar(
+                                firstDay: kFirstDay,
+                                lastDay: kLastDay,
+                                focusedDay: focusedDay,
+                                calendarFormat: calendarFormat,
+                                selectedDayPredicate: (day) {
+                                  // Use `selectedDayPredicate` to determine which day is currently selected.
+                                  // If this returns true, then `day` will be marked as selected.
+
+                                  // Using `isSameDay` is recommended to disregard
+                                  // the time-part of compared DateTime objects.
+                                  return isSameDay(selectedDay, day);
+                                },
+                                onDaySelected: (selectedDay, focusedDay) {
+                                  if (!isSameDay(selectedDay, selectedDay)) {
+                                    // Call `setState()` when updating the selected day
+                                    setState(() {
+                                      selectedDay = selectedDay;
+                                      focusedDay = focusedDay;
+                                    });
+                                  }
+                                },
+                                onFormatChanged: (format) {
+                                  if (calendarFormat != format) {
+                                    // Call `setState()` when updating calendar format
+                                    setState(() {
+                                      calendarFormat = format;
+                                    });
+                                  }
+                                },
+                                onPageChanged: (focusedDay) {
+                                  // No need to call `setState()` here
+                                  focusedDay = focusedDay;
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                }),
+            iconCard(
+                text: 'Time Off',
+                img: 'assets/images/icon/icon-04.png',
+                function: () {
+                  Get.to(const TimeOff());
+                }),
+            iconCard(text: 'Overtime', img: 'assets/images/icon/icon-05.png'),
+            iconCard(text: 'Pay Slip', img: 'assets/images/icon/icon-06.png'),
           ],
         ),
       ),
     );
   }
 
-  Widget iconCard(String text, String img) {
+  Widget iconCard({String? text, String? img, void Function()? function}) {
     return Padding(
       padding: const EdgeInsets.all(10),
-      child: Container(
-        color: Colors.transparent,
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(
-            children: [
-              Image.asset(
-                img,
-                width: 25,
-                fit: BoxFit.contain,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                text,
-                style: vars.FontHeading(
-                    context, 12, FontWeight.w500, const Color(0xFF0D1037)),
-              )
-            ],
+      child: GestureDetector(
+        onTap: function,
+        child: Container(
+          color: Colors.transparent,
+          child: Padding(
+            padding: const EdgeInsets.all(10),
+            child: Column(
+              children: [
+                Image.asset(
+                  img!,
+                  width: 25,
+                  fit: BoxFit.contain,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  text!,
+                  style: vars.FontHeading(
+                      context, 12, FontWeight.w500, const Color(0xFF0D1037)),
+                )
+              ],
+            ),
           ),
         ),
       ),

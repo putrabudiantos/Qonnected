@@ -1,6 +1,4 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:qonnected_app/service/notifforbirthday.dart';
 import './ajukanperubahansaya.dart';
 import 'package:get/get.dart';
 
@@ -14,8 +12,11 @@ class TentangSaya extends StatelessWidget {
         backgroundColor: const Color(0xFF0D1037),
         elevation: 0,
         centerTitle: true,
-        automaticallyImplyLeading: true,
-        title: const Text('Info Personal'),
+        leading: const BackButton(color: Colors.white),
+        title: const Text(
+          'Info Personal',
+          style: TextStyle(color: Colors.white, fontFamily: "Inter"),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 15, right: 15, top: 8),
@@ -108,7 +109,10 @@ class TentangSaya extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12), // <-- Radius
               ),
             ),
-            child: const Text('Ajukan Perubahan'),
+            child: const Text(
+              'Ajukan Perubahan',
+              style: TextStyle(color: Colors.white),
+            ),
           )),
     );
   }

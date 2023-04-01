@@ -36,8 +36,9 @@ class _AjukanPerubahanSayaState extends State<AjukanPerubahanSaya> {
         backgroundColor: const Color(0xFF0D1037),
         elevation: 0,
         centerTitle: true,
-        automaticallyImplyLeading: true,
-        title: const Text('Ajukan Perubahan'),
+        leading: const BackButton(color: Colors.white),
+        title: const Text('Ajukan Perubahan',
+            style: TextStyle(color: Colors.white)),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 15, right: 15, top: 15),
@@ -140,7 +141,10 @@ class _AjukanPerubahanSayaState extends State<AjukanPerubahanSaya> {
               borderRadius: BorderRadius.circular(12), // <-- Radius
             ),
           ),
-          child: const Text('Ajukan Perubahan'),
+          child: const Text(
+            'Ajukan Perubahan',
+            style: TextStyle(color: Colors.white),
+          ),
         ));
   }
 }

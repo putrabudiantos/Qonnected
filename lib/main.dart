@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:qonnected_app/binding/home_binding.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:qonnected_app/page/initial_page.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/page/introduction/index.dart';
@@ -13,8 +15,15 @@ import 'package:qonnected_app/page/settings/index.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+int? initScreen;
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
+  final pref = await SharedPreferences.getInstance();
+  initScreen = pref.getInt('initScreen');
+  await pref.setInt('initScreen', 1);
 
   //supabase
   await Supabase.initialize(
@@ -35,13 +44,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   List<GetPage> getPages = [
     GetPage(
-        name: '/initpage', page: () => InitialPage(), binding: HomeBinding()),
+        name: '/initpage',
+        page: () => const InitialPage(),
+        binding: HomeBinding()),
     GetPage(name: '/login', page: () => LoginPage()),
     GetPage(
         name: '/splash',
         page: () => const SplashPage(),
         binding: HomeBinding()),
-    GetPage(name: '/activity', page: () => IndexActivity()),
+    GetPage(name: '/activity', page: () => const IndexActivity()),
     GetPage(
         name: '/coworkers',
         page: () => const IndexCoWorkers(),
@@ -60,6 +71,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: ThemeData(
+          iconTheme: const IconThemeData(color: Colors.white),
+          backgroundColor: Colors.white,
+          useMaterial3: true,
           scaffoldBackgroundColor: const Color(0xFFFFFFFF),
           textTheme: const TextTheme(
               button: TextStyle(
@@ -68,8 +82,14 @@ class _MyAppState extends State<MyApp> {
                   fontWeight: FontWeight.bold)),
           fontFamily: "Inter"),
       debugShowCheckedModeBanner: false,
-      // home: const IntroductionScreens(),
-      home: const SplashPage(),
+      initialRoute:
+          initScreen == 0 || initScreen == null ? 'splashscreen' : 'splashpage',
+      routes: {
+        'splashscreen': (context) => const IntroductionScreens(),
+        'splashpage': (context) => const SplashPage()
+      },
+      home: const IntroductionScreens(),
+      // home: const SplashPage(),
       getPages: getPages,
     );
   }

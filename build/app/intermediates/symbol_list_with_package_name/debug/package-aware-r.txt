@@ -1744,12 +1744,15 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_barcode_flash_off
+drawable ic_barcode_flash_on
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_switch_camera
 drawable launch_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1885,6 +1888,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnBarcodeCaptureCancel
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1981,6 +1985,7 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
+id graphicOverlay
 id group_divider
 id groups
 id guideline
@@ -1996,6 +2001,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgViewBarcodeCaptureUseFlash
+id imgViewSwitchCamera
 id info
 id invisible
 id inward
@@ -2008,6 +2015,7 @@ id labeled
 id largeLabel
 id launch_product_query
 id layout
+id layoutBottom
 id left
 id leftToRight
 id light
@@ -2100,6 +2108,7 @@ id percent
 id pin
 id position
 id postLayout
+id preview
 id preview_view
 id progress_circular
 id progress_horizontal
@@ -2218,6 +2227,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id top
+id topLayout
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -2309,6 +2319,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_second
+layout barcode_capture
 layout camera
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2439,6 +2450,11 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string auto_focus
+string barcode_error
+string barcode_failure
+string barcode_header
+string barcode_success
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string character_counter_content_description
@@ -2472,6 +2488,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string low_storage_error
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2522,17 +2539,23 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string no_camera_permission
+string ok
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string permission_camera_rationale
 string rationale_ask
 string rationale_ask_again
+string read_barcode
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_main
 string title_activity_three
 string title_settings_dialog
+string use_flash
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

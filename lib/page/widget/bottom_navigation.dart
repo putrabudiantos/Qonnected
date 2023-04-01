@@ -13,12 +13,12 @@ class BottomNavWidget extends StatefulWidget {
 }
 
 class _BottomNavWidgetState extends State<BottomNavWidget> {
-  int _selectedIndex = 0;
+  int selectedIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
       Get.offAllNamed(InitialPage.routeName);
-      _selectedIndex = index;
+      selectedIndex = index;
       vars.idx = index;
       print(vars.idx);
     });
@@ -29,7 +29,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
     return BottomAppBar(
       //bottom navigation bar on scaffold
       color: Colors.white,
-      shape: CircularNotchedRectangle(), //shape of notch
+      shape: const CircularNotchedRectangle(), //shape of notch
       notchMargin: 5, //notche margin between floating button and bottom appbar
       child: SizedBox(
         height: 60,
@@ -51,12 +51,13 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                   children: [
                     Icon(
                       Icons.home_outlined,
-                      color: vars.idx == 0 ? Colors.red : Color(0xFF0D1037),
+                      color:
+                          vars.idx == 0 ? Colors.red : const Color(0xFF0D1037),
                     ),
                     Text(
                       "Home",
                       style: FontMedium(context, 12, FontWeight.w500,
-                          vars.idx == 0 ? Colors.red : Color(0xFF0D1037)),
+                          vars.idx == 0 ? Colors.red : const Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],
@@ -64,7 +65,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(right: 20),
+              padding: const EdgeInsets.only(right: 20),
               child: InkWell(
                 focusColor: Colors.transparent,
                 hoverColor: Colors.transparent,
@@ -76,11 +77,13 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.people_outline,
-                        color: vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
+                        color: vars.idx == 1
+                            ? Colors.red
+                            : const Color(0xFF0D1037)),
                     Text(
                       "Co Worker",
                       style: FontMedium(context, 12, FontWeight.w500,
-                          vars.idx == 1 ? Colors.red : Color(0xFF0D1037)),
+                          vars.idx == 1 ? Colors.red : const Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],
@@ -99,11 +102,13 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.domain_outlined,
-                        color: vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
+                        color: vars.idx == 2
+                            ? Colors.red
+                            : const Color(0xFF0D1037)),
                     Text(
                       "Company",
                       style: FontMedium(context, 12, FontWeight.w500,
-                          vars.idx == 2 ? Colors.red : Color(0xFF0D1037)),
+                          vars.idx == 2 ? Colors.red : const Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],
@@ -123,12 +128,13 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
                   children: [
                     Icon(
                       Icons.person_outline_rounded,
-                      color: vars.idx == 3 ? Colors.red : Color(0xFF0D1037),
+                      color:
+                          vars.idx == 3 ? Colors.red : const Color(0xFF0D1037),
                     ),
                     Text(
                       "Profile",
                       style: FontMedium(context, 12, FontWeight.w500,
-                          vars.idx == 3 ? Colors.red : Color(0xFF0D1037)),
+                          vars.idx == 3 ? Colors.red : const Color(0xFF0D1037)),
                     ),
                     //const Padding(padding: EdgeInsets.all(10))
                   ],

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/controller/init_controller.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
-import 'package:qonnected_app/global_variabel.dart';
 import 'package:get/get.dart';
-import 'package:qonnected_app/page/widget/banner.dart';
 import 'package:qonnected_app/page/widget/bottom_navigation.dart';
 import 'package:qonnected_app/page/widget/field_text.dart';
 

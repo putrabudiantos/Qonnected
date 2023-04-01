@@ -1,14 +1,9 @@
-import 'dart:convert';
-import 'dart:ffi';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import 'package:qonnected_app/helper/alert.dart';
 import 'package:qonnected_app/model/activity.dart';
-import 'package:qonnected_app/page/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:intl/intl.dart';
@@ -97,7 +92,7 @@ class ActivityController extends GetxController {
         desiredAccuracy: LocationAccuracy.high);
   }
 
-  Future<String> GetAddressFromLatLong(Position position) async {
+  Future<String> getAddressFromLatLong(Position position) async {
     var Address;
     List<Placemark> placemarks =
         await placemarkFromCoordinates(position.latitude, position.longitude);
@@ -119,7 +114,7 @@ class ActivityController extends GetxController {
     //     lat!, long!, position.latitude, position.longitude);
     var distance = Geolocator.distanceBetween(
         lat!, long!, position.latitude, position.longitude);
-    address.value = await GetAddressFromLatLong(position);
+    address.value = await getAddressFromLatLong(position);
 
     print(position.latitude);
     print(position.longitude);
@@ -139,7 +134,7 @@ class ActivityController extends GetxController {
     isLoading.value = true;
     final prefs = await SharedPreferences.getInstance();
     Position position = await _getGeoLocationPosition();
-    var locationName = await GetAddressFromLatLong(position);
+    var locationName = await getAddressFromLatLong(position);
     var id = vars.client.auth.currentUser!.id;
     var checkin = prefs.getBool('checkin');
     var checkout = prefs.getBool('checkout');

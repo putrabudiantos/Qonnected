@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 
 class FieldTextArea extends StatefulWidget {
-  FieldTextArea(
+  const FieldTextArea(
       {required this.textfield,
       required this.placeholder,
       required this.errorMessage,
@@ -38,7 +38,7 @@ class _FieldTextAreaState extends State<FieldTextArea> {
           obscureText: widget.customType,
           controller: widget.customController,
           style: GoogleFonts.inter(
-            color: Color(0xFF0D1037),
+            color: const Color(0xFF0D1037),
             textStyle: Theme.of(context).textTheme.bodyMedium,
             fontSize: 12,
             fontWeight: FontWeight.w500,
@@ -52,7 +52,7 @@ class _FieldTextAreaState extends State<FieldTextArea> {
               ),
               hintText: widget.placeholder,
               hintStyle: GoogleFonts.inter(
-                color: Color(0xFF0D1037),
+                color: const Color(0xFF0D1037),
                 textStyle: Theme.of(context).textTheme.bodyMedium,
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
@@ -60,10 +60,12 @@ class _FieldTextAreaState extends State<FieldTextArea> {
               isDense: true,
               contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
               focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFF0D1037), width: 1.0),
+                  borderSide:
+                      const BorderSide(color: Color(0xFF0D1037), width: 1.0),
                   borderRadius: BorderRadius.circular(10.0)),
               enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFF0D1037), width: 1.0),
+                  borderSide:
+                      const BorderSide(color: Color(0xFF0D1037), width: 1.0),
                   borderRadius: BorderRadius.circular(10.0))),
           validator: (value) {
             if (value == null || value.isEmpty) {

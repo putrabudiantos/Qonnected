@@ -45,8 +45,11 @@ class _PengingatState extends State<Pengingat> {
         backgroundColor: const Color(0xFF0D1037),
         elevation: 0,
         centerTitle: true,
-        automaticallyImplyLeading: true,
-        title: const Text('Pengingat'),
+        leading: const BackButton(color: Colors.white),
+        title: const Text(
+          'Pengingat',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 15, right: 15, top: 8),

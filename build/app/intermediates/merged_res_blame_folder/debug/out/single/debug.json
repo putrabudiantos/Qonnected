@@ -72,6 +72,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/anim/abc_slide_in_bottom.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xhdpi-v4_ic_barcode_flash_on.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_barcode_flash_on.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_test_custom_background.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/drawable/test_custom_background.xml"
     },
@@ -252,6 +256,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/drawable/mtrl_ic_cancel.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxhdpi-v4_ic_switch_camera.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xxhdpi-v4/ic_switch_camera.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_test_toolbar_surface.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/layout/test_toolbar_surface.xml"
     },
@@ -272,6 +280,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/52c9781f926af24ac4530a9702e17d3a/transformed/media-1.6.0/res/layout/notification_template_media_custom.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-hdpi-v4_ic_switch_camera.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_switch_camera.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_camera.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/res/layout/camera.xml"
     },
@@ -280,8 +292,16 @@
         "source": "/home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/res/layout/custom_dialog.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-ldpi-v4_ic_switch_camera.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-ldpi-v4/ic_switch_camera.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_notification_bg.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-anydpi-v21_ic_barcode_flash_off.xml.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-anydpi-v21/ic_barcode_flash_off.xml"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_mtrl_calendar_day_of_week.xml.flat",
@@ -544,6 +564,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/layout/mtrl_picker_text_input_date_range.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-anydpi-v21_ic_switch_camera.xml.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-anydpi-v21/ic_switch_camera.xml"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_material_chip_input_combo.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/layout/material_chip_input_combo.xml"
     },
@@ -570,6 +594,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/mipmap-mdpi-v4_ic_back.png.flat",
         "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/packaged_res/debug/mipmap-mdpi-v4/ic_back.png"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxxhdpi-v4_ic_barcode_flash_on.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_barcode_flash_on.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
@@ -716,6 +744,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/layout/design_layout_snackbar_include.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xhdpi-v4_ic_switch_camera.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_switch_camera.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/xml_standalone_badge.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/xml/standalone_badge.xml"
     },
@@ -740,6 +772,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/color/mtrl_calendar_item_stroke_color.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-mdpi-v4_ic_barcode_flash_off.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_barcode_flash_off.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -754,6 +790,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxxhdpi-v4_ic_barcode_flash_off.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_barcode_flash_off.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -810,6 +850,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/color_mtrl_card_view_ripple.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/color/mtrl_card_view_ripple.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xhdpi-v4_ic_barcode_flash_off.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_barcode_flash_off.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_avd_show_password.xml.flat",
@@ -1216,6 +1260,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/res/layout-v21/notification_template_custom_big.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_barcode_capture.xml.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/layout/barcode_capture.xml"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_abc_action_bar_title_item.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/layout/abc_action_bar_title_item.xml"
     },
@@ -1302,6 +1350,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_abc_btn_check_material_anim.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable/abc_btn_check_material_anim.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-ldpi-v4_ic_barcode_flash_on.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-ldpi-v4/ic_barcode_flash_on.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout-v26_abc_screen_toolbar.xml.flat",
@@ -1440,6 +1492,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-hdpi-v4_ic_barcode_flash_off.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_barcode_flash_off.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/animator_fragment_open_enter.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/a6bf228adcf2ade0b45c4be1ab213b75/transformed/fragment-1.3.6/res/animator/fragment_open_enter.xml"
     },
@@ -1502,6 +1558,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_abc_ic_menu_share_mtrl_alpha.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable/abc_ic_menu_share_mtrl_alpha.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxxhdpi-v4_ic_switch_camera.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_switch_camera.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_material_timepicker_textinput_display.xml.flat",
@@ -1612,12 +1672,12 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/animator/mtrl_extended_fab_hide_motion_spec.xml"
     },
     {
-        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/mipmap-mdpi-v4_ic_light.png.flat",
-        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/packaged_res/debug/mipmap-mdpi-v4/ic_light.png"
-    },
-    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/mipmap-mdpi-v4_ic_light.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/packaged_res/debug/mipmap-mdpi-v4/ic_light.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout_activity_second.xml.flat",
@@ -1692,6 +1752,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/color/abc_tint_spinner.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-mdpi-v4_ic_switch_camera.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_switch_camera.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
@@ -1752,6 +1816,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-hdpi-v4_ic_barcode_flash_on.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_barcode_flash_on.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -1802,6 +1870,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-mdpi-v4_ic_barcode_flash_on.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_barcode_flash_on.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -1944,6 +2016,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/drawable/mtrl_tabs_default_indicator.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxhdpi-v4_ic_barcode_flash_off.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xxhdpi-v4/ic_barcode_flash_off.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
@@ -2064,6 +2140,10 @@
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/color/material_on_surface_emphasis_high_type.xml"
     },
     {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-xxhdpi-v4_ic_barcode_flash_on.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-xxhdpi-v4/ic_barcode_flash_on.png"
+    },
+    {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/color_material_on_background_emphasis_high_type.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/color/material_on_background_emphasis_high_type.xml"
     },
@@ -2114,6 +2194,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/layout-v21_notification_action.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-anydpi-v21_ic_barcode_flash_on.xml.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-anydpi-v21/ic_barcode_flash_on.xml"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable_material_ic_calendar_black_24dp.xml.flat",
@@ -2286,6 +2370,10 @@
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/color_mtrl_fab_icon_text_color_selector.xml.flat",
         "source": "/home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/res/color/mtrl_fab_icon_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/drawable-ldpi-v4_ic_barcode_flash_off.png.flat",
+        "source": "/home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/packaged_res/debug/drawable-ldpi-v4/ic_barcode_flash_off.png"
     },
     {
         "merged": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/merged_res/debug/anim_abc_slide_out_top.xml.flat",

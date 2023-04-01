@@ -18,9 +18,9 @@ class AuthState<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onAuthenticated(Session session) {
     if (mounted) {
-      HelperSharedPreferences.StorageProfile();
+      HelperSharedPreferences.storageProfile();
       HelperSharedPreferences.refreshStorage();
-      Get.offAll(InitialPage());
+      Get.offAll(const InitialPage());
 
       // Navigator.of(context)
       //     .pushNamedAndRemoveUntil('/initpage', (route) => false);

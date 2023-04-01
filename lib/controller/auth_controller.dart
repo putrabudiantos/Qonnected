@@ -1,11 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import 'package:qonnected_app/helper/alert.dart';
-import 'package:qonnected_app/page/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 
@@ -87,7 +83,7 @@ class AuthController extends GetxController {
     final error = response.error;
     if (error != null) {
       isLoading.value = false;
-      Helper.alertDialog(context, '400', error.message, true,'/login');
+      Helper.alertDialog(context, '400', error.message, true, '/login');
     } else {
       isLoading.value = false;
       Helper.alertDialog(
@@ -119,8 +115,7 @@ class AuthController extends GetxController {
 
     if (reslt.statusCode == 200) {
       isLoading.value = false;
-      Helper.alertDialog(context, '200', 'Register Berhasil', false,'/login');
-    
+      Helper.alertDialog(context, '200', 'Register Berhasil', false, '/login');
     } else {
       isLoading.value = false;
       Helper.alertDialog(context, '400', 'Register Failed', true, '/login');

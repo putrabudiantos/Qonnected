@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:get/get.dart';
-import 'package:qonnected_app/page/login.dart';
 import 'package:qonnected_app/page/widget/banner.dart';
 import 'package:qonnected_app/page/profile/tentangsaya.dart';
 import '../profile/pekerjaan.dart';
 import '../profile/pengingatcico.dart';
+import '../profile/chatkehr.dart';
 
 class IndexSettings extends StatelessWidget {
   final profilesC = Get.put(ProfileController());
@@ -21,7 +21,7 @@ class IndexSettings extends StatelessWidget {
           children: [
             BannerCustom(
               customAsset:
-                  'https://www.markdesign.net/images/product/resize_755_3000/a3d63-my-devteam2.jpg',
+                  'https://www.chendracahyadi.com/images/gallery/4d888-cover-telkom-architecture-photo-surabaya-jakarta-photography.jpg',
               customHeight: .3,
             ),
             const SizedBox(
@@ -167,7 +167,10 @@ class IndexSettings extends StatelessWidget {
                 Icons.arrow_forward_ios_outlined,
                 size: 18,
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const ChatHR()));
+              },
               title: const Text("Chat ke Management"),
             ),
             const Divider(color: Colors.black38),

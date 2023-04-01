@@ -1,30 +1,30 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:qonnected_app/controller/init_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
-import 'package:qonnected_app/helper/shared_preferences.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
 import 'package:qonnected_app/page/settings/index.dart';
-import 'package:qrscan/qrscan.dart' as scanner;
+import 'package:qonnected_app/page/summary/tentangperusahaan.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class InitialPage extends StatefulWidget {
   static const routeName = '/initpage';
+
+  const InitialPage({Key? key}) : super(key: key);
   @override
   State<InitialPage> createState() => _InitialPageState();
 }
 
 class _InitialPageState extends State<InitialPage> {
+  String _scanBarcode = 'Unknown';
   final InitController initC = Get.put(InitController());
-
-  // List<PersistentBottomNavBarItem> _navBarsItems() {
 
   @override
   void initState() {
@@ -32,12 +32,13 @@ class _InitialPageState extends State<InitialPage> {
     super.initState();
   }
 
-  int _selectedIndex = vars.idx == 0 ? vars.idx : 0;
+  final int selectedIndex = vars.idx == 0 ? vars.idx : 0;
 
   final pages = [
-    IndexHome(),
-    IndexCoWorkers(),
-    IndexActivity(),
+    const IndexHome(),
+    const IndexCoWorkers(),
+    const TentangPerusahaan(),
+    // const IndexActivity(),
     IndexSettings()
   ];
 
@@ -51,49 +52,7 @@ class _InitialPageState extends State<InitialPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         extendBodyBehindAppBar: true,
-        appBar: AppBar(
-          // actions: [Icon(Icons.abc_outlined)],
-          iconTheme: IconThemeData(color: Color(0xFF2D2F48)),
-          backgroundColor: Colors.transparent,
-          foregroundColor: Colors.transparent,
-          elevation: 0,
-          // title: Center(
-          //   child: Padding(
-          //     padding: const EdgeInsets.only(right: 30),
-          //     child: Image.asset(
-          //       'assets/images/logo.png',
-          //       height: 80,
-          //     ),
-          //   ),
-          // ),
-        ),
-        drawerEnableOpenDragGesture: false,
-        // drawer: Drawer(
-        //   child: SingleChildScrollView(
-        //       child: Column(
-        //     children: const [
-        //       SizedBox(
-        //         height: 20,
-        //       ),
-        //       ListTile(
-        //         leading: Icon(Icons.library_books_outlined),
-        //         title: Text('Summary'),
-        //       ),
-        //       ListTile(
-        //         leading: Icon(Icons.library_books_outlined),
-        //         title: Text('Change Shift'),
-        //       ),
-        //       ListTile(
-        //         leading: Icon(Icons.library_books_outlined),
-        //         title: Text('Over Time'),
-        //       ),
-        //       ListTile(
-        //         leading: Icon(Icons.library_books_outlined),
-        //         title: Text('Payslip'),
-        //       )
-        //     ],
-        //   )),
-        // ),
+        drawerEnableOpenDragGesture: true,
         body: pages[vars.idx],
         floatingActionButton: Obx(() => FloatingActionButton(
               backgroundColor: Color(initC.mainColor.value),
@@ -103,16 +62,17 @@ class _InitialPageState extends State<InitialPage> {
                 final prefs = await SharedPreferences.getInstance();
                 await prefs.setBool('checkin', false);
                 await prefs.setBool('checkout', false);
+                scanQR(url: "https://invletter.com/profiles");
                 // HelperSharedPreferences.refreshStorage();
                 // print(prefs.getBool('checkin'));
               },
-              child: Icon(Icons.qr_code_scanner), //icon inside button
+              child: const Icon(Icons.qr_code_scanner), //icon inside button
             )),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
           //bottom navigation bar on scaffold
           color: Colors.white,
-          shape: CircularNotchedRectangle(), //shape of notch
+          shape: const CircularNotchedRectangle(), //shape of notch
           notchMargin:
               5, //notche margin between floating button and bottom appbar
           child: SizedBox(
@@ -126,7 +86,7 @@ class _InitialPageState extends State<InitialPage> {
                   child: InkWell(
                     focusColor: Colors.transparent,
                     hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
+                    highlightColor: Colors.black,
                     onTap: () {
                       _onItemTapped(0);
                     },
@@ -136,7 +96,7 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.home_outlined,
                             color: vars.idx == 0
                                 ? Color(initC.mainColor.value)
-                                : Color(0xFF0D1037)),
+                                : const Color(0xFF0D1037)),
                         Text(
                           "Home",
                           style: FontMedium(
@@ -145,7 +105,7 @@ class _InitialPageState extends State<InitialPage> {
                               FontWeight.w500,
                               vars.idx == 0
                                   ? Color(initC.mainColor.value)
-                                  : Color(0xFF0D1037)),
+                                  : const Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -153,7 +113,7 @@ class _InitialPageState extends State<InitialPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: const EdgeInsets.only(right: 20),
                   child: InkWell(
                     focusColor: Colors.transparent,
                     hoverColor: Colors.transparent,
@@ -167,7 +127,7 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.people_outline,
                             color: vars.idx == 1
                                 ? Color(initC.mainColor.value)
-                                : Color(0xFF0D1037)),
+                                : const Color(0xFF0D1037)),
                         Text(
                           "Co Worker",
                           style: FontMedium(
@@ -176,7 +136,7 @@ class _InitialPageState extends State<InitialPage> {
                               FontWeight.w500,
                               vars.idx == 1
                                   ? Color(initC.mainColor.value)
-                                  : Color(0xFF0D1037)),
+                                  : const Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -197,7 +157,7 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.domain_outlined,
                             color: vars.idx == 2
                                 ? Color(initC.mainColor.value)
-                                : Color(0xFF0D1037)),
+                                : const Color(0xFF0D1037)),
                         Text(
                           "Company",
                           style: FontMedium(
@@ -206,7 +166,7 @@ class _InitialPageState extends State<InitialPage> {
                               FontWeight.w500,
                               vars.idx == 2
                                   ? Color(initC.mainColor.value)
-                                  : Color(0xFF0D1037)),
+                                  : const Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -227,7 +187,7 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.person_outline_rounded,
                             color: vars.idx == 3
                                 ? Color(initC.mainColor.value)
-                                : Color(0xFF0D1037)),
+                                : const Color(0xFF0D1037)),
                         Text(
                           "Profile",
                           style: FontMedium(
@@ -236,7 +196,7 @@ class _InitialPageState extends State<InitialPage> {
                               FontWeight.w500,
                               vars.idx == 3
                                   ? Color(initC.mainColor.value)
-                                  : Color(0xFF0D1037)),
+                                  : const Color(0xFF0D1037)),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -296,5 +256,43 @@ class _InitialPageState extends State<InitialPage> {
         //   onTap: _onItemTapped,
         // ),
         );
+  }
+
+  //fungsi untuk scan code
+  Future<void> scanQR({String? url}) async {
+    String barcodeScanRes;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+          '#ff6666', 'Cancel', true, ScanMode.QR);
+      print(barcodeScanRes);
+    } on PlatformException {
+      barcodeScanRes = 'Failed to get platform version.';
+    }
+
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
+    if (barcodeScanRes == url) {
+      Get.to(const IndexActivity());
+    } else {
+      barcodeScanRes == "Gagal";
+      await AwesomeDialog(
+        context: context,
+        dialogType: DialogType.error,
+        animType: AnimType.scale,
+        title: "Gagal",
+        desc: 'Url link tidak sama dengan link absensi perusahaan.',
+        autoHide: const Duration(seconds: 3),
+        onDismissCallback: (type) {
+          debugPrint('Dialog Dissmiss from callback $type');
+        },
+      ).show();
+    }
+
+    // setState(() {
+    //   _scanBarcode = barcodeScanRes;
+    // });
   }
 }

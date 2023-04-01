@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 // List<ProfileModel> ProfileModelFromJson(String str) => List<ProfileModel>.from(
 //     json.decode(str).map((x) => ProfileModel.fromJson(x)));
 
@@ -7,7 +5,6 @@ import 'dart:convert';
 //     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class ActivityModel {
-  @override
   final String? created_at,
       profile_id,
       description,

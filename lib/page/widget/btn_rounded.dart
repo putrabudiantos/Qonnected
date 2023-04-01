@@ -11,7 +11,7 @@ class ButtonRoundedWidget extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 1,
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
                 color: Colors.black26, offset: Offset(0, 3), blurRadius: 3.0)
           ],
