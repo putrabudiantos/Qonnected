@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
@@ -6,7 +7,10 @@ import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/home/timeoff.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
+import 'package:qonnected_app/page/home/todayactivity.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class IndexHome extends StatefulWidget {
   const IndexHome({Key? key}) : super(key: key);
@@ -18,9 +22,10 @@ class IndexHome extends StatefulWidget {
 class _IndexHomeState extends State<IndexHome> {
   ActivityController homeC = Get.put(ActivityController());
   ProfileController profileC = Get.put(ProfileController());
-  // int get count => list.length;
-  // final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-  //     FlutterLocalNotificationsPlugin();
+  ScrollController? controller;
+
+  int get count => list.length;
+  final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
   List<int> list = [];
 
@@ -32,32 +37,32 @@ class _IndexHomeState extends State<IndexHome> {
     // list.addAll(List.generate(30, (v) => v));
   }
 
-  // void load() {
-  //   print("load");
-  //   setState(() {
-  //     list.addAll(List.generate(15, (v) => v));
-  //     print("data count = ${list.length}");
-  //   });
-  // }
+  void load() {
+    print("load");
+    setState(() {
+      list.addAll(List.generate(15, (v) => v));
+      print("data count = ${list.length}");
+    });
+  }
 
-  // Future<bool> _loadMore() async {
-  //   print("onLoadMore");
-  //   await Future.delayed(Duration(seconds: 0, milliseconds: 2000));
-  //   load();
-  //   return true;
-  // }
+  Future<bool> loadMore() async {
+    print("onLoadMore");
+    await Future.delayed(const Duration(seconds: 0, milliseconds: 2000));
+    load();
+    return true;
+  }
 
-  // Future<void> _refresh() async {
-  //   await Future.delayed(Duration(seconds: 0, milliseconds: 2000));
-  //   list.clear();
-  //   load();
-  // }
+  Future<void> refresh() async {
+    await Future.delayed(const Duration(seconds: 0, milliseconds: 2000));
+    list.clear();
+    load();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
+      body: ListView(children: [
+        Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -77,9 +82,36 @@ class _IndexHomeState extends State<IndexHome> {
                           child: widgetStats())),
                 ],
               ),
-              // displayActivities()
             ]),
-      ),
+        Padding(
+          padding: const EdgeInsets.only(top: 70, left: 18, right: 18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              Text(
+                "Today's Activity",
+                style: TextStyle(
+                    fontFamily: "Inter",
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold),
+              ),
+              Divider(
+                color: Colors.black26,
+              ),
+            ],
+          ),
+        ),
+        todaysActivity(
+            name: "Putra",
+            gender: "laki-laki",
+            status: "wfh",
+            date: DateFormat.yMMMEd().format(DateTime.now())),
+        todaysActivity(
+            name: "Arum",
+            gender: "perempuan",
+            status: "wfo",
+            date: DateFormat.yMMMEd().format(DateTime.now())),
+      ]),
     );
   }
 

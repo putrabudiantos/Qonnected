@@ -94,8 +94,8 @@ class _TimeOffState extends State<TimeOff> {
                         DateTime? pickeddate = await showDatePicker(
                             context: context,
                             initialDate: DateTime.now(),
-                            firstDate: DateTime(2022),
-                            lastDate: DateTime(2025));
+                            firstDate: DateTime(2023),
+                            lastDate: DateTime(2030));
 
                         if (pickeddate != null) {
                           print(pickeddate);
@@ -205,17 +205,9 @@ class _TimeOffState extends State<TimeOff> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10),
+        padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
         child: ListView(
           children: [
-            CoolDropdown(
-              dropdownHeight: 150,
-              resultWidth: 150,
-              dropdownWidth: 120,
-              dropdownList: status,
-              onChange: (_) {},
-              defaultValue: status[0],
-            ),
             cardtimeoff(
                 employeeid: "12",
                 name: "Frendy",
