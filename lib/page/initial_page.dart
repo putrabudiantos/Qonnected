@@ -1,14 +1,15 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+// import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:qonnected_app/controller/init_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:qonnected_app/page/scanner/index.dart';
-import 'package:qonnected_app/page/settings/index.dart';
+import 'package:qonnected_app/page/settings/profile.dart';
+import 'package:qonnected_app/page/settings/settings.dart';
 import 'package:qonnected_app/page/summary/tentangperusahaan.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
@@ -39,7 +40,8 @@ class _InitialPageState extends State<InitialPage> {
     const IndexCoWorkers(),
     const TentangPerusahaan(),
     // const IndexActivity(),
-    IndexSettings()
+    // IndexSettings()
+    const Settings()
   ];
 
   void _onItemTapped(int index) {
@@ -62,7 +64,7 @@ class _InitialPageState extends State<InitialPage> {
                 final prefs = await SharedPreferences.getInstance();
                 await prefs.setBool('checkin', false);
                 await prefs.setBool('checkout', false);
-                scanQR(url: "https://invletter.com/profiles");
+                // scanQR(url: "https://invletter.com/profiles");
                 // HelperSharedPreferences.refreshStorage();
                 // print(prefs.getBool('checkin'));
               },
@@ -184,12 +186,12 @@ class _InitialPageState extends State<InitialPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.person_outline_rounded,
+                        Icon(Icons.settings,
                             color: vars.idx == 3
                                 ? Color(initC.mainColor.value)
                                 : const Color(0xFF0D1037)),
                         Text(
-                          "Profile",
+                          "Settings",
                           style: FontMedium(
                               context,
                               12,
@@ -258,41 +260,41 @@ class _InitialPageState extends State<InitialPage> {
         );
   }
 
-  //fungsi untuk scan code
-  Future<void> scanQR({String? url}) async {
-    String barcodeScanRes;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-          '#ff6666', 'Cancel', true, ScanMode.QR);
-      print(barcodeScanRes);
-    } on PlatformException {
-      barcodeScanRes = 'Failed to get platform version.';
-    }
+  // //fungsi untuk scan code
+  // Future<void> scanQR({String? url}) async {
+  //   String barcodeScanRes;
+  //   // Platform messages may fail, so we use a try/catch PlatformException.
+  //   try {
+  //     barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+  //         '#ff6666', 'Cancel', true, ScanMode.QR);
+  //     print(barcodeScanRes);
+  //   } on PlatformException {
+  //     barcodeScanRes = 'Failed to get platform version.';
+  //   }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-    if (barcodeScanRes == url) {
-      Get.to(const IndexActivity());
-    } else {
-      barcodeScanRes == "Gagal";
-      await AwesomeDialog(
-        context: context,
-        dialogType: DialogType.error,
-        animType: AnimType.scale,
-        title: "Gagal",
-        desc: 'Url link tidak sama dengan link absensi perusahaan.',
-        autoHide: const Duration(seconds: 3),
-        onDismissCallback: (type) {
-          debugPrint('Dialog Dissmiss from callback $type');
-        },
-      ).show();
-    }
+  //   // If the widget was removed from the tree while the asynchronous platform
+  //   // message was in flight, we want to discard the reply rather than calling
+  //   // setState to update our non-existent appearance.
+  //   if (!mounted) return;
+  //   if (barcodeScanRes == url) {
+  //     Get.to(const IndexActivity());
+  //   } else {
+  //     barcodeScanRes == "Gagal";
+  //     await AwesomeDialog(
+  //       context: context,
+  //       dialogType: DialogType.error,
+  //       animType: AnimType.scale,
+  //       title: "Gagal",
+  //       desc: 'Url link tidak sama dengan link absensi perusahaan.',
+  //       autoHide: const Duration(seconds: 3),
+  //       onDismissCallback: (type) {
+  //         debugPrint('Dialog Dissmiss from callback $type');
+  //       },
+  //     ).show();
+  //   }
 
-    // setState(() {
-    //   _scanBarcode = barcodeScanRes;
-    // });
-  }
+  //   // setState(() {
+  //   //   _scanBarcode = barcodeScanRes;
+  //   // });
+  // }
 }

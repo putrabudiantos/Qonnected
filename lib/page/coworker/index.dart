@@ -9,7 +9,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IndexCoWorkers extends StatefulWidget {
-  const IndexCoWorkers({Key? key}) : super(key: key);
+  final String? urlimagecompany;
+  const IndexCoWorkers({Key? key, this.urlimagecompany}) : super(key: key);
 
   @override
   State<IndexCoWorkers> createState() => _IndexCoWorkersState();
@@ -319,68 +320,197 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
 
   @override
   Widget build(BuildContext context) {
+    String? url = widget.urlimagecompany;
     return Scaffold(
-        appBar: AppBar(
-          foregroundColor: Colors.white,
-          backgroundColor: Colors.transparent,
-          toolbarHeight: 80,
-          elevation: 0,
-          automaticallyImplyLeading: false,
-          centerTitle: true,
-          title: Container(
-            color: Colors.transparent,
-            height: 150,
-            width: 150,
+        body: SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width * 1,
+            height: MediaQuery.of(context).size.height * .27,
+            decoration: const BoxDecoration(
+              color: Color(0xFF0D1037),
+            ),
             child: Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Image.network(
-                'https://www.telkom.co.id/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png',
-                scale: 1.6,
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 35,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      CircleAvatar(
+                        radius: 40,
+                        // ambil gambar dari API
+                        backgroundImage: NetworkImage(
+                            "https://images.ctfassets.net/xvr9jywirbgw/3Hvty8DyOEUftI7YT8ecQ6/14b30fefbea79834da15b60b69bd9921/logo2.jpg"),
+                      ),
+                      //Nama Perusahaan diambil dari API
+                      Text(
+                        "MDT",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white),
+                      )
+                    ],
+                  )
+                  // SizedBox(
+                  //   height: 10,
+                  // ),
+                ],
               ),
             ),
           ),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 15, right: 15),
-          child: GridView.count(
-            crossAxisCount: 2,
-            childAspectRatio: (1 / 0.98),
-            shrinkWrap: true,
-            children: List.generate(datakaryawan.length, (index) {
-              return GestureDetector(
-                onTap: () {
-                  showModalBottomSheet(
-                      enableDrag: true,
-                      context: context,
-                      builder: (context) {
-                        return FractionallySizedBox(
-                          heightFactor: 0.9,
-                          child: Container(
-                            padding: const EdgeInsets.all(15),
-                            width: MediaQuery.of(context).size.width,
-                            decoration: const BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(30),
-                                  topRight: Radius.circular(30),
+          Container(
+            transform: Matrix4.translationValues(0.0, -50, 0),
+            width: MediaQuery.of(context).size.width,
+            decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(25))),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: GridView.count(
+                crossAxisCount: 2,
+                childAspectRatio: (1 / 0.98),
+                shrinkWrap: true,
+                children: List.generate(datakaryawan.length, (index) {
+                  return GestureDetector(
+                    onTap: () {
+                      showModalBottomSheet(
+                          enableDrag: true,
+                          context: context,
+                          builder: (context) {
+                            return FractionallySizedBox(
+                              heightFactor: 0.9,
+                              child: Container(
+                                padding: const EdgeInsets.all(15),
+                                width: MediaQuery.of(context).size.width,
+                                decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(30),
+                                      topRight: Radius.circular(30),
+                                    ),
+                                    color: Colors.white),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    //slider button seperti apple
+                                    Container(
+                                      color: Colors.transparent,
+                                      child: Container(
+                                        width: 60,
+                                        height: 8,
+                                        decoration: BoxDecoration(
+                                            color: Colors.black12,
+                                            borderRadius:
+                                                BorderRadius.circular(10)),
+                                      ),
+                                    ),
+                                    const SizedBox(height: 20),
+                                    //info profil
+                                    if (founduser[index]['jeniskelamin'] ==
+                                        "wanita")
+                                      Image.asset(
+                                        'assets/icons/male.png',
+                                        width: 60,
+                                        height: 60,
+                                      )
+                                    else if (founduser[index]['jeniskelamin'] ==
+                                        "pria")
+                                      Image.asset(
+                                        'assets/icons/female.png',
+                                        width: 60,
+                                        height: 60,
+                                      )
+                                    else
+                                      CircleAvatar(
+                                        backgroundColor: Colors.green.shade100,
+                                        radius: 30,
+                                        child: const Icon(
+                                          Icons.person_outlined,
+                                          size: 35,
+                                        ),
+                                      ),
+                                    const SizedBox(height: 10),
+                                    //informasi
+                                    Text(
+                                      "${founduser[index]['nama']}",
+                                      maxLines: 1,
+                                      style: const TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text(
+                                      "${founduser[index]['jabatan']}",
+                                      maxLines: 1,
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 10),
+                                    //informasi socialmedia wa
+                                    if (founduser[index]['whatsapp'] != '')
+                                      whatsapplistile(
+                                          number: founduser[index]['nomor'],
+                                          ontap: () {
+                                            whatsappdirect(
+                                                nomor: founduser[index]
+                                                    ['nomor']);
+                                          }),
+
+                                    //informasi socialmedia ig
+                                    // if (founduser[index]['instagram'] != '')
+                                    //   instagramlisttile(
+                                    //       username: founduser[index]['instagram'],
+                                    //       ontap: () {}),
+
+                                    //informasi email
+                                    if (founduser[index]['email'] != '')
+                                      emaillisttile(
+                                          email: founduser[index]['email'],
+                                          ontap: () {
+                                            launchUrlEmail(
+                                                founduser[index]['email']);
+                                          }),
+
+                                    if (founduser[index]['nomor'] != '')
+                                      telephone(
+                                          number: founduser[index]['nomor'],
+                                          ontap: () {
+                                            launchUrlPhone(
+                                                founduser[index]['nomor']);
+                                          }),
+                                  ],
                                 ),
-                                color: Colors.white),
+                              ),
+                            );
+                          });
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(5),
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          side:
+                              BorderSide(color: Colors.grey.shade200, width: 1),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        elevation: 2,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.grey.shade100,
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                //slider button seperti apple
-                                Container(
-                                  color: Colors.transparent,
-                                  child: Container(
-                                    width: 60,
-                                    height: 8,
-                                    decoration: BoxDecoration(
-                                        color: Colors.black12,
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                  ),
-                                ),
-                                const SizedBox(height: 20),
-                                //info profil
                                 if (founduser[index]['jeniskelamin'] ==
                                     "wanita")
                                   Image.asset(
@@ -404,13 +534,12 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
                                       size: 35,
                                     ),
                                   ),
-                                const SizedBox(height: 10),
-                                //informasi
+                                const SizedBox(height: 7),
                                 Text(
                                   "${founduser[index]['nama']}",
                                   maxLines: 1,
                                   style: const TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Text(
@@ -420,124 +549,30 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
                                     fontSize: 14,
                                   ),
                                 ),
-                                const SizedBox(height: 10),
-                                //informasi socialmedia wa
-                                if (founduser[index]['whatsapp'] != '')
-                                  whatsapplistile(
-                                      number: founduser[index]['nomor'],
-                                      ontap: () {
-                                        whatsappdirect(
-                                            nomor: founduser[index]['nomor']);
-                                      }),
-
-                                //informasi socialmedia ig
-                                // if (founduser[index]['instagram'] != '')
-                                //   instagramlisttile(
-                                //       username: founduser[index]['instagram'],
-                                //       ontap: () {}),
-
-                                //informasi email
-                                if (founduser[index]['email'] != '')
-                                  emaillisttile(
-                                      email: founduser[index]['email'],
-                                      ontap: () {
-                                        launchUrlEmail(
-                                            founduser[index]['email']);
-                                      }),
-
-                                if (founduser[index]['nomor'] != '')
-                                  telephone(
-                                      number: founduser[index]['nomor'],
-                                      ontap: () {
-                                        launchUrlPhone(
-                                            founduser[index]['nomor']);
-                                      }),
-
-                                //   linkedinlisttile(
-                                //       username: founduser[index]['linkedin'],
-                                //       ontap: () {}),
-                                //   websitelisttile(
-                                //       url: founduser[index]['urllink'],
-                                //       ontap: () {}),
+                                const SizedBox(height: 8),
+                                //sementara
+                                const Text(
+                                  "Onsite",
+                                  maxLines: 1,
+                                  style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.green,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ],
                             ),
                           ),
-                        );
-                      });
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(5),
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.grey.shade200, width: 1),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    elevation: 2,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey.shade100,
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            if (founduser[index]['jeniskelamin'] == "wanita")
-                              Image.asset(
-                                'assets/icons/male.png',
-                                width: 60,
-                                height: 60,
-                              )
-                            else if (founduser[index]['jeniskelamin'] == "pria")
-                              Image.asset(
-                                'assets/icons/female.png',
-                                width: 60,
-                                height: 60,
-                              )
-                            else
-                              CircleAvatar(
-                                backgroundColor: Colors.green.shade100,
-                                radius: 30,
-                                child: const Icon(
-                                  Icons.person_outlined,
-                                  size: 35,
-                                ),
-                              ),
-                            const SizedBox(height: 7),
-                            Text(
-                              "${founduser[index]['nama']}",
-                              maxLines: 1,
-                              style: const TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.bold),
-                            ),
-                            Text(
-                              "${founduser[index]['jabatan']}",
-                              maxLines: 1,
-                              style: const TextStyle(
-                                fontSize: 14,
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            //sementara
-                            const Text(
-                              "Onsite",
-                              maxLines: 1,
-                              style: TextStyle(
-                                  fontSize: 13,
-                                  color: Colors.green,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ],
                         ),
                       ),
                     ),
-                  ),
-                ),
-              );
-            }),
+                  );
+                }),
+              ),
+            ),
           ),
-        ));
+        ],
+      ),
+    ));
   }
 
   cardList(String name, String position, String status) {

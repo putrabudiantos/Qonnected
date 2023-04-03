@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class BannerCustom extends StatelessWidget {
-  BannerCustom(
+  final String customAsset;
+  final double customHeight;
+  final bool imageAvailable = false;
+  const BannerCustom(
       {required this.customAsset,
       required this.customHeight,
       Key? key,
       String? imageUrl})
       : super(key: key);
-  final String customAsset;
-  final double customHeight;
-  bool imageAvailable = false;
 
   @override
   Widget build(BuildContext context) {

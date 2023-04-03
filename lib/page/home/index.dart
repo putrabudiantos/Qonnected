@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:qonnected_app/controller/activity_controller.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
+import 'package:qonnected_app/page/home/payslip.dart';
 import 'package:qonnected_app/page/home/timeoff.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:qonnected_app/page/home/todayactivity.dart';
@@ -62,27 +63,31 @@ class _IndexHomeState extends State<IndexHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
-        Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  Container(
-                    height: 210,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFF0D1037),
-                    ),
-                  ),
-                  Positioned.fill(
-                      bottom: -90,
-                      child: Align(
-                          alignment: Alignment.bottomCenter,
-                          child: widgetStats())),
-                ],
-              ),
-            ]),
+        const SizedBox(height: 20),
+        buttonlogoperusahaan(
+            urlimage:
+                "https://media.licdn.com/dms/image/C560BAQEAUSqLfGDgLQ/company-logo_200_200/0/1593420726726?e=2147483647&v=beta&t=OfLy2pp1FTmLtJqj_SffcjCuip8J3KxHKBF-0Cf7HZ4"),
+        // Column(
+        //     mainAxisAlignment: MainAxisAlignment.start,
+        //     crossAxisAlignment: CrossAxisAlignment.start,
+        //     children: [
+        //       Stack(
+        //         clipBehavior: Clip.none,
+        //         children: [
+        //           Container(
+        //             height: 210,
+        //             decoration: const BoxDecoration(
+        //               color: Color(0xFF0D1037),
+        //             ),
+        //           ),
+        //           Positioned.fill(
+        //               bottom: -90,
+        //               child: Align(
+        //                   alignment: Alignment.bottomCenter,
+        //                   child: widgetStats())),
+        //         ],
+        //       ),
+        //     ]),
         Padding(
           padding: const EdgeInsets.only(top: 70, left: 18, right: 18),
           child: Column(
@@ -287,7 +292,12 @@ class _IndexHomeState extends State<IndexHome> {
                   Get.to(const TimeOff());
                 }),
             iconCard(text: 'Overtime', img: 'assets/images/icon/icon-05.png'),
-            iconCard(text: 'Pay Slip', img: 'assets/images/icon/icon-06.png'),
+            iconCard(
+                text: 'Pay Slip',
+                img: 'assets/images/icon/icon-06.png',
+                function: () {
+                  Get.to(const PaySlip());
+                }),
           ],
         ),
       ),
@@ -484,6 +494,64 @@ class _IndexHomeState extends State<IndexHome> {
                         )),
             )
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget buttonlogoperusahaan({String? urlimage}) {
+    bool kondisiekspanded = false;
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          kondisiekspanded = !kondisiekspanded;
+        });
+        if (kondisiekspanded == true) {
+          menulogo();
+        }
+      },
+      child: Container(
+        width: 80,
+        height: 80,
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50)),
+        child: Image.network("$urlimage"),
+      ),
+    );
+  }
+
+// Row untuk menu saat logo perusahaan ditekan
+  Row menulogo() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        imagedatacontainer(
+            function: () {}, urlassets: "assets/images/attendences.png"),
+        imagedatacontainer(
+            function: () {}, urlassets: "assets/images/summary.png"),
+        imagedatacontainer(
+            function: () {}, urlassets: "assets/images/timeoff.png")
+      ],
+    );
+  }
+
+  GestureDetector imagedatacontainer(
+      {String? urlassets, Function()? function}) {
+    return GestureDetector(
+      onTap: function,
+      child: Card(
+        shape: RoundedRectangleBorder(
+          side: const BorderSide(color: Colors.black, width: 1),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        elevation: 3,
+        child: Container(
+          width: 70,
+          height: 70,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Image.asset(urlassets!),
         ),
       ),
     );

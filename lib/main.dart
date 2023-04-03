@@ -11,7 +11,7 @@ import 'package:qonnected_app/page/introduction/index.dart';
 import 'package:qonnected_app/page/login.dart';
 import 'package:qonnected_app/page/profile/ajukanperubahansaya.dart';
 import 'package:qonnected_app/page/profile/index.dart';
-import 'package:qonnected_app/page/settings/index.dart';
+import 'package:qonnected_app/page/settings/profile.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
     GetPage(
         name: '/home', page: () => const IndexHome(), binding: HomeBinding()),
     GetPage(name: '/profile', page: () => IndexProfile()),
-    GetPage(name: '/settings', page: () => IndexSettings()),
+    GetPage(name: '/settings', page: () => ProfilesDetails()),
     GetPage(
         name: '/profile/personal/ajukanperubahan',
         page: () => const AjukanPerubahanSaya())

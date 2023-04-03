@@ -3,7 +3,39 @@ import './ajukanperubahansaya.dart';
 import 'package:get/get.dart';
 
 class TentangSaya extends StatelessWidget {
-  const TentangSaya({Key? key}) : super(key: key);
+  String? gender;
+  String? nama;
+  String? jabatan;
+  String? namaperusahaan;
+  int? warnaperusahaan;
+  String? alamat;
+  String? nip;
+  String? tempatlahir;
+  String? email;
+  String? npwp;
+  String? tanggallahir;
+  String? agama;
+  String? nohp;
+  String? rekening;
+  String? status;
+  TentangSaya(
+      {Key? key,
+      this.gender,
+      this.nama,
+      this.jabatan,
+      this.namaperusahaan,
+      this.warnaperusahaan,
+      this.agama,
+      this.alamat,
+      this.email,
+      this.nip,
+      this.npwp,
+      this.nohp,
+      this.rekening,
+      this.tanggallahir,
+      this.status,
+      this.tempatlahir})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +46,7 @@ class TentangSaya extends StatelessWidget {
         centerTitle: true,
         leading: const BackButton(color: Colors.white),
         title: const Text(
-          'Info Personal',
+          'Account',
           style: TextStyle(color: Colors.white, fontFamily: "Inter"),
         ),
       ),
@@ -22,69 +54,73 @@ class TentangSaya extends StatelessWidget {
         padding: const EdgeInsets.only(left: 15, right: 15, top: 8),
         child: ListView(
           children: [
+            // circle profile image
+            if (gender == "laki-laki")
+              profileimage(
+                  colorsperusahaan: warnaperusahaan,
+                  urlimage: "assets/icons/male.png",
+                  name: nama,
+                  jabatan: jabatan,
+                  namaperusahaan: namaperusahaan)
+            else
+              profileimage(
+                  colorsperusahaan: warnaperusahaan,
+                  urlimage: "assets/icons/female.png",
+                  name: nama,
+                  jabatan: jabatan,
+                  namaperusahaan: namaperusahaan),
+            const SizedBox(height: 10),
             //nama
-            textdata(
-                context: context,
-                lable: "Nama",
-                information: "Saputra Budianto"),
+            textdata(context: context, lable: "Nama", information: "$nama"),
             //alamat
-            textdata(
-                context: context, lable: "Alamat", information: "Sidoarjo"),
+            textdata(context: context, lable: "Alamat", information: "$alamat"),
             //agama
             textdata(
               context: context,
               lable: "NIP",
-              information: "A15B",
+              information: nip,
             ),
             //jabatan
             textdata(
-                context: context,
-                lable: "Jabatan",
-                information: "Mobile Developer"),
+                context: context, lable: "Jabatan", information: "$jabatan"),
             //email
-            textdata(
-                context: context,
-                lable: "Email",
-                information: "localhosting8080@gmail.com"),
+            textdata(context: context, lable: "Email", information: "$email"),
             //tempat lahir
             textdata(
                 context: context,
                 lable: "Tempat Lahir",
-                information: "Surabaya"),
+                information: "$tempatlahir"),
             //tanggal lahir
             textdata(
                 context: context,
                 lable: "Tanggal lahir",
-                information: "23/11/1999"),
+                information: "$tanggallahir"),
             //Jenis kelamin
             textdata(
                 context: context,
                 lable: "Jenis kelamin",
-                information: "Laki-laki"),
+                information: "$gender"),
             //status
-            textdata(context: context, lable: "Status", information: "Lajang"),
+            textdata(context: context, lable: "Status", information: "$status"),
             //nomor telpon
-            textdata(
-                context: context,
-                lable: "Nomor Hp",
-                information: "081237131587"),
+            textdata(context: context, lable: "Nomor Hp", information: "$nohp"),
             //agama
             textdata(
               context: context,
               lable: "Agama",
-              information: "Islam",
+              information: "$agama",
             ),
             //NPWP
             textdata(
               context: context,
               lable: "NPWP",
-              information: "38294729384",
+              information: "$npwp",
             ),
             //No. Rekening
             textdata(
               context: context,
               lable: "Nomor Rekening",
-              information: "14133958384",
+              information: "$rekening",
             ),
           ],
         ),
@@ -114,6 +150,46 @@ class TentangSaya extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
           )),
+    );
+  }
+
+  Widget profileimage(
+      {String? urlimage,
+      int? colorsperusahaan,
+      String? name,
+      String? jabatan,
+      String? namaperusahaan}) {
+    return Row(
+      children: [
+        Container(
+          height: 80,
+          width: 80,
+          decoration: BoxDecoration(
+            color: Color(colorsperusahaan!),
+            borderRadius: BorderRadius.circular(80),
+          ),
+          child: CircleAvatar(
+            child: Image.asset(
+              urlimage!,
+              width: 50,
+              height: 50,
+            ),
+          ),
+        ),
+        const SizedBox(width: 10),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(name!,
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
+            Text(jabatan!),
+            Text(namaperusahaan!,
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
+          ],
+        )
+      ],
     );
   }
 
