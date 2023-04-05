@@ -434,9 +434,16 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(width: 5),
-                        founduser[index]['status'] == "wfh"
-                            ? status(color: Colors.amber.shade300)
-                            : status(color: Colors.green.shade500),
+                        if (founduser[index]['status'] == "wfh")
+                          status(color: Colors.blue.shade500)
+                        else if (founduser[index]['status'] == "wfo")
+                          status(color: Colors.green.shade500)
+                        else if (founduser[index]['status'] == "izin")
+                          status(color: Colors.grey.shade500)
+                        else if (founduser[index]['status'] == "cuti")
+                          status(color: Colors.black)
+                        else
+                          status(color: Colors.red.shade500),
                       ],
                     ),
                     Text(founduser[index]['jabatan'])
