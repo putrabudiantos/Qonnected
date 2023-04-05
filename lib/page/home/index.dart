@@ -6,6 +6,7 @@ import 'package:qonnected_app/controller/activity_controller.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/home/payslip.dart';
+import 'package:qonnected_app/page/home/story.dart';
 import 'package:qonnected_app/page/home/timeoff.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:qonnected_app/page/home/todayactivity.dart';
@@ -24,6 +25,7 @@ class _IndexHomeState extends State<IndexHome> {
   ActivityController homeC = Get.put(ActivityController());
   ProfileController profileC = Get.put(ProfileController());
   ScrollController? controller;
+  bool kondisiekspanded = false;
 
   int get count => list.length;
   final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -64,32 +66,34 @@ class _IndexHomeState extends State<IndexHome> {
     return Scaffold(
       body: ListView(children: [
         const SizedBox(height: 20),
+
+        //Fungsi ini untuk memasukan logo perusanhaan
         buttonlogoperusahaan(
             urlimage:
                 "https://media.licdn.com/dms/image/C560BAQEAUSqLfGDgLQ/company-logo_200_200/0/1593420726726?e=2147483647&v=beta&t=OfLy2pp1FTmLtJqj_SffcjCuip8J3KxHKBF-0Cf7HZ4"),
-        // Column(
-        //     mainAxisAlignment: MainAxisAlignment.start,
-        //     crossAxisAlignment: CrossAxisAlignment.start,
-        //     children: [
-        //       Stack(
-        //         clipBehavior: Clip.none,
-        //         children: [
-        //           Container(
-        //             height: 210,
-        //             decoration: const BoxDecoration(
-        //               color: Color(0xFF0D1037),
-        //             ),
-        //           ),
-        //           Positioned.fill(
-        //               bottom: -90,
-        //               child: Align(
-        //                   alignment: Alignment.bottomCenter,
-        //                   child: widgetStats())),
-        //         ],
-        //       ),
-        //     ]),
+        if (kondisiekspanded == true) menulogo() else const SizedBox(height: 5),
+        const SizedBox(height: 20),
+        const Padding(
+          padding: EdgeInsets.only(top: 20, left: 23, right: 23),
+          child: Text("Our Stories",
+              style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+
+        // untuk Strory perusahaan
         Padding(
-          padding: const EdgeInsets.only(top: 70, left: 18, right: 18),
+          padding: const EdgeInsets.only(left: 15, right: 23),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: const [
+              StoryPerusahaan(),
+              StoryPerusahaan(),
+              StoryPerusahaan(),
+            ],
+          ),
+        ),
+
+        Padding(
+          padding: const EdgeInsets.only(top: 20, left: 18, right: 18),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
@@ -106,6 +110,8 @@ class _IndexHomeState extends State<IndexHome> {
             ],
           ),
         ),
+
+        // Aktifitas harian karyawan
         todaysActivity(
             name: "Putra",
             gender: "laki-laki",
@@ -500,15 +506,11 @@ class _IndexHomeState extends State<IndexHome> {
   }
 
   Widget buttonlogoperusahaan({String? urlimage}) {
-    bool kondisiekspanded = false;
     return GestureDetector(
       onTap: () {
         setState(() {
           kondisiekspanded = !kondisiekspanded;
         });
-        if (kondisiekspanded == true) {
-          menulogo();
-        }
       },
       child: Container(
         width: 80,
@@ -520,17 +522,23 @@ class _IndexHomeState extends State<IndexHome> {
   }
 
 // Row untuk menu saat logo perusahaan ditekan
-  Row menulogo() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        imagedatacontainer(
-            function: () {}, urlassets: "assets/images/attendences.png"),
-        imagedatacontainer(
-            function: () {}, urlassets: "assets/images/summary.png"),
-        imagedatacontainer(
-            function: () {}, urlassets: "assets/images/timeoff.png")
-      ],
+  Widget menulogo() {
+    return Padding(
+      padding: const EdgeInsets.only(left: 35, right: 35, top: 35),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          imagedatacontainer(
+              function: () {}, urlassets: "assets/icons/revisi/attendance.png"),
+          imagedatacontainer(
+              function: () {}, urlassets: "assets/icons/revisi/history.png"),
+          imagedatacontainer(
+              function: () {
+                Get.to(const PaySlip());
+              },
+              urlassets: "assets/icons/revisi/payslip2.png")
+        ],
+      ),
     );
   }
 
@@ -540,8 +548,8 @@ class _IndexHomeState extends State<IndexHome> {
       onTap: function,
       child: Card(
         shape: RoundedRectangleBorder(
-          side: const BorderSide(color: Colors.black, width: 1),
-          borderRadius: BorderRadius.circular(10),
+          side: BorderSide(color: Colors.grey.shade200, width: 1),
+          borderRadius: BorderRadius.circular(20),
         ),
         elevation: 3,
         child: Container(
@@ -549,9 +557,12 @@ class _IndexHomeState extends State<IndexHome> {
           height: 70,
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(20),
           ),
-          child: Image.asset(urlassets!),
+          child: Image.asset(
+            urlassets!,
+            scale: 6,
+          ),
         ),
       ),
     );

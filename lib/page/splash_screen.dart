@@ -34,7 +34,10 @@ class _SplashPageState extends AuthState<SplashPage> {
     _redirectCalled = true;
     final session = Supabase.instance.client;
     if (session != null) {
-      Get.to(InitialPage());
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => const InitialPage()),
+          (route) => false);
     } else {
       Navigator.of(context).pushReplacementNamed('/login');
     }

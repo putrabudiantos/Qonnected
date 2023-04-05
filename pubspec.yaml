@@ -55,6 +55,9 @@ dependencies:
   cool_dropdown: ^1.4.2
   # numberpicker: ^2.1.1
   flutter_barcode_scanner: ^2.0.0
+  flutter_stories: ^0.3.1
+  storyly_flutter: ^1.30.0
+  
 
 
 dev_dependencies:
@@ -92,6 +95,8 @@ flutter:
     - assets/images/icon/
     - assets/icons/
     - assets/icons/karyawan/
+    - assets/icons/revisi/
+    - assets/images/story/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

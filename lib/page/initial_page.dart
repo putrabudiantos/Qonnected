@@ -1,6 +1,7 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 // import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:qonnected_app/controller/init_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
@@ -37,8 +38,15 @@ class _InitialPageState extends State<InitialPage> {
 
   final pages = [
     const IndexHome(),
-    const IndexCoWorkers(),
+    const IndexCoWorkers(urlimagecompany: "", namaperusahaan: "MyDevTeam"),
     const TentangPerusahaan(),
+    ProfilesDetails(
+      nama: "Novita",
+      namaperusahaan: "MyDevTeam",
+      jabatan: "Developer IT",
+      warnaperusahaan: 0xFF0D1037,
+      gender: "perempuan",
+    ),
     // const IndexActivity(),
     // IndexSettings()
     const Settings()
@@ -57,14 +65,19 @@ class _InitialPageState extends State<InitialPage> {
         drawerEnableOpenDragGesture: true,
         body: pages[vars.idx],
         floatingActionButton: Obx(() => FloatingActionButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(40)),
               backgroundColor: Color(initC.mainColor.value),
+
               onPressed: () async {
                 //  String? barcode = await scanner.scan();
                 //  print(barcode);
                 final prefs = await SharedPreferences.getInstance();
                 await prefs.setBool('checkin', false);
                 await prefs.setBool('checkout', false);
-                // scanQR(url: "https://invletter.com/profiles");
+
+                // URL untuk barcode disini
+                scanQR(url: "https://invletter.com/profiles");
                 // HelperSharedPreferences.refreshStorage();
                 // print(prefs.getBool('checkin'));
               },
@@ -186,12 +199,12 @@ class _InitialPageState extends State<InitialPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.settings,
+                        Icon(Icons.person_outline_outlined,
                             color: vars.idx == 3
                                 ? Color(initC.mainColor.value)
                                 : const Color(0xFF0D1037)),
                         Text(
-                          "Settings",
+                          "Profile",
                           style: FontMedium(
                               context,
                               12,
@@ -260,41 +273,41 @@ class _InitialPageState extends State<InitialPage> {
         );
   }
 
-  // //fungsi untuk scan code
-  // Future<void> scanQR({String? url}) async {
-  //   String barcodeScanRes;
-  //   // Platform messages may fail, so we use a try/catch PlatformException.
-  //   try {
-  //     barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-  //         '#ff6666', 'Cancel', true, ScanMode.QR);
-  //     print(barcodeScanRes);
-  //   } on PlatformException {
-  //     barcodeScanRes = 'Failed to get platform version.';
-  //   }
+  //fungsi untuk scan code
+  Future<void> scanQR({String? url}) async {
+    String barcodeScanRes;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+          '#ff6666', 'Cancel', true, ScanMode.QR);
+      print(barcodeScanRes);
+    } on PlatformException {
+      barcodeScanRes = 'Failed to get platform version.';
+    }
 
-  //   // If the widget was removed from the tree while the asynchronous platform
-  //   // message was in flight, we want to discard the reply rather than calling
-  //   // setState to update our non-existent appearance.
-  //   if (!mounted) return;
-  //   if (barcodeScanRes == url) {
-  //     Get.to(const IndexActivity());
-  //   } else {
-  //     barcodeScanRes == "Gagal";
-  //     await AwesomeDialog(
-  //       context: context,
-  //       dialogType: DialogType.error,
-  //       animType: AnimType.scale,
-  //       title: "Gagal",
-  //       desc: 'Url link tidak sama dengan link absensi perusahaan.',
-  //       autoHide: const Duration(seconds: 3),
-  //       onDismissCallback: (type) {
-  //         debugPrint('Dialog Dissmiss from callback $type');
-  //       },
-  //     ).show();
-  //   }
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
+    if (barcodeScanRes == url) {
+      Get.to(const IndexActivity());
+    } else {
+      barcodeScanRes == "Gagal";
+      await AwesomeDialog(
+        context: context,
+        dialogType: DialogType.error,
+        animType: AnimType.scale,
+        title: "Gagal",
+        desc: 'Url link tidak sama dengan link absensi perusahaan.',
+        autoHide: const Duration(seconds: 3),
+        onDismissCallback: (type) {
+          debugPrint('Dialog Dissmiss from callback $type');
+        },
+      ).show();
+    }
 
-  //   // setState(() {
-  //   //   _scanBarcode = barcodeScanRes;
-  //   // });
-  // }
+    // setState(() {
+    //   _scanBarcode = barcodeScanRes;
+    // });
+  }
 }

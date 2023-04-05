@@ -31,6 +31,7 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string name="average_answer_text">Respuesta Promedio</string>
     <string name="bottomsheet_action_expand_halfway">Desplegar hasta la mitad</string>
     <string name="character_counter_content_description">Caracteres introducidos: %1$d de %2$d</string>
     <string name="character_counter_overflowed_content_description">Límite de caracteres superado (%1$d de %2$d)</string>
@@ -53,8 +54,10 @@
     <string name="common_open_on_phone">Abrir en teléfono</string>
     <string name="common_signin_button_text">Iniciar sesión</string>
     <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
+    <string name="days_text">días</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
+    <string name="hours_text">horas</string>
     <string name="icon_content_description">Icono del cuadro de diálogo</string>
     <string name="item_view_role_description">Pestaña</string>
     <string name="material_clock_toggle_content_description">Selecciona AM o PM</string>
@@ -69,6 +72,7 @@
     <string name="material_timepicker_pm">P.M.</string>
     <string name="material_timepicker_select_time">Seleccionar la hora</string>
     <string name="material_timepicker_text_input_mode_description">Cambia al modo de introducción de texto para escribir la hora.</string>
+    <string name="minutes_text">minutos</string>
     <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>
     <string name="mtrl_chip_close_icon_content_description">Retirar %1$s</string>
     <string name="mtrl_exceed_max_badge_number_content_description">Más de %1$d notificaciones nuevas</string>
@@ -103,6 +107,60 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Cambiar al modo de introducción Texto</string>
     <string name="mtrl_picker_toggle_to_year_selection">Toca para seleccionar un año</string>
     <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string name="reminder_off_text">Recordatorio Desactivado</string>
+    <string name="reminder_on_text">Recordatorio Activado</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
+    <string name="sponsored_text">Patrocinado</string>
+    <string name="st_desc_imagecta">Botón de imagen</string>
+    <string name="st_desc_option_a">Opción A</string>
+    <string name="st_desc_option_b">Opción B</string>
+    <string name="st_desc_option_c">Opción C</string>
+    <string name="st_desc_option_d">Opción D</string>
+    <string name="st_desc_poll_after_selection">%1$s, fue elegida por el %2$d%% de los usuarios</string>
+    <string name="st_desc_poll_with_title">Sticker de encuesta, %1$s</string>
+    <string name="st_desc_poll_without_title">Sticker de encuesta</string>
+    <string name="st_desc_quiz_after_poll">%1$s, %2$s, fue elegida por el %3$d%% de los usuarios</string>
+    <string name="st_desc_quiz_after_sngl_false">%1$s, %2$s es la respuesta falsa</string>
+    <string name="st_desc_quiz_after_sngl_true">%1$s, %2$s es la respuesta correcta</string>
+    <string name="st_desc_quiz_before">%1$s, %2$s</string>
+    <string name="st_desc_quiz_with_title">Sticker de quiz, %1$s</string>
+    <string name="st_desc_quiz_without_title">Sticker de quiz</string>
+    <string name="st_desc_seen">Visto</string>
+    <string name="st_desc_story_close">Cerrar historia</string>
+    <string name="st_desc_story_group_pinned">Posición de la historia %1$d de %2$d, %3$s, destacada, %4$s</string>
+    <string name="st_desc_story_group_unpinned">Posición de la historia %1d de %2$d, %3$s, %4$s</string>
+    <string name="st_desc_story_next">Siguiente historia</string>
+    <string name="st_desc_story_previous">Historia previa</string>
+    <string name="st_desc_story_share">Compartir historia</string>
+    <string name="st_desc_swipeup">Desliza hacia arriba</string>
+    <string name="st_desc_unseen">Sin ver</string>
+    <string name="st_ivod_create_time_text">Grabado hace %1$s</string>
+    <string name="st_ivod_day">%1$dd</string>
+    <string name="st_ivod_hour">%1$dh</string>
+    <string name="st_ivod_minute">%1$dm</string>
+    <string name="st_ivod_second">%1$ds</string>
+    <string name="st_ivod_seconds">%1$d segundos</string>
+    <string name="st_ivod_week">%1$dsem</string>
+    <string name="st_promo_code_tooltip_copied_text">Copiado</string>
+    <string name="st_share_sheet_copied_text">Copiado</string>
+    <string name="st_share_sheet_copy_text">Copiar enlace</string>
+    <string name="st_share_sheet_link_via">Compartir via...</string>
+    <string name="st_share_sheet_screenshot_via">Compartir imagen via...</string>
+    <string name="st_share_sheet_title_text">Compartir historia</string>
+    <string name="st_vod_next_button_text">Proximo</string>
+    <string name="st_vod_replay_button_text">Repetir</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stm_cancel_report">Cancelar</string>
+    <string name="stm_cta_tool_tip_text">Visitar URL</string>
+    <string name="stm_header_day">%1$dd</string>
+    <string name="stm_header_hour">%1$dh</string>
+    <string name="stm_header_minute">%1$dm</string>
+    <string name="stm_header_second">%1$ds</string>
+    <string name="stm_header_week">%1$dsem</string>
+    <string name="stm_report_detail_text">Tus comentarios son escenciales para mantener a la comunidad segura</string>
+    <string name="stm_report_feedback_close">Cerrar</string>
+    <string name="stm_report_text">Reporte</string>
+    <string name="stm_reported_feedback">Recibimos tus comentarios</string>
+    <string name="stm_reported_info">Has reportado esta historia</string>
+    <string name="stm_show_reported_view">Mostrar de todos modos</string>
 </resources>

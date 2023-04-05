@@ -58,7 +58,9 @@ class ProfilesDetails extends StatelessWidget {
         child: Column(
           children: [
             BannerCustom(
-              customAsset: "$urlimage",
+              customAsset: urlimage != null
+                  ? "$urlimage"
+                  : "https://akcdn.detik.net.id/community/media/visual/2022/09/22/ilustrasi-legalitas-perusahaan_169.jpeg?w=700&q=90",
               customHeight: .3,
             ),
             const SizedBox(

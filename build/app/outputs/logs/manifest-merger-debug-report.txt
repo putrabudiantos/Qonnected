@@ -19,12 +19,14 @@ MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/loc
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-18:19
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/9c9be3499add27cbb79a7fd2543adb58/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:9:5-16:19
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/9c9be3499add27cbb79a7fd2543adb58/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:9:5-16:19
-MERGED from [com.google.android.material:material:1.3.0] /home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.3.0] /home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:13:5-20:19
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:13:5-20:19
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:18:5-23:19
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:18:5-23:19
+MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/caches/transforms-3/3716afa62338abddce1658c864db55d9/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/caches/transforms-3/3716afa62338abddce1658c864db55d9/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] /home/python/.gradle/caches/transforms-3/2d36fe3092f409c15b974a0b68b21147/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:7:5-20
@@ -43,6 +45,8 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/python/.gr
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/python/.gradle/caches/transforms-3/67879e22102fb65217d23e347f5e9c0d/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/python/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/python/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/33b670f45337a936dd90f991f540f969/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/33b670f45337a936dd90f991f540f969/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
@@ -57,6 +61,8 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/python/.gradle/caches
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/python/.gradle/caches/transforms-3/34c3e571c9f2500d68296fe0b8609888/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/python/.gradle/caches/transforms-3/c6290d38a27dcf8d064fa9cefcb89071/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/python/.gradle/caches/transforms-3/c6290d38a27dcf8d064fa9cefcb89071/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/de6f0aa367fbe40f676391923f5f9f67/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/de6f0aa367fbe40f676391923f5f9f67/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:allowBackup
@@ -86,15 +92,18 @@ MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonne
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-31:12
 MERGED from [:permission_handler_android] /home/python/BitBucket/Qonnected/qonnected_app/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:storyly_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/storyly_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_launch] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_launch/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-20:12
 MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/9c9be3499add27cbb79a7fd2543adb58/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.android.material:material:1.3.0] /home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:2:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/caches/transforms-3/3716afa62338abddce1658c864db55d9/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji:emoji-appcompat:1.1.0] /home/python/.gradle/caches/transforms-3/b829dfde540cbbcc98de83bad69379ca/transformed/emoji-appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /home/python/.gradle/caches/transforms-3/dc3a900d1b2a6113518ce3efdf3a3b41/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] /home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/python/.gradle/caches/transforms-3/93c965e24040f9ba88efcc81151050cd/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-location:20.0.0] /home/python/.gradle/caches/transforms-3/2d36fe3092f409c15b974a0b68b21147/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:2:1-9:12
@@ -106,6 +115,7 @@ MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /home/python
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/python/.gradle/caches/transforms-3/67879e22102fb65217d23e347f5e9c0d/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/python/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/33b670f45337a936dd90f991f540f969/transformed/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/python/.gradle/caches/transforms-3/c564864b85a0960493dadaf97ef781d3/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] /home/python/.gradle/caches/transforms-3/a6bf228adcf2ade0b45c4be1ab213b75/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/3efd0ef986d1c6821089bc31bf64940c/transformed/jetified-activity-1.5.1/AndroidManifest.xml:17:1-24:12
@@ -118,20 +128,22 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/pyth
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.media:media:1.6.0] /home/python/.gradle/caches/transforms-3/52c9781f926af24ac4530a9702e17d3a/transformed/media-1.6.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/e7b09f39a842df5984e53de23e58c27f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/409e08e34bc80ce2fd2e7bb1ddb7bcf7/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/eba3ac105ce1a200b5302334a4f79c0c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/86da411e3ef3e48ed679a69941c8410e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] /home/python/.gradle/caches/transforms-3/3be332a1990e64b9d1e358712f26e5e2/transformed/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.appsamurai.storyly:storyly-exoplayer2:1.28.0-1] /home/python/.gradle/caches/transforms-3/dd3301be7454f94ece4bee4933790222/transformed/jetified-storyly-exoplayer2-1.28.0-1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/9660069a1436a4390ae6ae0f46f2f555/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/2fce982de6bcb65312b126b72c128883/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/eccc6adbfa12474b1575f96a882ac859/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/9fc546b4b41c30406c1c6f8de93a0c6d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/python/.gradle/caches/transforms-3/045d2e69ed718df502093495707de7d0/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/python/.gradle/caches/transforms-3/3f85ff916fceceae301885a578d2bf52/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/python/.gradle/caches/transforms-3/90a44ec6ceb48a2c7bed4c03a44c987b/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/e7b09f39a842df5984e53de23e58c27f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /home/python/.gradle/caches/transforms-3/d411e96186971239cc9320701a4aa95b/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/python/.gradle/caches/transforms-3/7a00f26f119e6345a841bd06bf8489d9/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/python/.gradle/caches/transforms-3/d9bf91b217bda403486bc9d591007d64/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/409e08e34bc80ce2fd2e7bb1ddb7bcf7/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/eba3ac105ce1a200b5302334a4f79c0c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/86da411e3ef3e48ed679a69941c8410e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji:emoji:1.1.0] /home/python/.gradle/caches/transforms-3/ccc08b7bc3917f31c72849058da58113/transformed/emoji-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.8.0] /home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/61383e9f8a5ef2982700cd374c2a6005/transformed/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] /home/python/.gradle/caches/transforms-3/1a84149c74c401c9e5ff7324425946dc/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
@@ -146,14 +158,17 @@ MERGED from [androidx.savedstate:savedstate:1.2.0] /home/python/.gradle/caches/t
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /home/python/.gradle/caches/transforms-3/3877b37cfe4d7673cce7b93b71042767/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/python/.gradle/caches/transforms-3/a9dbf56cdd9bfea41d83101b051211a3/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /home/python/.gradle/caches/transforms-3/3781aa15d0ffa4c9bedd198aebfb95dc/transformed/localbroadcastmanager-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/ae893b832c725ae41cefb75af7327aef/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:viewbinding:7.0.3] /home/python/.gradle/caches/transforms-3/9b1ec2d398798bbfba816b06862cb956/transformed/jetified-viewbinding-7.0.3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/33022110ab8edaeede9665dd42ecaa6e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/b0ed3bc1190a335fc620be73cef0fa31/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/python/.gradle/caches/transforms-3/ea6a0879485e52a4f4039ca8778d8de8/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/python/.gradle/caches/transforms-3/e9ca322f243d3b7ed3a19622385d8532/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/python/.gradle/caches/transforms-3/274a6366c1fa82a9cda5f98fe858df07/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/ae893b832c725ae41cefb75af7327aef/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/de6f0aa367fbe40f676391923f5f9f67/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/python/.gradle/caches/transforms-3/58e3540d7f5a5bac6af9a8f8fab44363/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/e2d62b65ba99af7d59a3315cf4910598/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:2:1-52:12
+MERGED from [com.android.volley:volley:1.2.1] /home/python/.gradle/caches/transforms-3/ca6bfc8d4ee8d6e4d08b3f70731a1be8/transformed/jetified-volley-1.2.1/AndroidManifest.xml:2:1-7:12
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/debug/AndroidManifest.xml:1:1-10:12
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/debug/AndroidManifest.xml:1:1-10:12
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/debug/AndroidManifest.xml:1:1-10:12
@@ -213,6 +228,8 @@ MERGED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/
 MERGED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:52:5-67
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-67
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-67
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:9:5-67
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:9:5-67
 	android:name
 		ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:52:22-64
 uses-permission#android.permission.CALL_PHONE
@@ -225,6 +242,8 @@ ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/A
 		ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:55:22-72
 queries
 ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:61:5-66:15
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:11:5-16:15
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:11:5-16:15
 intent#action:name:android.intent.action.VIEW+data:scheme:https
 ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:62:9-65:18
 action#android.intent.action.VIEW
@@ -265,6 +284,8 @@ MERGED from [:permission_handler_android] /home/python/BitBucket/Qonnected/qonne
 MERGED from [:permission_handler_android] /home/python/BitBucket/Qonnected/qonnected_app/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:storyly_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/storyly_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:storyly_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/storyly_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_launch] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_launch/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_launch] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_launch/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -273,16 +294,20 @@ MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/un
 MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/9c9be3499add27cbb79a7fd2543adb58/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:5:5-7:41
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/9c9be3499add27cbb79a7fd2543adb58/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.material:material:1.3.0] /home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.3.0] /home/python/.gradle/caches/transforms-3/8c09bec62be409fe572343fe4d451870/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/e59d4e28a8e50b93dec513d561f4ef3d/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/caches/transforms-3/3716afa62338abddce1658c864db55d9/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/caches/transforms-3/3716afa62338abddce1658c864db55d9/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji:emoji-appcompat:1.1.0] /home/python/.gradle/caches/transforms-3/b829dfde540cbbcc98de83bad69379ca/transformed/emoji-appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji:emoji-appcompat:1.1.0] /home/python/.gradle/caches/transforms-3/b829dfde540cbbcc98de83bad69379ca/transformed/emoji-appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /home/python/.gradle/caches/transforms-3/dc3a900d1b2a6113518ce3efdf3a3b41/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /home/python/.gradle/caches/transforms-3/dc3a900d1b2a6113518ce3efdf3a3b41/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/4776d5ff4ca486a35dfa7b3008192806/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.5.1] /home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.5.1] /home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/python/.gradle/caches/transforms-3/93c965e24040f9ba88efcc81151050cd/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
@@ -305,6 +330,8 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/python/.gr
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/python/.gradle/caches/transforms-3/67879e22102fb65217d23e347f5e9c0d/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/python/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/python/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/33b670f45337a936dd90f991f540f969/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/33b670f45337a936dd90f991f540f969/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/python/.gradle/caches/transforms-3/c564864b85a0960493dadaf97ef781d3/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/python/.gradle/caches/transforms-3/c564864b85a0960493dadaf97ef781d3/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /home/python/.gradle/caches/transforms-3/a6bf228adcf2ade0b45c4be1ab213b75/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
@@ -329,14 +356,10 @@ MERGED from [androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/tr
 MERGED from [androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.6.0] /home/python/.gradle/caches/transforms-3/52c9781f926af24ac4530a9702e17d3a/transformed/media-1.6.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.6.0] /home/python/.gradle/caches/transforms-3/52c9781f926af24ac4530a9702e17d3a/transformed/media-1.6.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/e7b09f39a842df5984e53de23e58c27f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/e7b09f39a842df5984e53de23e58c27f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/409e08e34bc80ce2fd2e7bb1ddb7bcf7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/409e08e34bc80ce2fd2e7bb1ddb7bcf7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/eba3ac105ce1a200b5302334a4f79c0c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/eba3ac105ce1a200b5302334a4f79c0c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/86da411e3ef3e48ed679a69941c8410e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/86da411e3ef3e48ed679a69941c8410e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] /home/python/.gradle/caches/transforms-3/3be332a1990e64b9d1e358712f26e5e2/transformed/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] /home/python/.gradle/caches/transforms-3/3be332a1990e64b9d1e358712f26e5e2/transformed/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.appsamurai.storyly:storyly-exoplayer2:1.28.0-1] /home/python/.gradle/caches/transforms-3/dd3301be7454f94ece4bee4933790222/transformed/jetified-storyly-exoplayer2-1.28.0-1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.appsamurai.storyly:storyly-exoplayer2:1.28.0-1] /home/python/.gradle/caches/transforms-3/dd3301be7454f94ece4bee4933790222/transformed/jetified-storyly-exoplayer2-1.28.0-1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/9660069a1436a4390ae6ae0f46f2f555/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/9660069a1436a4390ae6ae0f46f2f555/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/2fce982de6bcb65312b126b72c128883/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -349,14 +372,22 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] /home/python/.gradle/caches/tra
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/python/.gradle/caches/transforms-3/045d2e69ed718df502093495707de7d0/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/python/.gradle/caches/transforms-3/3f85ff916fceceae301885a578d2bf52/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/python/.gradle/caches/transforms-3/3f85ff916fceceae301885a578d2bf52/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/python/.gradle/caches/transforms-3/90a44ec6ceb48a2c7bed4c03a44c987b/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/python/.gradle/caches/transforms-3/90a44ec6ceb48a2c7bed4c03a44c987b/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/e7b09f39a842df5984e53de23e58c27f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/e7b09f39a842df5984e53de23e58c27f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /home/python/.gradle/caches/transforms-3/d411e96186971239cc9320701a4aa95b/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /home/python/.gradle/caches/transforms-3/d411e96186971239cc9320701a4aa95b/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/python/.gradle/caches/transforms-3/7a00f26f119e6345a841bd06bf8489d9/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/python/.gradle/caches/transforms-3/7a00f26f119e6345a841bd06bf8489d9/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/python/.gradle/caches/transforms-3/d9bf91b217bda403486bc9d591007d64/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/python/.gradle/caches/transforms-3/d9bf91b217bda403486bc9d591007d64/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/409e08e34bc80ce2fd2e7bb1ddb7bcf7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/409e08e34bc80ce2fd2e7bb1ddb7bcf7/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/eba3ac105ce1a200b5302334a4f79c0c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/eba3ac105ce1a200b5302334a4f79c0c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/86da411e3ef3e48ed679a69941c8410e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/86da411e3ef3e48ed679a69941c8410e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji:emoji:1.1.0] /home/python/.gradle/caches/transforms-3/ccc08b7bc3917f31c72849058da58113/transformed/emoji-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji:emoji:1.1.0] /home/python/.gradle/caches/transforms-3/ccc08b7bc3917f31c72849058da58113/transformed/emoji-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] /home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] /home/python/.gradle/caches/transforms-3/d363e3b5616f580c766e3e2b3c05f27d/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/61383e9f8a5ef2982700cd374c2a6005/transformed/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
@@ -385,8 +416,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/python/.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/python/.gradle/caches/transforms-3/a9dbf56cdd9bfea41d83101b051211a3/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /home/python/.gradle/caches/transforms-3/3781aa15d0ffa4c9bedd198aebfb95dc/transformed/localbroadcastmanager-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /home/python/.gradle/caches/transforms-3/3781aa15d0ffa4c9bedd198aebfb95dc/transformed/localbroadcastmanager-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/ae893b832c725ae41cefb75af7327aef/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/ae893b832c725ae41cefb75af7327aef/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.3] /home/python/.gradle/caches/transforms-3/9b1ec2d398798bbfba816b06862cb956/transformed/jetified-viewbinding-7.0.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.3] /home/python/.gradle/caches/transforms-3/9b1ec2d398798bbfba816b06862cb956/transformed/jetified-viewbinding-7.0.3/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/33022110ab8edaeede9665dd42ecaa6e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/33022110ab8edaeede9665dd42ecaa6e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/b0ed3bc1190a335fc620be73cef0fa31/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
@@ -397,10 +428,16 @@ MERGED from [androidx.print:print:1.0.0] /home/python/.gradle/caches/transforms-
 MERGED from [androidx.print:print:1.0.0] /home/python/.gradle/caches/transforms-3/e9ca322f243d3b7ed3a19622385d8532/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/python/.gradle/caches/transforms-3/274a6366c1fa82a9cda5f98fe858df07/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/python/.gradle/caches/transforms-3/274a6366c1fa82a9cda5f98fe858df07/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/ae893b832c725ae41cefb75af7327aef/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/ae893b832c725ae41cefb75af7327aef/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/de6f0aa367fbe40f676391923f5f9f67/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/de6f0aa367fbe40f676391923f5f9f67/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/python/.gradle/caches/transforms-3/58e3540d7f5a5bac6af9a8f8fab44363/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/python/.gradle/caches/transforms-3/58e3540d7f5a5bac6af9a8f8fab44363/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/e2d62b65ba99af7d59a3315cf4910598/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/e2d62b65ba99af7d59a3315cf4910598/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.volley:volley:1.2.1] /home/python/.gradle/caches/transforms-3/ca6bfc8d4ee8d6e4d08b3f70731a1be8/transformed/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] /home/python/.gradle/caches/transforms-3/ca6bfc8d4ee8d6e4d08b3f70731a1be8/transformed/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -647,6 +684,30 @@ ADDED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gra
 		ADDED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:18:13-63
 	android:name
 		ADDED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/48d797836f8370cdcec5637d18b49e37/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:15:13-74
+package#com.instagram.android
+ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:12:9-57
+	android:name
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:12:18-54
+package#com.twitter.android
+ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:13:9-55
+	android:name
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:13:18-52
+package#com.facebook.katana
+ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:14:9-55
+	android:name
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:14:18-52
+package#com.whatsapp
+ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:15:9-48
+	android:name
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:15:18-45
+receiver#com.appsamurai.storyly.util.notification.StorylyNotificationReceiver
+ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:19:9-22:41
+	android:process
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:22:13-38
+	android:exported
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/f6097257985f7945c498622a85c2fbb1/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:20:13-96
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 	android:exported

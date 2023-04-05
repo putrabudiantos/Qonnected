@@ -31,6 +31,7 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Teilen mit"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Mit <ns1:g id="APPLICATION_NAME">%s</ns1:g> teilen"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Minimieren"</string>
+    <string name="average_answer_text">Durchschnitt</string>
     <string name="bottomsheet_action_expand_halfway">Zur Hälfte maximieren</string>
     <string name="character_counter_content_description">Eingegebene Zeichen: %1$d von %2$d</string>
     <string name="character_counter_overflowed_content_description">Zeichenbeschränkung überschritten: %1$d/%2$d</string>
@@ -53,8 +54,10 @@
     <string name="common_open_on_phone">Auf Smartphone öffnen</string>
     <string name="common_signin_button_text">Anmelden</string>
     <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="days_text">tage</string>
     <string name="error_icon_content_description">Fehler</string>
     <string name="exposed_dropdown_menu_content_description">Drop-down-Menü anzeigen</string>
+    <string name="hours_text">stunden</string>
     <string name="icon_content_description">Dialogfeldsymbol</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Vormittags oder Nachmittags auswählen</string>
@@ -69,6 +72,7 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Uhrzeit auswählen</string>
     <string name="material_timepicker_text_input_mode_description">In den Texteingabemodus wechseln, um die Uhrzeit einzugeben.</string>
+    <string name="minutes_text">minuten</string>
     <string name="mtrl_badge_numberless_content_description">Neue Benachrichtigung</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s entfernen</string>
     <string name="mtrl_exceed_max_badge_number_content_description">Mehr als %1$d neue Benachrichtigungen</string>
@@ -103,6 +107,41 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">In den Texteingabemodus wechseln</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tippen, um zur Jahresauswahl zu wechseln</string>
     <string name="password_toggle_content_description">Passwort anzeigen</string>
+    <string name="reminder_off_text">Erinnerung Aus</string>
+    <string name="reminder_on_text">Erinnerung On</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Suche"</string>
+    <string name="sponsored_text">Gesponsert</string>
+    <string name="st_desc_seen">gesehen</string>
+    <string name="st_desc_story_close">Story schließen</string>
+    <string name="st_desc_story_group_pinned">Story position %1$d von %2$d, %3$s, pinned, %4$s</string>
+    <string name="st_desc_story_group_unpinned">Story position %1$d von %2$d, %3$s,%4$s</string>
+    <string name="st_desc_story_next">Nächste Story</string>
+    <string name="st_desc_story_previous">Vorherige Story</string>
+    <string name="st_desc_story_share">Story teilen</string>
+    <string name="st_desc_swipeup">Swipe Up</string>
+    <string name="st_desc_unseen">ungesehen</string>
+    <string name="st_ivod_create_time_text">Vor %1$s gestreamts</string>
+    <string name="st_ivod_day">%1$dd</string>
+    <string name="st_ivod_hour">%1$dh</string>
+    <string name="st_ivod_minute">%1$dm</string>
+    <string name="st_ivod_second">%1$ds</string>
+    <string name="st_ivod_seconds">%1$d sekunden</string>
+    <string name="st_ivod_week">%1$dw</string>
+    <string name="st_promo_code_tooltip_copied_text">Kopiert</string>
+    <string name="st_vod_next_button_text">Nächste</string>
+    <string name="st_vod_replay_button_text">Wiederholen</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stm_cancel_report">Abbrechen</string>
+    <string name="stm_cta_tool_tip_text">URL besuchen</string>
+    <string name="stm_header_day">%1$dd</string>
+    <string name="stm_header_hour">%1$dh</string>
+    <string name="stm_header_minute">%1$dm</string>
+    <string name="stm_header_second">%1$ds</string>
+    <string name="stm_header_week">%1$dw</string>
+    <string name="stm_report_detail_text">Dein Feedback ist wichtig, um die Sicherheit der Gemeinschaft zu gewährleisten.</string>
+    <string name="stm_report_feedback_close">Schließen</string>
+    <string name="stm_report_text">Report</string>
+    <string name="stm_reported_feedback">Wir haben Dein Feedback</string>
+    <string name="stm_reported_info">Du hast diese Geschichte gemeldet</string>
+    <string name="stm_show_reported_view">Trotzdem anzeigen</string>
 </resources>

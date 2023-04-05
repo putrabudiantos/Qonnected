@@ -5,12 +5,21 @@ import 'package:qonnected_app/global_variabel.dart' as vars;
 // import 'package:qonnected_app/global_variabel.dart';
 // import 'package:qonnected_app/page/widget/banner.dart';
 import 'package:flutter_launch/flutter_launch.dart';
+import 'package:qonnected_app/model/dummydata.dart';
+import 'package:qonnected_app/page/coworker/detailku.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IndexCoWorkers extends StatefulWidget {
   final String? urlimagecompany;
-  const IndexCoWorkers({Key? key, this.urlimagecompany}) : super(key: key);
+  final int? warnaperusahaan;
+  final String? namaperusahaan;
+  const IndexCoWorkers(
+      {Key? key,
+      this.urlimagecompany,
+      this.warnaperusahaan,
+      this.namaperusahaan})
+      : super(key: key);
 
   @override
   State<IndexCoWorkers> createState() => _IndexCoWorkersState();
@@ -47,7 +56,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Karina Santika',
@@ -56,7 +66,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': 'example@email.com',
       'imageurl':
           'https://media.licdn.com/dms/image/C5603AQGNQzV3KSgoQg/profile-displayphoto-shrink_800_800/0/1660284631987?e=2147483647&v=beta&t=nlOwOQFoyKmAka1IhrZNrwEiCn-WTKggsuEdDtFs270',
-      'namaperusahaan': '',
+      'namaperusahaan': 'PT. Indofood Indonesia',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -71,7 +81,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Intan Nurita Sari',
@@ -80,7 +91,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': 'example@email.com',
       'imageurl':
           'https://media.licdn.com/dms/image/C5603AQHK1Q2_PzWEwA/profile-displayphoto-shrink_800_800/0/1634366567499?e=1683158400&v=beta&t=7cVDzVNJml0F17c7qxHX18mHptzL6ABWKDgzsgdR48g',
-      'namaperusahaan': '',
+      'namaperusahaan': 'PT. Maspion',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -95,7 +106,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Ariska Riris',
@@ -104,7 +116,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': 'example@email.com',
       'imageurl':
           'https://media.licdn.com/dms/image/C5603AQEpLLe7GUZ-Fw/profile-displayphoto-shrink_800_800/0/1627022282091?e=2147483647&v=beta&t=AQ_RkkT0mmbU0WcFvSQ-c-6N1JEjAvfHEKXfkc9Ohc0',
-      'namaperusahaan': '',
+      'namaperusahaan': 'PT. Jacobis',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -119,7 +131,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Arum Purwita Sari',
@@ -131,7 +144,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'namaperusahaan': '',
       'cabang': '',
       'departement': '',
-      'posisipekerjaan': '',
+      'posisipekerjaan': 'MyDevTeam',
       'levelpekerjaan': '',
       'statuspekerjaan': '',
       'tanggalbergabung': '',
@@ -143,7 +156,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Nadzila Afifa',
@@ -167,7 +181,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfo'
     },
     {
       'nama': 'Karina Santika',
@@ -176,7 +191,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': 'example@email.com',
       'imageurl':
           'https://media.licdn.com/dms/image/C5603AQGNQzV3KSgoQg/profile-displayphoto-shrink_800_800/0/1660284631987?e=2147483647&v=beta&t=nlOwOQFoyKmAka1IhrZNrwEiCn-WTKggsuEdDtFs270',
-      'namaperusahaan': '',
+      'namaperusahaan': 'Telkom Indonesia',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -191,7 +206,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfo'
     },
     {
       'nama': 'Intan Nurita Sari',
@@ -200,7 +216,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': 'example@email.com',
       'imageurl':
           'https://media.licdn.com/dms/image/C5603AQHK1Q2_PzWEwA/profile-displayphoto-shrink_800_800/0/1634366567499?e=1683158400&v=beta&t=7cVDzVNJml0F17c7qxHX18mHptzL6ABWKDgzsgdR48g',
-      'namaperusahaan': '',
+      'namaperusahaan': 'MNC Media',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -215,7 +231,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Ariska Riris',
@@ -224,7 +241,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': 'example@email.com',
       'imageurl':
           'https://media.licdn.com/dms/image/C5603AQEpLLe7GUZ-Fw/profile-displayphoto-shrink_800_800/0/1627022282091?e=2147483647&v=beta&t=AQ_RkkT0mmbU0WcFvSQ-c-6N1JEjAvfHEKXfkc9Ohc0',
-      'namaperusahaan': '',
+      'namaperusahaan': 'PT. Wika',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -239,7 +256,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      'instagram': '@annonymouse',
+      'status': 'wfh'
     },
     {
       'nama': 'Arum Purwita Sari',
@@ -248,7 +266,7 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'email': '',
       'imageurl':
           'https://media.licdn.com/dms/image/D5603AQEJZLMKFcYW_A/profile-displayphoto-shrink_800_800/0/1677652695634?e=1683158400&v=beta&t=uC3BYaus8_ukTV8CvWwYwuP-fEnjn5jmDu4e7e8GtNE',
-      'namaperusahaan': '',
+      'namaperusahaan': 'PT. Gudang Garam TBk',
       'cabang': '',
       'departement': '',
       'posisipekerjaan': '',
@@ -263,7 +281,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'statuspernikahan': '',
       'agama': '',
       'golongandarah': '',
-      'instagram': '@annonymouse'
+      // 'instagram': '@annonymouse',
+      'status': 'wfh'
     },
   ];
 
@@ -321,258 +340,123 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
   @override
   Widget build(BuildContext context) {
     String? url = widget.urlimagecompany;
+    int? warna = widget.warnaperusahaan;
     return Scaffold(
-        body: SingleChildScrollView(
-      child: Column(
-        children: [
-          Container(
-            width: MediaQuery.of(context).size.width * 1,
-            height: MediaQuery.of(context).size.height * .27,
-            decoration: const BoxDecoration(
-              color: Color(0xFF0D1037),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        automaticallyImplyLeading: false,
+        toolbarHeight: 120,
+        title: url!.isEmpty
+            ? Column(
                 children: [
-                  const SizedBox(
-                    height: 35,
+                  Image.asset('assets/icons/revisi/logo.png',
+                      width: 80, height: 80),
+                  Text(
+                    "${widget.namaperusahaan}",
+                    style: const TextStyle(
+                        fontSize: 19, fontWeight: FontWeight.bold),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
-                      CircleAvatar(
-                        radius: 40,
-                        // ambil gambar dari API
-                        backgroundImage: NetworkImage(
-                            "https://images.ctfassets.net/xvr9jywirbgw/3Hvty8DyOEUftI7YT8ecQ6/14b30fefbea79834da15b60b69bd9921/logo2.jpg"),
-                      ),
-                      //Nama Perusahaan diambil dari API
-                      Text(
-                        "MDT",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 30,
-                            color: Colors.white),
-                      )
-                    ],
-                  )
-                  // SizedBox(
-                  //   height: 10,
-                  // ),
+                ],
+              )
+            : Column(
+                children: [
+                  Image.network(url),
+                  Text(
+                    "${widget.namaperusahaan}",
+                    style: const TextStyle(
+                        fontSize: 19, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
-            ),
-          ),
-          Container(
-            transform: Matrix4.translationValues(0.0, -50, 0),
-            width: MediaQuery.of(context).size.width,
-            decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    topRight: Radius.circular(25))),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 15, right: 15),
-              child: GridView.count(
-                crossAxisCount: 2,
-                childAspectRatio: (1 / 0.98),
-                shrinkWrap: true,
-                children: List.generate(datakaryawan.length, (index) {
-                  return GestureDetector(
-                    onTap: () {
-                      showModalBottomSheet(
-                          enableDrag: true,
-                          context: context,
-                          builder: (context) {
-                            return FractionallySizedBox(
-                              heightFactor: 0.9,
-                              child: Container(
-                                padding: const EdgeInsets.all(15),
-                                width: MediaQuery.of(context).size.width,
-                                decoration: const BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(30),
-                                      topRight: Radius.circular(30),
-                                    ),
-                                    color: Colors.white),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    //slider button seperti apple
-                                    Container(
-                                      color: Colors.transparent,
-                                      child: Container(
-                                        width: 60,
-                                        height: 8,
-                                        decoration: BoxDecoration(
-                                            color: Colors.black12,
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
-                                      ),
-                                    ),
-                                    const SizedBox(height: 20),
-                                    //info profil
-                                    if (founduser[index]['jeniskelamin'] ==
-                                        "wanita")
-                                      Image.asset(
-                                        'assets/icons/male.png',
-                                        width: 60,
-                                        height: 60,
-                                      )
-                                    else if (founduser[index]['jeniskelamin'] ==
-                                        "pria")
-                                      Image.asset(
-                                        'assets/icons/female.png',
-                                        width: 60,
-                                        height: 60,
-                                      )
-                                    else
-                                      CircleAvatar(
-                                        backgroundColor: Colors.green.shade100,
-                                        radius: 30,
-                                        child: const Icon(
-                                          Icons.person_outlined,
-                                          size: 35,
-                                        ),
-                                      ),
-                                    const SizedBox(height: 10),
-                                    //informasi
-                                    Text(
-                                      "${founduser[index]['nama']}",
-                                      maxLines: 1,
-                                      style: const TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    Text(
-                                      "${founduser[index]['jabatan']}",
-                                      maxLines: 1,
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    //informasi socialmedia wa
-                                    if (founduser[index]['whatsapp'] != '')
-                                      whatsapplistile(
-                                          number: founduser[index]['nomor'],
-                                          ontap: () {
-                                            whatsappdirect(
-                                                nomor: founduser[index]
-                                                    ['nomor']);
-                                          }),
-
-                                    //informasi socialmedia ig
-                                    // if (founduser[index]['instagram'] != '')
-                                    //   instagramlisttile(
-                                    //       username: founduser[index]['instagram'],
-                                    //       ontap: () {}),
-
-                                    //informasi email
-                                    if (founduser[index]['email'] != '')
-                                      emaillisttile(
-                                          email: founduser[index]['email'],
-                                          ontap: () {
-                                            launchUrlEmail(
-                                                founduser[index]['email']);
-                                          }),
-
-                                    if (founduser[index]['nomor'] != '')
-                                      telephone(
-                                          number: founduser[index]['nomor'],
-                                          ontap: () {
-                                            launchUrlPhone(
-                                                founduser[index]['nomor']);
-                                          }),
-                                  ],
-                                ),
-                              ),
-                            );
-                          });
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(5),
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                          side:
-                              BorderSide(color: Colors.grey.shade200, width: 1),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        elevation: 2,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.grey.shade100,
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                if (founduser[index]['jeniskelamin'] ==
-                                    "wanita")
-                                  Image.asset(
-                                    'assets/icons/male.png',
-                                    width: 60,
-                                    height: 60,
-                                  )
-                                else if (founduser[index]['jeniskelamin'] ==
-                                    "pria")
-                                  Image.asset(
-                                    'assets/icons/female.png',
-                                    width: 60,
-                                    height: 60,
-                                  )
-                                else
-                                  CircleAvatar(
-                                    backgroundColor: Colors.green.shade100,
-                                    radius: 30,
-                                    child: const Icon(
-                                      Icons.person_outlined,
-                                      size: 35,
-                                    ),
-                                  ),
-                                const SizedBox(height: 7),
-                                Text(
-                                  "${founduser[index]['nama']}",
-                                  maxLines: 1,
-                                  style: const TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "${founduser[index]['jabatan']}",
-                                  maxLines: 1,
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                  ),
-                                ),
-                                const SizedBox(height: 8),
-                                //sementara
-                                const Text(
-                                  "Onsite",
-                                  maxLines: 1,
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      color: Colors.green,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.only(left: 17, right: 17, top: 10),
+        child: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: (1 / 0.8),
+          shrinkWrap: true,
+          children: List.generate(datakaryawan.length, (index) {
+            return GestureDetector(
+                onTap: () {
+                  Get.to(
+                    Detailku(
+                      urlimages:
+                          "https://www.markdesign.net/images/product/resize_755_3000/a3d63-my-devteam2.jpg",
+                      nama: founduser[index]['nama'],
+                      jabatan: founduser[index]['jabatan'],
+                      namaperusahaan: founduser[index]['namaperusahaan'],
+                      gender: founduser[index]['jeniskelamin'],
+                      email: founduser[index]['email'],
+                      ig: founduser[index]['instagram'],
+                      whatsapp: founduser[index]['nomor'],
+                      phone: founduser[index]['nomor'],
                     ),
                   );
-                }),
-              ),
-            ),
-          ),
-        ],
+                },
+                child: Column(
+                  children: [
+                    // container background image sesuai warna perusahaan
+                    Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: warna == null
+                              ? const Color(0xFF0D1037)
+                              : Color(warna)),
+                      child: founduser[index]['jeniskelamin'] == "pria"
+                          ? Padding(
+                              padding: const EdgeInsets.all(13),
+                              child: Image.asset(
+                                'assets/icons/male.png',
+                                width: 20,
+                                height: 20,
+                              ),
+                            )
+                          : Padding(
+                              padding: const EdgeInsets.all(13),
+                              child: Image.asset(
+                                'assets/icons/female.png',
+                                width: 20,
+                                height: 20,
+                              ),
+                            ),
+                    ),
+                    const SizedBox(height: 10),
+                    // Nama user
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          founduser[index]['nama'],
+                          style: const TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(width: 5),
+                        founduser[index]['status'] == "wfh"
+                            ? status(color: Colors.amber.shade300)
+                            : status(color: Colors.green.shade500),
+                      ],
+                    ),
+                    Text(founduser[index]['jabatan'])
+                  ],
+                ));
+          }),
+        ),
       ),
-    ));
+    );
+  }
+
+  Container status({Color? color}) {
+    return Container(
+      width: 10,
+      height: 10,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: color,
+      ),
+    );
   }
 
   cardList(String name, String position, String status) {

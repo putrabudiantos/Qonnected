@@ -7,15 +7,28 @@ import 'package:qonnected_app/page/widget/field_email.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
+
   final AuthController authC = Get.put(AuthController());
 
-  LoginPage({Key? key}) : super(key: key);
+  TextEditingController email = TextEditingController();
+
+  @override
+  void dispose() {
+    email.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController email = TextEditingController();
     return Form(
       key: _formKey,
       child: Scaffold(

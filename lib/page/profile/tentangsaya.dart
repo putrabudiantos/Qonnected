@@ -41,7 +41,9 @@ class TentangSaya extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF0D1037),
+        backgroundColor: warnaperusahaan == null
+            ? const Color(0xFF0D1037)
+            : Color(warnaperusahaan!),
         elevation: 0,
         centerTitle: true,
         leading: const BackButton(color: Colors.white),
@@ -71,57 +73,82 @@ class TentangSaya extends StatelessWidget {
                   namaperusahaan: namaperusahaan),
             const SizedBox(height: 10),
             //nama
-            textdata(context: context, lable: "Nama", information: "$nama"),
+            nama != null
+                ? textdata(
+                    context: context, lable: "Nama", information: "$nama")
+                : textdata(context: context, lable: "Nama", information: "-"),
             //alamat
-            textdata(context: context, lable: "Alamat", information: "$alamat"),
+            alamat != null
+                ? textdata(
+                    context: context, lable: "Alamat", information: "$alamat")
+                : textdata(context: context, lable: "Alamat", information: "-"),
             //agama
-            textdata(
-              context: context,
-              lable: "NIP",
-              information: nip,
-            ),
+            nip != null
+                ? textdata(context: context, lable: "NIP", information: nip)
+                : textdata(context: context, lable: "NIP", information: "-"),
             //jabatan
-            textdata(
-                context: context, lable: "Jabatan", information: "$jabatan"),
+            jabatan != null
+                ? textdata(
+                    context: context, lable: "Jabatan", information: "$jabatan")
+                : textdata(
+                    context: context, lable: "Jabatan", information: "-"),
             //email
-            textdata(context: context, lable: "Email", information: "$email"),
+            email != null
+                ? textdata(
+                    context: context, lable: "Email", information: "$email")
+                : textdata(context: context, lable: "Email", information: "-"),
             //tempat lahir
-            textdata(
-                context: context,
-                lable: "Tempat Lahir",
-                information: "$tempatlahir"),
+            tempatlahir != null
+                ? textdata(
+                    context: context,
+                    lable: "Tempat Lahir",
+                    information: "$tempatlahir")
+                : textdata(
+                    context: context, lable: "Tempat Lahir", information: "-"),
             //tanggal lahir
-            textdata(
-                context: context,
-                lable: "Tanggal lahir",
-                information: "$tanggallahir"),
+            tanggallahir != null
+                ? textdata(
+                    context: context,
+                    lable: "Tanggal lahir",
+                    information: "$tanggallahir")
+                : textdata(
+                    context: context, lable: "Tempat Lahir", information: "-"),
             //Jenis kelamin
-            textdata(
-                context: context,
-                lable: "Jenis kelamin",
-                information: "$gender"),
+            gender != null
+                ? textdata(
+                    context: context,
+                    lable: "Jenis kelamin",
+                    information: "$gender")
+                : textdata(
+                    context: context, lable: "Jenis kelamin", information: "-"),
             //status
-            textdata(context: context, lable: "Status", information: "$status"),
+            status != null
+                ? textdata(
+                    context: context, lable: "Status", information: "$status")
+                : textdata(context: context, lable: "Status", information: "-"),
             //nomor telpon
-            textdata(context: context, lable: "Nomor Hp", information: "$nohp"),
+            nohp != null
+                ? textdata(
+                    context: context, lable: "Nomor Hp", information: "$nohp")
+                : textdata(context: context, lable: "No Hp", information: "-"),
             //agama
-            textdata(
-              context: context,
-              lable: "Agama",
-              information: "$agama",
-            ),
+            agama != null
+                ? textdata(
+                    context: context, lable: "Agama", information: "$agama")
+                : textdata(context: context, lable: "Agama", information: "-"),
             //NPWP
-            textdata(
-              context: context,
-              lable: "NPWP",
-              information: "$npwp",
-            ),
+            npwp != null
+                ? textdata(
+                    context: context, lable: "NPWP", information: "$npwp")
+                : textdata(context: context, lable: "NPWP", information: "-"),
             //No. Rekening
-            textdata(
-              context: context,
-              lable: "Nomor Rekening",
-              information: "$rekening",
-            ),
+            rekening != null
+                ? textdata(
+                    context: context,
+                    lable: "Nomor Rekening",
+                    information: "$rekening")
+                : textdata(
+                    context: context, lable: "Nomer Rekening", information: "-")
           ],
         ),
       ),

@@ -3,6 +3,7 @@
 -keep class androidx.startup.InitializationProvider { <init>(); }
 -keep class asia.qonnected.adikarya.MainActivity { <init>(); }
 -keep class com.amolg.flutterbarcodescanner.BarcodeCaptureActivity { <init>(); }
+-keep class com.appsamurai.storyly.util.notification.StorylyNotificationReceiver { <init>(); }
 -keep class com.baseflow.geolocator.GeolocatorLocationService { <init>(); }
 -keep class com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver { <init>(); }
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
@@ -68,6 +69,10 @@
 -keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.emoji.widget.EmojiExtractEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.emoji.widget.ExtractButtonCompat { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 

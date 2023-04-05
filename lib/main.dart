@@ -16,6 +16,7 @@ import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 int? initScreen;
+const int defaultcolors = 0xFF0D1037;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,7 +48,7 @@ class _MyAppState extends State<MyApp> {
         name: '/initpage',
         page: () => const InitialPage(),
         binding: HomeBinding()),
-    GetPage(name: '/login', page: () => LoginPage()),
+    GetPage(name: '/login', page: () => const LoginPage()),
     GetPage(
         name: '/splash',
         page: () => const SplashPage(),
@@ -74,6 +75,7 @@ class _MyAppState extends State<MyApp> {
           iconTheme: const IconThemeData(color: Colors.white),
           backgroundColor: Colors.white,
           useMaterial3: true,
+          primaryColor: const Color(0xFF0D1037),
           scaffoldBackgroundColor: const Color(0xFFFFFFFF),
           textTheme: const TextTheme(
               button: TextStyle(

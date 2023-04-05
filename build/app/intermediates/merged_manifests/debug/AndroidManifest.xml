@@ -32,6 +32,11 @@
 
             <data android:scheme="https" />
         </intent>
+
+        <package android:name="com.instagram.android" />
+        <package android:name="com.twitter.android" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.whatsapp" />
     </queries>
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -218,6 +223,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver
+            android:name="com.appsamurai.storyly.util.notification.StorylyNotificationReceiver"
+            android:exported="false"
+            android:process=":remote" />
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

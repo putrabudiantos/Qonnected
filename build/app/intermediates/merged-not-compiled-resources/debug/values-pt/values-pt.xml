@@ -27,6 +27,64 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="average_answer_text">Resposta média</string>
+    <string name="days_text">días</string>
+    <string name="hours_text">horas</string>
+    <string name="minutes_text">minutos</string>
+    <string name="reminder_off_text">Lembrete desativado</string>
+    <string name="reminder_on_text">Lembrete ativado</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
+    <string name="sponsored_text">Patrocinadas</string>
+    <string name="st_desc_imagecta">Botão de imagem</string>
+    <string name="st_desc_option_a">A opção A</string>
+    <string name="st_desc_option_b">A opção B</string>
+    <string name="st_desc_option_c">A opção C</string>
+    <string name="st_desc_option_d">A opção D</string>
+    <string name="st_desc_poll_after_selection">%1$s, foi selecionada por %2$d%% dos usuários</string>
+    <string name="st_desc_poll_with_title">Sticker da enquete, %1$s</string>
+    <string name="st_desc_poll_without_title">Sticker da enquete</string>
+    <string name="st_desc_quiz_after_poll">%1$s, %2$s, foi selecionada por %3$d%% dos usuários</string>
+    <string name="st_desc_quiz_after_sngl_false">%1$s, %2$s é a resposta falsa</string>
+    <string name="st_desc_quiz_after_sngl_true">%1$s, %2$s é a resposta correta</string>
+    <string name="st_desc_quiz_before">%1$s, %2$s</string>
+    <string name="st_desc_quiz_with_title">Sticker do questionário, %1$s</string>
+    <string name="st_desc_quiz_without_title">Sticker do questionário</string>
+    <string name="st_desc_seen">Visto</string>
+    <string name="st_desc_story_close">Fechar Story</string>
+    <string name="st_desc_story_group_pinned">Posição do Story %1$d de %2$d, %3$s, destacado, %4$s</string>
+    <string name="st_desc_story_group_unpinned">Posição do Story %1$d de %2$d, %3$s, %4$s</string>
+    <string name="st_desc_story_next">Próximo Story</string>
+    <string name="st_desc_story_previous">Story Anterior</string>
+    <string name="st_desc_story_share">Compartilhar Story</string>
+    <string name="st_desc_swipeup">Deslize para cima</string>
+    <string name="st_desc_unseen">Não visto</string>
+    <string name="st_ivod_create_time_text">Gravado %1$s atrás</string>
+    <string name="st_ivod_day">%1$dd</string>
+    <string name="st_ivod_hour">%1$dh</string>
+    <string name="st_ivod_minute">%1$dm</string>
+    <string name="st_ivod_second">%1$ds</string>
+    <string name="st_ivod_seconds">%1$d segundos</string>
+    <string name="st_ivod_week">%1$dsem</string>
+    <string name="st_promo_code_tooltip_copied_text">Copiado</string>
+    <string name="st_share_sheet_copied_text">Copiado</string>
+    <string name="st_share_sheet_copy_text">Link de cópia</string>
+    <string name="st_share_sheet_link_via">Compartilhar via…</string>
+    <string name="st_share_sheet_screenshot_via">Compartilhar imagem via…</string>
+    <string name="st_share_sheet_title_text">Compartilhar Story</string>
+    <string name="st_vod_next_button_text">Próximo</string>
+    <string name="st_vod_replay_button_text">Repetir</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stm_cancel_report">Cancelar</string>
+    <string name="stm_cta_tool_tip_text">URL de visita</string>
+    <string name="stm_header_day">%1$dd</string>
+    <string name="stm_header_hour">%1$dh</string>
+    <string name="stm_header_minute">%1$dm</string>
+    <string name="stm_header_second">%1$ds</string>
+    <string name="stm_header_week">%1$dsem</string>
+    <string name="stm_report_detail_text">Seu feedback é essencial para manter a comunidade mais segura.</string>
+    <string name="stm_report_feedback_close">Fechar</string>
+    <string name="stm_report_text">Relatório</string>
+    <string name="stm_reported_feedback">Recebemos seu feedback</string>
+    <string name="stm_reported_info">Você reportou este story</string>
+    <string name="stm_show_reported_view">Mostrar mesmo assim</string>
 </resources>

@@ -31,6 +31,7 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="average_answer_text">Ortalama Cevap</string>
     <string name="bottomsheet_action_expand_halfway">Yarım genişlet</string>
     <string name="character_counter_content_description">Girilen karakter: %1$d / %2$d</string>
     <string name="character_counter_overflowed_content_description">Karakter sınırı aşıldı %1$d / %2$d</string>
@@ -53,8 +54,10 @@
     <string name="common_open_on_phone">Telefonda aç</string>
     <string name="common_signin_button_text">Oturum aç</string>
     <string name="common_signin_button_text_long">Google\'da oturum aç</string>
+    <string name="days_text">gün</string>
     <string name="error_icon_content_description">Hata</string>
     <string name="exposed_dropdown_menu_content_description">Açılır menüyü göster</string>
+    <string name="hours_text">saat</string>
     <string name="icon_content_description">İletişim kutusu simgesi</string>
     <string name="item_view_role_description">Sekme</string>
     <string name="material_clock_toggle_content_description">ÖÖ veya ÖS\'yi seçin</string>
@@ -69,6 +72,7 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Zamanı seçin</string>
     <string name="material_timepicker_text_input_mode_description">Zaman girişi için metin girişi moduna geçin.</string>
+    <string name="minutes_text">dakika</string>
     <string name="mtrl_badge_numberless_content_description">Yeni bildirim</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s içeriğini kaldır</string>
     <string name="mtrl_exceed_max_badge_number_content_description">%1$d adetten fazla yeni bildirim</string>
@@ -103,6 +107,47 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Metin giriş moduna geç</string>
     <string name="mtrl_picker_toggle_to_year_selection">Yıl seçmeye geçmek için dokunun</string>
     <string name="password_toggle_content_description">Şifreyi göster</string>
+    <string name="reminder_off_text">Hatırlatıcı Kapalı</string>
+    <string name="reminder_on_text">Hatırlatıcı Açık</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>
+    <string name="sponsored_text">Sponsorlu</string>
+    <string name="st_desc_imagecta">Galeri</string>
+    <string name="st_desc_seen">Görüntülendi</string>
+    <string name="st_desc_story_close">Hikayeyi Kapat</string>
+    <string name="st_desc_story_group_pinned">Story konumu %1$d bölü %2$d, %3$s, sabitlenmiş, %4$s</string>
+    <string name="st_desc_story_group_unpinned">Story konumu %1$d bölü %2$d, %3$s, %4$s</string>
+    <string name="st_desc_story_next">Sıradaki Hikaye</string>
+    <string name="st_desc_story_previous">Önceki Hikaye</string>
+    <string name="st_desc_story_share">Hikayeyi Paylaş</string>
+    <string name="st_desc_swipeup">Yukarı kaydır</string>
+    <string name="st_desc_unseen">Görüntülenmedi</string>
+    <string name="st_ivod_create_time_text">%1$s önce kaydedildi</string>
+    <string name="st_ivod_day">%1$dg</string>
+    <string name="st_ivod_hour">%1$ds</string>
+    <string name="st_ivod_minute">%1$ddk</string>
+    <string name="st_ivod_second">%1$dsn</string>
+    <string name="st_ivod_seconds">%1$d saniye</string>
+    <string name="st_ivod_week">%1$dh</string>
+    <string name="st_promo_code_tooltip_copied_text">Kopyalandı</string>
+    <string name="st_share_sheet_copied_text">Kopyalandı</string>
+    <string name="st_share_sheet_copy_text">Bağlantıyı kopyala</string>
+    <string name="st_share_sheet_link_via">Paylaş...</string>
+    <string name="st_share_sheet_screenshot_via">Görseli paylaş...</string>
+    <string name="st_share_sheet_title_text">Hikayeyi paylaş</string>
+    <string name="st_vod_next_button_text">Sıradaki</string>
+    <string name="st_vod_replay_button_text">Tekrar Oynat</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stm_cancel_report">İptal et</string>
+    <string name="stm_cta_tool_tip_text">URL\'i ziyaret et</string>
+    <string name="stm_header_day">%1$dg</string>
+    <string name="stm_header_hour">%1$ds</string>
+    <string name="stm_header_minute">%1$ddk</string>
+    <string name="stm_header_second">%1$dsn</string>
+    <string name="stm_header_week">%1$dh</string>
+    <string name="stm_report_detail_text">Topluluğun güvenliği için geri bildirimin çok önemli.</string>
+    <string name="stm_report_feedback_close">Kapat</string>
+    <string name="stm_report_text">Bildir</string>
+    <string name="stm_reported_feedback">Geri bildirimini aldık</string>
+    <string name="stm_reported_info">Bu Hikayeyi şikayet ettin</string>
+    <string name="stm_show_reported_view">Yine de görüntüle</string>
 </resources>
