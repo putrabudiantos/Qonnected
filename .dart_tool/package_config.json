@@ -122,6 +122,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "curved_navigation_bar",
+      "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/curved_navigation_bar-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "dbus",
       "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/dbus-0.7.8",
       "packageUri": "lib/",
@@ -956,7 +962,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-04-04T03:47:39.746639Z",
+  "generated": "2023-04-05T04:18:08.520404Z",
   "generator": "pub",
   "generatorVersion": "2.17.5"
 }

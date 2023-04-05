@@ -59,11 +59,13 @@ class ProfileController extends GetxController {
 
   SignOut(BuildContext context) async {
     final response = await vars.client.auth.signOut();
+    final preferences = await SharedPreferences.getInstance();
+    await preferences.clear();
     final error = response.error;
     print('Logout');
     if (error != null) {
     } else {
-      Get.offAll(LoginPage());
+      Get.offAll(const LoginPage());
     }
   }
 }

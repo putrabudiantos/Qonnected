@@ -57,6 +57,7 @@ dependencies:
   flutter_barcode_scanner: ^2.0.0
   flutter_stories: ^0.3.1
   storyly_flutter: ^1.30.0
+  curved_navigation_bar: ^1.0.3
   
 
 

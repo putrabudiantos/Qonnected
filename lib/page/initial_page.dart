@@ -45,11 +45,15 @@ class _InitialPageState extends State<InitialPage> {
       namaperusahaan: "MyDevTeam",
       jabatan: "Developer IT",
       warnaperusahaan: 0xFF0D1037,
-      gender: "perempuan",
+      gender: "laki-laki",
+      jumlahcuti: "6",
+      jumlahizin: "8",
+      hour: DateTime.now().toString(),
+      urlimage:
+          "https://akcdn.detik.net.id/community/media/visual/2022/09/22/ilustrasi-legalitas-perusahaan_169.jpeg?w=700&q=90",
     ),
     // const IndexActivity(),
     // IndexSettings()
-    const Settings()
   ];
 
   void _onItemTapped(int index) {
@@ -99,8 +103,8 @@ class _InitialPageState extends State<InitialPage> {
               children: <Widget>[
                 Center(
                   child: InkWell(
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
+                    focusColor: Colors.black,
+                    hoverColor: Colors.grey.shade300,
                     highlightColor: Colors.black,
                     onTap: () {
                       _onItemTapped(0);
@@ -111,7 +115,7 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.home_outlined,
                             color: vars.idx == 0
                                 ? Color(initC.mainColor.value)
-                                : const Color(0xFF0D1037)),
+                                : Colors.grey.shade500),
                         Text(
                           "Home",
                           style: FontMedium(
@@ -120,7 +124,7 @@ class _InitialPageState extends State<InitialPage> {
                               FontWeight.w500,
                               vars.idx == 0
                                   ? Color(initC.mainColor.value)
-                                  : const Color(0xFF0D1037)),
+                                  : Colors.grey.shade500),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -130,7 +134,7 @@ class _InitialPageState extends State<InitialPage> {
                 Padding(
                   padding: const EdgeInsets.only(right: 20),
                   child: InkWell(
-                    focusColor: Colors.transparent,
+                    focusColor: Colors.black,
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
@@ -142,16 +146,16 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.people_outline,
                             color: vars.idx == 1
                                 ? Color(initC.mainColor.value)
-                                : const Color(0xFF0D1037)),
+                                : Colors.grey.shade500),
                         Text(
-                          "Co Worker",
+                          "Co Workers",
                           style: FontMedium(
                               context,
                               12,
                               FontWeight.w500,
                               vars.idx == 1
                                   ? Color(initC.mainColor.value)
-                                  : const Color(0xFF0D1037)),
+                                  : Colors.grey.shade500),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -160,7 +164,7 @@ class _InitialPageState extends State<InitialPage> {
                 ),
                 Center(
                   child: InkWell(
-                    focusColor: Colors.transparent,
+                    focusColor: Colors.black,
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
@@ -172,16 +176,16 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.domain_outlined,
                             color: vars.idx == 2
                                 ? Color(initC.mainColor.value)
-                                : const Color(0xFF0D1037)),
+                                : Colors.grey.shade500),
                         Text(
-                          "Company",
+                          "Companies",
                           style: FontMedium(
                               context,
                               12,
                               FontWeight.w500,
                               vars.idx == 2
                                   ? Color(initC.mainColor.value)
-                                  : const Color(0xFF0D1037)),
+                                  : Colors.grey.shade500),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],
@@ -190,7 +194,7 @@ class _InitialPageState extends State<InitialPage> {
                 ),
                 Center(
                   child: InkWell(
-                    focusColor: Colors.transparent,
+                    focusColor: Colors.black,
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
@@ -202,7 +206,7 @@ class _InitialPageState extends State<InitialPage> {
                         Icon(Icons.person_outline_outlined,
                             color: vars.idx == 3
                                 ? Color(initC.mainColor.value)
-                                : const Color(0xFF0D1037)),
+                                : Colors.grey.shade500),
                         Text(
                           "Profile",
                           style: FontMedium(
@@ -211,7 +215,7 @@ class _InitialPageState extends State<InitialPage> {
                               FontWeight.w500,
                               vars.idx == 3
                                   ? Color(initC.mainColor.value)
-                                  : const Color(0xFF0D1037)),
+                                  : Colors.grey.shade500),
                         ),
                         //const Padding(padding: EdgeInsets.all(10))
                       ],

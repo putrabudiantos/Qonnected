@@ -30,6 +30,11 @@ class ProfilesDetails extends StatelessWidget {
   String? nohp;
   String? rekening;
   String? status;
+  String? jumlahwfh;
+  String? jumlahizin;
+  String? jumlahcuti;
+  String? date;
+  String? hour;
 
   ProfilesDetails(
       {Key? key,
@@ -48,6 +53,11 @@ class ProfilesDetails extends StatelessWidget {
       this.status,
       this.agama,
       this.nohp,
+      this.jumlahcuti,
+      this.jumlahizin,
+      this.jumlahwfh,
+      this.date,
+      this.hour,
       this.rekening})
       : super(key: key);
 
@@ -57,12 +67,8 @@ class ProfilesDetails extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            BannerCustom(
-              customAsset: urlimage != null
-                  ? "$urlimage"
-                  : "https://akcdn.detik.net.id/community/media/visual/2022/09/22/ilustrasi-legalitas-perusahaan_169.jpeg?w=700&q=90",
-              customHeight: .3,
-            ),
+            bannerProfiles(
+                context: context, gender: gender, urlimages: urlimage),
             const SizedBox(
               height: 46,
             ),
@@ -79,7 +85,10 @@ class ProfilesDetails extends StatelessWidget {
                     "$namaperusahaan",
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  infoSummary(context),
+                  infoSummary(
+                      jumlahcuti: "$jumlahcuti",
+                      jumlahizin: "$jumlahizin",
+                      jumlahwfh: "$jumlahwfh"),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -119,6 +128,13 @@ class ProfilesDetails extends StatelessWidget {
                           functions: () {
                             Get.to(MyHistory(
                               urlimages: "$urlimage",
+                              gender: gender,
+                              jabatan: jabatan,
+                              nama: nama,
+                              namaperusahaan: namaperusahaan,
+                              date: date,
+                              hour: hour,
+                              status: status,
                             ));
                           },
                           icons: Icons.list,
@@ -222,6 +238,51 @@ class ProfilesDetails extends StatelessWidget {
     );
   }
 
+  Widget bannerProfiles(
+      {BuildContext? context, String? urlimages, String? gender}) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Container(
+          height: MediaQuery.of(context!).size.height * .3,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: urlimages == null
+                  ? const NetworkImage(
+                      'https://akcdn.detik.net.id/community/media/visual/2022/09/22/ilustrasi-legalitas-perusahaan_169.jpeg?w=700&q=90')
+                  : NetworkImage(urlimages),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Positioned.fill(
+          bottom: -40,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              width: 100,
+              height: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(120),
+                color: Colors.white,
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(80),
+                child: Image(
+                    fit: BoxFit.cover,
+                    width: 80,
+                    height: 80,
+                    image: gender == "laki-laki"
+                        ? const AssetImage('assets/icons/male.png')
+                        : const AssetImage('assets/icons/female.png')),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget iconsButton({IconData? icons, Function()? functions, Color? colors}) {
     return Card(
       shape: RoundedRectangleBorder(
@@ -247,14 +308,18 @@ class ProfilesDetails extends StatelessWidget {
     );
   }
 
-  Widget infoSummary(BuildContext context) {
+  Widget infoSummary(
+      {String? jumlahwfh, String? jumlahizin, String? jumlahcuti}) {
     return Padding(
       padding: const EdgeInsets.only(left: 2, right: 2, top: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          summary(context),
+          summary(
+              jumlahwfh: "$jumlahwfh",
+              jumlahizin: "$jumlahizin",
+              jumlahcuti: "$jumlahcuti"),
           const SizedBox(
             height: 20,
           ),
@@ -263,16 +328,16 @@ class ProfilesDetails extends StatelessWidget {
     );
   }
 
-  Widget summary(BuildContext context) {
+  Widget summary({String? jumlahwfh, String? jumlahizin, String? jumlahcuti}) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(30),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            textSummary(context, 'WFH', '0'),
-            textSummary(context, 'IZIN', '0'),
-            textSummary(context, 'CUTI', '0')
+            textSummary(status: "WFH", jumlah: "$jumlahwfh"),
+            textSummary(status: "IZIN", jumlah: "$jumlahizin"),
+            textSummary(status: "CUTI", jumlah: "$jumlahcuti")
           ],
         ),
       ),
@@ -345,15 +410,12 @@ class ProfilesDetails extends StatelessWidget {
     );
   }
 
-  Widget textSummary(BuildContext context, String title, String summary) {
+  Widget textSummary({String? status, String? jumlah}) {
     return Column(
       children: [
-        Text(summary,
-            style: FontMedium(
-                context, 20, FontWeight.w700, const Color(0xFF0D1037))),
-        Text(title,
-            style: FontMedium(
-                context, 10, FontWeight.w500, const Color(0xFF0D1037)))
+        Text("$jumlah",
+            style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        Text(status!, style: const TextStyle(fontSize: 15))
       ],
     );
   }
