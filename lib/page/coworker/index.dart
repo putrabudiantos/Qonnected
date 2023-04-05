@@ -232,7 +232,9 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'agama': '',
       'golongandarah': '',
       'instagram': '@annonymouse',
-      'status': 'wfh'
+      'status': 'wfh',
+      'tiktok': "arumps",
+      'linkedin': "https://linkedin.com/in/arum-purwita-sari"
     },
     {
       'nama': 'Ariska Riris',
@@ -257,6 +259,8 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'agama': '',
       'golongandarah': '',
       'instagram': '@annonymouse',
+      'tiktok': "arumps",
+      'linkedin': "https://linkedin.com/in/arum-purwita-sari",
       'status': 'wfh'
     },
     {
@@ -282,7 +286,9 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
       'agama': '',
       'golongandarah': '',
       // 'instagram': '@annonymouse',
-      'status': 'wfh'
+      'status': 'wfh',
+      'tiktok': "arumps",
+      'linkedin': "https://linkedin.com/in/arum-purwita-sari"
     },
   ];
 
@@ -391,6 +397,9 @@ class _IndexCoWorkersState extends State<IndexCoWorkers> {
                       ig: founduser[index]['instagram'],
                       whatsapp: founduser[index]['nomor'],
                       phone: founduser[index]['nomor'],
+                      linkedin: founduser[index]['linkedin'],
+                      tiktok: founduser[index]['tiktok'],
+                      urlportofolio: founduser[index]['urlportofolio'],
                     ),
                   );
                 },

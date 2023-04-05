@@ -36,10 +36,18 @@ class _InitialPageState extends State<InitialPage> {
 
   final int selectedIndex = vars.idx == 0 ? vars.idx : 0;
 
+  // disini fungsi class dari tab home, coworkers, scanner, companies dan profile
   final pages = [
+    // Fungsi class Home
     const IndexHome(),
+
+    //Fungsi kelas Co Workers
     const IndexCoWorkers(urlimagecompany: "", namaperusahaan: "MyDevTeam"),
+
+    //Fungsi kelas Companies
     const TentangPerusahaan(),
+
+    //Fungsi kelas profil
     ProfilesDetails(
       nama: "Novita",
       namaperusahaan: "MyDevTeam",

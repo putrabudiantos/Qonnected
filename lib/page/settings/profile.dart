@@ -33,12 +33,19 @@ class ProfilesDetails extends StatelessWidget {
   String? jumlahwfh;
   String? jumlahizin;
   String? jumlahcuti;
+  String? instagram;
   String? date;
   String? hour;
+  String? tiktok;
+  String? urllinkedin;
+  String? urlportofolio;
 
   ProfilesDetails(
       {Key? key,
       this.urlimage,
+      this.urlportofolio,
+      this.urllinkedin,
+      this.tiktok,
       this.nama,
       this.jabatan,
       this.namaperusahaan,
@@ -53,6 +60,7 @@ class ProfilesDetails extends StatelessWidget {
       this.status,
       this.agama,
       this.nohp,
+      this.instagram,
       this.jumlahcuti,
       this.jumlahizin,
       this.jumlahwfh,
@@ -78,17 +86,28 @@ class ProfilesDetails extends StatelessWidget {
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Column(
                 children: [
-                  Text("$nama",
-                      style: const TextStyle(fontWeight: FontWeight.bold)),
-                  Text("$jabatan"),
-                  Text(
-                    "$namaperusahaan",
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                  // Nama
+                  nama != null
+                      ? Text("$nama",
+                          style: const TextStyle(fontWeight: FontWeight.bold))
+                      : const Text("-"),
+
+                  // Jabatan
+                  jabatan != null ? Text("$jabatan") : const Text("-"),
+
+                  // Nama Perusahaan
+                  namaperusahaan != null
+                      ? Text(
+                          "$namaperusahaan",
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      : const Text("-"),
+
                   infoSummary(
-                      jumlahcuti: "$jumlahcuti",
-                      jumlahizin: "$jumlahizin",
-                      jumlahwfh: "$jumlahwfh"),
+                    jumlahcuti: jumlahcuti != null ? "$jumlahcuti" : "0",
+                    jumlahizin: jumlahizin != null ? "$jumlahizin" : "0",
+                    jumlahwfh: jumlahwfh != null ? "$jumlahwfh" : "0",
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -188,7 +207,8 @@ class ProfilesDetails extends StatelessWidget {
                       children: [
                         iconsButton(
                             functions: () {
-                              whatsappdirect(nomor: nohp);
+                              whatsappdirect(
+                                  nomor: nohp, pesan: "Assalamualaikum");
                             },
                             icons: FontAwesomeIcons.whatsapp,
                             colors: Colors.green),
@@ -201,12 +221,16 @@ class ProfilesDetails extends StatelessWidget {
                             colors: Colors.yellow.shade900),
                         const SizedBox(width: 15),
                         iconsButton(
-                            functions: () {},
+                            functions: () {
+                              launchinstagram(username: instagram);
+                            },
                             icons: FontAwesomeIcons.instagram,
                             colors: Colors.purple.shade900),
                         const SizedBox(width: 15),
                         iconsButton(
-                            functions: () {},
+                            functions: () {
+                              launchlinkedin(linkedinurl: urllinkedin);
+                            },
                             icons: FontAwesomeIcons.linkedin,
                             colors: Colors.blue.shade400)
                       ],
@@ -218,13 +242,19 @@ class ProfilesDetails extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      iconsButton(
-                          functions: () {},
-                          icons: FontAwesomeIcons.tiktok,
-                          colors: Colors.black),
+                      tiktok != null
+                          ? iconsButton(
+                              functions: () {
+                                launchtiktok(username: tiktok);
+                              },
+                              icons: FontAwesomeIcons.tiktok,
+                              colors: Colors.black)
+                          : const SizedBox(height: 0, width: 0),
                       const SizedBox(width: 15),
                       iconsButton(
-                          functions: () {},
+                          functions: () {
+                            launchurlportofolio(urlportofolio: urlportofolio);
+                          },
                           icons: FontAwesomeIcons.internetExplorer,
                           colors: Colors.blueAccent),
                     ],
@@ -443,8 +473,38 @@ class ProfilesDetails extends StatelessWidget {
       await FlutterLaunch.launchWhatsapp(phone: nomor!, message: pesan!);
     }
   }
-  //fungsi untuk alert saat ingin log out
 
+  // fungsi untuk direct ke aplikasi instagram
+  Future<void> launchinstagram({String? username}) async {
+    final url = Uri.parse("https://instagram.com/$username");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi tiktok
+  Future<void> launchtiktok({String? username}) async {
+    final url = Uri.parse("https://tiktok.com/@$username");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi linkedin
+  Future<void> launchlinkedin({String? linkedinurl}) async {
+    final url = Uri.parse("$linkedinurl");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi tiktok
+  Future<void> launchurlportofolio({String? urlportofolio}) async {
+    final url = Uri.parse("$urlportofolio");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
 }
 
 /*

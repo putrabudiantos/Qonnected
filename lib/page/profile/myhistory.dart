@@ -34,16 +34,20 @@ class _MyHistoryState extends State<MyHistory> {
       child: Column(
         children: [
           bannerProfiles(
-              heights: .3, urlimages: urlimagess, gender: widget.gender),
+              heights: .3,
+              urlimages: urlimagess,
+              gender: widget.gender != null ? "${widget.gender}" : "-"),
           // Info user dibawah foto gender pada tab profile
           const SizedBox(height: 46),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Column(
               children: [
-                Text("${widget.nama} Activity",
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 20)),
+                widget.gender != null
+                    ? Text("${widget.nama} Activity",
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20))
+                    : const Text("-"),
                 const SizedBox(height: 25),
                 DefaultTabController(
                     length: 4, // length of tabs

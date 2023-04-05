@@ -524,44 +524,60 @@ class _IndexHomeState extends State<IndexHome> {
 // Row untuk menu saat logo perusahaan ditekan
   Widget menulogo() {
     return Padding(
-      padding: const EdgeInsets.only(left: 35, right: 35, top: 35),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 35),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           imagedatacontainer(
-              function: () {}, urlassets: "assets/icons/revisi/attendance.png"),
+              function: () {},
+              urlassets: "assets/icons/revisi/attendance.png",
+              nama: "Summary"),
           imagedatacontainer(
-              function: () {}, urlassets: "assets/icons/revisi/history.png"),
+              function: () {
+                Get.to(const TimeOff());
+              },
+              urlassets: "assets/icons/revisi/history.png",
+              nama: "Time Off"),
           imagedatacontainer(
               function: () {
                 Get.to(const PaySlip());
               },
-              urlassets: "assets/icons/revisi/payslip2.png")
+              urlassets: "assets/icons/revisi/payslip2.png",
+              nama: "PaySlip")
         ],
       ),
     );
   }
 
   GestureDetector imagedatacontainer(
-      {String? urlassets, Function()? function}) {
+      {String? urlassets, Function()? function, String? nama}) {
     return GestureDetector(
       onTap: function,
       child: Card(
         shape: RoundedRectangleBorder(
           side: BorderSide(color: Colors.grey.shade200, width: 1),
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(15),
         ),
         elevation: 3,
         child: Container(
-          width: 70,
-          height: 70,
+          width: 100,
+          height: 100,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(20),
           ),
-          child: Image.asset(
-            urlassets!,
-            scale: 6,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                urlassets!,
+                scale: 6,
+              ),
+              const SizedBox(height: 10),
+              Text(nama!,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 15))
+            ],
           ),
         ),
       ),

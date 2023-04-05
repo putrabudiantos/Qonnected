@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_launch/flutter_launch.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:qonnected_app/model/dummydata.dart';
 import 'package:qonnected_app/page/widget/banner.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Detailku extends StatelessWidget {
   final String? nama;
@@ -14,6 +17,8 @@ class Detailku extends StatelessWidget {
   final String? email;
   final String? tiktok;
   final String? phone;
+  final int? index;
+  final String? urlportofolio;
   const Detailku(
       {Key? key,
       this.nama,
@@ -26,7 +31,9 @@ class Detailku extends StatelessWidget {
       this.linkedin,
       this.email,
       this.tiktok,
-      this.phone})
+      this.phone,
+      this.index,
+      this.urlportofolio})
       : super(key: key);
 
   @override
@@ -68,33 +75,65 @@ class Detailku extends StatelessWidget {
                     children: [
                       whatsapp != null
                           ? iconsButton(
-                              functions: () {},
+                              functions: () {
+                                whatsappdirect(
+                                    nomor: phone, pesan: "Assalamualaikum\n");
+                              },
                               icons: FontAwesomeIcons.whatsapp,
                               colors: Colors.green)
                           : const SizedBox(height: 0, width: 0),
                       email != null
                           ? iconsButton(
-                              functions: () {},
+                              functions: () {
+                                launchUrlEmail(email);
+                              },
                               icons: Icons.email,
                               colors: Colors.orange)
                           : const SizedBox(height: 0, width: 0),
                       phone != null
                           ? iconsButton(
-                              functions: () {},
+                              functions: () {
+                                launchUrlPhone(phone);
+                              },
                               icons: Icons.call,
                               colors: Colors.red)
                           : const SizedBox(height: 0, width: 0),
                       ig != null
                           ? iconsButton(
-                              functions: () {},
+                              functions: () {
+                                launchinstagram(username: ig);
+                              },
                               icons: FontAwesomeIcons.instagram,
                               colors: Colors.purple.shade300)
                           : const SizedBox(height: 0, width: 0),
                       linkedin != null
                           ? iconsButton(
-                              functions: () {},
+                              functions: () {
+                                launchlinkedin(linkedinurl: linkedin);
+                              },
                               icons: FontAwesomeIcons.linkedin,
                               colors: Colors.blue)
+                          : const SizedBox(height: 0, width: 0),
+                      tiktok != null
+                          ? IconButton(
+                              onPressed: () {
+                                launchtiktok(username: tiktok);
+                              },
+                              icon: const Icon(
+                                FontAwesomeIcons.tiktok,
+                                color: Colors.white,
+                              ))
+                          : const SizedBox(height: 0, width: 0),
+                      urlportofolio != null
+                          ? IconButton(
+                              onPressed: () {
+                                launchurlportofolio(
+                                    urlportofolio: urlportofolio);
+                              },
+                              icon: Icon(
+                                FontAwesomeIcons.internetExplorer,
+                                color: Colors.blue.shade700,
+                              ))
                           : const SizedBox(height: 0, width: 0),
                     ],
                   ),
@@ -131,5 +170,61 @@ class Detailku extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Future<void> launchUrlEmail(String? to) async {
+    if (!await launchUrl(Uri(
+        scheme: 'mailto',
+        path: to,
+        queryParameters: {'subject': 'Pekerjaan'}))) {
+      throw Exception('Could not launch $to');
+    }
+  }
+
+  //fungsi untuk direct ke aplikasi telpon
+  Future<void> launchUrlPhone(String? tocall) async {
+    if (!await launchUrl(Uri.parse('tel:$tocall'))) {
+      throw Exception('Could not launch $tocall');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi whatsapp
+  Future<void> whatsappdirect({String? nomor, String? pesan}) async {
+    bool whatsapp = await FlutterLaunch.hasApp(name: "whatsapp");
+    if (whatsapp) {
+      await FlutterLaunch.launchWhatsapp(phone: nomor!, message: pesan!);
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi instagram
+  Future<void> launchinstagram({String? username}) async {
+    final url = Uri.parse("https://instagram.com/$username");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi tiktok
+  Future<void> launchtiktok({String? username}) async {
+    final url = Uri.parse("https://tiktok.com/@$username");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi linkedin
+  Future<void> launchlinkedin({String? linkedinurl}) async {
+    final url = Uri.parse("$linkedinurl");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+  // fungsi untuk direct ke aplikasi tiktok
+  Future<void> launchurlportofolio({String? urlportofolio}) async {
+    final url = Uri.parse("$urlportofolio");
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
   }
 }
