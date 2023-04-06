@@ -36,7 +36,8 @@
         <package android:name="com.instagram.android" />
         <package android:name="com.twitter.android" />
         <package android:name="com.facebook.katana" />
-        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp" /> <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
     </queries>
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -53,7 +54,12 @@
 
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- for android -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Include required permissions for Google Maps API to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" /> <!-- for android -->
     <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
     <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
     <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
@@ -85,6 +91,10 @@
         android:label="Qonnected Apps"
         android:largeHeap="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB9dtXou1nkunpTD6hHKIcRi-7w1Actbxc" />
+
         <activity
             android:name="asia.qonnected.adikarya.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -227,7 +237,10 @@
         <receiver
             android:name="com.appsamurai.storyly.util.notification.StorylyNotificationReceiver"
             android:exported="false"
-            android:process=":remote" />
+            android:process=":remote" /> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

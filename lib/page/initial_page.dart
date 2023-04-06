@@ -88,12 +88,22 @@ class _InitialPageState extends State<InitialPage> {
                 await prefs.setBool('checkin', false);
                 await prefs.setBool('checkout', false);
 
+                Get.to(LiveAttendence(
+                    formattimemasuk: "AM",
+                    formattimekeluar: "PM",
+                    jumlahlokasi: "3",
+                    logtime: "08:10",
+                    setjammasuk: "07.00",
+                    lengthdatalog: 4,
+                    statusmasukkerjalog: "Clock In",
+                    setjamkeluar: "03.00"));
+
                 // URL untuk barcode disini
-                scanQR(url: "https://invletter.com/profiles");
+                // scanQR(url: "https://invletter.com/profiles");
                 // HelperSharedPreferences.refreshStorage();
                 // print(prefs.getBool('checkin'));
               },
-              child: const Icon(Icons.qr_code_scanner), //icon inside button
+              child: const Icon(Icons.quora, size: 30), //icon inside button
             )),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
