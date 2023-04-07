@@ -1,3 +1,5 @@
+import 'dart:io';
+import 'dart:async';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -5,11 +7,13 @@ import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:intl/intl.dart';
 import 'package:slide_digital_clock/slide_digital_clock.dart';
 import 'package:get/get.dart';
-
 import '../activity/index.dart';
 import '../profile/myhistory.dart';
 import 'googlemaps.dart';
-import 'manualactivity.dart';
+import 'kondisiwfhwfo.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class LiveAttendence extends StatefulWidget {
   int? colorperusahaan;
@@ -43,6 +47,110 @@ class LiveAttendence extends StatefulWidget {
 }
 
 class _LiveAttendenceState extends State<LiveAttendence> {
+  double latkantor = -7.26964, longkantor = 112.80511;
+  late double lat;
+  late double long;
+  final Set<Marker> _marker = {};
+  Position? _position;
+  String? _address;
+  String jarak = "", catatan = "", waktu = "";
+
+  void _getCurrentLocation() async {
+    Position position = await _determinePosition();
+    String address = await _getAddressFormLatLongOnline(position);
+    setState(() {
+      _position = position;
+      lat = position.latitude;
+      long = position.longitude;
+      _address = address;
+    });
+  }
+
+  Future<Position> _determinePosition() async {
+    LocationPermission permission;
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        return Future.error('Location permissions are denied');
+      }
+    }
+    if (permission == LocationPermission.deniedForever) {
+      return Future.error(
+          'Location permissions are permanently denied, we cannot request permissions.');
+    }
+    return await Geolocator.getCurrentPosition();
+  }
+
+  Future<String> _getAddressFormLatLongOnline(Position param) async {
+    try {
+      List<Placemark> placemarkList = await placemarkFromCoordinates(
+        param.latitude,
+        param.longitude,
+        localeIdentifier: "id",
+      );
+      Placemark place = placemarkList[0];
+      return _address =
+          "${place.country} ${place.postalCode} ${place.administrativeArea} ${place.subAdministrativeArea} ${place.locality} ${place.subLocality} ${place.thoroughfare} ${place.subThoroughfare} ${place.name}";
+    } catch (e) {
+      return "Log error$e";
+    }
+  }
+
+  void marker() async {
+    Position pos = await Geolocator.getCurrentPosition();
+    setState(() {
+      _marker.add(
+        Marker(
+          markerId: const MarkerId("Lokasi saat ini"),
+          position: LatLng(pos.latitude, pos.longitude),
+          infoWindow: InfoWindow(
+            title: "Posisi Anda Sekarang",
+            snippet: _address,
+          ),
+        ),
+      );
+    });
+    setState(() {
+      jarak = Geolocator.distanceBetween(
+              latkantor, longkantor, pos.latitude, pos.longitude)
+          .floor()
+          .toString();
+    });
+  }
+
+  void cekJarak() {
+    int.parse(jarak) < 99
+        ? AlertDialog(
+            title: const Text('Clock In gagal'),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: <Widget>[
+                  Text('Jarak anda dengan titik kordinat adalah $jarak meter'),
+                  const Text('Anda berada diluar radius yang telah ditetapkan'),
+                  const Text('Harap menuju ke lokasi yang telah ditetapkan!'),
+                ],
+              ),
+            ),
+            actions: <Widget>[
+              TextButton(
+                child: const Text('Oke'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          )
+        : null;
+  }
+
+  @override
+  void initState() {
+    _getCurrentLocation();
+    marker();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     int? warna = widget.colorperusahaan;
@@ -264,8 +372,11 @@ class _LiveAttendenceState extends State<LiveAttendence> {
               nama: "Scan"),
           imagedatacontainer(
               function: () {
-                // Get.to(const ManualActivity());
-                Get.to(const ClockIn());
+                if (int.parse(jarak) < 100) {
+                  Get.to(const ClockIn());
+                } else if (int.parse(jarak) > 100) {
+                  Get.to(const KondisiWfhIzinCuti());
+                }
               },
               urlassets: "assets/icons/revisi/manual.png",
               nama: "Manual Activity"),
