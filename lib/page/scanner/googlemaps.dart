@@ -11,7 +11,8 @@ import 'package:slide_digital_clock/slide_digital_clock.dart';
 
 class ClockIn extends StatefulWidget {
   final int? colorperusahaan;
-  const ClockIn({super.key, this.colorperusahaan});
+  final double? posisikantor;
+  const ClockIn({super.key, this.colorperusahaan, this.posisikantor});
 
   @override
   ClockInState createState() => ClockInState();
@@ -190,7 +191,7 @@ class ClockInState extends State<ClockIn> {
           colon: const Text(
             ":",
             style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
+                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
           ),
         ),
       ),

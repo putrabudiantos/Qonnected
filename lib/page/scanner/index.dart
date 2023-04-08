@@ -47,7 +47,59 @@ class LiveAttendence extends StatefulWidget {
 }
 
 class _LiveAttendenceState extends State<LiveAttendence> {
+  //-7.434928693418607, 112.72895139072396
+  // String? _currentAddress;
+  // Position? _currentPosition;
+  // Future<bool> _handleLocationPermission() async {
+  //   bool serviceEnabled;
+  //   LocationPermission permission;
+  //   Position position = await Geolocator.getCurrentPosition(
+  //       desiredAccuracy: LocationAccuracy.high);
+
+  //   serviceEnabled = await Geolocator.isLocationServiceEnabled();
+  //   if (!serviceEnabled) {
+  //     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+  //         content: Text(
+  //             'Location services are disabled. Please enable the services')));
+  //     return false;
+  //   }
+  //   permission = await Geolocator.checkPermission();
+  //   if (permission == LocationPermission.denied) {
+  //     permission = await Geolocator.requestPermission();
+  //     if (permission == LocationPermission.denied) {
+  //       ScaffoldMessenger.of(context).showSnackBar(
+  //           const SnackBar(content: Text('Location permissions are denied')));
+  //       return false;
+  //     }
+  //   }
+  //   if (permission == LocationPermission.deniedForever) {
+  //     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+  //         content: Text(
+  //             'Location permissions are permanently denied, we cannot request permissions.')));
+  //     return false;
+  //   }
+  //   return true;
+  // }
+
+  // Future<void> _getCurrentPosition() async {
+  //   final hasPermission = await _handleLocationPermission();
+  //   if (!hasPermission) return;
+  //   await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
+  //       .then((Position position) {
+  //     setState(() => _currentPosition = position);
+  //   }).catchError((e) {
+  //     debugPrint(e);
+  //   });
+  // }
+
+  // @override
+  // void initState() {
+  //   _getCurrentPosition();
+  //   super.initState();
+  // }
+
   double latkantor = -7.26964, longkantor = 112.80511;
+  double lokasiku = 0;
   late double lat;
   late double long;
   final Set<Marker> _marker = {};
@@ -100,6 +152,10 @@ class _LiveAttendenceState extends State<LiveAttendence> {
   void marker() async {
     Position pos = await Geolocator.getCurrentPosition();
     setState(() {
+      _marker.add(Marker(
+          markerId: const MarkerId("Lokasi kantor"),
+          position: LatLng(latkantor, longkantor),
+          infoWindow: InfoWindow(title: "Posisi kantor", snippet: _address)));
       _marker.add(
         Marker(
           markerId: const MarkerId("Lokasi saat ini"),
@@ -116,6 +172,9 @@ class _LiveAttendenceState extends State<LiveAttendence> {
               latkantor, longkantor, pos.latitude, pos.longitude)
           .floor()
           .toString();
+      lokasiku = double.parse(jarak);
+      print("$latkantor, $longkantor posisi kantor");
+      print("");
     });
   }
 
@@ -181,7 +240,7 @@ class _LiveAttendenceState extends State<LiveAttendence> {
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18),
+                  fontSize: 35),
             ),
           ),
           Text(DateFormat.yMMMEd().format(DateTime.now()),
@@ -372,9 +431,10 @@ class _LiveAttendenceState extends State<LiveAttendence> {
               nama: "Scan"),
           imagedatacontainer(
               function: () {
-                if (int.parse(jarak) < 100) {
+                if (lokasiku < 100) {
                   Get.to(const ClockIn());
-                } else if (int.parse(jarak) > 100) {
+                }
+                if (lokasiku > 100) {
                   Get.to(const KondisiWfhIzinCuti());
                 }
               },

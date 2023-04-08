@@ -1113,6 +1113,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1422,6 +1426,8 @@ dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2210,6 +2216,11 @@ id blocking
 id border_rotation
 id bottom
 id bounce
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id btnBarcodeCaptureCancel
 id buttonPanel
 id cancel_action
@@ -2721,6 +2732,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_second
 layout barcode_capture
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout camera
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2837,6 +2850,7 @@ mipmap ic_light
 mipmap ic_photo
 plurals mtrl_badge_content_description
 raw beep
+raw firebase_common_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2898,7 +2912,9 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
 string days_text
+string default_web_client_id
 string error_icon_content_description
 string exo_download_completed
 string exo_download_description
@@ -2912,6 +2928,16 @@ string exo_download_removing
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string hours_text
@@ -2982,6 +3008,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string permission_camera_rationale
+string project_id
 string rationale_ask
 string rationale_ask_again
 string read_barcode
@@ -3936,6 +3963,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewfinderView inner_corner_color inner_corner_length inner_corner_width inner_height inner_margintop inner_scan_bitmap inner_scan_iscircle inner_scan_speed inner_width
 xml flutter_image_picker_file_paths
+xml image_share_filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

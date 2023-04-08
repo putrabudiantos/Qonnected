@@ -59,6 +59,10 @@ dependencies:
   storyly_flutter: ^1.30.0
   curved_navigation_bar: ^1.0.3
   flutter_map: ^1.1.1
+  firebase_core: any
+  firebase_auth: any
+  cloud_firestore: any
+  firebase_messaging: any
   
 
 

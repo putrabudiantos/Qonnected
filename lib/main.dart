@@ -14,6 +14,8 @@ import 'package:qonnected_app/page/profile/index.dart';
 import 'package:qonnected_app/page/settings/profile.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 int? initScreen;
 const int defaultcolors = 0xFF0D1037;
@@ -25,6 +27,10 @@ Future<void> main() async {
   final pref = await SharedPreferences.getInstance();
   initScreen = pref.getInt('initScreen');
   await pref.setInt('initScreen', 1);
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   //supabase
   await Supabase.initialize(

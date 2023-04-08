@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>493485927140-eap2jhh9pru9dvlv26pj2aib4k6ejuoa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.493485927140-eap2jhh9pru9dvlv26pj2aib4k6ejuoa</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCbEgajHTf1aroiD4Ci8QPd7rLYLuo4caI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>493485927140</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.qonnectedApp</string>
+	<key>PROJECT_ID</key>
+	<string>qonnected-2a114</string>
+	<key>STORAGE_BUCKET</key>
+	<string>qonnected-2a114.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:493485927140:ios:be87783bacb408b77f1af1</string>
+	<key>DATABASE_URL</key>
+	<string>https://qonnected-2a114-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

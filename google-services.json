@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "493485927140",
+    "firebase_url": "https://qonnected-2a114-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qonnected-2a114",
+    "storage_bucket": "qonnected-2a114.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493485927140:android:735a1b59e2835da67f1af1",
+        "android_client_info": {
+          "package_name": "asia.qonnected.adikarya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493485927140-oc2gsne42n1rjbgou3oth7olek8og0d6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4bRinYV3WF3UOwVS4KYCj0A3D20qPjuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493485927140-oc2gsne42n1rjbgou3oth7olek8og0d6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "493485927140-eap2jhh9pru9dvlv26pj2aib4k6ejuoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.qonnectedApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

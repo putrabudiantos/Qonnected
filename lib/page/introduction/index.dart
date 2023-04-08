@@ -35,7 +35,7 @@ class IntroductionScreens extends StatelessWidget {
           pages: [
             PageViewModel(
               titleWidget: const Text(
-                "Cari Kerja, Absensi Karyawan jadi lebih mudah",
+                "Absensi Karyawan jadi lebih mudah",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: Colors.black54,

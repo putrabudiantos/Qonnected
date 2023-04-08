@@ -4,24 +4,7 @@
             "outputFile": "/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/python/.gradle/caches/transforms-3/ea6751acb56b0b88131e2e20244ba024/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "10,11,12,13,14,15,16,33",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "532,602,686,770,866,968,1070,3026",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "597,681,765,861,963,1065,1159,3110"
-                    }
-                },
-                {
-                    "source": "/home/python/.gradle/caches/transforms-3/3716afa62338abddce1658c864db55d9/transformed/material-1.4.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/python/.gradle/caches/transforms-3/30c7d10f1c384596b9e87e0d05df26d4/transformed/material-1.4.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "1164,1252,1376,1478,1580,1696,1798,1912,2040,2156,2278,2414,2534,2668,2788,2900,3115,3239,3369,3491,3629,3763,3879",
                         "endColumns": "87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,123,129,121,137,133,115,119",
                         "endOffsets": "1247,1371,1473,1575,1691,1793,1907,2035,2151,2273,2409,2529,2663,2783,2895,3021,3234,3364,3486,3624,3758,3874,3994"
+                    }
+                },
+                {
+                    "source": "/home/python/.gradle/caches/transforms-3/8f906cb9d225e8d1a3a0d07406fd4300/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,33",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "532,602,686,770,866,968,1070,3026",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "597,681,765,861,963,1065,1159,3110"
                     }
                 },
                 {

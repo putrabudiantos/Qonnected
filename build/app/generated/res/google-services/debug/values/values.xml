@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">493485927140-oc2gsne42n1rjbgou3oth7olek8og0d6.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://qonnected-2a114-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">493485927140</string>
+    <string name="google_api_key" translatable="false">AIzaSyB4bRinYV3WF3UOwVS4KYCj0A3D20qPjuY</string>
+    <string name="google_app_id" translatable="false">1:493485927140:android:735a1b59e2835da67f1af1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB4bRinYV3WF3UOwVS4KYCj0A3D20qPjuY</string>
+    <string name="google_storage_bucket" translatable="false">qonnected-2a114.appspot.com</string>
+    <string name="project_id" translatable="false">qonnected-2a114</string>
+</resources>
