@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qonnected_app/binding/home_binding.dart';
+import 'package:qonnected_app/controller/firebaseauth/authrepo/authenticationrepository.dart';
 import 'package:qonnected_app/page/activity/index.dart';
 import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
@@ -15,6 +16,7 @@ import 'package:qonnected_app/page/settings/profile.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'auth/phonelogin.dart';
 import 'firebase_options.dart';
 
 int? initScreen;
@@ -28,9 +30,8 @@ Future<void> main() async {
   initScreen = pref.getInt('initScreen');
   await pref.setInt('initScreen', 1);
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
+      .then((value) => Get.put(AuthenticationRepository()));
 
   //supabase
   await Supabase.initialize(
@@ -90,15 +91,17 @@ class _MyAppState extends State<MyApp> {
                   fontWeight: FontWeight.bold)),
           fontFamily: "Inter"),
       debugShowCheckedModeBanner: false,
-      initialRoute:
-          initScreen == 0 || initScreen == null ? 'splashscreen' : 'splashpage',
-      routes: {
-        'splashscreen': (context) => const IntroductionScreens(),
-        'splashpage': (context) => const SplashPage()
-      },
-      home: const IntroductionScreens(),
+      // initialRoute:
+      //     initScreen == 0 || initScreen == null ? 'splashscreen' : 'splashpage',
+      // routes: {
+      //   'splashscreen': (context) => const IntroductionScreens(),
+      //   'splashpage': (context) => const SplashPage()
+      // },
+      home: const Scaffold(body: Center(child: CircularProgressIndicator())),
+      // home: const PhoneLogin(),
+      // home: const IntroductionScreens(),
       // home: const SplashPage(),
-      getPages: getPages,
+      // getPages: getPages,
     );
   }
 }

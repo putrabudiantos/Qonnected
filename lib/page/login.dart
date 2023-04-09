@@ -19,13 +19,13 @@ class _LoginPageState extends State<LoginPage> {
 
   final AuthController authC = Get.put(AuthController());
 
-  TextEditingController email = TextEditingController();
+  // TextEditingController email = TextEditingController();
 
-  @override
-  void dispose() {
-    email.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   email.dispose();
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:qonnected_app/controller/firebaseauth/authrepo/authenticationrepository.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:get/get.dart';
@@ -176,7 +177,9 @@ class ProfilesDetails extends StatelessWidget {
                                     ),
                                     TextButton(
                                       onPressed: () {
-                                        profilesC.SignOut(context);
+                                        // profilesC.SignOut(context);
+                                        AuthenticationRepository.instance
+                                            .logout();
                                       },
                                       child: const Text('Keluar'),
                                     ),

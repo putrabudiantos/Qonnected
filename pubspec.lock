@@ -260,6 +260,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.2"
+  firebase_dynamic_links:
+    dependency: "direct main"
+    description:
+      name: firebase_dynamic_links
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.17"
+  firebase_dynamic_links_platform_interface:
+    dependency: transitive
+    description:
+      name: firebase_dynamic_links_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.3+32"
   firebase_messaging:
     dependency: "direct main"
     description:
@@ -353,6 +367,13 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_map
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.1"
+  flutter_otp_text_field:
+    dependency: "direct main"
+    description:
+      name: flutter_otp_text_field
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
@@ -590,6 +611,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
+  intl_phone_field:
+    dependency: "direct main"
+    description:
+      name: intl_phone_field
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.0"
   intro_views_flutter:
     dependency: "direct main"
     description:

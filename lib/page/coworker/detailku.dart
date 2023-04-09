@@ -68,76 +68,72 @@ class Detailku extends StatelessWidget {
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                 const SizedBox(height: 15),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10, right: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      whatsapp != null
-                          ? iconsButton(
-                              functions: () {
-                                whatsappdirect(
-                                    nomor: phone, pesan: "Assalamualaikum\n");
-                              },
-                              icons: FontAwesomeIcons.whatsapp,
-                              colors: Colors.green)
-                          : const SizedBox(height: 0, width: 0),
-                      email != null
-                          ? iconsButton(
-                              functions: () {
-                                launchUrlEmail(email);
-                              },
-                              icons: Icons.email,
-                              colors: Colors.orange)
-                          : const SizedBox(height: 0, width: 0),
-                      phone != null
-                          ? iconsButton(
-                              functions: () {
-                                launchUrlPhone(phone);
-                              },
-                              icons: Icons.call,
-                              colors: Colors.red)
-                          : const SizedBox(height: 0, width: 0),
-                      ig != null
-                          ? iconsButton(
-                              functions: () {
-                                launchinstagram(username: ig);
-                              },
-                              icons: FontAwesomeIcons.instagram,
-                              colors: Colors.purple.shade300)
-                          : const SizedBox(height: 0, width: 0),
-                      linkedin != null
-                          ? iconsButton(
-                              functions: () {
-                                launchlinkedin(linkedinurl: linkedin);
-                              },
-                              icons: FontAwesomeIcons.linkedin,
-                              colors: Colors.blue)
-                          : const SizedBox(height: 0, width: 0),
-                      tiktok != null
-                          ? IconButton(
-                              onPressed: () {
-                                launchtiktok(username: tiktok);
-                              },
-                              icon: const Icon(
-                                FontAwesomeIcons.tiktok,
-                                color: Colors.white,
-                              ))
-                          : const SizedBox(height: 0, width: 0),
-                      urlportofolio != null
-                          ? IconButton(
-                              onPressed: () {
-                                launchurlportofolio(
-                                    urlportofolio: urlportofolio);
-                              },
-                              icon: Icon(
-                                FontAwesomeIcons.internetExplorer,
-                                color: Colors.blue.shade700,
-                              ))
-                          : const SizedBox(height: 0, width: 0),
-                    ],
-                  ),
-                )
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    whatsapp != null
+                        ? iconsButton(
+                            functions: () {
+                              whatsappdirect(
+                                  nomor: phone, pesan: "Assalamualaikum\n");
+                            },
+                            icons: FontAwesomeIcons.whatsapp,
+                            colors: Colors.green)
+                        : const SizedBox(height: 0, width: 0),
+                    email != null
+                        ? iconsButton(
+                            functions: () {
+                              launchUrlEmail(email);
+                            },
+                            icons: Icons.email,
+                            colors: Colors.orange)
+                        : const SizedBox(height: 0, width: 0),
+                    phone != null
+                        ? iconsButton(
+                            functions: () {
+                              launchUrlPhone(phone);
+                            },
+                            icons: Icons.call,
+                            colors: Colors.red)
+                        : const SizedBox(height: 0, width: 0),
+                    ig != null
+                        ? iconsButton(
+                            functions: () {
+                              launchinstagram(username: ig);
+                            },
+                            icons: FontAwesomeIcons.instagram,
+                            colors: Colors.purple.shade300)
+                        : const SizedBox(height: 0, width: 0),
+                    linkedin != null
+                        ? iconsButton(
+                            functions: () {
+                              launchlinkedin(linkedinurl: linkedin);
+                            },
+                            icons: FontAwesomeIcons.linkedin,
+                            colors: Colors.blue)
+                        : const SizedBox(height: 0, width: 0),
+                    tiktok != null
+                        ? IconButton(
+                            onPressed: () {
+                              launchtiktok(username: tiktok);
+                            },
+                            icon: const Icon(
+                              FontAwesomeIcons.tiktok,
+                              color: Colors.white,
+                            ))
+                        : const SizedBox(height: 0, width: 0),
+                    urlportofolio != null
+                        ? IconButton(
+                            onPressed: () {
+                              launchurlportofolio(urlportofolio: urlportofolio);
+                            },
+                            icon: Icon(
+                              FontAwesomeIcons.internetExplorer,
+                              color: Colors.blue.shade700,
+                            ))
+                        : const SizedBox(height: 0, width: 0),
+                  ],
+                ),
               ],
             ),
           )

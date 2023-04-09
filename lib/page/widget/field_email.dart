@@ -42,7 +42,7 @@ class _FieldEmailState extends State<FieldEmail> {
           style: GoogleFonts.inter(
             color: const Color(0xFF0D1037),
             textStyle: Theme.of(context).textTheme.bodyMedium,
-            fontSize: 12,
+            fontSize: 15,
             fontWeight: FontWeight.w500,
           ),
           decoration: InputDecoration(
