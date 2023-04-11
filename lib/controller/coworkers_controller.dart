@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:qonnected_app/model/profile.dart';
+import 'package:qonnected_app/model/profile/profile.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';

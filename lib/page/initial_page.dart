@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -15,6 +17,8 @@ import 'package:qonnected_app/page/summary/tentangperusahaan.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
+import '../model/profile/profile.dart';
 
 class InitialPage extends StatefulWidget {
   static const routeName = '/initpage';
@@ -48,18 +52,20 @@ class _InitialPageState extends State<InitialPage> {
     const TentangPerusahaan(),
 
     //Fungsi kelas profil
-    ProfilesDetails(
-      nama: "Novita",
-      namaperusahaan: "MyDevTeam",
-      jabatan: "Developer IT",
-      warnaperusahaan: 0xFF0D1037,
-      gender: "laki-laki",
-      jumlahcuti: "6",
-      jumlahizin: "8",
-      hour: DateTime.now().toString(),
-      urlimage:
-          "https://akcdn.detik.net.id/community/media/visual/2022/09/22/ilustrasi-legalitas-perusahaan_169.jpeg?w=700&q=90",
-    ),
+    ProfilesDetails()
+    // ProfilesDetails(
+    //   nama: "Novita",
+    //   namaperusahaan: "MyDevTeam",
+    //   jabatan: "Developer IT",
+    //   warnaperusahaan: 0xFF0D1037,
+    //   gender: "laki-laki",
+    //   jumlahcuti: "6",
+    //   jumlahizin: "8",
+    //   hour: DateTime.now().toString(),
+    //   urlimage:
+    //       "https://akcdn.detik.net.id/community/media/visual/2022/09/22/ilustrasi-legalitas-perusahaan_169.jpeg?w=700&q=90",
+    // )
+
     // const IndexActivity(),
     // IndexSettings()
   ];
@@ -97,11 +103,6 @@ class _InitialPageState extends State<InitialPage> {
                     lengthdatalog: 4,
                     statusmasukkerjalog: "Clock In",
                     setjamkeluar: "03.00"));
-
-                // URL untuk barcode disini
-                // scanQR(url: "https://invletter.com/profiles");
-                // HelperSharedPreferences.refreshStorage();
-                // print(prefs.getBool('checkin'));
               },
               child: const Icon(Icons.quora, size: 30), //icon inside button
             )),

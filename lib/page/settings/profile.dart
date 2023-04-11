@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -5,6 +7,8 @@ import 'package:qonnected_app/controller/firebaseauth/authrepo/authenticationrep
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:get/get.dart';
+import 'package:http/http.dart' as http;
+import 'package:qonnected_app/model/profile/profile.dart';
 import 'package:qonnected_app/page/profile/myhistory.dart';
 import 'package:qonnected_app/page/widget/banner.dart';
 import 'package:qonnected_app/page/profile/tentangsaya.dart';
@@ -419,7 +423,7 @@ class ProfilesDetails extends StatelessWidget {
       onTap: () {
         if (route == 'logout') {
           print('a');
-          profilesC.SignOut(context);
+          profilesC.signOut(context);
         } else {
           Get.to(route);
         }

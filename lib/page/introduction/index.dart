@@ -77,13 +77,14 @@ class IntroductionScreens extends StatelessWidget {
                 image: buildImage("assets/images/thirdpage.png"),
                 //getPageDecoration, a method to customise the page style
                 decoration: getPageDecoration(),
-                footer: TextButton(
+                footer: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        primary: const Color(0xFF0D1037)),
                     onPressed: () {
                       showMyDialogLocation(context);
                     },
-                    child: Text("Beri Akses",
-                        style: TextStyle(
-                            color: Colors.blue.shade900, fontSize: 16)))),
+                    child: const Text("Beri Akses",
+                        style: TextStyle(color: Colors.white, fontSize: 16)))),
             PageViewModel(
                 titleWidget: const Text(
                   "Beri akses layanan kamera untuk Clock In/Out",
@@ -98,14 +99,15 @@ class IntroductionScreens extends StatelessWidget {
                 image: buildImage("assets/images/fourthpage.png"),
                 //getPageDecoration, a method to customise the page style
                 decoration: getPageDecoration(),
-                footer: TextButton(
+                footer: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        primary: const Color(0xFF0D1037)),
                     onPressed: () async {
                       showMyDialogCamera(context);
                     },
-                    child: Text(
+                    child: const Text(
                       "Beri Akses",
-                      style:
-                          TextStyle(color: Colors.blue.shade900, fontSize: 16),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ))),
           ],
           onDone: () {

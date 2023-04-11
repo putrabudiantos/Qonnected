@@ -8,6 +8,7 @@ import 'package:intl/intl.dart';
 import 'package:slide_digital_clock/slide_digital_clock.dart';
 import 'package:get/get.dart';
 import '../activity/index.dart';
+import '../introduction/index.dart';
 import '../profile/myhistory.dart';
 import 'googlemaps.dart';
 import 'kondisiwfhwfo.dart';
@@ -287,7 +288,9 @@ class _LiveAttendenceState extends State<LiveAttendence> {
                     ),
                     widget.jumlahlokasi != null
                         ? TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(const IntroductionScreens());
+                            },
                             child: Text(
                                 "See ${widget.jumlahlokasi} other attendance location"))
                         : const SizedBox(height: 0, width: 0),

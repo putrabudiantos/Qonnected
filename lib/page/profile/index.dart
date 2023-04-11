@@ -54,15 +54,13 @@ class IndexProfile extends StatelessWidget {
 
   Widget form(BuildContext context) {
     profileC.nameController.value.text =
-        profileC.coworkersModel.value[0].fullname!;
-    profileC.phoneController.value.text =
-        profileC.coworkersModel.value[0].phone!;
-    profileC.emailController.value.text =
-        profileC.coworkersModel.value[0].email!;
-    profileC.identityController.value.text =
-        profileC.coworkersModel.value[0].identity_number!;
-    profileC.identityEmployeeController.value.text =
-        profileC.coworkersModel.value[0].employee_identification!;
+        profileC.coworkersModel.value!.fullname!;
+    profileC.phoneController.value.text = profileC.coworkersModel.value!.phone!;
+    profileC.emailController.value.text = profileC.coworkersModel.value!.email!;
+    // profileC.identityController.value.text =
+    //     profileC.coworkersModel.value!.identity_number!;
+    // profileC.identityEmployeeController.value.text =
+    //     profileC.coworkersModel.value!.employee_identification!;
 
     return Padding(
       padding: const EdgeInsets.all(20),

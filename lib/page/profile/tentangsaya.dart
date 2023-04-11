@@ -1,8 +1,14 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:qonnected_app/model/profile/profile.dart';
+import '../../controller/profile_controller.dart';
 import './ajukanperubahansaya.dart';
 import 'package:get/get.dart';
+import 'package:convert/convert.dart';
+import 'package:http/http.dart' as http;
 
-class TentangSaya extends StatelessWidget {
+class TentangSaya extends StatefulWidget {
   String? gender;
   String? nama;
   String? jabatan;
@@ -38,12 +44,61 @@ class TentangSaya extends StatelessWidget {
       : super(key: key);
 
   @override
+  State<TentangSaya> createState() => _TentangSayaState();
+}
+
+class _TentangSayaState extends State<TentangSaya> {
+  final profileC = Get.put(ProfileController());
+
+  Future<ProfileModel> fetchProfile() async {
+    var headers = {
+      'Authorization': 'Token adCrbmpXTUpcMokI7OkivNC71QgsV067',
+      'Cookie':
+          'route=1681096813.535.308.981237|1f6839247221289d5dff78ead76ea2bb'
+    };
+    var request = http.Request(
+        'GET',
+        Uri.parse(
+            'https://api.baserow.io/api/database/rows/table/154795/1/?user_field_names=true'));
+
+    request.headers.addAll(headers);
+
+    http.StreamedResponse response = await request.send();
+
+    if (response.statusCode == 200) {
+      print(await response.stream.bytesToString());
+      print(jsonDecode(request.body));
+      return ProfileModel.fromJson(jsonDecode(request.body));
+    } else {
+      print(response.reasonPhrase);
+    }
+    return ProfileModel.fromJson(jsonDecode(request.body));
+  }
+
+  late Future<ProfileModel> futureProfile;
+
+  @override
+  void initState() {
+    super.initState();
+    futureProfile = fetchProfile();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: warnaperusahaan == null
+        backgroundColor: widget.warnaperusahaan == null
             ? const Color(0xFF0D1037)
-            : Color(warnaperusahaan!),
+            : Color(widget.warnaperusahaan!),
+        actions: [
+          IconButton(
+            onPressed: () {
+              profileC.fetchProfile();
+            },
+            icon: const Icon(Icons.abc),
+            color: Colors.white,
+          )
+        ],
         elevation: 0,
         centerTitle: true,
         leading: const BackButton(color: Colors.white),
@@ -52,105 +107,152 @@ class TentangSaya extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontFamily: "Inter"),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(left: 15, right: 15, top: 8),
-        child: ListView(
-          children: [
-            // circle profile image
-            if (gender == "laki-laki")
-              profileimage(
-                  colorsperusahaan: warnaperusahaan,
-                  urlimage: "assets/icons/male.png",
-                  name: nama,
-                  jabatan: jabatan,
-                  namaperusahaan: namaperusahaan)
-            else
-              profileimage(
-                  colorsperusahaan: warnaperusahaan,
-                  urlimage: "assets/icons/female.png",
-                  name: nama,
-                  jabatan: jabatan,
-                  namaperusahaan: namaperusahaan),
-            const SizedBox(height: 10),
-            //nama
-            nama != null
-                ? textdata(
-                    context: context, lable: "Nama", information: "$nama")
-                : textdata(context: context, lable: "Nama", information: "-"),
-            //alamat
-            alamat != null
-                ? textdata(
-                    context: context, lable: "Alamat", information: "$alamat")
-                : textdata(context: context, lable: "Alamat", information: "-"),
-            //agama
-            nip != null
-                ? textdata(context: context, lable: "NIP", information: nip)
-                : textdata(context: context, lable: "NIP", information: "-"),
-            //jabatan
-            jabatan != null
-                ? textdata(
-                    context: context, lable: "Jabatan", information: "$jabatan")
-                : textdata(
-                    context: context, lable: "Jabatan", information: "-"),
-            //email
-            email != null
-                ? textdata(
-                    context: context, lable: "Email", information: "$email")
-                : textdata(context: context, lable: "Email", information: "-"),
-            //tempat lahir
-            tempatlahir != null
-                ? textdata(
-                    context: context,
-                    lable: "Tempat Lahir",
-                    information: "$tempatlahir")
-                : textdata(
-                    context: context, lable: "Tempat Lahir", information: "-"),
-            //tanggal lahir
-            tanggallahir != null
-                ? textdata(
-                    context: context,
-                    lable: "Tanggal lahir",
-                    information: "$tanggallahir")
-                : textdata(
-                    context: context, lable: "Tempat Lahir", information: "-"),
-            //Jenis kelamin
-            gender != null
-                ? textdata(
-                    context: context,
-                    lable: "Jenis kelamin",
-                    information: "$gender")
-                : textdata(
-                    context: context, lable: "Jenis kelamin", information: "-"),
-            //status
-            status != null
-                ? textdata(
-                    context: context, lable: "Status", information: "$status")
-                : textdata(context: context, lable: "Status", information: "-"),
-            //nomor telpon
-            nohp != null
-                ? textdata(
-                    context: context, lable: "Nomor Hp", information: "$nohp")
-                : textdata(context: context, lable: "No Hp", information: "-"),
-            //agama
-            agama != null
-                ? textdata(
-                    context: context, lable: "Agama", information: "$agama")
-                : textdata(context: context, lable: "Agama", information: "-"),
-            //NPWP
-            npwp != null
-                ? textdata(
-                    context: context, lable: "NPWP", information: "$npwp")
-                : textdata(context: context, lable: "NPWP", information: "-"),
-            //No. Rekening
-            rekening != null
-                ? textdata(
-                    context: context,
-                    lable: "Nomor Rekening",
-                    information: "$rekening")
-                : textdata(
-                    context: context, lable: "Nomer Rekening", information: "-")
-          ],
-        ),
+      body: FutureBuilder<ProfileModel>(
+        future: futureProfile,
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15, top: 8),
+              child: ListView(
+                children: [
+                  // circle profile image
+                  if (snapshot.data!.gender == "laki-laki")
+                    profileimage(
+                        colorsperusahaan: 0xFF0D1037,
+                        urlimage: "assets/icons/male.png",
+                        name: "${snapshot.data!.fullname}",
+                        jabatan: "${snapshot.data!.address}",
+                        namaperusahaan: "${snapshot.data!.email}")
+                  else
+                    profileimage(
+                        colorsperusahaan: 0xFF0D1037,
+                        urlimage: "assets/icons/female.png",
+                        name: "${snapshot.data!.fullname}",
+                        jabatan: "${snapshot.data!.address}",
+                        namaperusahaan: "${snapshot.data!.email}"),
+                  const SizedBox(height: 10),
+                  //nama
+                  snapshot.data!.fullname != null
+                      ? textdata(
+                          context: context,
+                          lable: "Nama",
+                          information: "${snapshot.data!.fullname}")
+                      : textdata(
+                          context: context, lable: "Nama", information: "-"),
+                  //alamat
+                  snapshot.data!.address != null
+                      ? textdata(
+                          context: context,
+                          lable: "Alamat",
+                          information: "${snapshot.data!.address}")
+                      : textdata(
+                          context: context, lable: "Alamat", information: "-"),
+                  //agama
+                  snapshot.data!.nip != null
+                      ? textdata(
+                          context: context,
+                          lable: "NIP",
+                          information: snapshot.data!.nip)
+                      : textdata(
+                          context: context, lable: "NIP", information: "-"),
+                  //jabatan
+                  snapshot.data!.address != null
+                      ? textdata(
+                          context: context,
+                          lable: "Jabatan",
+                          information: "${snapshot.data!.address}")
+                      : textdata(
+                          context: context, lable: "Jabatan", information: "-"),
+                  //email
+                  snapshot.data!.email != null
+                      ? textdata(
+                          context: context,
+                          lable: "Email",
+                          information: "${snapshot.data!.email}")
+                      : textdata(
+                          context: context, lable: "Email", information: "-"),
+                  //tempat lahir
+                  snapshot.data!.place_of_birth != null
+                      ? textdata(
+                          context: context,
+                          lable: "Tempat Lahir",
+                          information: "${snapshot.data!.place_of_birth}")
+                      : textdata(
+                          context: context,
+                          lable: "Tempat Lahir",
+                          information: "-"),
+                  //tanggal lahir
+                  snapshot.data!.date_of_birth != null
+                      ? textdata(
+                          context: context,
+                          lable: "Tanggal lahir",
+                          information: "${snapshot.data!.date_of_birth}")
+                      : textdata(
+                          context: context,
+                          lable: "Tempat Lahir",
+                          information: "-"),
+                  //Jenis kelamin
+                  snapshot.data!.gender != null
+                      ? textdata(
+                          context: context,
+                          lable: "Jenis kelamin",
+                          information: "${snapshot.data!.gender}")
+                      : textdata(
+                          context: context,
+                          lable: "Jenis kelamin",
+                          information: "-"),
+                  //status
+                  snapshot.data!.gender != null
+                      ? textdata(
+                          context: context,
+                          lable: "Status",
+                          information: "${snapshot.data!.gender}")
+                      : textdata(
+                          context: context, lable: "Status", information: "-"),
+                  //nomor telpon
+                  snapshot.data!.phone != null
+                      ? textdata(
+                          context: context,
+                          lable: "Nomor Hp",
+                          information: "${snapshot.data!.phone}")
+                      : textdata(
+                          context: context, lable: "No Hp", information: "-"),
+                  //agama
+                  snapshot.data!.religion != null
+                      ? textdata(
+                          context: context,
+                          lable: "Agama",
+                          information: "${snapshot.data!.religion}")
+                      : textdata(
+                          context: context, lable: "Agama", information: "-"),
+                  //NPWP
+                  snapshot.data!.npwp != null
+                      ? textdata(
+                          context: context,
+                          lable: "NPWP",
+                          information: "${snapshot.data!.npwp}")
+                      : textdata(
+                          context: context, lable: "NPWP", information: "-"),
+                  //No. Rekening
+                  snapshot.data!.bank_account_number != null
+                      ? textdata(
+                          context: context,
+                          lable: "Nomor Rekening",
+                          information: "${snapshot.data!.bank_account_number}")
+                      : textdata(
+                          context: context,
+                          lable: "Nomer Rekening",
+                          information: "-")
+                ],
+              ),
+            );
+          } else if (snapshot.hasError) {
+            return Center(child: Text('${snapshot.error}'));
+          }
+
+          // By default, show a loading spinner.
+          return const Center(child: CircularProgressIndicator());
+        },
       ),
       bottomNavigationBar: Padding(
           padding: const EdgeInsets.only(left: 12, right: 12, bottom: 5),

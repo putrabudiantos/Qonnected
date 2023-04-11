@@ -148,7 +148,7 @@ class _IndexHomeState extends State<IndexHome> {
                       children: [
                         Obx(() => profileC.isLoading.value == true
                             ? const Text('...')
-                            : Text(profileC.coworkersModel.value[0].fullname!,
+                            : Text(profileC.coworkersModel.value!.fullname!,
                                 style: vars.FontHeading(context, 20,
                                     FontWeight.w800, Colors.white))),
                         const SizedBox(
@@ -156,7 +156,7 @@ class _IndexHomeState extends State<IndexHome> {
                         ),
                         Obx(() => profileC.isLoading.value == true
                             ? const Text('...')
-                            : Text(profileC.coworkersModel.value[0].position!,
+                            : Text(profileC.coworkersModel.value!.address!,
                                 style: vars.FontHeading(context, 15,
                                     FontWeight.w500, Colors.white)))
                       ],

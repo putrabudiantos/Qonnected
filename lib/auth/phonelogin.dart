@@ -68,11 +68,11 @@ class _PhoneLoginState extends State<PhoneLogin> {
                     "Kami akan mengirimkan anda kode OTP ke nomor yang anda inputkan",
                     textAlign: TextAlign.center),
                 const SizedBox(height: 30),
-                TextButton(
-                    onPressed: () {
-                      Get.to(const EmailLogin());
-                    },
-                    child: const Text('Login dengan email?')),
+                // TextButton(
+                //     onPressed: () {
+                //       Get.to(const EmailLogin());
+                //     },
+                //     child: const Text('Login dengan email?')),
                 const SizedBox(height: 30),
                 ElevatedButton(
                     onPressed: () {

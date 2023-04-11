@@ -91,17 +91,17 @@ class _MyAppState extends State<MyApp> {
                   fontWeight: FontWeight.bold)),
           fontFamily: "Inter"),
       debugShowCheckedModeBanner: false,
-      // initialRoute:
-      //     initScreen == 0 || initScreen == null ? 'splashscreen' : 'splashpage',
-      // routes: {
-      //   'splashscreen': (context) => const IntroductionScreens(),
-      //   'splashpage': (context) => const SplashPage()
-      // },
+      initialRoute:
+          initScreen == 0 || initScreen == null ? 'splashscreen' : 'splashpage',
+      routes: {
+        'splashscreen': (context) => const IntroductionScreens(),
+        'splashpage': (context) => const PhoneLogin()
+      },
       home: const Scaffold(body: Center(child: CircularProgressIndicator())),
       // home: const PhoneLogin(),
       // home: const IntroductionScreens(),
       // home: const SplashPage(),
-      // getPages: getPages,
+      getPages: getPages,
     );
   }
 }

@@ -1,7 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:http/http.dart' as http;
 // import 'package:qonnected_app/helper/alert.dart';
-import 'package:qonnected_app/model/profile.dart';
+import 'package:qonnected_app/model/profile/profile.dart';
 import 'package:qonnected_app/page/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
@@ -9,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileController extends GetxController {
   var isLoading = false.obs;
-  var coworkersModel = <ProfileModel>[].obs;
+  var coworkersModel = Rxn<ProfileModel>();
   var nameController = TextEditingController().obs;
   var emailController = TextEditingController().obs;
   var phoneController = TextEditingController().obs;
@@ -38,26 +41,38 @@ class ProfileController extends GetxController {
   }
 
   fetchProfile() async {
-    isLoading.value = true;
-    final prefs = await SharedPreferences.getInstance();
-    var id = '77c8f365-24af-441c-ae06-41b4b83d724f';
-    final response =
-        await vars.client.from('profiles').select().eq('id', id).execute();
-    print(response.data);
-    if (response.status == 200) {
-      List jsonResponse = response.data;
+    var headers = {
+      'Authorization': 'Token adCrbmpXTUpcMokI7OkivNC71QgsV067',
+      'Cookie':
+          'route=1681096813.535.308.981237|1f6839247221289d5dff78ead76ea2bb'
+    };
+    var request = http.Request(
+        'GET',
+        Uri.parse(
+            'https://api.baserow.io/api/database/rows/table/154795/1/?user_field_names=true'));
 
-      coworkersModel.value =
-          jsonResponse.map((e) => ProfileModel.fromJson(e)).toList();
-      isLoading.value = false;
+    request.headers.addAll(headers);
+
+    http.StreamedResponse response = await request.send();
+
+    if (response.statusCode == 200) {
+      await response.stream.bytesToString().then((value) {
+        var jsonResponse = json.decode(value);
+
+        print("data 1 : ${jsonResponse['worker_status']['id']}");
+
+        coworkersModel.value =
+            jsonResponse.map((e) => ProfileModel.fromJson(e));
+
+        print(coworkersModel.value);
+      });
     } else {
-      Get.snackbar('Error Loading data!',
-          'Sever responded: ${response.status}:${response.error}');
-      isLoading.value = false;
+      print("B");
+      print(response.reasonPhrase);
     }
   }
 
-  SignOut(BuildContext context) async {
+  signOut(BuildContext context) async {
     final response = await vars.client.auth.signOut();
     final preferences = await SharedPreferences.getInstance();
     await preferences.clear();

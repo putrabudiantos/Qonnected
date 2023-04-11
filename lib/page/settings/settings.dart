@@ -7,10 +7,13 @@ import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/widget/banner.dart';
 
 import '../../controller/profile_controller.dart';
+import '../../model/profile/profile.dart';
 import '../profile/chatkehr.dart';
 import '../profile/pengingatcico.dart';
 import '../profile/tentangsaya.dart';
 import 'profile.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
 class Settings extends StatefulWidget {
   const Settings({Key? key}) : super(key: key);
@@ -22,6 +25,30 @@ class Settings extends StatefulWidget {
 class _SettingsState extends State<Settings> {
   CoWorkersController workerC = Get.put(CoWorkersController());
   final profilesC = Get.put(ProfileController());
+
+  Future<ProfileModel> getDataUser() async {
+    var headers = {
+      'Authorization': 'Token adCrbmpXTUpcMokI7OkivNC71QgsV067',
+      'Cookie':
+          'route=1681096813.535.308.981237|1f6839247221289d5dff78ead76ea2bb'
+    };
+    var request = http.Request(
+        'GET',
+        Uri.parse(
+            'https://api.baserow.io/api/database/rows/table/154795/1/?user_field_names=true'));
+
+    request.headers.addAll(headers);
+
+    http.StreamedResponse response = await request.send();
+
+    if (response.statusCode == 200) {
+      print(await response.stream.bytesToString());
+    } else {
+      print(response.reasonPhrase);
+    }
+    return ProfileModel.fromJson(
+        jsonDecode(await response.stream.bytesToString()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -76,26 +103,7 @@ class _SettingsState extends State<Settings> {
                       size: 18,
                     ),
                     onTap: () {
-                      Get.to(ProfilesDetails(
-                        agama: "Katholik",
-                        alamat: "Japanan",
-                        email: "example@gmail.com",
-                        gender: "Laki-laki",
-                        jabatan: "Developer",
-                        nama: "Novita",
-                        namaperusahaan: "MyDevTeam",
-                        nip: "378dhw3",
-                        nohp: "08287363",
-                        npwp: "278edb3",
-                        rekening: "283782634",
-                        status: "Belum Menikah",
-                        tanggallahir:
-                            DateFormat.yMMMEd().format(DateTime.now()),
-                        warnaperusahaan: 0xFF0D1037,
-                        tempatlahir: "Gempol",
-                        urlimage:
-                            "https://www.markdesign.net/images/product/resize_755_3000/a3d63-my-devteam2.jpg",
-                      ));
+                      Get.to(ProfilesDetails());
                     },
                     title: const Text("Profile"),
                   ),
@@ -182,7 +190,7 @@ class _SettingsState extends State<Settings> {
                           ),
                           TextButton(
                             onPressed: () {
-                              profilesC.SignOut(context);
+                              profilesC.signOut(context);
                             },
                             child: const Text('Keluar'),
                           ),

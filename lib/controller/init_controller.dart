@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:qonnected_app/helper/alert.dart';
-import 'package:qonnected_app/model/profile.dart';
+import 'package:qonnected_app/model/profile/profile.dart';
 import 'package:qonnected_app/page/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
@@ -12,12 +12,12 @@ class InitController extends GetxController {
 
   @override
   void onInit() {
-    fetchInit();
+    // fetchInit();
     super.onInit();
   }
 
-  fetchInit() async {
-    final prefs = await SharedPreferences.getInstance();
-    mainColor.value = int.parse(prefs.getString('mainColor')!);
-  }
+  // fetchInit() async {
+  //   final prefs = await SharedPreferences.getInstance();
+  //   mainColor.value = int.parse(prefs.getString('mainColor')!);
+  // }
 }

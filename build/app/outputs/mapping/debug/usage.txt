@@ -35470,6 +35470,152 @@ com.google.firebase.datatransport.R$string
 com.google.firebase.datatransport.R$style
 com.google.firebase.datatransport.R$styleable
 com.google.firebase.datatransport.R
+com.google.firebase.dynamiclinks.BuildConfig
+com.google.firebase.dynamiclinks.DynamicLink$AndroidParameters$Builder:
+    public void <init>()
+    public android.net.Uri getFallbackUrl()
+    public int getMinimumVersion()
+com.google.firebase.dynamiclinks.DynamicLink$AndroidParameters:
+    public static final java.lang.String KEY_ANDROID_FALLBACK_LINK
+    public static final java.lang.String KEY_ANDROID_MIN_VERSION_CODE
+    public static final java.lang.String KEY_ANDROID_PACKAGE_NAME
+com.google.firebase.dynamiclinks.DynamicLink$Builder:
+    private static final java.lang.String APP_GOO_GL_PATTERN
+    public static final java.lang.String KEY_API_KEY
+    public static final java.lang.String KEY_DOMAIN
+    public static final java.lang.String KEY_DOMAIN_URI_PREFIX
+    public static final java.lang.String KEY_DYNAMIC_LINK
+    public static final java.lang.String KEY_DYNAMIC_LINK_PARAMETERS
+    public static final java.lang.String KEY_LINK
+    public static final java.lang.String KEY_SUFFIX
+    private static final java.lang.String PAGE_LINK_PATTERN
+    private static final java.lang.String SCHEME_PREFIX
+    public com.google.android.gms.tasks.Task buildShortDynamicLink()
+    public java.lang.String getDomainUriPrefix()
+    public android.net.Uri getLink()
+    public android.net.Uri getLongLink()
+    public com.google.firebase.dynamiclinks.DynamicLink$Builder setDynamicLinkDomain(java.lang.String)
+com.google.firebase.dynamiclinks.DynamicLink$GoogleAnalyticsParameters$Builder:
+    public void <init>(java.lang.String,java.lang.String,java.lang.String)
+    public java.lang.String getCampaign()
+    public java.lang.String getContent()
+    public java.lang.String getMedium()
+    public java.lang.String getSource()
+    public java.lang.String getTerm()
+com.google.firebase.dynamiclinks.DynamicLink$GoogleAnalyticsParameters:
+    public static final java.lang.String KEY_UTM_CAMPAIGN
+    public static final java.lang.String KEY_UTM_CONTENT
+    public static final java.lang.String KEY_UTM_MEDIUM
+    public static final java.lang.String KEY_UTM_SOURCE
+    public static final java.lang.String KEY_UTM_TERM
+com.google.firebase.dynamiclinks.DynamicLink$IosParameters$Builder:
+    public java.lang.String getAppStoreId()
+    public java.lang.String getCustomScheme()
+    public java.lang.String getIpadBundleId()
+    public android.net.Uri getIpadFallbackUrl()
+    public java.lang.String getMinimumVersion()
+com.google.firebase.dynamiclinks.DynamicLink$IosParameters:
+    public static final java.lang.String KEY_IOS_APP_STORE_ID
+    public static final java.lang.String KEY_IOS_BUNDLE_ID
+    public static final java.lang.String KEY_IOS_CUSTOM_SCHEME
+    public static final java.lang.String KEY_IOS_FALLBACK_LINK
+    public static final java.lang.String KEY_IOS_MINIMUM_VERSION
+    public static final java.lang.String KEY_IPAD_BUNDLE_ID
+    public static final java.lang.String KEY_IPAD_FALLBACK_LINK
+com.google.firebase.dynamiclinks.DynamicLink$ItunesConnectAnalyticsParameters$Builder:
+    public java.lang.String getAffiliateToken()
+    public java.lang.String getCampaignToken()
+    public java.lang.String getProviderToken()
+com.google.firebase.dynamiclinks.DynamicLink$ItunesConnectAnalyticsParameters:
+    public static final java.lang.String KEY_ITUNES_CONNECT_AT
+    public static final java.lang.String KEY_ITUNES_CONNECT_CT
+    public static final java.lang.String KEY_ITUNES_CONNECT_PT
+com.google.firebase.dynamiclinks.DynamicLink$NavigationInfoParameters$Builder:
+    public boolean getForcedRedirectEnabled()
+com.google.firebase.dynamiclinks.DynamicLink$NavigationInfoParameters:
+    public static final java.lang.String KEY_FORCED_REDIRECT
+com.google.firebase.dynamiclinks.DynamicLink$SocialMetaTagParameters$Builder:
+    public java.lang.String getDescription()
+    public android.net.Uri getImageUrl()
+    public java.lang.String getTitle()
+com.google.firebase.dynamiclinks.DynamicLink$SocialMetaTagParameters:
+    public static final java.lang.String KEY_SOCIAL_DESCRIPTION
+    public static final java.lang.String KEY_SOCIAL_IMAGE_LINK
+    public static final java.lang.String KEY_SOCIAL_TITLE
+com.google.firebase.dynamiclinks.PendingDynamicLinkData:
+    protected void <init>(java.lang.String,int,long,android.net.Uri)
+    public android.os.Bundle getExtensions()
+    public android.net.Uri getRedirectUrl()
+    public android.content.Intent getUpdateAppIntent(android.content.Context)
+com.google.firebase.dynamiclinks.R$attr
+com.google.firebase.dynamiclinks.R$color
+com.google.firebase.dynamiclinks.R$dimen
+com.google.firebase.dynamiclinks.R$drawable
+com.google.firebase.dynamiclinks.R$id
+com.google.firebase.dynamiclinks.R$integer
+com.google.firebase.dynamiclinks.R$layout
+com.google.firebase.dynamiclinks.R$raw
+com.google.firebase.dynamiclinks.R$string
+com.google.firebase.dynamiclinks.R$style
+com.google.firebase.dynamiclinks.R$styleable
+com.google.firebase.dynamiclinks.R
+com.google.firebase.dynamiclinks.ShortDynamicLink$Suffix
+com.google.firebase.dynamiclinks.ShortDynamicLink$Warning:
+    public abstract java.lang.String getCode()
+com.google.firebase.dynamiclinks.internal.DynamicLinkData:
+    public void setDeepLink(java.lang.String)
+    public void setDynamicLink(java.lang.String)
+    public void setExtensionData(android.os.Bundle)
+    public void setMinVersion(int)
+    public void setRedirectUrl(android.net.Uri)
+com.google.firebase.dynamiclinks.internal.DynamicLinkDataCreator:
+    public static final int CONTENT_DESCRIPTION
+com.google.firebase.dynamiclinks.internal.DynamicLinkUTMParams:
+    public static final java.lang.String KEY_CAMPAIGN
+    public static final java.lang.String KEY_CAMPAIGN_BUNDLE
+    public static final java.lang.String KEY_MEDIUM
+    public static final java.lang.String KEY_SCION_DATA_BUNDLE
+    public static final java.lang.String KEY_SOURCE
+    public static final java.lang.String KEY_UTM_CAMPAIGN
+    public static final java.lang.String KEY_UTM_MEDIUM
+    public static final java.lang.String KEY_UTM_SOURCE
+com.google.firebase.dynamiclinks.internal.DynamicLinksClient:
+    public static final java.lang.String ACTION_START_SERVICE
+    private static final int DYNAMIC_LINKS_API_VALUE
+    public static final java.lang.String SERVICE_DESCRIPTOR
+    private static final int V17
+com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinksImpl:
+    private static final java.lang.String ANALYTICS_FDL_ORIGIN
+    public static final java.lang.String EXTRA_DYNAMIC_LINK_DATA
+    public static final java.lang.String KEY_SCION_DATA
+    private static final java.lang.String TAG
+com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinksImplConstants
+com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks$Default
+com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks$Stub$Proxy
+com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onCreateShortDynamicLink
+    static final int TRANSACTION_onGetDynamicLink
+    public static com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks asInterface(android.os.IBinder)
+    public static com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks getDefaultImpl()
+    public static boolean setDefaultImpl(com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks)
+com.google.firebase.dynamiclinks.internal.IDynamicLinksService$Default
+com.google.firebase.dynamiclinks.internal.IDynamicLinksService$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+com.google.firebase.dynamiclinks.internal.IDynamicLinksService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_createShortDynamicLink
+    static final int TRANSACTION_getDynamicLink
+    public void <init>()
+    public android.os.IBinder asBinder()
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+    public static boolean setDefaultImpl(com.google.firebase.dynamiclinks.internal.IDynamicLinksService)
+com.google.firebase.dynamiclinks.internal.ShortDynamicLinkImpl$WarningImpl:
+    public java.lang.String getCode()
+com.google.firebase.dynamiclinks.internal.ShortDynamicLinkImplCreator:
+    public static final int CONTENT_DESCRIPTION
+com.google.firebase.dynamiclinks.internal.WarningImplCreator:
+    public static final int CONTENT_DESCRIPTION
 com.google.firebase.dynamicloading.ComponentLoader:
     public abstract void discoverComponents()
 com.google.firebase.emulators.EmulatedServiceSettings:
@@ -44305,6 +44451,25 @@ io.flutter.plugins.firebase.core.R$string
 io.flutter.plugins.firebase.core.R$style
 io.flutter.plugins.firebase.core.R$styleable
 io.flutter.plugins.firebase.core.R
+io.flutter.plugins.firebase.dynamiclinks.BuildConfig
+io.flutter.plugins.firebase.dynamiclinks.Constants
+io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseDynamicLinksPlugin:
+    private static final java.lang.String METHOD_CHANNEL_NAME
+    private static final java.lang.String TAG
+io.flutter.plugins.firebase.dynamiclinks.R$attr
+io.flutter.plugins.firebase.dynamiclinks.R$color
+io.flutter.plugins.firebase.dynamiclinks.R$dimen
+io.flutter.plugins.firebase.dynamiclinks.R$drawable
+io.flutter.plugins.firebase.dynamiclinks.R$id
+io.flutter.plugins.firebase.dynamiclinks.R$integer
+io.flutter.plugins.firebase.dynamiclinks.R$layout
+io.flutter.plugins.firebase.dynamiclinks.R$raw
+io.flutter.plugins.firebase.dynamiclinks.R$string
+io.flutter.plugins.firebase.dynamiclinks.R$style
+io.flutter.plugins.firebase.dynamiclinks.R$styleable
+io.flutter.plugins.firebase.dynamiclinks.R
+io.flutter.plugins.firebase.dynamiclinks.Utils:
+    public void <init>()
 io.flutter.plugins.firebase.firestore.BuildConfig
 io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreException:
     private static final java.lang.String ERROR_ABORTED
