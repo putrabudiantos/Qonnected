@@ -286,14 +286,14 @@ class _LiveAttendenceState extends State<LiveAttendence> {
                             : Text(" PM", style: jam()),
                       ],
                     ),
-                    widget.jumlahlokasi != null
-                        ? TextButton(
-                            onPressed: () {
-                              Get.to(const IntroductionScreens());
-                            },
-                            child: Text(
-                                "See ${widget.jumlahlokasi} other attendance location"))
-                        : const SizedBox(height: 0, width: 0),
+                    // widget.jumlahlokasi != null
+                    //     ? TextButton(
+                    //         onPressed: () {
+                    //           Get.to(const IntroductionScreens());
+                    //         },
+                    //         child: Text(
+                    //             "See ${widget.jumlahlokasi} other attendance location"))
+                    //     : const SizedBox(height: 0, width: 0),
                     const Divider(color: Colors.black45),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -501,7 +501,18 @@ class _LiveAttendenceState extends State<LiveAttendence> {
     // setState to update our non-existent appearance.
     if (!mounted) return;
     if (barcodeScanRes == url) {
-      Get.to(const IndexActivity());
+      await AwesomeDialog(
+        context: context,
+        dialogType: DialogType.success,
+        animType: AnimType.scale,
+        title: 'Berhasil',
+        desc: 'Berhasil melakukan Clock In.',
+        autoHide: const Duration(seconds: 3),
+        onDismissCallback: (type) {
+          debugPrint('Dialog Dissmiss from callback $type');
+        },
+      ).show();
+      // Get.to(const IndexActivity());
     } else {
       barcodeScanRes == "Gagal";
       await AwesomeDialog(

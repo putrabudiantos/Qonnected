@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:loading_indicator/loading_indicator.dart';
 import 'package:qonnected_app/controller/firebaseauth/authrepo/authenticationrepository.dart';
 import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
@@ -17,8 +18,7 @@ import '../profile/pekerjaan.dart';
 import '../profile/pengingatcico.dart';
 import '../profile/chatkehr.dart';
 
-class ProfilesDetails extends StatelessWidget {
-  final profilesC = Get.put(ProfileController());
+class ProfilesDetails extends StatefulWidget {
   String? urlimage;
   String? gender;
   String? nama;
@@ -75,203 +75,492 @@ class ProfilesDetails extends StatelessWidget {
       : super(key: key);
 
   @override
+  State<ProfilesDetails> createState() => _ProfilesDetailsState();
+}
+
+class _ProfilesDetailsState extends State<ProfilesDetails> {
+  final profilesC = Get.put(ProfileController());
+
+  Future<ProfileModel> fetchProfile() async {
+    var headers = {
+      'Authorization': 'Token adCrbmpXTUpcMokI7OkivNC71QgsV067',
+      'Cookie':
+          'route=1681096813.535.308.981237|1f6839247221289d5dff78ead76ea2bb'
+    };
+    final request = http.Request(
+        'GET',
+        Uri.parse(
+            'https://api.baserow.io/api/database/rows/table/154795/1/?user_field_names=true'));
+
+    request.headers.addAll(headers);
+
+    http.StreamedResponse response = await request.send();
+
+    if (response.statusCode == 200) {
+      // If the server did return a 200 OK response,
+      // then parse the JSON.
+      return ProfileModel.fromJson(
+          jsonDecode(await response.stream.bytesToString()));
+    } else {
+      // If the server did not return a 200 OK response,
+      // then throw an exception.
+      throw Exception('Failed to load album');
+    }
+  }
+
+  late Future<ProfileModel> futureProfile;
+
+  @override
+  void initState() {
+    super.initState();
+    futureProfile = fetchProfile();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            bannerProfiles(
-                context: context, gender: gender, urlimages: urlimage),
-            const SizedBox(
-              height: 46,
-            ),
-
-            // Info user dibawah foto gender pada tab profile
-            Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              child: Column(
-                children: [
-                  // Nama
-                  nama != null
-                      ? Text("$nama",
-                          style: const TextStyle(fontWeight: FontWeight.bold))
-                      : const Text("-"),
-
-                  // Jabatan
-                  jabatan != null ? Text("$jabatan") : const Text("-"),
-
-                  // Nama Perusahaan
-                  namaperusahaan != null
-                      ? Text(
-                          "$namaperusahaan",
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        )
-                      : const Text("-"),
-
-                  infoSummary(
-                    jumlahcuti: jumlahcuti != null ? "$jumlahcuti" : "0",
-                    jumlahizin: jumlahizin != null ? "$jumlahizin" : "0",
-                    jumlahwfh: jumlahwfh != null ? "$jumlahwfh" : "0",
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text('  Info Saya',
-                          style: FontMedium(context, 18, FontWeight.w700,
-                              const Color(0xFF0D1037))),
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-                  // Button profile user
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      //untuk integrasi API data lewat kelas parameter ini
-                      iconsButton(
-                          functions: () {
-                            Get.to(TentangSaya(
-                                gender: gender,
-                                namaperusahaan: namaperusahaan,
-                                nama: nama,
-                                jabatan: jabatan,
-                                warnaperusahaan: warnaperusahaan,
-                                agama: agama,
-                                alamat: alamat,
-                                email: email,
-                                nip: nip,
-                                nohp: nohp,
-                                npwp: npwp,
-                                rekening: rekening,
-                                tanggallahir: tanggallahir,
-                                status: status,
-                                tempatlahir: tempatlahir));
-                          },
-                          icons: Icons.person,
-                          colors: Colors.black),
-                      iconsButton(
-                          functions: () {
-                            Get.to(MyHistory(
-                              urlimages: "$urlimage",
-                              gender: gender,
-                              jabatan: jabatan,
-                              nama: nama,
-                              namaperusahaan: namaperusahaan,
-                              date: date,
-                              hour: hour,
-                              status: status,
-                            ));
-                          },
-                          icons: Icons.list,
-                          colors: Colors.black),
-                      iconsButton(
-                          functions: () => showDialog<String>(
-                                context: context,
-                                builder: (BuildContext context) => AlertDialog(
-                                  title: const Text(
-                                    'Log Out',
-                                    textAlign: TextAlign.center,
-                                  ),
-                                  content: const Text(
-                                      'Apakah anda yakin ingin keluar dari akun ini?'),
-                                  actions: <Widget>[
-                                    TextButton(
-                                      onPressed: () =>
-                                          Navigator.pop(context, 'Cancel'),
-                                      child: const Text('Batal'),
-                                    ),
-                                    TextButton(
-                                      onPressed: () {
-                                        // profilesC.SignOut(context);
-                                        AuthenticationRepository.instance
-                                            .logout();
-                                      },
-                                      child: const Text('Keluar'),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                          icons: Icons.exit_to_app_rounded,
-                          colors: Colors.black)
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-                  // Button profile user
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text('  Social Media',
-                          style: FontMedium(context, 18, FontWeight.w700,
-                              const Color(0xFF0D1037))),
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        iconsButton(
-                            functions: () {
-                              whatsappdirect(
-                                  nomor: nohp, pesan: "Assalamualaikum");
-                            },
-                            icons: FontAwesomeIcons.whatsapp,
-                            colors: Colors.green),
-                        const SizedBox(width: 15),
-                        iconsButton(
-                            functions: () {
-                              launchUrlEmail(email);
-                            },
-                            icons: Icons.email,
-                            colors: Colors.yellow.shade900),
-                        const SizedBox(width: 15),
-                        iconsButton(
-                            functions: () {
-                              launchinstagram(username: instagram);
-                            },
-                            icons: FontAwesomeIcons.instagram,
-                            colors: Colors.purple.shade900),
-                        const SizedBox(width: 15),
-                        iconsButton(
-                            functions: () {
-                              launchlinkedin(linkedinurl: urllinkedin);
-                            },
-                            icons: FontAwesomeIcons.linkedin,
-                            colors: Colors.blue.shade400)
-                      ],
+      body: FutureBuilder<ProfileModel>(
+          future: futureProfile,
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return SingleChildScrollView(
+                child: Column(
+                  children: [
+                    bannerProfiles(
+                        context: context,
+                        gender: snapshot.data!.gender,
+                        urlimages: widget.urlimage),
+                    const SizedBox(
+                      height: 46,
                     ),
-                  ),
 
-                  const SizedBox(height: 15),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      tiktok != null
-                          ? iconsButton(
-                              functions: () {
-                                launchtiktok(username: tiktok);
-                              },
-                              icons: FontAwesomeIcons.tiktok,
-                              colors: Colors.black)
-                          : const SizedBox(height: 0, width: 0),
-                      const SizedBox(width: 15),
-                      iconsButton(
-                          functions: () {
-                            launchurlportofolio(urlportofolio: urlportofolio);
-                          },
-                          icons: FontAwesomeIcons.internetExplorer,
-                          colors: Colors.blueAccent),
-                    ],
-                  )
-                ],
-              ),
-            )
-          ],
-        ),
-      ),
+                    // Info user dibawah foto gender pada tab profile
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10, right: 10),
+                      child: Column(
+                        children: [
+                          // Nama
+                          snapshot.data!.fullname != null
+                              ? Text("${snapshot.data!.fullname}",
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold))
+                              : const Text("-"),
+
+                          // Jabatan
+                          snapshot.data!.position.value != null
+                              ? Text(snapshot.data!.position.value)
+                              : const Text("-"),
+
+                          // Nama Perusahaan
+                          snapshot.data!.company_group_id.value != null
+                              ? Text(
+                                  snapshot.data!.company_group_id.value,
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
+                                )
+                              : const Text("-"),
+
+                          infoSummary(
+                            jumlahcuti: widget.jumlahcuti != null
+                                ? "${widget.jumlahcuti}"
+                                : "0",
+                            jumlahizin: widget.jumlahizin != null
+                                ? "${widget.jumlahizin}"
+                                : "0",
+                            jumlahwfh: widget.jumlahwfh != null
+                                ? "${widget.jumlahwfh}"
+                                : "0",
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text('  Info Saya',
+                                  style: FontMedium(
+                                      context,
+                                      18,
+                                      FontWeight.w700,
+                                      const Color(0xFF0D1037))),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          // Button profile user
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              //untuk integrasi API data lewat kelas parameter ini
+                              iconsButton(
+                                  functions: () {
+                                    Get.to(TentangSaya());
+                                  },
+                                  icons: Icons.person,
+                                  colors: Colors.black),
+                              iconsButton(
+                                  functions: () {
+                                    Get.to(MyHistory(
+                                      urlimages: "${widget.urlimage}",
+                                      gender: widget.gender,
+                                      jabatan: widget.jabatan,
+                                      nama: widget.nama,
+                                      namaperusahaan: widget.namaperusahaan,
+                                      date: widget.date,
+                                      hour: widget.hour,
+                                      status: widget.status,
+                                    ));
+                                  },
+                                  icons: Icons.list,
+                                  colors: Colors.black),
+                              iconsButton(
+                                  functions: () => showDialog<String>(
+                                        context: context,
+                                        builder: (BuildContext context) =>
+                                            AlertDialog(
+                                          title: const Text(
+                                            'Log Out',
+                                            textAlign: TextAlign.center,
+                                          ),
+                                          content: const Text(
+                                              'Apakah anda yakin ingin keluar dari akun ini?'),
+                                          actions: <Widget>[
+                                            TextButton(
+                                              onPressed: () => Navigator.pop(
+                                                  context, 'Cancel'),
+                                              child: const Text('Batal'),
+                                            ),
+                                            TextButton(
+                                              onPressed: () {
+                                                // profilesC.SignOut(context);
+                                                AuthenticationRepository
+                                                    .instance
+                                                    .logout();
+                                              },
+                                              child: const Text('Keluar'),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                  icons: Icons.exit_to_app_rounded,
+                                  colors: Colors.black)
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          // Button profile user
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text('  Social Media',
+                                  style: FontMedium(
+                                      context,
+                                      18,
+                                      FontWeight.w700,
+                                      const Color(0xFF0D1037))),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20, right: 20),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                iconsButton(
+                                    functions: () {
+                                      whatsappdirect(
+                                          nomor: snapshot.data!.phone,
+                                          pesan: "Assalamualaikum");
+                                    },
+                                    icons: FontAwesomeIcons.whatsapp,
+                                    colors: Colors.green),
+                                const SizedBox(width: 15),
+                                iconsButton(
+                                    functions: () {
+                                      launchUrlEmail(snapshot.data!.email);
+                                    },
+                                    icons: Icons.email,
+                                    colors: Colors.yellow.shade900),
+                                const SizedBox(width: 15),
+                                snapshot.data!.instagram != null
+                                    ? iconsButton(
+                                        functions: () {
+                                          launchinstagram(
+                                              username:
+                                                  snapshot.data!.instagram);
+                                        },
+                                        icons: FontAwesomeIcons.instagram,
+                                        colors: Colors.purple.shade900)
+                                    : Container(),
+                                const SizedBox(width: 15),
+                                snapshot.data!.linkedin != null
+                                    ? iconsButton(
+                                        functions: () {
+                                          launchlinkedin(
+                                              linkedinurl:
+                                                  snapshot.data!.linkedin);
+                                        },
+                                        icons: FontAwesomeIcons.linkedin,
+                                        colors: Colors.blue.shade400)
+                                    : Container()
+                              ],
+                            ),
+                          ),
+
+                          const SizedBox(height: 15),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              snapshot.data!.tiktok != null
+                                  ? iconsButton(
+                                      functions: () {
+                                        launchtiktok(
+                                            username: snapshot.data!.tiktok);
+                                      },
+                                      icons: FontAwesomeIcons.tiktok,
+                                      colors: Colors.black)
+                                  : const SizedBox(height: 0, width: 0),
+                              const SizedBox(width: 15),
+                              snapshot.data!.portofolio_url != null
+                                  ? iconsButton(
+                                      functions: () {
+                                        launchurlportofolio(
+                                            urlportofolio:
+                                                widget.urlportofolio);
+                                      },
+                                      icons: FontAwesomeIcons.internetExplorer,
+                                      colors: Colors.blueAccent)
+                                  : Container()
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              );
+            } else if (snapshot.hasError) {
+              return SingleChildScrollView(
+                child: Column(
+                  children: [
+                    bannerProfiles(
+                        context: context,
+                        gender: snapshot.data!.gender,
+                        urlimages: widget.urlimage),
+                    const SizedBox(
+                      height: 46,
+                    ),
+
+                    // Info user dibawah foto gender pada tab profile
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10, right: 10),
+                      child: Column(
+                        children: [
+                          // Nama
+                          widget.nama != null
+                              ? Text("${widget.nama}",
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold))
+                              : const Text("-"),
+
+                          // Jabatan
+                          widget.jabatan != null
+                              ? Text("${widget.jabatan}")
+                              : const Text("-"),
+
+                          // Nama Perusahaan
+                          widget.namaperusahaan != null
+                              ? Text(
+                                  "${widget.namaperusahaan}",
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
+                                )
+                              : const Text("-"),
+
+                          infoSummary(
+                            jumlahcuti: widget.jumlahcuti != null
+                                ? "${widget.jumlahcuti}"
+                                : "0",
+                            jumlahizin: widget.jumlahizin != null
+                                ? "${widget.jumlahizin}"
+                                : "0",
+                            jumlahwfh: widget.jumlahwfh != null
+                                ? "${widget.jumlahwfh}"
+                                : "0",
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text('  Info Saya',
+                                  style: FontMedium(
+                                      context,
+                                      18,
+                                      FontWeight.w700,
+                                      const Color(0xFF0D1037))),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          // Button profile user
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              //untuk integrasi API data lewat kelas parameter ini
+                              iconsButton(
+                                  functions: () {
+                                    Get.to(TentangSaya());
+                                  },
+                                  icons: Icons.person,
+                                  colors: Colors.black),
+                              iconsButton(
+                                  functions: () {
+                                    Get.to(MyHistory(
+                                      urlimages: "${widget.urlimage}",
+                                      gender: widget.gender,
+                                      jabatan: widget.jabatan,
+                                      nama: widget.nama,
+                                      namaperusahaan: widget.namaperusahaan,
+                                      date: widget.date,
+                                      hour: widget.hour,
+                                      status: widget.status,
+                                    ));
+                                  },
+                                  icons: Icons.list,
+                                  colors: Colors.black),
+                              iconsButton(
+                                  functions: () => showDialog<String>(
+                                        context: context,
+                                        builder: (BuildContext context) =>
+                                            AlertDialog(
+                                          title: const Text(
+                                            'Log Out',
+                                            textAlign: TextAlign.center,
+                                          ),
+                                          content: const Text(
+                                              'Apakah anda yakin ingin keluar dari akun ini?'),
+                                          actions: <Widget>[
+                                            TextButton(
+                                              onPressed: () => Navigator.pop(
+                                                  context, 'Cancel'),
+                                              child: const Text('Batal'),
+                                            ),
+                                            TextButton(
+                                              onPressed: () {
+                                                // profilesC.SignOut(context);
+                                                AuthenticationRepository
+                                                    .instance
+                                                    .logout();
+                                              },
+                                              child: const Text('Keluar'),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                  icons: Icons.exit_to_app_rounded,
+                                  colors: Colors.black)
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          // Button profile user
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text('  Social Media',
+                                  style: FontMedium(
+                                      context,
+                                      18,
+                                      FontWeight.w700,
+                                      const Color(0xFF0D1037))),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20, right: 20),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                iconsButton(
+                                    functions: () {
+                                      whatsappdirect(
+                                          nomor: widget.nohp,
+                                          pesan: "Assalamualaikum");
+                                    },
+                                    icons: FontAwesomeIcons.whatsapp,
+                                    colors: Colors.green),
+                                const SizedBox(width: 15),
+                                iconsButton(
+                                    functions: () {
+                                      launchUrlEmail(widget.email);
+                                    },
+                                    icons: Icons.email,
+                                    colors: Colors.yellow.shade900),
+                                const SizedBox(width: 15),
+                                iconsButton(
+                                    functions: () {
+                                      launchinstagram(
+                                          username: widget.instagram);
+                                    },
+                                    icons: FontAwesomeIcons.instagram,
+                                    colors: Colors.purple.shade900),
+                                const SizedBox(width: 15),
+                                iconsButton(
+                                    functions: () {
+                                      launchlinkedin(
+                                          linkedinurl: widget.urllinkedin);
+                                    },
+                                    icons: FontAwesomeIcons.linkedin,
+                                    colors: Colors.blue.shade400)
+                              ],
+                            ),
+                          ),
+
+                          const SizedBox(height: 15),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              widget.tiktok != null
+                                  ? iconsButton(
+                                      functions: () {
+                                        launchtiktok(username: widget.tiktok);
+                                      },
+                                      icons: FontAwesomeIcons.tiktok,
+                                      colors: Colors.black)
+                                  : const SizedBox(height: 0, width: 0),
+                              const SizedBox(width: 15),
+                              iconsButton(
+                                  functions: () {
+                                    launchurlportofolio(
+                                        urlportofolio: widget.urlportofolio);
+                                  },
+                                  icons: FontAwesomeIcons.internetExplorer,
+                                  colors: Colors.blueAccent),
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              );
+            }
+            return Center(
+                child: Container(
+              width: 70,
+              height: 70,
+              color: Colors.transparent,
+              child: LoadingIndicator(
+                  indicatorType: Indicator.ballRotateChase,
+                  colors: [
+                    Colors.blue.shade800,
+                    Colors.red,
+                    Colors.pink,
+                    Colors.green
+                  ],
+                  strokeWidth: 2,
+                  backgroundColor: Colors.transparent,
+                  pathBackgroundColor: Colors.black),
+            ));
+          }),
     );
   }
 

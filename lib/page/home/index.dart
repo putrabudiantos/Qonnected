@@ -7,6 +7,7 @@ import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/home/payslip.dart';
 import 'package:qonnected_app/page/home/story.dart';
+import 'package:qonnected_app/page/home/summary.dart';
 import 'package:qonnected_app/page/home/timeoff.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:qonnected_app/page/home/todayactivity.dart';
@@ -529,7 +530,9 @@ class _IndexHomeState extends State<IndexHome> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           imagedatacontainer(
-              function: () {},
+              function: () {
+                Get.to(const Summary());
+              },
               urlassets: "assets/icons/revisi/attendance.png",
               nama: "Summary"),
           imagedatacontainer(

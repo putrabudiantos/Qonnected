@@ -1,30 +1,30 @@
 -- Merging decision tree log ---
 application
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:9:4-50:19
+MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-48:19
+MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-48:19
 MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:19
 MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:19
 MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-48:19
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-48:19
 MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:19
 MERGED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:19
+MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-32:19
+MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-32:19
 MERGED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
 MERGED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-29:19
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-29:19
 MERGED from [:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-50:19
 MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-50:19
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-32:19
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-32:19
 MERGED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-14:19
 MERGED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-14:19
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-29:19
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-29:19
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-18:19
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-18:19
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/15db9e3357a0bde20979c569082f4c78/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:9:5-16:19
@@ -39,6 +39,12 @@ MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/ca
 MERGED from [com.google.android.material:material:1.4.0] /home/python/.gradle/caches/transforms-3/30c7d10f1c384596b9e87e0d05df26d4/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/53583941e6b7b51456c3bcbd88d3d263/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/53583941e6b7b51456c3bcbd88d3d263/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
@@ -49,8 +55,6 @@ MERGED from [com.google.android.gms:play-services-vision:20.1.3] /home/python/.g
 MERGED from [com.google.android.gms:play-services-vision:20.1.3] /home/python/.gradle/caches/transforms-3/09fbf515a214b81641652625df9df40f/transformed/jetified-play-services-vision-20.1.3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:15:5-23:19
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:30:5-59:19
 MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] /home/python/.gradle/caches/transforms-3/936d27bd72397881746ae56053e0c050/transformed/jetified-play-services-vision-common-19.1.3/AndroidManifest.xml:7:5-20
@@ -67,8 +71,6 @@ MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gra
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/1fcff7cfbdd7f0bd1424bd6b831674ee/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/1fcff7cfbdd7f0bd1424bd6b831674ee/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/python/.gradle/caches/transforms-3/730b76b55745f22bcf8606cd8a0c1a1e/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
@@ -79,8 +81,6 @@ MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/ca
 MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:24:5-37:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/python/.gradle/caches/transforms-3/1527854859835c6d3ffe7502923368b9/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/python/.gradle/caches/transforms-3/1527854859835c6d3ffe7502923368b9/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/python/.gradle/caches/transforms-3/f6618adbf0cdecccc6a26302f4bae7e8/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/python/.gradle/caches/transforms-3/f6618adbf0cdecccc6a26302f4bae7e8/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/python/.gradle/caches/transforms-3/8fd47409066427c257afb82b384bc757/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
@@ -123,29 +123,30 @@ INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/mai
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:1:1-69:12
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:1:1-69:12
 MERGED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:1:1-69:12
+MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-50:12
 MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-50:12
 MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
-MERGED from [:google_maps_flutter_android] /home/python/BitBucket/Qonnected/qonnected_app/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-34:12
+MERGED from [:path_provider_android] /home/python/BitBucket/Qonnected/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:tru_sdk_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/tru_sdk_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonnected_app/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-31:12
+MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:google_maps_flutter_android] /home/python/BitBucket/Qonnected/qonnected_app/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_plugin_android_lifecycle] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-52:12
 MERGED from [:sqflite] /home/python/BitBucket/Qonnected/qonnected_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-34:12
 MERGED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-16:12
-MERGED from [:path_provider_android] /home/python/BitBucket/Qonnected/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonnected_app/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-31:12
 MERGED from [:permission_handler_android] /home/python/BitBucket/Qonnected/qonnected_app/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:storyly_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/storyly_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_launch] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_launch/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-20:12
-MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/15db9e3357a0bde20979c569082f4c78/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:2:1-18:12
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:2:1-22:12
@@ -155,13 +156,18 @@ MERGED from [androidx.emoji:emoji-appcompat:1.1.0] /home/python/.gradle/caches/t
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /home/python/.gradle/caches/transforms-3/e6d5f4e6a2edd9c37b640bef69c2d576/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/53583941e6b7b51456c3bcbd88d3d263/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] /home/python/.gradle/caches/transforms-3/8f906cb9d225e8d1a3a0d07406fd4300/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/python/.gradle/caches/transforms-3/620fe03bba1b1c827cf6a4d51585bc91/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/python/.gradle/caches/transforms-3/8b26eb7120037e4d36638aa318e8be87/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:17:1-61:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/python/.gradle/caches/transforms-3/91b7b0231884d1172dd6e465a32d6361/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/python/.gradle/caches/transforms-3/20a6462778966996399e03c68e51597d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.android.gms:play-services-location:20.0.0] /home/python/.gradle/caches/transforms-3/b81707e6271e900a2e2a4e3c354df8b4/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-vision:20.1.3] /home/python/.gradle/caches/transforms-3/09fbf515a214b81641652625df9df40f/transformed/jetified-play-services-vision-20.1.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:2:1-25:12
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:17:1-61:12
 MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:15:1-32:12
 MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] /home/python/.gradle/caches/transforms-3/936d27bd72397881746ae56053e0c050/transformed/jetified-play-services-vision-common-19.1.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/python/.gradle/caches/transforms-3/3ae159d4d0e017ff09f07711f5778f0f/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
@@ -173,25 +179,20 @@ MERGED from [com.google.android.gms:play-services-flags:17.0.0] /home/python/.gr
 MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /home/python/.gradle/caches/transforms-3/7849efcd362466213de75c5cd9027839/transformed/jetified-play-services-phenotype-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/1fcff7cfbdd7f0bd1424bd6b831674ee/transformed/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/python/.gradle/caches/transforms-3/730b76b55745f22bcf8606cd8a0c1a1e/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:15:1-33:12
 MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/python/.gradle/caches/transforms-3/1527854859835c6d3ffe7502923368b9/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/python/.gradle/caches/transforms-3/f6618adbf0cdecccc6a26302f4bae7e8/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] /home/python/.gradle/caches/transforms-3/7deccd45a5285d6038c5ef37710afde0/transformed/jetified-firebase-installations-interop-17.1.0/AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/python/.gradle/caches/transforms-3/8fd47409066427c257afb82b384bc757/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/python/.gradle/caches/transforms-3/7deadb910d1bae61b10aabb2b158282c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] /home/python/.gradle/caches/transforms-3/f25debdc65d61e9778f9a5817b982fb6/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/8fdc9bb9688b5e8a25f11bead20a5333/transformed/jetified-activity-1.5.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/python/.gradle/caches/transforms-3/8b26eb7120037e4d36638aa318e8be87/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/python/.gradle/caches/transforms-3/91b7b0231884d1172dd6e465a32d6361/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/python/.gradle/caches/transforms-3/20a6462778966996399e03c68e51597d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/python/.gradle/caches/transforms-3/c6d11f52e4e8081f9a64e739aa1dac6d/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/8fdc9bb9688b5e8a25f11bead20a5333/transformed/jetified-activity-1.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/python/.gradle/caches/transforms-3/81db74cb4d0f495520c673d8b2a83562/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/python/.gradle/caches/transforms-3/0b24ba771e47dc1f82e1928250606569/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/21b26ef90e71324700151bde7e8603b7/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
@@ -200,16 +201,16 @@ MERGED from [androidx.media:media:1.6.0] /home/python/.gradle/caches/transforms-
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /home/python/.gradle/caches/transforms-3/572898616d1fe76c0f915ab05b5f2265/transformed/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.appsamurai.storyly:storyly-exoplayer2:1.28.0-1] /home/python/.gradle/caches/transforms-3/7c79090be11d957bd1ccbc598ef38921/transformed/jetified-storyly-exoplayer2-1.28.0-1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.browser:browser:1.4.0] /home/python/.gradle/caches/transforms-3/297942c3957902ff7659eb1bc47c3617/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/94e438eed8df738d09c0c587431d93f5/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/84929968d569d6259597f6aa72e963d8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/2bc70df3af71faf4da8eb2ffef2b1a05/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/python/.gradle/caches/transforms-3/ba6d04d58a10f2c6173835a799a8b5ff/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/84929968d569d6259597f6aa72e963d8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/python/.gradle/caches/transforms-3/5e8d76c533881f96b45042ea5efbc993/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/c263e81f8033ffd43c5266c5338edd83/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /home/python/.gradle/caches/transforms-3/1ec724f0c82c66d5a38599bb5375d747/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/python/.gradle/caches/transforms-3/09a99c85186c09d30c4b1199a941d51f/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/python/.gradle/caches/transforms-3/78af9d1e549c9d79bddf8a9f3b6fda57/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/94e438eed8df738d09c0c587431d93f5/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/2bc70df3af71faf4da8eb2ffef2b1a05/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/d30bbed11e01bbb52c48f9f18752619a/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/6e426380c04bba127355cec14d117f95/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/python/.gradle/caches/transforms-3/6af8bca3ddcb78f32f6694a214bd523b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -234,14 +235,15 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/pyt
 MERGED from [com.google.android.datatransport:transport-api:3.0.0] /home/python/.gradle/caches/transforms-3/7db831043215782735126b0039050805/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/python/.gradle/caches/transforms-3/e8346151600a8c2d140930b7b815c656/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] /home/python/.gradle/caches/transforms-3/883ffee6f2c118e0f8ada59340be1b0c/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:15:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/b668e1ed6fd5063748c9736c1945100b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/12ac8b95c5dd14691931d3425ec9b202/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/python/.gradle/caches/transforms-3/ba2becd06070db218b75548a44787dfd/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/python/.gradle/caches/transforms-3/ba53b631c7f27ca2a015a79a3114d7be/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/python/.gradle/caches/transforms-3/1942d12b33ce7a51a3319b734272dc26/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/b668e1ed6fd5063748c9736c1945100b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/12ac8b95c5dd14691931d3425ec9b202/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/3147532aea67e8f73e35abf288c0bf3e/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/a44ed574eef107579d05ff68e84f6b84/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.50.2] /home/python/.gradle/caches/transforms-3/f4af55196bf2d6abc25303c082cd2181/transformed/jetified-grpc-android-1.50.2/AndroidManifest.xml:2:1-11:12
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:2:1-15:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/python/.gradle/caches/transforms-3/7b0449fa7552e8a8a339afd91dd38861/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.volley:volley:1.2.1] /home/python/.gradle/caches/transforms-3/38d7b9fc8bae5f17123aaf1fa376768b/transformed/jetified-volley-1.2.1/AndroidManifest.xml:2:1-7:12
@@ -303,28 +305,30 @@ uses-permission#android.permission.INTERNET
 ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:54:5-67
 MERGED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:54:5-67
 MERGED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:54:5-67
-MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
-MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-67
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-67
 MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:9:5-67
 MERGED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:13:5-67
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:10:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:10:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:12:5-67
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:12:5-67
 	android:name
 		ADDED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:54:22-64
 uses-permission#android.permission.CALL_PHONE
@@ -355,52 +359,54 @@ uses-sdk
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:google_maps_flutter_android] /home/python/BitBucket/Qonnected/qonnected_app/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:google_maps_flutter_android] /home/python/BitBucket/Qonnected/qonnected_app/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /home/python/BitBucket/Qonnected/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /home/python/BitBucket/Qonnected/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:tru_sdk_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/tru_sdk_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:tru_sdk_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/tru_sdk_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonnected_app/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonnected_app/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] /home/python/BitBucket/Qonnected/qonnected_app/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] /home/python/BitBucket/Qonnected/qonnected_app/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:sqflite] /home/python/BitBucket/Qonnected/qonnected_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:sqflite] /home/python/BitBucket/Qonnected/qonnected_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] /home/python/BitBucket/Qonnected/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] /home/python/BitBucket/Qonnected/qonnected_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonnected_app/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences_android] /home/python/BitBucket/Qonnected/qonnected_app/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:permission_handler_android] /home/python/BitBucket/Qonnected/qonnected_app/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:permission_handler_android] /home/python/BitBucket/Qonnected/qonnected_app/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:geocoding] /home/python/BitBucket/Qonnected/qonnected_app/build/geocoding/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:storyly_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/storyly_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:storyly_flutter] /home/python/BitBucket/Qonnected/qonnected_app/build/storyly_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_launch] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_launch/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_launch] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_launch/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:uni_links] /home/python/BitBucket/Qonnected/qonnected_app/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/15db9e3357a0bde20979c569082f4c78/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:5:5-7:41
 MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-3/15db9e3357a0bde20979c569082f4c78/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:5:5-7:41
 MERGED from [pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
@@ -419,10 +425,22 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gra
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/python/.gradle/caches/transforms-3/53583941e6b7b51456c3bcbd88d3d263/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.5.1] /home/python/.gradle/caches/transforms-3/8f906cb9d225e8d1a3a0d07406fd4300/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.5.1] /home/python/.gradle/caches/transforms-3/8f906cb9d225e8d1a3a0d07406fd4300/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/python/.gradle/caches/transforms-3/620fe03bba1b1c827cf6a4d51585bc91/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/python/.gradle/caches/transforms-3/620fe03bba1b1c827cf6a4d51585bc91/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/python/.gradle/caches/transforms-3/8b26eb7120037e4d36638aa318e8be87/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/python/.gradle/caches/transforms-3/8b26eb7120037e4d36638aa318e8be87/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/python/.gradle/caches/transforms-3/91b7b0231884d1172dd6e465a32d6361/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/python/.gradle/caches/transforms-3/91b7b0231884d1172dd6e465a32d6361/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/python/.gradle/caches/transforms-3/20a6462778966996399e03c68e51597d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/python/.gradle/caches/transforms-3/20a6462778966996399e03c68e51597d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-location:20.0.0] /home/python/.gradle/caches/transforms-3/b81707e6271e900a2e2a4e3c354df8b4/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:5:5-44
@@ -431,8 +449,6 @@ MERGED from [com.google.android.gms:play-services-vision:20.1.3] /home/python/.g
 MERGED from [com.google.android.gms:play-services-vision:20.1.3] /home/python/.gradle/caches/transforms-3/09fbf515a214b81641652625df9df40f/transformed/jetified-play-services-vision-20.1.3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.gms:play-services-vision-common:19.1.3] /home/python/.gradle/caches/transforms-3/936d27bd72397881746ae56053e0c050/transformed/jetified-play-services-vision-common-19.1.3/AndroidManifest.xml:5:5-44
@@ -455,8 +471,6 @@ MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gra
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/1fcff7cfbdd7f0bd1424bd6b831674ee/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/python/.gradle/caches/transforms-3/1fcff7cfbdd7f0bd1424bd6b831674ee/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/python/.gradle/caches/transforms-3/730b76b55745f22bcf8606cd8a0c1a1e/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
@@ -469,8 +483,6 @@ MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/python/.grad
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/python/.gradle/caches/transforms-3/1527854859835c6d3ffe7502923368b9/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/python/.gradle/caches/transforms-3/b8f954195299b6582d1751eed6b0f2e9/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/python/.gradle/caches/transforms-3/f6618adbf0cdecccc6a26302f4bae7e8/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/python/.gradle/caches/transforms-3/f6618adbf0cdecccc6a26302f4bae7e8/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] /home/python/.gradle/caches/transforms-3/7deccd45a5285d6038c5ef37710afde0/transformed/jetified-firebase-installations-interop-17.1.0/AndroidManifest.xml:18:5-20:41
@@ -483,16 +495,10 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/python/.gradle/caches/t
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/python/.gradle/caches/transforms-3/7deadb910d1bae61b10aabb2b158282c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /home/python/.gradle/caches/transforms-3/f25debdc65d61e9778f9a5817b982fb6/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /home/python/.gradle/caches/transforms-3/f25debdc65d61e9778f9a5817b982fb6/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/8fdc9bb9688b5e8a25f11bead20a5333/transformed/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/8fdc9bb9688b5e8a25f11bead20a5333/transformed/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/python/.gradle/caches/transforms-3/8b26eb7120037e4d36638aa318e8be87/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/python/.gradle/caches/transforms-3/8b26eb7120037e4d36638aa318e8be87/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/python/.gradle/caches/transforms-3/91b7b0231884d1172dd6e465a32d6361/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/python/.gradle/caches/transforms-3/91b7b0231884d1172dd6e465a32d6361/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/python/.gradle/caches/transforms-3/20a6462778966996399e03c68e51597d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/python/.gradle/caches/transforms-3/20a6462778966996399e03c68e51597d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/python/.gradle/caches/transforms-3/c6d11f52e4e8081f9a64e739aa1dac6d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/python/.gradle/caches/transforms-3/c6d11f52e4e8081f9a64e739aa1dac6d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/8fdc9bb9688b5e8a25f11bead20a5333/transformed/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] /home/python/.gradle/caches/transforms-3/8fdc9bb9688b5e8a25f11bead20a5333/transformed/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/python/.gradle/caches/transforms-3/81db74cb4d0f495520c673d8b2a83562/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/python/.gradle/caches/transforms-3/81db74cb4d0f495520c673d8b2a83562/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/python/.gradle/caches/transforms-3/0b24ba771e47dc1f82e1928250606569/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
@@ -509,16 +515,10 @@ MERGED from [com.appsamurai.storyly:storyly-exoplayer2:1.28.0-1] /home/python/.g
 MERGED from [com.appsamurai.storyly:storyly-exoplayer2:1.28.0-1] /home/python/.gradle/caches/transforms-3/7c79090be11d957bd1ccbc598ef38921/transformed/jetified-storyly-exoplayer2-1.28.0-1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.browser:browser:1.4.0] /home/python/.gradle/caches/transforms-3/297942c3957902ff7659eb1bc47c3617/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.4.0] /home/python/.gradle/caches/transforms-3/297942c3957902ff7659eb1bc47c3617/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/94e438eed8df738d09c0c587431d93f5/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/94e438eed8df738d09c0c587431d93f5/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/84929968d569d6259597f6aa72e963d8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/84929968d569d6259597f6aa72e963d8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/2bc70df3af71faf4da8eb2ffef2b1a05/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/2bc70df3af71faf4da8eb2ffef2b1a05/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/python/.gradle/caches/transforms-3/ba6d04d58a10f2c6173835a799a8b5ff/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/python/.gradle/caches/transforms-3/ba6d04d58a10f2c6173835a799a8b5ff/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/84929968d569d6259597f6aa72e963d8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/python/.gradle/caches/transforms-3/84929968d569d6259597f6aa72e963d8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/python/.gradle/caches/transforms-3/5e8d76c533881f96b45042ea5efbc993/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/python/.gradle/caches/transforms-3/5e8d76c533881f96b45042ea5efbc993/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/python/.gradle/caches/transforms-3/c263e81f8033ffd43c5266c5338edd83/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -529,6 +529,12 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/python/
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/python/.gradle/caches/transforms-3/09a99c85186c09d30c4b1199a941d51f/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/python/.gradle/caches/transforms-3/78af9d1e549c9d79bddf8a9f3b6fda57/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/python/.gradle/caches/transforms-3/78af9d1e549c9d79bddf8a9f3b6fda57/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/94e438eed8df738d09c0c587431d93f5/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] /home/python/.gradle/caches/transforms-3/94e438eed8df738d09c0c587431d93f5/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/2bc70df3af71faf4da8eb2ffef2b1a05/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/python/.gradle/caches/transforms-3/2bc70df3af71faf4da8eb2ffef2b1a05/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/d30bbed11e01bbb52c48f9f18752619a/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] /home/python/.gradle/caches/transforms-3/d30bbed11e01bbb52c48f9f18752619a/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/python/.gradle/caches/transforms-3/6e426380c04bba127355cec14d117f95/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -577,22 +583,24 @@ MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/python/.gr
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/python/.gradle/caches/transforms-3/e8346151600a8c2d140930b7b815c656/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] /home/python/.gradle/caches/transforms-3/883ffee6f2c118e0f8ada59340be1b0c/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] /home/python/.gradle/caches/transforms-3/883ffee6f2c118e0f8ada59340be1b0c/transformed/jetified-firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/b668e1ed6fd5063748c9736c1945100b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/b668e1ed6fd5063748c9736c1945100b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/12ac8b95c5dd14691931d3425ec9b202/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/12ac8b95c5dd14691931d3425ec9b202/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/python/.gradle/caches/transforms-3/ba2becd06070db218b75548a44787dfd/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/python/.gradle/caches/transforms-3/ba2becd06070db218b75548a44787dfd/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/python/.gradle/caches/transforms-3/ba53b631c7f27ca2a015a79a3114d7be/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/python/.gradle/caches/transforms-3/ba53b631c7f27ca2a015a79a3114d7be/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/python/.gradle/caches/transforms-3/1942d12b33ce7a51a3319b734272dc26/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/python/.gradle/caches/transforms-3/1942d12b33ce7a51a3319b734272dc26/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/b668e1ed6fd5063748c9736c1945100b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/python/.gradle/caches/transforms-3/b668e1ed6fd5063748c9736c1945100b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/12ac8b95c5dd14691931d3425ec9b202/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/python/.gradle/caches/transforms-3/12ac8b95c5dd14691931d3425ec9b202/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/3147532aea67e8f73e35abf288c0bf3e/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /home/python/.gradle/caches/transforms-3/3147532aea67e8f73e35abf288c0bf3e/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/a44ed574eef107579d05ff68e84f6b84/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/python/.gradle/caches/transforms-3/a44ed574eef107579d05ff68e84f6b84/transformed/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.50.2] /home/python/.gradle/caches/transforms-3/f4af55196bf2d6abc25303c082cd2181/transformed/jetified-grpc-android-1.50.2/AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.50.2] /home/python/.gradle/caches/transforms-3/f4af55196bf2d6abc25303c082cd2181/transformed/jetified-grpc-android-1.50.2/AndroidManifest.xml:5:5-7:41
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:5:5-7:41
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/python/.gradle/caches/transforms-3/7b0449fa7552e8a8a339afd91dd38861/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/python/.gradle/caches/transforms-3/7b0449fa7552e8a8a339afd91dd38861/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
@@ -609,82 +617,30 @@ INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/deb
 	android:minSdkVersion
 		INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/python/BitBucket/Qonnected/qonnected_app/android/app/src/debug/AndroidManifest.xml
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
-MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
-MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-41:19
-MERGED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-41:19
-MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
-MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
-MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:16:9-22:19
-MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:16:9-22:19
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:52:9-58:19
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:52:9-58:19
-MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:23:9-29:19
-MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:23:9-29:19
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:14:9-20:19
-MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:14:9-20:19
-MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
-MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
-MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:32:9-36:35
-MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:32:9-36:35
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
-	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:36:13-32
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
-	android:name
-		ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
-	android:value
-		ADDED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
-	android:name
-		ADDED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-	android:value
-		ADDED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
-	android:name
-		ADDED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-68
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-68
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
 	android:name
 		ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
@@ -695,14 +651,16 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/pyt
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
 MERGED from [io.grpc:grpc-android:1.50.2] /home/python/.gradle/caches/transforms-3/f4af55196bf2d6abc25303c082cd2181/transformed/jetified-grpc-android-1.50.2/AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.50.2] /home/python/.gradle/caches/transforms-3/f4af55196bf2d6abc25303c082cd2181/transformed/jetified-grpc-android-1.50.2/AndroidManifest.xml:9:5-79
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:9:5-79
+MERGED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
-MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
-MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
 MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
 MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
+MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:25:5-77
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:25:5-77
 	android:name
@@ -741,6 +699,40 @@ action#com.google.android.c2dm.intent.RECEIVE
 ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
 	android:name
 		ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-41:19
+MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:52:9-58:19
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:52:9-58:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:23:9-29:19
+MERGED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:23:9-29:19
+MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:31:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
 ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
 	android:value
@@ -757,6 +749,24 @@ ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/
 		ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
 	android:name
 		ADDED from [:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+	android:value
+		ADDED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+	android:name
+		ADDED from [:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
+ADDED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
 ADDED from [:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 	android:value
@@ -777,6 +787,66 @@ ADDED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/
 		ADDED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-53
 	android:name
 		ADDED from [:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-77
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
+MERGED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
+MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:11:5-66
+MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+receiver#com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+	android:exported
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
 uses-feature#android.hardware.camera
 ADDED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-60
 MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-60
@@ -793,6 +863,22 @@ activity#com.amolg.flutterbarcodescanner.BarcodeCaptureActivity
 ADDED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-91
 	android:name
 		ADDED from [:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:19-88
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-70
+	android:name
+		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:19-67
+activity#com.shinow.qrscan.SecondActivity
+ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-28:20
+	android:theme
+		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-63
+	android:name
+		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-60
+meta-data#flutterEmbedding
+ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
+	android:value
+		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
+	android:name
+		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
 ADDED from [:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
@@ -813,22 +899,6 @@ uses-permission#android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
 ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-89
 	android:name
 		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-86
-uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
-	android:name
-		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
-uses-permission#android.permission.VIBRATE
-ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-MERGED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-MERGED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:11:5-66
-MERGED from [com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:11:5-66
-	android:name
-		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-63
 receiver#me.carda.awesome_notifications.DartNotificationActionReceiver
 ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-17:39
 	android:exported
@@ -861,26 +931,10 @@ category#android.intent.category.DEFAULT
 ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
 	android:name
 		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
-action#android.intent.action.BOOT_COMPLETED
-ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-79
-	android:name
-		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-76
 action#android.intent.action.LOCKED_BOOT_COMPLETED
 ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-86
 	android:name
 		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-83
-action#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-84
-	android:name
-		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-81
-action#android.intent.action.QUICKBOOT_POWERON
-ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:17-82
-	android:name
-		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:25-79
-action#com.htc.intent.action.QUICKBOOT_POWERON
-ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:17-82
-	android:name
-		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:25-79
 action#android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
 ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:17-107
 	android:name
@@ -907,34 +961,6 @@ MERGED from [me.carda:androidcore:0.7.7] /home/python/.gradle/caches/transforms-
 		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:48:13-54
 	android:name
 		ADDED from [:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-90
-uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
-	android:name
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
-uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
-	android:name
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
-receiver#com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver
-ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
-	android:exported
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
-	android:name
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
-receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
-ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
-	android:exported
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
-	android:name
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
-receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
-ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
-	android:exported
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
-	android:name
-		ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
-intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
 activity#io.flutter.plugins.urllauncher.WebViewActivity
 ADDED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
 	android:exported
@@ -943,22 +969,6 @@ ADDED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_ap
 		ADDED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
 	android:name
 		ADDED from [:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
-uses-feature#android.hardware.camera.autofocus
-ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-70
-	android:name
-		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:19-67
-activity#com.shinow.qrscan.SecondActivity
-ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-28:20
-	android:theme
-		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-63
-	android:name
-		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-60
-meta-data#flutterEmbedding
-ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
-	android:value
-		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
-	android:name
-		ADDED from [:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
 service#com.lyokone.location.FlutterLocationService
 ADDED from [:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
 	android:enabled
@@ -1015,6 +1025,42 @@ ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/t
 		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:21:13-37
 	android:name
 		ADDED from [com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:20:13-96
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:5-82
+MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:31:9-38:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:33:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:34:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:32:13-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:44:9-51:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:47:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:46:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:45:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:55:13-57:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:57:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:56:17-119
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
@@ -1075,36 +1121,6 @@ ADDED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/
 		ADDED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:21:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:20:17-111
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:5-82
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
-MERGED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /home/python/.gradle/caches/transforms-3/e672705abf0bb282c687654b0cf60cbd/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:22-79
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:31:9-38:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:33:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:34:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:32:13-78
-service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:44:9-51:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:47:13-37
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:46:13-43
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:45:13-82
-meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
-ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:55:13-57:85
-	android:value
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:57:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:56:17-119
 meta-data#com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar
 ADDED from [com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
 	android:value
@@ -1119,12 +1135,6 @@ ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.grad
 		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
-	android:value
-		ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
 meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
 ADDED from [com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:17:13-19:85
 	android:value
@@ -1229,6 +1239,18 @@ ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/pyth
 		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:10:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:11:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:13:22-76
 uses-permission#com.sec.android.provider.badge.permission.READ
 ADDED from [me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
 	android:name

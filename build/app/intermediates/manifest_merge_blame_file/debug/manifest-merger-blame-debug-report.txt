@@ -94,708 +94,719 @@
 46    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 46-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
 46-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-74
-47
-48    <uses-feature android:name="android.hardware.camera" />
-48-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-60
-48-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:11:19-57
-49
-50    <uses-permission android:name="android.permission.FLASHLIGHT" />
-50-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-69
-50-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-66
-51    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
-51-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-89
-51-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-86
-52    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-52-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
-52-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
-53    <uses-permission android:name="android.permission.VIBRATE" />
-53-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
-53-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-63
-54    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-54-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
-54-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
-55    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-55-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
-55-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
-56
-57    <uses-feature android:name="android.hardware.camera.autofocus" />
-57-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-70
-57-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:19-67
-58    <uses-feature
-58-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
-59        android:glEsVersion="0x00020000"
-59-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
-60        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-60-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
-61    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
-61-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:5-82
-61-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:22-79
-62    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
-63    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
-64    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
-65    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
-66    <!-- for Samsung -->
-67    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-67-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
-67-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
-68    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
-68-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
-68-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
-69    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-69-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
-69-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
-70    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
-70-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
-70-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
-71    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-71-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
-71-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
-72    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
-72-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
-72-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
-73    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
-73-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
-73-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
-74    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
-74-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
-74-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
-75    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
-75-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
-75-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
-76    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-76-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
-76-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
-77    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
-77-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
-77-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
-78    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
-78-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
-78-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
-79    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
-79-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
-79-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
-80    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
-80-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
-80-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
-81    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
-81-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
-81-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
-82    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
-82-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
-82-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
-83
-84    <application
-85        android:name="android.app.Application"
-86        android:allowBackup="true"
-86-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:13:18-44
-87        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-87-->[androidx.core:core:1.8.0] /home/python/.gradle/caches/transforms-3/005627934cb5de51d804cd3c597f8200/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
-88        android:debuggable="true"
-89        android:icon="@mipmap/ic_launcher"
-90        android:label="Qonnected Apps"
-91        android:largeHeap="true"
-91-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-33
-92        android:theme="@style/Theme.AppCompat.NoActionBar" >
-92-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-59
-93        <meta-data
-94            android:name="com.google.android.geo.API_KEY"
-95            android:value="AIzaSyB9dtXou1nkunpTD6hHKIcRi-7w1Actbxc" />
-96
-97        <activity
-98            android:name="asia.qonnected.adikarya.MainActivity"
-99            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-100            android:exported="true"
-101            android:hardwareAccelerated="true"
-102            android:launchMode="singleTop"
-103            android:showWhenLocked="true"
-104            android:theme="@style/LaunchTheme"
-105            android:turnScreenOn="true"
-106            android:windowSoftInputMode="adjustResize" >
-107            <meta-data
-108                android:name="io.flutter.embedding.android.NormalTheme"
-109                android:resource="@style/NormalTheme" />
-110
-111            <intent-filter>
-112                <action android:name="android.intent.action.MAIN" />
-113
-114                <category android:name="android.intent.category.LAUNCHER" />
-115            </intent-filter>
-116            <intent-filter>
-117                <action android:name="android.intent.action.VIEW" />
-117-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:13-65
-117-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:21-62
-118
-119                <category android:name="android.intent.category.DEFAULT" />
-119-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
-119-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
-120                <category android:name="android.intent.category.BROWSABLE" />
-120-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-120-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-121
-122                <data
-122-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:13-44
-123                    android:host="login-callback"
-124                    android:scheme="io.supabase.flutterquickstart" />
-124-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:19-41
-125            </intent-filter>
-126        </activity>
-127        <!--
-128             Don't delete the meta-data below.
-129             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-130        -->
-131        <meta-data
-131-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
-132            android:name="flutterEmbedding"
-132-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
-133            android:value="2" />
-133-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
-134
-135        <service
-135-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-136            android:name="com.google.firebase.components.ComponentDiscoveryService"
-136-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
-137            android:directBootAware="true"
-137-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
-138            android:exported="false" >
-138-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
-139            <meta-data
-139-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-140                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-140-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
-141                android:value="com.google.firebase.components.ComponentRegistrar" />
-141-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
-142            <meta-data
-142-->[:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
-143                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
-143-->[:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
-144                android:value="com.google.firebase.components.ComponentRegistrar" />
-144-->[:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
-145            <meta-data
-145-->[:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-146                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-146-->[:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
-147                android:value="com.google.firebase.components.ComponentRegistrar" />
-147-->[:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
-148            <meta-data
-148-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
-149                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-149-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
-150                android:value="com.google.firebase.components.ComponentRegistrar" />
-150-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
-151            <meta-data
-151-->[:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
-152                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-152-->[:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
-153                android:value="com.google.firebase.components.ComponentRegistrar" />
-153-->[:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
-154            <meta-data
-154-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
-155                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-155-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
-156                android:value="com.google.firebase.components.ComponentRegistrar" />
-156-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
-157            <meta-data
-157-->[com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:19:13-21:85
-158                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-158-->[com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:20:17-111
-159                android:value="com.google.firebase.components.ComponentRegistrar" />
-159-->[com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:21:17-82
-160            <meta-data
-160-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:55:13-57:85
-161                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-161-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:56:17-119
-162                android:value="com.google.firebase.components.ComponentRegistrar" />
-162-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:57:17-82
-163            <meta-data
-163-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
-164                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
-164-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
-165                android:value="com.google.firebase.components.ComponentRegistrar" />
-165-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+47    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+47-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+47-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+48    <uses-permission android:name="android.permission.VIBRATE" />
+48-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+48-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+49    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+49-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+49-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+50    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+50-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+50-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+51
+52    <uses-feature android:name="android.hardware.camera" />
+52-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-60
+52-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:11:19-57
+53
+54    <uses-permission android:name="android.permission.FLASHLIGHT" />
+54-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-69
+54-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-66
+55
+56    <uses-feature android:name="android.hardware.camera.autofocus" />
+56-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-70
+56-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:14:19-67
+57
+58    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+58-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-89
+58-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-86
+59    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+59-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
+59-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:22-79
+60
+61    <uses-feature
+61-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+62        android:glEsVersion="0x00020000"
+62-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+63        android:required="true" />
+63-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+64
+65    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+65-->[id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:10:5-76
+65-->[id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:10:22-73
+66    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+66-->[id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:11:5-76
+66-->[id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:11:22-73
+67    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- for android -->
+67-->[id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:13:5-79
+67-->[id.tru.sdk:tru-sdk-android:1.0.3] /home/python/.gradle/caches/transforms-3/7532a4f5ab54d7654d8c09c77013a576/transformed/jetified-tru-sdk-android-1.0.3/AndroidManifest.xml:13:22-76
+68    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+69    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+70    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+71    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+72    <!-- for Samsung -->
+73    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+73-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+73-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+74    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+74-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+74-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+75    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+75-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+75-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+76    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+76-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+76-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+77    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+77-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+77-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+78    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+78-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+78-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+79    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+79-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+79-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+80    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+80-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+80-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+81    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+81-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+81-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+82    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+82-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+82-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+83    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+83-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+83-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+84    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+84-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+84-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+85    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+85-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+85-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+86    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+86-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+86-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+87    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+87-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+87-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+88    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+88-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+88-->[me.leolin:ShortcutBadger:1.1.22] /home/python/.gradle/caches/transforms-3/f5d861bcf431ae26a092644b196ebdb2/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+89
+90    <application
+91        android:name="android.app.Application"
+92        android:allowBackup="true"
+92-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:13:18-44
+93        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+93-->[androidx.core:core:1.8.0] /home/python/.gradle/caches/transforms-3/005627934cb5de51d804cd3c597f8200/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+94        android:debuggable="true"
+95        android:icon="@mipmap/ic_launcher"
+96        android:label="Qonnected Apps"
+97        android:largeHeap="true"
+97-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-33
+98        android:theme="@style/Theme.AppCompat.NoActionBar" >
+98-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-59
+99        <meta-data
+100            android:name="com.google.android.geo.API_KEY"
+101            android:value="AIzaSyB9dtXou1nkunpTD6hHKIcRi-7w1Actbxc" />
+102
+103        <activity
+104            android:name="asia.qonnected.adikarya.MainActivity"
+105            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+106            android:exported="true"
+107            android:hardwareAccelerated="true"
+108            android:launchMode="singleTop"
+109            android:showWhenLocked="true"
+110            android:theme="@style/LaunchTheme"
+111            android:turnScreenOn="true"
+112            android:windowSoftInputMode="adjustResize" >
+113            <meta-data
+114                android:name="io.flutter.embedding.android.NormalTheme"
+115                android:resource="@style/NormalTheme" />
+116
+117            <intent-filter>
+118                <action android:name="android.intent.action.MAIN" />
+119
+120                <category android:name="android.intent.category.LAUNCHER" />
+121            </intent-filter>
+122            <intent-filter>
+123                <action android:name="android.intent.action.VIEW" />
+123-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:13-65
+123-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:21-62
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
+125-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+126-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+127
+128                <data
+128-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:13-44
+129                    android:host="login-callback"
+130                    android:scheme="io.supabase.flutterquickstart" />
+130-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:19-41
+131            </intent-filter>
+132        </activity>
+133        <!--
+134             Don't delete the meta-data below.
+135             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+136        -->
+137        <meta-data
+137-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
+138            android:name="flutterEmbedding"
+138-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
+139            android:value="2" />
+139-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
+140
+141        <service
+141-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
+142            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+142-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
+143            android:exported="false"
+143-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+144            android:permission="android.permission.BIND_JOB_SERVICE" />
+144-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
+145        <service
+145-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
+146            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+146-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
+147            android:exported="false" >
+147-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+148            <intent-filter>
+148-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+149                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+149-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+149-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+150            </intent-filter>
+151        </service>
+152
+153        <receiver
+153-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
+154            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+154-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
+155            android:exported="true"
+155-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+156            android:permission="com.google.android.c2dm.permission.SEND" >
+156-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
+157            <intent-filter>
+157-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+158                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+158-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+158-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+159            </intent-filter>
+160        </receiver>
+161
+162        <service
+162-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-41:19
+163            android:name="com.google.firebase.components.ComponentDiscoveryService"
+163-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:18-89
+164            android:directBootAware="true"
+164-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:34:13-43
+165            android:exported="false" >
+165-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:31:13-37
 166            <meta-data
-166-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
-167                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-167-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+166-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
+167                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+167-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
 168                android:value="com.google.firebase.components.ComponentRegistrar" />
-168-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+168-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
 169            <meta-data
-169-->[com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:17:13-19:85
-170                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-170-->[com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:18:17-127
+169-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+170                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+170-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 171                android:value="com.google.firebase.components.ComponentRegistrar" />
-171-->[com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:19:17-82
+171-->[:cloud_firestore] /home/python/BitBucket/Qonnected/qonnected_app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 172            <meta-data
-172-->[com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
-173                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-173-->[com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+172-->[:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+173                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+173-->[:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
 174                android:value="com.google.firebase.components.ComponentRegistrar" />
-174-->[com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
-175        </service>
-176        <service
-176-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
-177            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-177-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
-178            android:exported="false"
-178-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
-179            android:permission="android.permission.BIND_JOB_SERVICE" />
-179-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
-180        <service
-180-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
-181            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-181-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
-182            android:exported="false" >
-182-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
-183            <intent-filter>
-183-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
-184                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-184-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
-184-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
-185            </intent-filter>
-186        </service>
-187
-188        <receiver
-188-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
-189            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-189-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
-190            android:exported="true"
-190-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
-191            android:permission="com.google.android.c2dm.permission.SEND" >
-191-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
-192            <intent-filter>
-192-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
-193                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-193-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
-193-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
-194            </intent-filter>
-195        </receiver>
-196
-197        <provider
-197-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
-198            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-198-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
-199            android:authorities="asia.qonnected.adikarya.flutterfirebasemessaginginitprovider"
-199-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
-200            android:exported="false"
-200-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
-201            android:initOrder="99" />
-201-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
-202
-203        <service
-203-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:56
-204            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-204-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-77
-205            android:enabled="true"
-205-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
-206            android:exported="false"
-206-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
-207            android:foregroundServiceType="location" />
-207-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-53
-208
-209        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
-209-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-91
-209-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:19-88
-210
-211        <provider
-211-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
-212            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-212-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
-213            android:authorities="asia.qonnected.adikarya.flutter.image_provider"
-213-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
-214            android:exported="false"
-214-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
-215            android:grantUriPermissions="true" >
-215-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
-216            <meta-data
-216-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
-217                android:name="android.support.FILE_PROVIDER_PATHS"
-217-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
-218                android:resource="@xml/flutter_image_picker_file_paths" />
-218-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
-219        </provider>
-220
-221        <receiver
-221-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-17:39
-222            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
-222-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-89
-223            android:exported="true" />
-223-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-36
-224        <receiver
-224-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-20:39
-225            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
-225-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-92
-226            android:exported="true" />
-226-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-36
-227        <receiver
-227-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-23:39
-228            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
-228-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-92
-229            android:exported="true" />
-229-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
-230        <receiver
-230-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-38:20
-231            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
-231-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-87
-232            android:enabled="true"
-232-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-35
-233            android:exported="true" >
-233-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
-234            <intent-filter>
-234-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37:29
-235                <category android:name="android.intent.category.DEFAULT" />
-235-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
-235-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
-236
-237                <action android:name="android.intent.action.BOOT_COMPLETED" />
-237-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-79
-237-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-76
-238                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-238-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-86
-238-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-83
-239                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-239-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-84
-239-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-81
-240                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-240-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:17-82
-240-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:25-79
-241                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-241-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:17-82
-241-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:25-79
-242                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
-242-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:17-107
-242-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:25-104
-243            </intent-filter>
-244        </receiver>
-245
-246        <service
-246-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:72
-247            android:name="me.carda.awesome_notifications.DartBackgroundService"
-247-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-80
-248            android:exported="false"
-248-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-37
-249            android:permission="android.permission.BIND_JOB_SERVICE" />
-249-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-69
-250        <service
-250-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:44:9-49:43
-251            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
-251-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-90
-252            android:enabled="true"
-252-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-35
-253            android:exported="false"
-253-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-37
-254            android:foregroundServiceType="phoneCall"
-254-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:48:13-54
-255            android:stopWithTask="true" />
-255-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:49:13-40
-256
-257        <receiver
-257-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
-258            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
-258-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
-259            android:exported="false" />
-259-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
-260        <receiver
-260-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
-261            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
-261-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
-262            android:exported="false" />
-262-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
-263        <receiver
-263-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
-264            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
-264-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
-265            android:exported="false" >
-265-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
-266            <intent-filter>
-266-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
-267                <action android:name="android.intent.action.BOOT_COMPLETED" />
-267-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-79
-267-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-76
-268                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-268-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-84
-268-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-81
-269                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-269-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:17-82
-269-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:25-79
-270                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-270-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:17-82
-270-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:25-79
-271            </intent-filter>
-272        </receiver>
-273
-274        <activity
-274-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
-275            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-275-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
-276            android:exported="false"
-276-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
-277            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-277-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
-278        <activity
-278-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-28:20
-279            android:name="com.shinow.qrscan.SecondActivity"
-279-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-60
-280            android:theme="@style/Theme.AppCompat.NoActionBar" >
-280-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-63
-281            <meta-data
-281-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
-282                android:name="flutterEmbedding"
-282-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
-283                android:value="2" />
-283-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
-284        </activity>
-285
-286        <service
-286-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
-287            android:name="com.lyokone.location.FlutterLocationService"
-287-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
-288            android:enabled="true"
-288-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
-289            android:exported="false"
-289-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
-290            android:foregroundServiceType="location" />
-290-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
-291
-292        <activity
-292-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
-293            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-293-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:13:13-86
-294            android:exported="false"
-294-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:14:13-37
-295            android:label=""
-295-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:15:13-29
-296            android:theme="@style/EasyPermissions.Transparent" />
-296-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:16:13-63
-297        <activity
-297-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:14:9-19:63
-298            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
-298-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:15:13-74
-299            android:configChanges="orientation|keyboardHidden"
-299-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:16:13-63
-300            android:screenOrientation="portrait"
-300-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:17:13-49
-301            android:theme="@style/Theme.AppCompat.NoActionBar"
-301-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:18:13-63
-302            android:windowSoftInputMode="stateAlwaysHidden" />
-302-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:19:13-60
-303
-304        <receiver
-304-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:19:9-22:41
-305            android:name="com.appsamurai.storyly.util.notification.StorylyNotificationReceiver"
-305-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:20:13-96
-306            android:exported="false"
-306-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:21:13-37
-307            android:process=":remote" /> <!-- Needs to be explicitly declared on P+ -->
-307-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:22:13-38
-308        <uses-library
-308-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
-309            android:name="org.apache.http.legacy"
-309-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
-310            android:required="false" />
-310-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
-311
-312        <activity
-312-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
-313            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-313-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
-314            android:excludeFromRecents="true"
-314-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
-315            android:exported="true"
-315-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
-316            android:launchMode="singleTask"
-316-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
-317            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-317-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
-318            <intent-filter>
-318-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
-319                <action android:name="android.intent.action.VIEW" />
-319-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:13-65
-319-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:21-62
-320
-321                <category android:name="android.intent.category.DEFAULT" />
-321-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
-321-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
-322                <category android:name="android.intent.category.BROWSABLE" />
-322-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-322-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-323
-324                <data
-324-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:13-44
-325                    android:host="firebase.auth"
-326                    android:path="/"
-327                    android:scheme="genericidp" />
-327-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:19-41
-328            </intent-filter>
-329        </activity>
-330        <activity
-330-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
-331            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-331-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
-332            android:excludeFromRecents="true"
-332-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
-333            android:exported="true"
-333-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
-334            android:launchMode="singleTask"
-334-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
-335            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-335-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
-336            <intent-filter>
-336-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
-337                <action android:name="android.intent.action.VIEW" />
-337-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:13-65
-337-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:21-62
+174-->[:firebase_dynamic_links] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+175            <meta-data
+175-->[:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+176                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+176-->[:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[:firebase_auth] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+178            <meta-data
+178-->[:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+179                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+179-->[:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[:firebase_core] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+181            <meta-data
+181-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+182                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+182-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-iid:21.1.0] /home/python/.gradle/caches/transforms-3/2c8fd9b068f47c2305add24377b6833a/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:55:13-57:85
+185                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+185-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:56:17-119
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:57:17-82
+187            <meta-data
+187-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+188                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+188-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+190            <meta-data
+190-->[com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:19:13-21:85
+191                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+191-->[com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:20:17-111
+192                android:value="com.google.firebase.components.ComponentRegistrar" />
+192-->[com.google.firebase:firebase-firestore:24.4.3] /home/python/.gradle/caches/transforms-3/41698f2dbd5da996535897b76cce2796/transformed/jetified-firebase-firestore-24.4.3/AndroidManifest.xml:21:17-82
+193            <meta-data
+193-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
+194                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+194-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
+195                android:value="com.google.firebase.components.ComponentRegistrar" />
+195-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/python/.gradle/caches/transforms-3/cca81b147f2afd3c07e7fddfec734900/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+196            <meta-data
+196-->[com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:17:13-19:85
+197                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+197-->[com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:18:17-127
+198                android:value="com.google.firebase.components.ComponentRegistrar" />
+198-->[com.google.firebase:firebase-installations:17.1.2] /home/python/.gradle/caches/transforms-3/24061899187b78241009844c3d179c84/transformed/jetified-firebase-installations-17.1.2/AndroidManifest.xml:19:17-82
+199            <meta-data
+199-->[com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+200                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+200-->[com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+201                android:value="com.google.firebase.components.ComponentRegistrar" />
+201-->[com.google.firebase:firebase-datatransport:18.1.7] /home/python/.gradle/caches/transforms-3/6d3d61abd70335c3b3635bb7c10c06d9/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+202        </service>
+203
+204        <provider
+204-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
+205            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+205-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+206            android:authorities="asia.qonnected.adikarya.flutterfirebasemessaginginitprovider"
+206-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
+207            android:exported="false"
+207-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
+208            android:initOrder="99" />
+208-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
+209
+210        <service
+210-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:56
+211            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+211-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-77
+212            android:enabled="true"
+212-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
+213            android:exported="false"
+213-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
+214            android:foregroundServiceType="location" />
+214-->[:geolocator_android] /home/python/BitBucket/Qonnected/qonnected_app/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-53
+215
+216        <receiver
+216-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+217            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+217-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+218            android:exported="false" />
+218-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+219        <receiver
+219-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+220            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+220-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+221            android:exported="false" />
+221-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+222        <receiver
+222-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+223            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+223-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+224            android:exported="false" >
+224-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+225            <intent-filter>
+225-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+226                <action android:name="android.intent.action.BOOT_COMPLETED" />
+226-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+226-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+227                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+227-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+227-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+228                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+228-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+228-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+229                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+229-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+229-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+230            </intent-filter>
+231        </receiver>
+232
+233        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+233-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-91
+233-->[:flutter_barcode_scanner] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:19-88
+234        <activity
+234-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-28:20
+235            android:name="com.shinow.qrscan.SecondActivity"
+235-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-60
+236            android:theme="@style/Theme.AppCompat.NoActionBar" >
+236-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-63
+237            <meta-data
+237-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:37
+238                android:name="flutterEmbedding"
+238-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-48
+239                android:value="2" />
+239-->[:qrscan] /home/python/BitBucket/Qonnected/qonnected_app/build/qrscan/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-34
+240        </activity>
+241
+242        <provider
+242-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+243            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+243-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+244            android:authorities="asia.qonnected.adikarya.flutter.image_provider"
+244-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+245            android:exported="false"
+245-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+246            android:grantUriPermissions="true" >
+246-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+247            <meta-data
+247-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+248                android:name="android.support.FILE_PROVIDER_PATHS"
+248-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+249                android:resource="@xml/flutter_image_picker_file_paths" />
+249-->[:image_picker_android] /home/python/BitBucket/Qonnected/qonnected_app/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+250        </provider>
+251
+252        <receiver
+252-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-17:39
+253            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+253-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-89
+254            android:exported="true" />
+254-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-36
+255        <receiver
+255-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-20:39
+256            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+256-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-92
+257            android:exported="true" />
+257-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-36
+258        <receiver
+258-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-23:39
+259            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+259-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-92
+260            android:exported="true" />
+260-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
+261        <receiver
+261-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-38:20
+262            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+262-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-87
+263            android:enabled="true"
+263-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-35
+264            android:exported="true" >
+264-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+265            <intent-filter>
+265-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37:29
+266                <category android:name="android.intent.category.DEFAULT" />
+266-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
+266-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
+267
+268                <action android:name="android.intent.action.BOOT_COMPLETED" />
+268-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+268-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+269                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+269-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-86
+269-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-83
+270                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+270-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+270-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+271                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+271-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+271-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+272                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+272-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+272-->[:flutter_local_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+273                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+273-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:17-107
+273-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:25-104
+274            </intent-filter>
+275        </receiver>
+276
+277        <service
+277-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:72
+278            android:name="me.carda.awesome_notifications.DartBackgroundService"
+278-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-80
+279            android:exported="false"
+279-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-37
+280            android:permission="android.permission.BIND_JOB_SERVICE" />
+280-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-69
+281        <service
+281-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:44:9-49:43
+282            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+282-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-90
+283            android:enabled="true"
+283-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-35
+284            android:exported="false"
+284-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-37
+285            android:foregroundServiceType="phoneCall"
+285-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:48:13-54
+286            android:stopWithTask="true" />
+286-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:49:13-40
+287
+288        <activity
+288-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+289            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+289-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+290            android:exported="false"
+290-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+291            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+291-->[:url_launcher_android] /home/python/BitBucket/Qonnected/qonnected_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+292
+293        <service
+293-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
+294            android:name="com.lyokone.location.FlutterLocationService"
+294-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
+295            android:enabled="true"
+295-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+296            android:exported="false"
+296-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+297            android:foregroundServiceType="location" />
+297-->[:location] /home/python/BitBucket/Qonnected/qonnected_app/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+298
+299        <activity
+299-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+300            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+300-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:13:13-86
+301            android:exported="false"
+301-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+302            android:label=""
+302-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+303            android:theme="@style/EasyPermissions.Transparent" />
+303-->[pub.devrel:easypermissions:3.0.0] /home/python/.gradle/caches/transforms-3/344a9e36776b30d690da3fc0e10cd90e/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+304        <activity
+304-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:14:9-19:63
+305            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+305-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:15:13-74
+306            android:configChanges="orientation|keyboardHidden"
+306-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:16:13-63
+307            android:screenOrientation="portrait"
+307-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:17:13-49
+308            android:theme="@style/Theme.AppCompat.NoActionBar"
+308-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:18:13-63
+309            android:windowSoftInputMode="stateAlwaysHidden" />
+309-->[com.github.leyan95:android-zxingLibrary:0.1.4-PRE] /home/python/.gradle/caches/transforms-3/7148a70fb0449e0a0fb3112a7cb4c440/transformed/jetified-android-zxingLibrary-0.1.4-PRE/AndroidManifest.xml:19:13-60
+310
+311        <receiver
+311-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:19:9-22:41
+312            android:name="com.appsamurai.storyly.util.notification.StorylyNotificationReceiver"
+312-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:20:13-96
+313            android:exported="false"
+313-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:21:13-37
+314            android:process=":remote" />
+314-->[com.appsamurai.storyly:storyly:1.30.0] /home/python/.gradle/caches/transforms-3/9b26beb58df62aa861ab519e88fd5b38/transformed/jetified-storyly-1.30.0/AndroidManifest.xml:22:13-38
+315        <receiver
+315-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:31:9-38:20
+316            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+316-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:32:13-78
+317            android:exported="true"
+317-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:33:13-36
+318            android:permission="com.google.android.c2dm.permission.SEND" >
+318-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:34:13-73
+319            <intent-filter>
+319-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+320                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+320-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+320-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+321            </intent-filter>
+322        </receiver>
+323        <!--
+324             FirebaseMessagingService performs security checks at runtime,
+325             but set to not exported to explicitly avoid allowing another app to call it.
+326        -->
+327        <service
+327-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:44:9-51:19
+328            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+328-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:45:13-82
+329            android:directBootAware="true"
+329-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:46:13-43
+330            android:exported="false" >
+330-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:47:13-37
+331            <intent-filter android:priority="-500" >
+331-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+332                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+332-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+332-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+333            </intent-filter>
+334        </service> <!-- Needs to be explicitly declared on P+ -->
+335        <uses-library
+335-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+336            android:name="org.apache.http.legacy"
+336-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+337            android:required="false" />
+337-->[com.google.android.gms:play-services-maps:18.1.0] /home/python/.gradle/caches/transforms-3/2d343665ade3289abaa799768a8e9f4d/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
 338
-339                <category android:name="android.intent.category.DEFAULT" />
-339-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
-339-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
-340                <category android:name="android.intent.category.BROWSABLE" />
-340-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-340-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-341
-342                <data
-342-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:13-44
-343                    android:host="firebase.auth"
-344                    android:path="/"
-345                    android:scheme="recaptcha" />
-345-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:19-41
-346            </intent-filter>
-347        </activity>
-348
-349        <receiver
-349-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:31:9-38:20
-350            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-350-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:32:13-78
-351            android:exported="true"
-351-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:33:13-36
-352            android:permission="com.google.android.c2dm.permission.SEND" >
-352-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:34:13-73
-353            <intent-filter>
-353-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
-354                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-354-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
-354-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+339        <activity
+339-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+340            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+340-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+341            android:excludeFromRecents="true"
+341-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+342            android:exported="true"
+342-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+343            android:launchMode="singleTask"
+343-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+344            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+344-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+345            <intent-filter>
+345-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+346                <action android:name="android.intent.action.VIEW" />
+346-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:13-65
+346-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:21-62
+347
+348                <category android:name="android.intent.category.DEFAULT" />
+348-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
+348-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
+349                <category android:name="android.intent.category.BROWSABLE" />
+349-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+349-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+350
+351                <data
+351-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:13-44
+352                    android:host="firebase.auth"
+353                    android:path="/"
+354                    android:scheme="genericidp" />
+354-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:19-41
 355            </intent-filter>
-356        </receiver>
-357        <!--
-358             FirebaseMessagingService performs security checks at runtime,
-359             but set to not exported to explicitly avoid allowing another app to call it.
-360        -->
-361        <service
-361-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:44:9-51:19
-362            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-362-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:45:13-82
-363            android:directBootAware="true"
-363-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:46:13-43
-364            android:exported="false" >
-364-->[com.google.firebase:firebase-messaging:23.1.1] /home/python/.gradle/caches/transforms-3/df9a90ae4652f15482b0374a218c8d1a/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:47:13-37
-365            <intent-filter android:priority="-500" >
-365-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
-366                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-366-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
-366-->[:firebase_messaging] /home/python/BitBucket/Qonnected/qonnected_app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
-367            </intent-filter>
-368        </service>
-369
-370        <activity
-370-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-371            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-371-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-372            android:exported="false"
-372-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-373            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-373-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-374
-375        <provider
-375-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:25:9-30:39
-376            android:name="com.google.firebase.provider.FirebaseInitProvider"
-376-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:26:13-77
-377            android:authorities="asia.qonnected.adikarya.firebaseinitprovider"
-377-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:27:13-72
-378            android:directBootAware="true"
-378-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:28:13-43
-379            android:exported="false"
-379-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:29:13-37
-380            android:initOrder="100" />
-380-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:30:13-36
-381
-382        <meta-data
-382-->[com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-383            android:name="com.google.android.gms.version"
-383-->[com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-384            android:value="@integer/google_play_services_version" />
-384-->[com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-385
-386        <uses-library
-386-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-387            android:name="androidx.window.extensions"
-387-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-388            android:required="false" />
-388-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-389        <uses-library
-389-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-390            android:name="androidx.window.sidecar"
-390-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-391            android:required="false" />
-391-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-392
-393        <provider
-393-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-394            android:name="androidx.startup.InitializationProvider"
-394-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-395            android:authorities="asia.qonnected.adikarya.androidx-startup"
-395-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-396            android:exported="false" >
-396-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-397            <meta-data
-397-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-398                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-398-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-399                android:value="androidx.startup" />
-399-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-400            <meta-data
-400-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/python/.gradle/caches/transforms-3/187ee2efbeba929b1a77906e18cd24b2/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
-401                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-401-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/python/.gradle/caches/transforms-3/187ee2efbeba929b1a77906e18cd24b2/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
-402                android:value="androidx.startup" />
-402-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/python/.gradle/caches/transforms-3/187ee2efbeba929b1a77906e18cd24b2/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
-403        </provider>
-404        <provider
-404-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-405            android:name="com.squareup.picasso.PicassoProvider"
-405-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-406            android:authorities="asia.qonnected.adikarya.com.squareup.picasso"
-406-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-407            android:exported="false" />
-407-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-408
-409        <service
-409-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
-410            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-410-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
-411            android:exported="false" >
-411-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
-412            <meta-data
-412-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
-413                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-413-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
-414                android:value="cct" />
-414-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
-415        </service>
-416        <service
-416-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
-417            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-417-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
-418            android:exported="false"
-418-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
-419            android:permission="android.permission.BIND_JOB_SERVICE" >
-419-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+356        </activity>
+357        <activity
+357-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+358            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+358-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+359            android:excludeFromRecents="true"
+359-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+360            android:exported="true"
+360-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+361            android:launchMode="singleTask"
+361-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+362            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+362-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+363            <intent-filter>
+363-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+364                <action android:name="android.intent.action.VIEW" />
+364-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:13-65
+364-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:65:21-62
+365
+366                <category android:name="android.intent.category.DEFAULT" />
+366-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
+366-->[:awesome_notifications] /home/python/BitBucket/Qonnected/qonnected_app/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
+367                <category android:name="android.intent.category.BROWSABLE" />
+367-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+367-->[com.google.firebase:firebase-auth:21.1.0] /home/python/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+368
+369                <data
+369-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:13-44
+370                    android:host="firebase.auth"
+371                    android:path="/"
+372                    android:scheme="recaptcha" />
+372-->/home/python/BitBucket/Qonnected/qonnected_app/android/app/src/main/AndroidManifest.xml:66:19-41
+373            </intent-filter>
+374        </activity>
+375        <activity
+375-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+376            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+376-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+377            android:exported="false"
+377-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+378            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+378-->[com.google.android.gms:play-services-base:18.0.1] /home/python/.gradle/caches/transforms-3/1a2cb69c9228e95e429c828957f3a3b6/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+379
+380        <provider
+380-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:25:9-30:39
+381            android:name="com.google.firebase.provider.FirebaseInitProvider"
+381-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:26:13-77
+382            android:authorities="asia.qonnected.adikarya.firebaseinitprovider"
+382-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:27:13-72
+383            android:directBootAware="true"
+383-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:28:13-43
+384            android:exported="false"
+384-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:29:13-37
+385            android:initOrder="100" />
+385-->[com.google.firebase:firebase-common:20.3.0] /home/python/.gradle/caches/transforms-3/b24238b145583e9bb28ada432bde27f7/transformed/jetified-firebase-common-20.3.0/AndroidManifest.xml:30:13-36
+386
+387        <meta-data
+387-->[com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+388            android:name="com.google.android.gms.version"
+388-->[com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+389            android:value="@integer/google_play_services_version" />
+389-->[com.google.android.gms:play-services-basement:18.1.0] /home/python/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+390
+391        <uses-library
+391-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+392            android:name="androidx.window.extensions"
+392-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+393            android:required="false" />
+393-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+394        <uses-library
+394-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+395            android:name="androidx.window.sidecar"
+395-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+396            android:required="false" />
+396-->[androidx.window:window:1.0.0-beta04] /home/python/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+397
+398        <provider
+398-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+399            android:name="androidx.startup.InitializationProvider"
+399-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+400            android:authorities="asia.qonnected.adikarya.androidx-startup"
+400-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+401            android:exported="false" >
+401-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+402            <meta-data
+402-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+403                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+403-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+404                android:value="androidx.startup" />
+404-->[androidx.emoji2:emoji2:1.2.0] /home/python/.gradle/caches/transforms-3/3f458b27c710c033214b46ad6235ef6e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+405            <meta-data
+405-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/python/.gradle/caches/transforms-3/187ee2efbeba929b1a77906e18cd24b2/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+406                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+406-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/python/.gradle/caches/transforms-3/187ee2efbeba929b1a77906e18cd24b2/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+407                android:value="androidx.startup" />
+407-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/python/.gradle/caches/transforms-3/187ee2efbeba929b1a77906e18cd24b2/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+408        </provider>
+409        <provider
+409-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+410            android:name="com.squareup.picasso.PicassoProvider"
+410-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+411            android:authorities="asia.qonnected.adikarya.com.squareup.picasso"
+411-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+412            android:exported="false" />
+412-->[com.squareup.picasso:picasso:2.71828] /home/python/.gradle/caches/transforms-3/820a2a60dd98c9b7fd854a8ec546ac84/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+413
+414        <service
+414-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+415            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+415-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+416            android:exported="false" >
+416-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+417            <meta-data
+417-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+418                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+418-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+419                android:value="cct" />
+419-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/python/.gradle/caches/transforms-3/61fd35e3738ef55dd6374ee6a68cae63/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
 420        </service>
-421
-422        <receiver
-422-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
-423            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-423-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
-424            android:exported="false" />
-424-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
-425    </application>
+421        <service
+421-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+422            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+422-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+423            android:exported="false"
+423-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+424            android:permission="android.permission.BIND_JOB_SERVICE" >
+424-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+425        </service>
 426
-427</manifest>
+427        <receiver
+427-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+428            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+428-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+429            android:exported="false" />
+429-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/python/.gradle/caches/transforms-3/978a2af69b997e29759906459292b13f/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+430    </application>
+431
+432</manifest>

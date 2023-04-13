@@ -8,6 +8,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.18"
+  after_layout:
+    dependency: "direct main"
+    description:
+      name: after_layout
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   archive:
     dependency: transitive
     description:
@@ -674,6 +681,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
+  loading_indicator:
+    dependency: "direct main"
+    description:
+      name: loading_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.0"
   loadmore:
     dependency: "direct main"
     description:
@@ -1190,6 +1204,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.9.1"
+  tru_sdk_flutter:
+    dependency: "direct main"
+    description:
+      name: tru_sdk_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.5"
   tuple:
     dependency: transitive
     description:

@@ -43923,6 +43923,68 @@ com.uuzuche.lib_zxing.view.ViewfinderView:
     public static int dip2px(android.content.Context,float)
 firebase.com.protolitewrapper.BuildConfig
 firebase.com.protolitewrapper.R
+id.tru.sdk.BuildConfig
+id.tru.sdk.R$anim
+id.tru.sdk.R$attr
+id.tru.sdk.R$bool
+id.tru.sdk.R$color
+id.tru.sdk.R$dimen
+id.tru.sdk.R$drawable
+id.tru.sdk.R$id
+id.tru.sdk.R$integer
+id.tru.sdk.R$interpolator
+id.tru.sdk.R$layout
+id.tru.sdk.R$string
+id.tru.sdk.R$style
+id.tru.sdk.R$styleable
+id.tru.sdk.R
+id.tru.sdk.TruSDK$Companion:
+    public final synchronized id.tru.sdk.TruSDK getInstance()
+id.tru.sdk.TruSDK:
+    private static final java.lang.String TAG
+id.tru.sdk.flutter.tru_sdk_flutter.BuildConfig
+id.tru.sdk.flutter.tru_sdk_flutter.R$anim
+id.tru.sdk.flutter.tru_sdk_flutter.R$attr
+id.tru.sdk.flutter.tru_sdk_flutter.R$bool
+id.tru.sdk.flutter.tru_sdk_flutter.R$color
+id.tru.sdk.flutter.tru_sdk_flutter.R$dimen
+id.tru.sdk.flutter.tru_sdk_flutter.R$drawable
+id.tru.sdk.flutter.tru_sdk_flutter.R$id
+id.tru.sdk.flutter.tru_sdk_flutter.R$integer
+id.tru.sdk.flutter.tru_sdk_flutter.R$interpolator
+id.tru.sdk.flutter.tru_sdk_flutter.R$layout
+id.tru.sdk.flutter.tru_sdk_flutter.R$string
+id.tru.sdk.flutter.tru_sdk_flutter.R$style
+id.tru.sdk.flutter.tru_sdk_flutter.R$styleable
+id.tru.sdk.flutter.tru_sdk_flutter.R
+id.tru.sdk.network.CellularNetworkManager:
+    private static final java.lang.String TAG
+    private static final long TIME_OUT
+id.tru.sdk.network.ClientSocket$ResultHandler:
+    public final java.lang.String getB()
+    public final java.util.ArrayList getCs()
+    public final java.net.URL getR()
+    public final int getS()
+id.tru.sdk.network.ClientSocket:
+    private static final java.lang.String HEADER_USER_AGENT
+    private static final int MAX_REDIRECT_COUNT
+    private static final int PORT_443
+    private static final int PORT_80
+    private static final java.lang.String TAG
+    public void <init>()
+    public final void setTracer(id.tru.sdk.network.TraceCollector)
+id.tru.sdk.network.DebugInfo:
+    public final synchronized void enableConsole(boolean)
+    private final id.tru.sdk.network.DateUtils getDateUtils()
+id.tru.sdk.network.TraceCollector:
+    public final id.tru.sdk.network.DebugInfo getDebugInfo()
+    public final synchronized void shouldLogDebugInfoToConsole(boolean)
+id.tru.sdk.network.TraceInfo:
+    public final java.lang.String component1()
+    public final id.tru.sdk.network.DebugInfo component2()
+    public final id.tru.sdk.network.TraceInfo copy(java.lang.String,id.tru.sdk.network.DebugInfo)
+    public static synthetic id.tru.sdk.network.TraceInfo copy$default(id.tru.sdk.network.TraceInfo,java.lang.String,id.tru.sdk.network.DebugInfo,int,java.lang.Object)
+    public final id.tru.sdk.network.DebugInfo getDebugInfo()
 io.flutter.BuildConfig
 io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
@@ -49032,7 +49094,6 @@ kotlin.collections.MapsKt__MapsJVMKt:
     public static final varargs java.util.SortedMap sortedMapOf(kotlin.Pair[])
     private static final java.util.Properties toProperties(java.util.Map)
     private static final java.util.Map toSingletonMapOrSelf(java.util.Map)
-    public static final java.util.SortedMap toSortedMap(java.util.Map)
     public static final java.util.SortedMap toSortedMap(java.util.Map,java.util.Comparator)
 kotlin.collections.MapsKt__MapsKt:
     public void <init>()
@@ -49789,15 +49850,19 @@ kotlin.jvm.internal.PropertyReference0Impl:
     public void <init>(java.lang.Class,java.lang.String,java.lang.String,int)
     public void <init>(kotlin.reflect.KDeclarationContainer,java.lang.String,java.lang.String)
     public java.lang.Object get()
-kotlin.jvm.internal.PropertyReference1
-kotlin.jvm.internal.PropertyReference1Impl
+kotlin.jvm.internal.PropertyReference1:
+    public void <init>(java.lang.Object)
+    public java.lang.Object getDelegate(java.lang.Object)
+    public synthetic bridge kotlin.reflect.KProperty$Getter getGetter()
+kotlin.jvm.internal.PropertyReference1Impl:
+    public void <init>(java.lang.Class,java.lang.String,java.lang.String,int)
+    public void <init>(java.lang.Object,java.lang.Class,java.lang.String,java.lang.String,int)
 kotlin.jvm.internal.PropertyReference2
 kotlin.jvm.internal.PropertyReference2Impl
 kotlin.jvm.internal.PropertyReference:
     public void <init>(java.lang.Object)
     public boolean isConst()
     public boolean isLateinit()
-kotlin.jvm.internal.Ref$BooleanRef
 kotlin.jvm.internal.Ref$ByteRef
 kotlin.jvm.internal.Ref$CharRef
 kotlin.jvm.internal.Ref$DoubleRef
@@ -49823,7 +49888,6 @@ kotlin.jvm.internal.Reflection:
     public static varargs kotlin.reflect.KType nullableTypeOf(java.lang.Class,kotlin.reflect.KTypeProjection[])
     public static kotlin.reflect.KType nullableTypeOf(kotlin.reflect.KClassifier)
     public static kotlin.reflect.KType platformType(kotlin.reflect.KType,kotlin.reflect.KType)
-    public static kotlin.reflect.KProperty1 property1(kotlin.jvm.internal.PropertyReference1)
     public static kotlin.reflect.KProperty2 property2(kotlin.jvm.internal.PropertyReference2)
     public static void setUpperBounds(kotlin.reflect.KTypeParameter,kotlin.reflect.KType)
     public static varargs void setUpperBounds(kotlin.reflect.KTypeParameter,kotlin.reflect.KType[])
@@ -49843,7 +49907,6 @@ kotlin.jvm.internal.ReflectionFactory:
     public kotlin.reflect.KMutableProperty2 mutableProperty2(kotlin.jvm.internal.MutablePropertyReference2)
     public kotlin.reflect.KType nothingType(kotlin.reflect.KType)
     public kotlin.reflect.KType platformType(kotlin.reflect.KType,kotlin.reflect.KType)
-    public kotlin.reflect.KProperty1 property1(kotlin.jvm.internal.PropertyReference1)
     public kotlin.reflect.KProperty2 property2(kotlin.jvm.internal.PropertyReference2)
     public void setUpperBounds(kotlin.reflect.KTypeParameter,java.util.List)
     public kotlin.reflect.KType typeOf(kotlin.reflect.KClassifier,java.util.List,boolean)
@@ -50826,7 +50889,6 @@ kotlin.text.StringsKt__StringBuilderJVMKt:
     private static final java.lang.StringBuilder appendln(java.lang.StringBuilder,short)
     private static final java.lang.StringBuilder appendln(java.lang.StringBuilder,boolean)
     private static final java.lang.StringBuilder appendln(java.lang.StringBuilder,char[])
-    public static final java.lang.StringBuilder clear(java.lang.StringBuilder)
     private static final java.lang.StringBuilder deleteAt(java.lang.StringBuilder,int)
     private static final java.lang.StringBuilder deleteRange(java.lang.StringBuilder,int,int)
     private static final java.lang.StringBuilder insertRange(java.lang.StringBuilder,int,java.lang.CharSequence,int,int)
@@ -54452,6 +54514,228 @@ okio.Util:
     public static long reverseBytesLong(long)
     public static short reverseBytesShort(short)
 okio.package-info
+org.apache.commons.io.ByteOrderMark
+org.apache.commons.io.Charsets
+org.apache.commons.io.CopyUtils
+org.apache.commons.io.DirectoryWalker$CancelException
+org.apache.commons.io.DirectoryWalker
+org.apache.commons.io.EndianUtils
+org.apache.commons.io.FileCleaner
+org.apache.commons.io.FileCleaningTracker$Reaper
+org.apache.commons.io.FileCleaningTracker$Tracker
+org.apache.commons.io.FileCleaningTracker
+org.apache.commons.io.FileDeleteStrategy$ForceFileDeleteStrategy
+org.apache.commons.io.FileDeleteStrategy
+org.apache.commons.io.FileExistsException
+org.apache.commons.io.FileSystemUtils
+org.apache.commons.io.FileUtils
+org.apache.commons.io.FilenameUtils
+org.apache.commons.io.HexDump
+org.apache.commons.io.IOCase
+org.apache.commons.io.IOExceptionWithCause
+org.apache.commons.io.IOUtils:
+    private static final int DEFAULT_BUFFER_SIZE
+    public static final char DIR_SEPARATOR_UNIX
+    public static final char DIR_SEPARATOR_WINDOWS
+    private static final int EOF
+    public static final java.lang.String LINE_SEPARATOR_UNIX
+    public static final java.lang.String LINE_SEPARATOR_WINDOWS
+    private static final int SKIP_BUFFER_SIZE
+    private static byte[] SKIP_BYTE_BUFFER
+    private static char[] SKIP_CHAR_BUFFER
+    public void <init>()
+    public static void close(java.net.URLConnection)
+    public static void closeQuietly(java.io.Closeable)
+    public static void closeQuietly(java.io.InputStream)
+    public static void closeQuietly(java.io.OutputStream)
+    public static void closeQuietly(java.io.Reader)
+    public static void closeQuietly(java.io.Writer)
+    public static void closeQuietly(java.net.ServerSocket)
+    public static void closeQuietly(java.net.Socket)
+    public static void closeQuietly(java.nio.channels.Selector)
+    public static boolean contentEquals(java.io.InputStream,java.io.InputStream)
+    public static boolean contentEquals(java.io.Reader,java.io.Reader)
+    public static boolean contentEqualsIgnoreEOL(java.io.Reader,java.io.Reader)
+    public static int copy(java.io.InputStream,java.io.OutputStream)
+    public static void copy(java.io.InputStream,java.io.Writer)
+    public static void copy(java.io.InputStream,java.io.Writer,java.lang.String)
+    public static void copy(java.io.InputStream,java.io.Writer,java.nio.charset.Charset)
+    public static void copy(java.io.Reader,java.io.OutputStream)
+    public static void copy(java.io.Reader,java.io.OutputStream,java.lang.String)
+    public static void copy(java.io.Reader,java.io.OutputStream,java.nio.charset.Charset)
+    public static long copyLarge(java.io.InputStream,java.io.OutputStream)
+    public static long copyLarge(java.io.InputStream,java.io.OutputStream,long,long)
+    public static long copyLarge(java.io.InputStream,java.io.OutputStream,long,long,byte[])
+    public static long copyLarge(java.io.InputStream,java.io.OutputStream,byte[])
+    public static long copyLarge(java.io.Reader,java.io.Writer,long,long)
+    public static long copyLarge(java.io.Reader,java.io.Writer,long,long,char[])
+    public static org.apache.commons.io.LineIterator lineIterator(java.io.InputStream,java.lang.String)
+    public static org.apache.commons.io.LineIterator lineIterator(java.io.InputStream,java.nio.charset.Charset)
+    public static org.apache.commons.io.LineIterator lineIterator(java.io.Reader)
+    public static int read(java.io.InputStream,byte[])
+    public static int read(java.io.InputStream,byte[],int,int)
+    public static int read(java.io.Reader,char[])
+    public static int read(java.io.Reader,char[],int,int)
+    public static void readFully(java.io.InputStream,byte[])
+    public static void readFully(java.io.InputStream,byte[],int,int)
+    public static void readFully(java.io.Reader,char[])
+    public static void readFully(java.io.Reader,char[],int,int)
+    public static java.util.List readLines(java.io.InputStream)
+    public static java.util.List readLines(java.io.InputStream,java.lang.String)
+    public static java.util.List readLines(java.io.InputStream,java.nio.charset.Charset)
+    public static java.util.List readLines(java.io.Reader)
+    public static long skip(java.io.InputStream,long)
+    public static long skip(java.io.Reader,long)
+    public static void skipFully(java.io.InputStream,long)
+    public static void skipFully(java.io.Reader,long)
+    public static java.io.InputStream toBufferedInputStream(java.io.InputStream)
+    public static java.io.BufferedReader toBufferedReader(java.io.Reader)
+    public static byte[] toByteArray(java.io.InputStream)
+    public static byte[] toByteArray(java.io.InputStream,int)
+    public static byte[] toByteArray(java.io.InputStream,long)
+    public static byte[] toByteArray(java.io.Reader)
+    public static byte[] toByteArray(java.io.Reader,java.lang.String)
+    public static byte[] toByteArray(java.io.Reader,java.nio.charset.Charset)
+    public static byte[] toByteArray(java.lang.String)
+    public static byte[] toByteArray(java.net.URI)
+    public static byte[] toByteArray(java.net.URL)
+    public static byte[] toByteArray(java.net.URLConnection)
+    public static char[] toCharArray(java.io.InputStream)
+    public static char[] toCharArray(java.io.InputStream,java.lang.String)
+    public static char[] toCharArray(java.io.InputStream,java.nio.charset.Charset)
+    public static char[] toCharArray(java.io.Reader)
+    public static java.io.InputStream toInputStream(java.lang.CharSequence)
+    public static java.io.InputStream toInputStream(java.lang.CharSequence,java.lang.String)
+    public static java.io.InputStream toInputStream(java.lang.CharSequence,java.nio.charset.Charset)
+    public static java.io.InputStream toInputStream(java.lang.String)
+    public static java.io.InputStream toInputStream(java.lang.String,java.lang.String)
+    public static java.io.InputStream toInputStream(java.lang.String,java.nio.charset.Charset)
+    public static java.lang.String toString(java.io.InputStream)
+    public static java.lang.String toString(java.io.InputStream,java.lang.String)
+    public static java.lang.String toString(java.io.InputStream,java.nio.charset.Charset)
+    public static java.lang.String toString(java.net.URI)
+    public static java.lang.String toString(java.net.URI,java.lang.String)
+    public static java.lang.String toString(java.net.URI,java.nio.charset.Charset)
+    public static java.lang.String toString(java.net.URL)
+    public static java.lang.String toString(java.net.URL,java.lang.String)
+    public static java.lang.String toString(java.net.URL,java.nio.charset.Charset)
+    public static java.lang.String toString(byte[])
+    public static java.lang.String toString(byte[],java.lang.String)
+    public static void write(java.lang.CharSequence,java.io.OutputStream)
+    public static void write(java.lang.CharSequence,java.io.OutputStream,java.lang.String)
+    public static void write(java.lang.CharSequence,java.io.OutputStream,java.nio.charset.Charset)
+    public static void write(java.lang.CharSequence,java.io.Writer)
+    public static void write(java.lang.String,java.io.OutputStream)
+    public static void write(java.lang.String,java.io.OutputStream,java.lang.String)
+    public static void write(java.lang.String,java.io.OutputStream,java.nio.charset.Charset)
+    public static void write(java.lang.String,java.io.Writer)
+    public static void write(java.lang.StringBuffer,java.io.OutputStream)
+    public static void write(java.lang.StringBuffer,java.io.OutputStream,java.lang.String)
+    public static void write(java.lang.StringBuffer,java.io.Writer)
+    public static void write(byte[],java.io.OutputStream)
+    public static void write(byte[],java.io.Writer)
+    public static void write(byte[],java.io.Writer,java.lang.String)
+    public static void write(byte[],java.io.Writer,java.nio.charset.Charset)
+    public static void write(char[],java.io.OutputStream)
+    public static void write(char[],java.io.OutputStream,java.lang.String)
+    public static void write(char[],java.io.OutputStream,java.nio.charset.Charset)
+    public static void write(char[],java.io.Writer)
+    public static void writeLines(java.util.Collection,java.lang.String,java.io.OutputStream)
+    public static void writeLines(java.util.Collection,java.lang.String,java.io.OutputStream,java.lang.String)
+    public static void writeLines(java.util.Collection,java.lang.String,java.io.OutputStream,java.nio.charset.Charset)
+    public static void writeLines(java.util.Collection,java.lang.String,java.io.Writer)
+org.apache.commons.io.LineIterator
+org.apache.commons.io.TaggedIOException
+org.apache.commons.io.ThreadMonitor
+org.apache.commons.io.comparator.AbstractFileComparator
+org.apache.commons.io.comparator.CompositeFileComparator
+org.apache.commons.io.comparator.DefaultFileComparator
+org.apache.commons.io.comparator.DirectoryFileComparator
+org.apache.commons.io.comparator.ExtensionFileComparator
+org.apache.commons.io.comparator.LastModifiedFileComparator
+org.apache.commons.io.comparator.NameFileComparator
+org.apache.commons.io.comparator.PathFileComparator
+org.apache.commons.io.comparator.ReverseComparator
+org.apache.commons.io.comparator.SizeFileComparator
+org.apache.commons.io.filefilter.AbstractFileFilter
+org.apache.commons.io.filefilter.AgeFileFilter
+org.apache.commons.io.filefilter.AndFileFilter
+org.apache.commons.io.filefilter.CanReadFileFilter
+org.apache.commons.io.filefilter.CanWriteFileFilter
+org.apache.commons.io.filefilter.ConditionalFileFilter
+org.apache.commons.io.filefilter.DelegateFileFilter
+org.apache.commons.io.filefilter.DirectoryFileFilter
+org.apache.commons.io.filefilter.EmptyFileFilter
+org.apache.commons.io.filefilter.FalseFileFilter
+org.apache.commons.io.filefilter.FileFileFilter
+org.apache.commons.io.filefilter.FileFilterUtils
+org.apache.commons.io.filefilter.HiddenFileFilter
+org.apache.commons.io.filefilter.IOFileFilter
+org.apache.commons.io.filefilter.MagicNumberFileFilter
+org.apache.commons.io.filefilter.NameFileFilter
+org.apache.commons.io.filefilter.NotFileFilter
+org.apache.commons.io.filefilter.OrFileFilter
+org.apache.commons.io.filefilter.PrefixFileFilter
+org.apache.commons.io.filefilter.RegexFileFilter
+org.apache.commons.io.filefilter.SizeFileFilter
+org.apache.commons.io.filefilter.SuffixFileFilter
+org.apache.commons.io.filefilter.TrueFileFilter
+org.apache.commons.io.filefilter.WildcardFileFilter
+org.apache.commons.io.filefilter.WildcardFilter
+org.apache.commons.io.input.AutoCloseInputStream
+org.apache.commons.io.input.BOMInputStream$1
+org.apache.commons.io.input.BOMInputStream
+org.apache.commons.io.input.BoundedInputStream
+org.apache.commons.io.input.BrokenInputStream
+org.apache.commons.io.input.CharSequenceInputStream
+org.apache.commons.io.input.CharSequenceReader
+org.apache.commons.io.input.ClassLoaderObjectInputStream
+org.apache.commons.io.input.CloseShieldInputStream
+org.apache.commons.io.input.ClosedInputStream
+org.apache.commons.io.input.CountingInputStream
+org.apache.commons.io.input.DemuxInputStream
+org.apache.commons.io.input.NullInputStream
+org.apache.commons.io.input.NullReader
+org.apache.commons.io.input.ProxyInputStream
+org.apache.commons.io.input.ProxyReader
+org.apache.commons.io.input.ReaderInputStream
+org.apache.commons.io.input.ReversedLinesFileReader$1
+org.apache.commons.io.input.ReversedLinesFileReader$FilePart
+org.apache.commons.io.input.ReversedLinesFileReader
+org.apache.commons.io.input.SwappedDataInputStream
+org.apache.commons.io.input.TaggedInputStream
+org.apache.commons.io.input.Tailer
+org.apache.commons.io.input.TailerListener
+org.apache.commons.io.input.TailerListenerAdapter
+org.apache.commons.io.input.TeeInputStream
+org.apache.commons.io.input.XmlStreamReader
+org.apache.commons.io.input.XmlStreamReaderException
+org.apache.commons.io.monitor.FileAlterationListener
+org.apache.commons.io.monitor.FileAlterationListenerAdaptor
+org.apache.commons.io.monitor.FileAlterationMonitor
+org.apache.commons.io.monitor.FileAlterationObserver
+org.apache.commons.io.monitor.FileEntry
+org.apache.commons.io.output.BrokenOutputStream
+org.apache.commons.io.output.ByteArrayOutputStream
+org.apache.commons.io.output.CloseShieldOutputStream
+org.apache.commons.io.output.ClosedOutputStream
+org.apache.commons.io.output.CountingOutputStream
+org.apache.commons.io.output.DeferredFileOutputStream
+org.apache.commons.io.output.DemuxOutputStream
+org.apache.commons.io.output.FileWriterWithEncoding
+org.apache.commons.io.output.LockableFileWriter
+org.apache.commons.io.output.NullOutputStream
+org.apache.commons.io.output.NullWriter
+org.apache.commons.io.output.ProxyOutputStream
+org.apache.commons.io.output.ProxyWriter
+org.apache.commons.io.output.StringBuilderWriter:
+    public void <init>(java.lang.StringBuilder)
+    public java.lang.StringBuilder getBuilder()
+org.apache.commons.io.output.TaggedOutputStream
+org.apache.commons.io.output.TeeOutputStream
+org.apache.commons.io.output.ThresholdingOutputStream
+org.apache.commons.io.output.WriterOutputStream
+org.apache.commons.io.output.XmlStreamWriter
 org.checkerframework.checker.builder.qual.CalledMethods
 org.checkerframework.checker.builder.qual.NotCalledMethods
 org.checkerframework.checker.builder.qual.ReturnsReceiver
@@ -55217,6 +55501,8 @@ io.grpc.stub.AbstractAsyncStub:
     static final synthetic boolean $assertionsDisabled
 io.grpc.stub.ClientCalls:
     static final synthetic boolean $assertionsDisabled
+kotlin.jvm.internal.PropertyReference1:
+    public void <init>()
 kotlin.jvm.internal.markers.KMutableIterable
 kotlin.random.AbstractPlatformRandom:
     public int nextBits(int)

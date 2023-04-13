@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:loading_indicator/loading_indicator.dart';
 import 'package:qonnected_app/binding/home_binding.dart';
 import 'package:qonnected_app/controller/firebaseauth/authrepo/authenticationrepository.dart';
 import 'package:qonnected_app/page/activity/index.dart';
@@ -7,6 +8,7 @@ import 'package:qonnected_app/page/coworker/index.dart';
 import 'package:qonnected_app/page/home/index.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:qonnected_app/page/initial_page.dart';
+import 'package:after_layout/after_layout.dart';
 import 'package:get/get.dart';
 import 'package:qonnected_app/page/introduction/index.dart';
 import 'package:qonnected_app/page/login.dart';
@@ -97,7 +99,25 @@ class _MyAppState extends State<MyApp> {
         'splashscreen': (context) => const IntroductionScreens(),
         'splashpage': (context) => const PhoneLogin()
       },
-      home: const Scaffold(body: Center(child: CircularProgressIndicator())),
+      // home: const Splash(),
+      home: Scaffold(
+          body: Center(
+              child: Container(
+        width: 70,
+        height: 70,
+        color: Colors.transparent,
+        child: LoadingIndicator(
+            indicatorType: Indicator.ballRotateChase,
+            colors: [
+              Colors.blue.shade800,
+              Colors.red,
+              Colors.pink,
+              Colors.green
+            ],
+            strokeWidth: 2,
+            backgroundColor: Colors.transparent,
+            pathBackgroundColor: Colors.black),
+      ))),
       // home: const PhoneLogin(),
       // home: const IntroductionScreens(),
       // home: const SplashPage(),
@@ -105,3 +125,39 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
+// @immutable
+// class Splash extends StatefulWidget {
+//   const Splash({Key? key}) : super(key: key);
+
+//   @override
+//   SplashState createState() => SplashState();
+// }
+
+// class SplashState extends State<Splash> with AfterLayoutMixin<Splash> {
+//   Future checkFirstSeen() async {
+//     SharedPreferences prefs = await SharedPreferences.getInstance();
+//     bool seen = (prefs.getBool('seen') ?? false);
+
+//     if (seen) {
+//       Navigator.of(context).pushReplacement(
+//           MaterialPageRoute(builder: (context) => const PhoneLogin()));
+//     } else {
+//       await prefs.setBool('seen', true);
+//       Navigator.of(context).pushReplacement(
+//           MaterialPageRoute(builder: (context) => const IntroductionScreens()));
+//     }
+//   }
+
+//   @override
+//   void afterFirstLayout(BuildContext context) => checkFirstSeen();
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return const Scaffold(
+//       body: Center(
+//         child: Text('Loading...'),
+//       ),
+//     );
+//   }
+// }

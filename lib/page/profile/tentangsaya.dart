@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'package:loading_indicator/loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:qonnected_app/model/profile/profile.dart';
 import '../../controller/profile_controller.dart';
@@ -9,40 +9,6 @@ import 'package:convert/convert.dart';
 import 'package:http/http.dart' as http;
 
 class TentangSaya extends StatefulWidget {
-  String? gender;
-  String? nama;
-  String? jabatan;
-  String? namaperusahaan;
-  int? warnaperusahaan;
-  String? alamat;
-  String? nip;
-  String? tempatlahir;
-  String? email;
-  String? npwp;
-  String? tanggallahir;
-  String? agama;
-  String? nohp;
-  String? rekening;
-  String? status;
-  TentangSaya(
-      {Key? key,
-      this.gender,
-      this.nama,
-      this.jabatan,
-      this.namaperusahaan,
-      this.warnaperusahaan,
-      this.agama,
-      this.alamat,
-      this.email,
-      this.nip,
-      this.npwp,
-      this.nohp,
-      this.rekening,
-      this.tanggallahir,
-      this.status,
-      this.tempatlahir})
-      : super(key: key);
-
   @override
   State<TentangSaya> createState() => _TentangSayaState();
 }
@@ -56,7 +22,7 @@ class _TentangSayaState extends State<TentangSaya> {
       'Cookie':
           'route=1681096813.535.308.981237|1f6839247221289d5dff78ead76ea2bb'
     };
-    var request = http.Request(
+    final request = http.Request(
         'GET',
         Uri.parse(
             'https://api.baserow.io/api/database/rows/table/154795/1/?user_field_names=true'));
@@ -66,13 +32,15 @@ class _TentangSayaState extends State<TentangSaya> {
     http.StreamedResponse response = await request.send();
 
     if (response.statusCode == 200) {
-      print(await response.stream.bytesToString());
-      print(jsonDecode(request.body));
-      return ProfileModel.fromJson(jsonDecode(request.body));
+      // If the server did return a 200 OK response,
+      // then parse the JSON.
+      return ProfileModel.fromJson(
+          jsonDecode(await response.stream.bytesToString()));
     } else {
-      print(response.reasonPhrase);
+      // If the server did not return a 200 OK response,
+      // then throw an exception.
+      throw Exception('Failed to load album');
     }
-    return ProfileModel.fromJson(jsonDecode(request.body));
   }
 
   late Future<ProfileModel> futureProfile;
@@ -87,18 +55,7 @@ class _TentangSayaState extends State<TentangSaya> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: widget.warnaperusahaan == null
-            ? const Color(0xFF0D1037)
-            : Color(widget.warnaperusahaan!),
-        actions: [
-          IconButton(
-            onPressed: () {
-              profileC.fetchProfile();
-            },
-            icon: const Icon(Icons.abc),
-            color: Colors.white,
-          )
-        ],
+        backgroundColor: const Color(0xFF0D1037),
         elevation: 0,
         centerTitle: true,
         leading: const BackButton(color: Colors.white),
@@ -121,8 +78,8 @@ class _TentangSayaState extends State<TentangSaya> {
                         colorsperusahaan: 0xFF0D1037,
                         urlimage: "assets/icons/male.png",
                         name: "${snapshot.data!.fullname}",
-                        jabatan: "${snapshot.data!.address}",
-                        namaperusahaan: "${snapshot.data!.email}")
+                        jabatan: snapshot.data!.position.value,
+                        namaperusahaan: snapshot.data!.company_group_id.value)
                   else
                     profileimage(
                         colorsperusahaan: 0xFF0D1037,
@@ -152,15 +109,15 @@ class _TentangSayaState extends State<TentangSaya> {
                       ? textdata(
                           context: context,
                           lable: "NIP",
-                          information: snapshot.data!.nip)
+                          information: "${snapshot.data!.nip}")
                       : textdata(
                           context: context, lable: "NIP", information: "-"),
                   //jabatan
-                  snapshot.data!.address != null
+                  snapshot.data!.position.value != null
                       ? textdata(
                           context: context,
                           lable: "Jabatan",
-                          information: "${snapshot.data!.address}")
+                          information: "${snapshot.data!.position.value}")
                       : textdata(
                           context: context, lable: "Jabatan", information: "-"),
                   //email
@@ -202,11 +159,11 @@ class _TentangSayaState extends State<TentangSaya> {
                           lable: "Jenis kelamin",
                           information: "-"),
                   //status
-                  snapshot.data!.gender != null
+                  snapshot.data!.marital_status.value != null
                       ? textdata(
                           context: context,
                           lable: "Status",
-                          information: "${snapshot.data!.gender}")
+                          information: snapshot.data!.marital_status.value)
                       : textdata(
                           context: context, lable: "Status", information: "-"),
                   //nomor telpon
@@ -251,7 +208,23 @@ class _TentangSayaState extends State<TentangSaya> {
           }
 
           // By default, show a loading spinner.
-          return const Center(child: CircularProgressIndicator());
+          return Center(
+              child: Container(
+            width: 70,
+            height: 70,
+            color: Colors.transparent,
+            child: LoadingIndicator(
+                indicatorType: Indicator.ballRotateChase,
+                colors: [
+                  Colors.blue.shade800,
+                  Colors.red,
+                  Colors.pink,
+                  Colors.green
+                ],
+                strokeWidth: 2,
+                backgroundColor: Colors.transparent,
+                pathBackgroundColor: Colors.black),
+          ));
         },
       ),
       bottomNavigationBar: Padding(

@@ -8,6 +8,12 @@
       "languageVersion": "2.16"
     },
     {
+      "name": "after_layout",
+      "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/after_layout-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.6",
       "packageUri": "lib/",
@@ -584,6 +590,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "loading_indicator",
+      "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/loading_indicator-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "loadmore",
       "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/loadmore-2.0.1",
       "packageUri": "lib/",
@@ -1028,6 +1040,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "tru_sdk_flutter",
+      "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/tru_sdk_flutter-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "tuple",
       "rootUri": "file:///home/python/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/tuple-2.0.1",
       "packageUri": "lib/",
@@ -1166,7 +1184,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-04-11T03:17:00.698302Z",
+  "generated": "2023-04-12T14:17:15.732332Z",
   "generator": "pub",
   "generatorVersion": "2.17.5"
 }

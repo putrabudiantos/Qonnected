@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 // import 'package:android_intent/android_intent.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:qonnected_app/auth/phonelogin.dart';
 import 'package:qonnected_app/page/splash_screen.dart';
 
 enum PermissionStatus {
@@ -112,7 +113,7 @@ class IntroductionScreens extends StatelessWidget {
           ],
           onDone: () {
             Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) => const SplashPage()));
+                MaterialPageRoute(builder: (context) => const PhoneLogin()));
             // Navigator.pushReplacement(context,
             //     MaterialPageRoute(builder: (context) => const SplashPage()));
           },
@@ -132,7 +133,7 @@ class IntroductionScreens extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: Colors.blue.shade900,
                   fontFamily: "Inter")),
-          done: Text("Selesai",
+          done: Text("Done",
               style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: Colors.blue.shade900,
