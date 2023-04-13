@@ -1,4 +1,4 @@
-#Wed Apr 12 22:30:52 WIB 2023
+#Thu Apr 13 17:06:01 WIB 2023
 base.1=/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/dex/debug/minifyDebugWithR8/classes2.dex
 path.1=classes2.dex
 base.0=/home/python/BitBucket/Qonnected/qonnected_app/build/app/intermediates/dex/debug/minifyDebugWithR8/classes.dex

@@ -7,13 +7,13 @@ import 'package:qonnected_app/controller/profile_controller.dart';
 import 'package:qonnected_app/global_variabel.dart';
 import 'package:qonnected_app/page/home/payslip.dart';
 import 'package:qonnected_app/page/home/story.dart';
-import 'package:qonnected_app/page/home/summary.dart';
 import 'package:qonnected_app/page/home/timeoff.dart';
 import 'package:qonnected_app/global_variabel.dart' as vars;
 import 'package:qonnected_app/page/home/todayactivity.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:qonnected_app/page/home/summary.dart';
 
 class IndexHome extends StatefulWidget {
   const IndexHome({Key? key}) : super(key: key);
@@ -531,7 +531,7 @@ class _IndexHomeState extends State<IndexHome> {
         children: [
           imagedatacontainer(
               function: () {
-                Get.to(const Summary());
+                Get.to(DetailsScreen());
               },
               urlassets: "assets/icons/revisi/attendance.png",
               nama: "Summary"),

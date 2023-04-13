@@ -1,0 +1,34 @@
+{
+    "previous" : "URL for previous Page",
+    "next" : "URL for Next Page",
+    "result" : [
+        {
+            "first_name" : "Saputra",
+            "last_name" : "Budianto",
+            "email" : "localhosting@gmail.com",
+            "phone" : "08238274943",
+            "verified" : false
+        },
+        {
+            "first_name" : "Arum",
+            "last_name" : "Purwita",
+            "email" : "localhosting@gmail.com",
+            "phone" : "08238274943",
+            "verified" : false
+        },
+        {
+            "first_name" : "Izza",
+            "last_name" : "Afcarina",
+            "email" : "localhosting@gmail.com",
+            "phone" : "08238274943",
+            "verified" : true
+        },
+        {
+            "first_name" : "Annisa",
+            "last_name" : "Nurdiana",
+            "email" : "localhosting@gmail.com",
+            "phone" : "08238274943",
+            "verified" : true
+        }
+    ]
+}

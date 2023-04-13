@@ -92,18 +92,18 @@ class _TentangSayaState extends State<TentangSaya> {
                   snapshot.data!.fullname != null
                       ? textdata(
                           context: context,
-                          lable: "Nama",
+                          lable: "Name",
                           information: "${snapshot.data!.fullname}")
                       : textdata(
-                          context: context, lable: "Nama", information: "-"),
+                          context: context, lable: "Name", information: "-"),
                   //alamat
                   snapshot.data!.address != null
                       ? textdata(
                           context: context,
-                          lable: "Alamat",
+                          lable: "Address",
                           information: "${snapshot.data!.address}")
                       : textdata(
-                          context: context, lable: "Alamat", information: "-"),
+                          context: context, lable: "Address", information: "-"),
                   //agama
                   snapshot.data!.nip != null
                       ? textdata(
@@ -116,10 +116,12 @@ class _TentangSayaState extends State<TentangSaya> {
                   snapshot.data!.position.value != null
                       ? textdata(
                           context: context,
-                          lable: "Jabatan",
-                          information: "${snapshot.data!.position.value}")
+                          lable: "Position",
+                          information: snapshot.data!.position.value)
                       : textdata(
-                          context: context, lable: "Jabatan", information: "-"),
+                          context: context,
+                          lable: "Position",
+                          information: "-"),
                   //email
                   snapshot.data!.email != null
                       ? textdata(
@@ -132,56 +134,60 @@ class _TentangSayaState extends State<TentangSaya> {
                   snapshot.data!.place_of_birth != null
                       ? textdata(
                           context: context,
-                          lable: "Tempat Lahir",
+                          lable: "Place of Birth",
                           information: "${snapshot.data!.place_of_birth}")
                       : textdata(
                           context: context,
-                          lable: "Tempat Lahir",
+                          lable: "Place of Birth",
                           information: "-"),
                   //tanggal lahir
                   snapshot.data!.date_of_birth != null
                       ? textdata(
                           context: context,
-                          lable: "Tanggal lahir",
+                          lable: "Date of Birth",
                           information: "${snapshot.data!.date_of_birth}")
                       : textdata(
                           context: context,
-                          lable: "Tempat Lahir",
+                          lable: "Date of Birth",
                           information: "-"),
                   //Jenis kelamin
                   snapshot.data!.gender != null
                       ? textdata(
                           context: context,
-                          lable: "Jenis kelamin",
+                          lable: "Gender",
                           information: "${snapshot.data!.gender}")
                       : textdata(
-                          context: context,
-                          lable: "Jenis kelamin",
-                          information: "-"),
+                          context: context, lable: "Gender", information: "-"),
                   //status
                   snapshot.data!.marital_status.value != null
                       ? textdata(
                           context: context,
-                          lable: "Status",
+                          lable: "Marital Status",
                           information: snapshot.data!.marital_status.value)
                       : textdata(
-                          context: context, lable: "Status", information: "-"),
+                          context: context,
+                          lable: "Marital Status",
+                          information: "-"),
                   //nomor telpon
                   snapshot.data!.phone != null
                       ? textdata(
                           context: context,
-                          lable: "Nomor Hp",
+                          lable: "Phone Number",
                           information: "${snapshot.data!.phone}")
                       : textdata(
-                          context: context, lable: "No Hp", information: "-"),
+                          context: context,
+                          lable: "Phone Number",
+                          information: "-"),
                   //agama
                   snapshot.data!.religion != null
                       ? textdata(
                           context: context,
-                          lable: "Agama",
+                          lable: "Religion",
                           information: "${snapshot.data!.religion}")
                       : textdata(
-                          context: context, lable: "Agama", information: "-"),
+                          context: context,
+                          lable: "Religion",
+                          information: "-"),
                   //NPWP
                   snapshot.data!.npwp != null
                       ? textdata(
@@ -194,12 +200,48 @@ class _TentangSayaState extends State<TentangSaya> {
                   snapshot.data!.bank_account_number != null
                       ? textdata(
                           context: context,
-                          lable: "Nomor Rekening",
+                          lable: "Bank Account Number",
                           information: "${snapshot.data!.bank_account_number}")
                       : textdata(
                           context: context,
-                          lable: "Nomer Rekening",
-                          information: "-")
+                          lable: "Bank Account Number",
+                          information: "-"),
+                  snapshot.data!.tiktok != null
+                      ? textdata(
+                          context: context,
+                          lable: "TikTok Account",
+                          information: "${snapshot.data!.tiktok}")
+                      : textdata(
+                          context: context,
+                          lable: "TikTok Account",
+                          information: "-"),
+                  snapshot.data!.instagram != null
+                      ? textdata(
+                          context: context,
+                          lable: "Instagram Account",
+                          information: "${snapshot.data!.instagram}")
+                      : textdata(
+                          context: context,
+                          lable: "Instagram Account",
+                          information: "-"),
+                  snapshot.data!.portofolio_url != null
+                      ? textdata(
+                          context: context,
+                          lable: "Portofolio URL",
+                          information: "${snapshot.data!.portofolio_url}")
+                      : textdata(
+                          context: context,
+                          lable: "Portofolio URL",
+                          information: "-"),
+                  snapshot.data!.linkedin != null
+                      ? textdata(
+                          context: context,
+                          lable: "Linkedin URL",
+                          information: "${snapshot.data!.linkedin}")
+                      : textdata(
+                          context: context,
+                          lable: "Linkedin URL",
+                          information: "-"),
                 ],
               ),
             );
