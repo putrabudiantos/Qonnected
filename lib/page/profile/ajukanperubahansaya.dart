@@ -14,6 +14,10 @@ class _AjukanPerubahanSayaState extends State<AjukanPerubahanSaya> {
   final email = TextEditingController();
   final nohp = TextEditingController();
   final alamat = TextEditingController();
+  final maritalstatus = TextEditingController();
+  final instagram = TextEditingController();
+  final tiktok = TextEditingController();
+  final profileurl = TextEditingController();
 
   @override
   void initState() {
@@ -26,6 +30,10 @@ class _AjukanPerubahanSayaState extends State<AjukanPerubahanSaya> {
     email.dispose();
     nohp.dispose();
     alamat.dispose();
+    profileurl.dispose();
+    tiktok.dispose();
+    instagram.dispose();
+    maritalstatus.dispose();
     super.dispose();
   }
 
@@ -60,11 +68,29 @@ class _AjukanPerubahanSayaState extends State<AjukanPerubahanSaya> {
             const SizedBox(height: 10),
             editing(
                 controller: alamat,
-                label: "Alamat",
+                label: "Address",
                 type: TextInputType.streetAddress),
             const SizedBox(height: 10),
             editing(
-                controller: status, label: "Status", type: TextInputType.name),
+                controller: status,
+                label: "Marital Status",
+                type: TextInputType.name),
+            editing(
+                controller: status,
+                label: "Instagram Account",
+                type: TextInputType.name),
+            editing(
+                controller: status,
+                label: "Tiktok Account",
+                type: TextInputType.name),
+            editing(
+                controller: status,
+                label: "Portofolo URL",
+                type: TextInputType.name),
+            editing(
+                controller: status,
+                label: "Linkedin URL",
+                type: TextInputType.name),
           ],
         ),
       ),

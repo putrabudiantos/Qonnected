@@ -48,6 +48,7 @@ class _PhoneLoginState extends State<PhoneLogin> {
                 ),
                 const SizedBox(height: 25),
                 IntlPhoneField(
+                  disableLengthCheck: false,
                   controller: controller.phonecontroller,
                   initialCountryCode: "ID",
                   decoration: InputDecoration(
@@ -68,11 +69,6 @@ class _PhoneLoginState extends State<PhoneLogin> {
                     "Kami akan mengirimkan anda kode OTP ke nomor yang anda inputkan",
                     textAlign: TextAlign.center),
                 const SizedBox(height: 30),
-                // TextButton(
-                //     onPressed: () {
-                //       Get.to(const EmailLogin());
-                //     },
-                //     child: const Text('Login dengan email?')),
                 const SizedBox(height: 30),
                 ElevatedButton(
                     onPressed: () {
